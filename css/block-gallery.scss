@@ -2,13 +2,11 @@
 // -
 // + + + + + + + + + + 
 
-@import 'variables.scss';
-@import 'mixins.scss';
+@import 'blocks.scss';
 
 
-[class*=acf-block--] {
+.acf-block--gallery {
 	position: relative;
-	margin-bottom: $grid-padding*2;
 }
 
 .acf-block-container {
@@ -19,34 +17,44 @@
 // Block
 
 
-.acf-block-gallery-pictures {
+[class*=acf-block-gallery-pictures],
+[class*=acf-block-gallery-content] {
 	display: flex;
 	justify-content: flex-start; 
 	flex-wrap: wrap;
-	margin: 0 -$grid-padding;
 }
 
-[class*="acf-block-gallery-item-"] {
-	padding: $grid-padding;
+.acf-block-gallery-item {
+	padding: .5em;
 	width: 50%;
-}
-
-@include rwd(large) {
-	.acf-block-gallery-item-6cols {
-		width: 16.6667%;
+	
+	a {
+		display: block;
+		text-decoration: none;
 	}
-	.acf-block-gallery-item-5cols {
-		width: 20%;
-	}
-	.acf-block-gallery-item-4cols {
-		width: 25%;
-	}
-	.acf-block-gallery-item-3cols {
-		width: 33.3333%;
-	}
-	.acf-block-gallery-item-2cols {
-		width: 50%;
-	}
+	
+	@include rwd(large) {
+		.acf-block-gallery-pictures--6cols &,
+		.acf-block-gallery-content--6cols & {
+			width: 16.6667%;
+		}
+		.acf-block-gallery-pictures--5cols &,
+		.acf-block-gallery-content--5cols & {
+			width: 20%;
+		}
+		.acf-block-gallery-pictures--4cols &,
+		.acf-block-gallery-content--4cols & {
+			width: 25%;
+		}
+		.acf-block-gallery-pictures--3cols &,
+		.acf-block-gallery-content--3cols & {
+			width: 33.3333%;
+		}
+		.acf-block-gallery-pictures--2cols &,
+		.acf-block-gallery-content--2cols & {
+			width: 50%;
+		}
+	}	
 }
 
 .acf-block-gallery-figure {
@@ -63,17 +71,13 @@
 
 }
 .acf-block-gallery-caption {
-	font-family: $font-regular;
-}
-
-.wp-admin .acf-block-gallery-caption {
-	display: none;
+	
 }
 
 
 @include rwd(large) {
 
-	.acf-block-gallery-figure {
+	.acf-block-gallery-item {
 		
 		a:hover,
 		a.focus-visible {
@@ -100,7 +104,7 @@
 			width: 100%; 
 			height: 100%;
 			margin: 0;
-			background-color: transparentize( $secondary-color, .3 );
+			background-color: transparentize( #000, .3 );
 			opacity: 0;
 			transition: opacity .2s ease-in-out;
 		}
@@ -110,13 +114,12 @@
 			display: block;
 			width: 100%;
 			padding: $grid-padding;
-			color: $text-color;
-			font-family: $font-bold;
+			color: #fff;
 			text-align: center;
 			transition: transform .2s ease-in-out;		
 		}
 		
-		.acf-block-gallery-figure {
+		.acf-block-gallery-item {
 			
 			a:hover,
 			a.focus-visible {

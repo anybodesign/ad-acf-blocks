@@ -376,7 +376,7 @@ function adblocks_add_fields() {
 	
 	acf_add_local_field_group(array(
 		'key' => 'group_5ce417112b1de',
-		'title' => __('AD ACF Block 03: Photo gallery', 'adblocks'),
+		'title' => __('AD ACF Block 03: Gallery', 'adblocks'),
 		'fields' => array(
 			array(
 				'key' => 'field_5ce4174ccc530',
@@ -404,13 +404,43 @@ function adblocks_add_fields() {
 				'return_format' => 'value',
 			),
 			array(
+				'key' => 'field_5dee669d7cdba',
+				'label' => __('Content type', 'adblocks'),
+				'name' => 'type',
+				'type' => 'button_group',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'gallery' => __('Picture gallery', 'adblocks'),
+					'content' => __('Content gallery', 'adblocks'),
+				),
+				'allow_null' => 0,
+				'default_value' => 'gallery',
+				'layout' => 'horizontal',
+				'return_format' => 'value',
+			),
+			array(
 				'key' => 'field_5ce4174ccc531',
-				'label' => __('Gallery', 'adblocks'),
-				'name' => 'gallery',
+				'label' => __('Picture gallery', 'adblocks'),
+				'name' => 'picture_gallery',
 				'type' => 'gallery',
 				'instructions' => __('Select the pictures', 'adblocks'),
 				'required' => 0,
-				'conditional_logic' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5dee669d7cdba',
+							'operator' => '==',
+							'value' => 'gallery',
+						),
+					),
+				),
 				'wrapper' => array(
 					'width' => '',
 					'class' => '',
@@ -431,21 +461,63 @@ function adblocks_add_fields() {
 				'mime_types' => '',
 			),
 			array(
+				'key' => 'field_5cecfef96837f',
+				'label' => __('Content gallery', 'adblocks'),
+				'name' => 'content_gallery',
+				'type' => 'relationship',
+				'instructions' => __('Select the pages or posts you wish to have in this gallery', 'adblocks'),
+				'required' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5dee669d7cdba',
+							'operator' => '==',
+							'value' => 'content',
+						),
+					),
+				),
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'post_type' => '',
+				'taxonomy' => '',
+				'filters' => array(
+					0 => 'search',
+					1 => 'post_type',
+					2 => 'taxonomy',
+				),
+				'elements' => array(
+					0 => 'featured_image',
+				),
+				'min' => '',
+				'max' => '',
+				'return_format' => 'object',
+			),
+			array(
 				'key' => 'field_5dc12ae66f8fb',
-				'label' => __('Lengend display', 'adblocks'),
+				'label' => __('Legend display', 'adblocks'),
 				'name' => 'legend',
 				'type' => 'button_group',
 				'instructions' => '',
 				'required' => 0,
-				'conditional_logic' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5dee669d7cdba',
+							'operator' => '!=empty',
+						),
+					),
+				),
 				'wrapper' => array(
 					'width' => '',
 					'class' => '',
 					'id' => '',
 				),
 				'choices' => array(
-					'inside' => __('Inside the picture', 'adblocks'),
-					'outside' => __('Outside the picture', 'adblocks'),
+					'inside' => __('Inside', 'adblocks'),
+					'outside' => __('Outside', 'adblocks'),
 				),
 				'allow_null' => 0,
 				'default_value' => 'inside',
@@ -473,105 +545,8 @@ function adblocks_add_fields() {
 	));
 	
 	acf_add_local_field_group(array(
-		'key' => 'group_5cecfe35069c4',
-		'title' => __('AD ACF Block 04: Content Gallery', 'adblocks'),
-		'fields' => array(
-			array(
-				'key' => 'field_5cecfedc6837e',
-				'label' => __('Layout', 'adblocks'),
-				'name' => 'layout',
-				'type' => 'button_group',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'choices' => array(
-					'2cols' => __('2 columns', 'adblocks'),
-					'3cols' => __('3 columns', 'adblocks'),
-					'4cols' => __('4 columns', 'adblocks'),
-					'5cols' => __('5 columns', 'adblocks'),
-					'6cols' => __('6 columns', 'adblocks'),
-				),
-				'allow_null' => 0,
-				'default_value' => '',
-				'layout' => 'horizontal',
-				'return_format' => 'value',
-			),
-			array(
-				'key' => 'field_5cecfef96837f',
-				'label' => __('Content', 'adblocks'),
-				'name' => 'gallery',
-				'type' => 'relationship',
-				'instructions' => __('Select the pages or posts you wish to have in this gallery', 'adblocks'),
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'post_type' => '',
-				'taxonomy' => '',
-				'filters' => array(
-					0 => 'search',
-					1 => 'post_type',
-					2 => 'taxonomy',
-				),
-				'elements' => array(
-					0 => 'featured_image',
-				),
-				'min' => '',
-				'max' => '',
-				'return_format' => 'object',
-			),
-			array(
-				'key' => 'field_5dc12c25bac3d',
-				'label' => __('Title display', 'adblocks'),
-				'name' => 'title',
-				'type' => 'clone',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'clone' => array(
-					0 => 'field_5dc12ae66f8fb',
-				),
-				'display' => 'seamless',
-				'layout' => 'block',
-				'prefix_label' => 0,
-				'prefix_name' => 0,
-			),
-		),
-		'location' => array(
-			array(
-				array(
-					'param' => 'block',
-					'operator' => '==',
-					'value' => 'acf/content',
-				),
-			),
-		),
-		'menu_order' => 0,
-		'position' => 'normal',
-		'style' => 'default',
-		'label_placement' => 'top',
-		'instruction_placement' => 'label',
-		'hide_on_screen' => '',
-		'active' => true,
-		'description' => '',
-	));
-	
-	acf_add_local_field_group(array(
 		'key' => 'group_5ced02f02266d',
-		'title' => __('AD ACF Block 05: CTA', 'adblocks'),
+		'title' => __('AD ACF Block 04: CTA', 'adblocks'),
 		'fields' => array(
 			array(
 				'key' => 'field_5ced030883dea',
