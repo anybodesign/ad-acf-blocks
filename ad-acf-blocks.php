@@ -105,7 +105,7 @@ function adblocks_block_categories( $categories, $post ) {
             array(
                 'slug' 	=> 'ad-blocks',
                 'title' => __( 'AD ACF Blocks', 'adblocks' ),
-                'icon'  => 'lightbulb',
+                'icon'  => 'palmtree',
             ),
         )
     );
