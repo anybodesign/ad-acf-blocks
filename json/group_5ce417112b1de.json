@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ce4174ccc530",
-            "label": "Mise en page",
+            "label": "Layout",
             "name": "columns",
             "type": "button_group",
             "instructions": "",
@@ -16,11 +16,11 @@
                 "id": ""
             },
             "choices": {
-                "2cols": "2 colonnes",
-                "3cols": "3 colonnes",
-                "4cols": "4 colonnes",
-                "5cols": "5 colonnes",
-                "6cols": "6 colonnes"
+                "2cols": "2 columns",
+                "3cols": "3 columns",
+                "4cols": "4 columns",
+                "5cols": "5 columns",
+                "6cols": "6 columns"
             },
             "allow_null": 0,
             "default_value": "4cols",
@@ -29,10 +29,10 @@
         },
         {
             "key": "field_5ce4174ccc531",
-            "label": "Galerie",
+            "label": "Gallery",
             "name": "gallery",
             "type": "gallery",
-            "instructions": "",
+            "instructions": "Select the pictures",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -40,23 +40,23 @@
                 "class": "",
                 "id": ""
             },
-            "min": "",
-            "max": "",
+            "return_format": "array",
+            "preview_size": "medium",
             "insert": "append",
             "library": "all",
+            "min": "",
+            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": "",
-            "return_format": "array",
-            "preview_size": "medium"
+            "mime_types": ""
         },
         {
             "key": "field_5dc12ae66f8fb",
-            "label": "Affichage de la légende",
+            "label": "Lengend display",
             "name": "legend",
             "type": "button_group",
             "instructions": "",
@@ -68,8 +68,8 @@
                 "id": ""
             },
             "choices": {
-                "inside": "À l’intérieur du bloc",
-                "outside": "À l’extérieur du bloc"
+                "inside": "Inside the picture",
+                "outside": "Outside the picture"
             },
             "allow_null": 0,
             "default_value": "inside",
@@ -94,5 +94,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575899436
+    "modified": 1575901416
 }

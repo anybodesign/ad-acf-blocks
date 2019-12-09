@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_5ce3ffde2ab33",
-            "label": "Mise en page",
+            "label": "Layout",
             "name": "layout",
             "type": "button_group",
-            "instructions": "Choisir la mise en page pour cette section",
+            "instructions": "Choose a layout pour this block",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,11 +16,11 @@
                 "id": ""
             },
             "choices": {
-                "1col": "1 colonne",
-                "2col": "2 colonnes",
-                "3col": "3 colonnes",
-                "2-1col": "Deux-tiers \/ Un tiers",
-                "1-2col": "Un tiers \/ Deux-tiers"
+                "1col": "1 column",
+                "2col": "2 columns",
+                "3col": "3 columns",
+                "2-1col": "Two thirds \/ One third",
+                "1-2col": "One third \/ Two thirds"
             },
             "allow_null": 0,
             "default_value": "",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_5cebff896af3c",
-            "label": "Centrage vertical",
+            "label": "Vertical centering",
             "name": "center",
             "type": "true_false",
             "instructions": "",
@@ -48,7 +48,7 @@
         },
         {
             "key": "field_5ce3ffde2ab34",
-            "label": "Première colonne",
+            "label": "First column",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -100,7 +100,7 @@
         },
         {
             "key": "field_5ce3ffde2ab35",
-            "label": "Zone de contenu",
+            "label": "Content",
             "name": "text_1",
             "type": "wysiwyg",
             "instructions": "",
@@ -119,7 +119,7 @@
         },
         {
             "key": "field_5ce3ffde2ab36",
-            "label": "Deuxième colonne",
+            "label": "Second column",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -164,7 +164,7 @@
         },
         {
             "key": "field_5ce3ffde2ab37",
-            "label": "Zone de contenu",
+            "label": "Content",
             "name": "text_2",
             "type": "wysiwyg",
             "instructions": "",
@@ -183,7 +183,7 @@
         },
         {
             "key": "field_5ce3ffde2ab38",
-            "label": "Troisième colonne",
+            "label": "Third column",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -207,7 +207,7 @@
         },
         {
             "key": "field_5ce3ffde2ab39",
-            "label": "Zone de contenu",
+            "label": "Content",
             "name": "text_3",
             "type": "wysiwyg",
             "instructions": "",
@@ -242,5 +242,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575899395
+    "modified": 1575901286
 }

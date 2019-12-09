@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ce41de031ede",
-            "label": "Zone de texte",
+            "label": "Text area",
             "name": "text",
             "type": "wysiwyg",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ce41de031ee0",
-            "label": "Image",
+            "label": "Picture",
             "name": "picture",
             "type": "image",
             "instructions": "",
@@ -47,7 +47,7 @@
         },
         {
             "key": "field_5ce41de031edf",
-            "label": "Image à droite",
+            "label": "Picture on the right",
             "name": "right",
             "type": "true_false",
             "instructions": "",
@@ -66,7 +66,7 @@
         },
         {
             "key": "field_5ceba9d006162",
-            "label": "Zoom sur l'image",
+            "label": "Agrandir l'image",
             "name": "zoom",
             "type": "true_false",
             "instructions": "",
@@ -85,7 +85,7 @@
         },
         {
             "key": "field_5cec15ae50656",
-            "label": "Centrage vertical",
+            "label": "Vertical centering",
             "name": "center",
             "type": "true_false",
             "instructions": "",
@@ -120,5 +120,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575899414
+    "modified": 1575901340
 }

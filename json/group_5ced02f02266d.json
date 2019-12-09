@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ced030883dea",
-            "label": "Zone de texte",
+            "label": "Text area",
             "name": "text",
             "type": "wysiwyg",
             "instructions": "",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5ced030883deb",
-            "label": "Lien",
+            "label": "Link",
             "name": "link",
             "type": "link",
             "instructions": "",
@@ -53,7 +53,7 @@
             "sub_fields": [
                 {
                     "key": "field_5ced030883ded",
-                    "label": "Couleur du texte",
+                    "label": "Texte color",
                     "name": "white_text",
                     "type": "true_false",
                     "instructions": "",
@@ -64,7 +64,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "Passer le texte en blanc",
+                    "message": "Switch text to white",
                     "default_value": 0,
                     "ui": 1,
                     "ui_on_text": "",
@@ -72,7 +72,7 @@
                 },
                 {
                     "key": "field_5ced030883dee",
-                    "label": "Couleur d'arrière-plan",
+                    "label": "Background color",
                     "name": "bg_color",
                     "type": "color_picker",
                     "instructions": "",
@@ -87,7 +87,7 @@
                 },
                 {
                     "key": "field_5ced030883def",
-                    "label": "Image d'arrière-plan",
+                    "label": "Background picture",
                     "name": "bg_image",
                     "type": "image",
                     "instructions": "",
@@ -148,5 +148,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575899369
+    "modified": 1575901893
 }
