@@ -195,3 +195,19 @@ function adblocks_custom_acf_settings_textdomain($domain){
   return 'adblocks';
 }
 add_filter('acf/settings/l10n_textdomain', 'adblocks_custom_acf_settings_textdomain');
+
+
+
+//
+// Auto-Updater
+//
+// ////////////////
+
+
+require 'assets/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/anybodesign/ad-acf-blocks',
+	__FILE__,
+	'ad-acf-blocks'
+);
+$myUpdateChecker->setBranch('master');
