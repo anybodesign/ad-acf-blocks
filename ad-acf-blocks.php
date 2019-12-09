@@ -1,4 +1,4 @@
-<?php if ( !defined('ABSPATH') ) die();
+<?php defined('ABSPATH') or die(); 
 /**
  * Plugin Name: AD ACF Blocks
  * Description: A collection of blocks made with ACF for the new Editor 
@@ -193,8 +193,15 @@ function adblocks_init() {
 	}	
 }
 
+
+// Load ACF fields (PHP)
+
+require_once('ad-acf-blocks-fields.php');
+
+
 // Save Acf
  
+/*
 add_filter('acf/settings/save_json', 'ad_json_save_point');
 function ad_json_save_point( $json_path ) {
     
@@ -202,9 +209,11 @@ function ad_json_save_point( $json_path ) {
     return $json_path;
     
 }
+*/
 
 // Load Acf
  
+/*
 add_filter('acf/settings/load_json', 'ad_json_load_point');
 function ad_json_load_point( $json_path ) {
     
@@ -213,3 +222,16 @@ function ad_json_load_point( $json_path ) {
     return $json_path;
     
 }
+*/
+
+// Translate fields
+
+function adblocks_custom_acf_settings_localization($localization){
+  return true;
+}
+add_filter('acf/settings/l10n', 'adblocks_custom_acf_settings_localization');
+
+function adblocks_custom_acf_settings_textdomain($domain){
+  return 'adblocks';
+}
+add_filter('acf/settings/l10n_textdomain', 'adblocks_custom_acf_settings_textdomain');
