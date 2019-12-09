@@ -1,0 +1,49 @@
+// Blocks var & mixins
+// -
+// + + + + + + + + + + +
+
+
+$grid-padding: 1rem;
+
+$width-small: 30em; 		// @note: 480px
+$width-medium: 45em;		// @note: 720px
+$width-large: 60em; 		// @note: 960px
+$width-wide: 75em;	 		// @note: 1200px
+$width-xwide: 90em;	 		// @note: 1440px
+
+
+// Mobile First Media Queries
+
+@mixin rwd($width) {
+	
+	@if $width == xwide {
+		@media only screen and (min-width: $width-xwide) {
+			@content;
+		}
+	}
+	@if $width == wide {
+		@media only screen and (min-width: $width-wide) {
+			@content;
+		}
+	}
+	@else if $width == large {
+		@media only screen and (min-width: $width-large) {
+			@content;
+		}
+	}
+	@else if $width == medium {
+		@media only screen and (min-width: $width-medium) {
+			@content;
+		}
+	}
+	@else if $width == small {
+		@media only screen and (min-width: $width-small) {
+			@content;
+		}
+	}
+	@else {
+		@media only screen and (min-width: $width) {
+			@content;
+		}
+	}
+}
