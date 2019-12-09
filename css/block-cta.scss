@@ -1,0 +1,49 @@
+// CTA Block
+// -
+// + + + + + + + + + + +
+
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+[class*=acf-block--] {
+	position: relative;
+	margin-bottom: $grid-padding*2;
+}
+
+.acf-block-container {
+	width: 100%;
+}
+
+
+// Block
+
+
+.acf-block--cta {
+	padding: 6em;
+	text-align: center;
+	background-size: cover;
+	background-position: center center;
+}
+.acf-block-cta-text {}
+.acf-block-cta-btn {}
+
+.cta-overlay {
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0; 
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(to top, rgba(0,0,0, .65) 0%, rgba(0,0,0, 0) 100%);
+		z-index: 1;
+	}
+	
+	.acf-block-cta-text,
+	.acf-block-cta-btn {
+		position: relative;
+		z-index: 2;
+	}
+}

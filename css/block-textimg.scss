@@ -1,0 +1,59 @@
+// Text+Img Block
+// -
+// + + + + + + + + + + 
+
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+[class*=acf-block--] {
+	position: relative;
+	margin-bottom: $grid-padding*2;
+}
+
+.acf-block-container {
+	width: 100%;
+}
+
+
+// Block
+
+
+.acf-block--textimg {
+	
+	.acf-block-container {
+		
+		@include rwd(medium) {
+			display: flex;
+			
+			&.centered {
+				align-items: center;				
+			}
+			&.right {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}
+
+.acf-block-textimg-text,
+.acf-block-textimg-picture {
+	
+	@include rwd(medium) {
+		width: 50%;
+	}
+}
+
+.acf-block-textimg-text {
+	padding: $grid-padding;
+	padding-left: $grid-padding*2;
+	
+	.right & {
+		padding-left: $grid-padding;
+		padding-right: $grid-padding*2;
+	}
+}
+
+.acf-block-textimg-picture {
+	@include img-opacity(.7);
+}

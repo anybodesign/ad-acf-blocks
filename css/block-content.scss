@@ -1,0 +1,16 @@
+// Content Gallery Block
+// -
+// + + + + + + + + + + +
+
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+[class*=acf-block--] {
+	position: relative;
+	margin-bottom: $grid-padding*2;
+}
+
+.acf-block-container {
+	width: 100%;
+}

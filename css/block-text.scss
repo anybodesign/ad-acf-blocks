@@ -1,0 +1,59 @@
+// Text Block
+// -
+// + + + + + + + + + + 
+
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+[class*=acf-block--] {
+	position: relative;
+	margin-bottom: $grid-padding*2;
+}
+
+.acf-block-container {
+	width: 100%;
+}
+
+
+// Block
+
+
+.acf-block-text {}
+
+[class*=acf-block-text--] {
+	
+	@include rwd(medium) {
+		display: flex;
+		justify-content: space-between;
+		
+		&.centered {
+			align-items: center;
+		} 
+	}
+}
+
+.acf-block-text-column {
+	flex: 1 0 0;
+	margin-right: 1.5em;
+	
+	&:last-child {
+		margin-right: 0;	
+	}
+	
+	@include rwd(medium) {
+		.acf-block-text--2-1col &:first-child,
+		.acf-block-text--1-2col &:last-child {
+			flex: auto;
+			width: 66.6667%;
+		}
+		.acf-block-text--2-1col &:last-child,
+		.acf-block-text--1-2col &:first-child {
+			flex: auto;
+			width: 33.3333%;
+		}
+	}
+
+	@include img-opacity(.7);
+	
+}
