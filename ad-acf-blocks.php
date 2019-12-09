@@ -160,22 +160,7 @@ function adblocks_init() {
             'render_template'   => ADBLOCKS__PLUGIN_PATH . 'templates/block-gallery.php',
             'enqueue_style' 	=> ADBLOCKS__PLUGIN_URL . 'css/block-gallery.css',
 		));
-		
-		// Content Gallery
-		
-		acf_register_block(array(
-			'name'				=> 'content',
-			'title'				=> __('Content gallery', 'adblocks'),
-			'description'		=> __('Create links to your pages or posts.', 'adblocks'),
-			'category'			=> 'ad-blocks',
-			'icon'				=> '<svg width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><rect x="20.12" y="7.841" width="3.88" height="8.085" style="fill:#555d66;"/><rect x="0" y="7.841" width="3.88" height="8.085" style="fill:#555d66;"/><rect x="6" y="6" width="12" height="12" style="fill:#555d66;"/><path d="M13.872,11.882l-0.464,0.349c-0.465,0.464 -0.581,1.277 -0.233,1.858l-0.929,0.929l-1.277,-1.278l-1.51,1.51c-0.232,0.232 -1.858,1.51 -2.09,1.278c-0.232,-0.233 1.045,-1.858 1.277,-2.091l1.51,-1.509l-1.277,-1.278l0.929,-0.929c0.58,0.349 1.393,0.349 1.858,-0.232l0.348,-0.348c0.581,-0.581 0.581,-1.394 0.232,-1.975l0.929,-0.929l3.484,3.368l-0.929,0.929c-0.555,-0.222 -1.322,-0.232 -1.858,0.348Z" style="fill:#fff;"/></g></svg>',
-            'mode'				=> 'auto',
-            'supports'			=> array( 'align' => array( 'wide', 'full' ), 'mode' => false),
-            'keywords'			=> array( 'content', 'contenu', 'gallery', 'galerie' ),
-            'render_template'   => ADBLOCKS__PLUGIN_PATH . 'templates/block-content.php',
-            'enqueue_style' 	=> ADBLOCKS__PLUGIN_URL . 'css/block-content.css',
-		));
-		
+				
 		// CTA
 		
 		acf_register_block(array(
