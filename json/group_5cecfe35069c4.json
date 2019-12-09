@@ -1,0 +1,97 @@
+{
+    "key": "group_5cecfe35069c4",
+    "title": "AD ACF Block 04: Content Gallery",
+    "fields": [
+        {
+            "key": "field_5cecfedc6837e",
+            "label": "Mise en page",
+            "name": "layout",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2cols": "2 colonnes",
+                "3cols": "3 colonnes",
+                "4cols": "4 colonnes",
+                "5cols": "5 colonnes",
+                "6cols": "6 colonnes"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5cecfef96837f",
+            "label": "Choix des contenus",
+            "name": "gallery",
+            "type": "relationship",
+            "instructions": "Choisir les contenus que vous souhaitez voir figurer dans la galerie.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5dc12c25bac3d",
+            "label": "Affichage du titre",
+            "name": "title",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5dc12ae66f8fb"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1575899533
+}

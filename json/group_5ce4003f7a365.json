@@ -1,0 +1,246 @@
+{
+    "key": "group_5ce4003f7a365",
+    "title": "AD ACF Block 01: Text",
+    "fields": [
+        {
+            "key": "field_5ce3ffde2ab33",
+            "label": "Mise en page",
+            "name": "layout",
+            "type": "button_group",
+            "instructions": "Choisir la mise en page pour cette section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1col": "1 colonne",
+                "2col": "2 colonnes",
+                "3col": "3 colonnes",
+                "2-1col": "Deux-tiers \/ Un tiers",
+                "1-2col": "Un tiers \/ Deux-tiers"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5cebff896af3c",
+            "label": "Centrage vertical",
+            "name": "center",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ce3ffde2ab34",
+            "label": "Première colonne",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "1col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "2col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "3col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "2-1col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "1-2col"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ce3ffde2ab35",
+            "label": "Zone de contenu",
+            "name": "text_1",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5ce3ffde2ab36",
+            "label": "Deuxième colonne",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "2col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "3col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "2-1col"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "1-2col"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ce3ffde2ab37",
+            "label": "Zone de contenu",
+            "name": "text_2",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5ce3ffde2ab38",
+            "label": "Troisième colonne",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ce3ffde2ab33",
+                        "operator": "==",
+                        "value": "3col"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ce3ffde2ab39",
+            "label": "Zone de contenu",
+            "name": "text_3",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/text"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1575899395
+}

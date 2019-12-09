@@ -1,0 +1,98 @@
+{
+    "key": "group_5ce417112b1de",
+    "title": "AD ACF Block 03: Photo gallery",
+    "fields": [
+        {
+            "key": "field_5ce4174ccc530",
+            "label": "Mise en page",
+            "name": "columns",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2cols": "2 colonnes",
+                "3cols": "3 colonnes",
+                "4cols": "4 colonnes",
+                "5cols": "5 colonnes",
+                "6cols": "6 colonnes"
+            },
+            "allow_null": 0,
+            "default_value": "4cols",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ce4174ccc531",
+            "label": "Galerie",
+            "name": "gallery",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_5dc12ae66f8fb",
+            "label": "Affichage de la légende",
+            "name": "legend",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inside": "À l’intérieur du bloc",
+                "outside": "À l’extérieur du bloc"
+            },
+            "allow_null": 0,
+            "default_value": "inside",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/gallery"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1575899436
+}
