@@ -2,13 +2,11 @@
 // -
 // + + + + + + + + + + 
 
-@import 'variables.scss';
-@import 'mixins.scss';
+@import 'blocks.scss';
 
 
-[class*=acf-block--] {
+.acf-block--textimg {
 	position: relative;
-	margin-bottom: $grid-padding*2;
 }
 
 .acf-block-container {

@@ -2,13 +2,11 @@
 // -
 // + + + + + + + + + + 
 
-@import 'variables.scss';
-@import 'mixins.scss';
+@import 'blocks.scss';
 
 
-[class*=acf-block--] {
+.acf-block--text {
 	position: relative;
-	margin-bottom: $grid-padding*2;
 }
 
 .acf-block-container {
@@ -52,8 +50,5 @@
 			flex: auto;
 			width: 33.3333%;
 		}
-	}
-
-	@include img-opacity(.7);
-	
+	}	
 }
