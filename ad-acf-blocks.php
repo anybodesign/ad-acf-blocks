@@ -35,7 +35,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'ADBLOCKS__BASENAME', plugin_basename(__FILE__) );
+define( 'ADBLOCKS__BASENAME', plugin_basename( __FILE__ ) );
 
 
 // i18n
@@ -198,31 +198,6 @@ function adblocks_init() {
 
 require_once('ad-acf-blocks-fields.php');
 
-
-// Save Acf
- 
-/*
-add_filter('acf/settings/save_json', 'ad_json_save_point');
-function ad_json_save_point( $json_path ) {
-    
-    $json_path = ADBLOCKS__PLUGIN_PATH . '/json';
-    return $json_path;
-    
-}
-*/
-
-// Load Acf
- 
-/*
-add_filter('acf/settings/load_json', 'ad_json_load_point');
-function ad_json_load_point( $json_path ) {
-    
-    unset($json_path[0]);
-    $json_path[] = ADBLOCKS__PLUGIN_PATH . '/json';
-    return $json_path;
-    
-}
-*/
 
 // Translate fields
 

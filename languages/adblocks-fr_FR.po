@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2019-12-09 15:00+0100\n"
-"PO-Revision-Date: 2019-12-09 15:00+0100\n"
+"POT-Creation-Date: 2019-12-09 15:49+0100\n"
+"PO-Revision-Date: 2019-12-09 15:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,6 +20,169 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: ad-acf-blocks-fields.php:9
+msgid "AD ACF Block 01: Rich Text"
+msgstr "AD ACF Bloc 01 : Texte riche"
+
+#: ad-acf-blocks-fields.php:13 ad-acf-blocks-fields.php:383
+#: ad-acf-blocks-fields.php:481
+msgid "Layout"
+msgstr "MIse en page"
+
+#: ad-acf-blocks-fields.php:16
+msgid "Choose a layout for this block"
+msgstr "Choisir une mise en page pour ce bloc"
+
+#: ad-acf-blocks-fields.php:25
+msgid "1 column"
+msgstr "1 colonne"
+
+#: ad-acf-blocks-fields.php:26 ad-acf-blocks-fields.php:395
+#: ad-acf-blocks-fields.php:493
+msgid "2 columns"
+msgstr "2 colonnes"
+
+#: ad-acf-blocks-fields.php:27 ad-acf-blocks-fields.php:396
+#: ad-acf-blocks-fields.php:494
+msgid "3 columns"
+msgstr "3 colonnes"
+
+#: ad-acf-blocks-fields.php:28
+msgid "Two thirds / One third"
+msgstr "Deux tiers / Un tiers"
+
+#: ad-acf-blocks-fields.php:29
+msgid "One third / Two thirds"
+msgstr "Un tiers / Deux tiers"
+
+#: ad-acf-blocks-fields.php:38 ad-acf-blocks-fields.php:340
+msgid "Vertical centering"
+msgstr "Centrage vertical"
+
+#: ad-acf-blocks-fields.php:57
+msgid "First column"
+msgstr "Première colonne"
+
+#: ad-acf-blocks-fields.php:109 ad-acf-blocks-fields.php:173
+#: ad-acf-blocks-fields.php:216 ad-acf-blocks-fields.php:506
+msgid "Content"
+msgstr "Contenu"
+
+#: ad-acf-blocks-fields.php:128
+msgid "Second column"
+msgstr "Deuxième colonne"
+
+#: ad-acf-blocks-fields.php:192
+msgid "Third column"
+msgstr "Troisième colonne"
+
+#: ad-acf-blocks-fields.php:255
+msgid "AD ACF Block 02: Text + Image"
+msgstr "AD ACF Bloc 02 : Texte et Image"
+
+#: ad-acf-blocks-fields.php:259 ad-acf-blocks-fields.php:578
+msgid "Text area"
+msgstr "Zone de texte"
+
+#: ad-acf-blocks-fields.php:278
+msgid "Picture"
+msgstr "Image"
+
+#: ad-acf-blocks-fields.php:302
+msgid "Picture on the right"
+msgstr "Image à droite"
+
+#: ad-acf-blocks-fields.php:321 templates/block-gallery.php:31
+#: templates/block-textimg.php:30
+msgid "Enlarge picture"
+msgstr "Agrandir l'image"
+
+#: ad-acf-blocks-fields.php:379
+msgid "AD ACF Block 03: Photo gallery"
+msgstr "AD ACF Block 03 : Galerie d’images"
+
+#: ad-acf-blocks-fields.php:397 ad-acf-blocks-fields.php:495
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: ad-acf-blocks-fields.php:398 ad-acf-blocks-fields.php:496
+msgid "5 columns"
+msgstr "5 colonnes"
+
+#: ad-acf-blocks-fields.php:399 ad-acf-blocks-fields.php:497
+msgid "6 columns"
+msgstr "6 colonnes"
+
+#: ad-acf-blocks-fields.php:408
+msgid "Gallery"
+msgstr "Galerie"
+
+#: ad-acf-blocks-fields.php:411
+msgid "Select the pictures"
+msgstr "Sélectionnez les photos"
+
+#: ad-acf-blocks-fields.php:435
+msgid "Lengend display"
+msgstr "Affichage de la légende"
+
+#: ad-acf-blocks-fields.php:447
+msgid "Inside the picture"
+msgstr "À l'intérieur de l'image"
+
+#: ad-acf-blocks-fields.php:448
+msgid "Outside the picture"
+msgstr "En dehors de l'image"
+
+#: ad-acf-blocks-fields.php:477
+msgid "AD ACF Block 04: Content Gallery"
+msgstr "AD ACF Bloc 04 : Galerie de contenus"
+
+#: ad-acf-blocks-fields.php:509
+msgid "Select the pages or posts you wish to have in this gallery"
+msgstr ""
+"Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
+"galerie"
+
+#: ad-acf-blocks-fields.php:533
+msgid "Title display"
+msgstr "Affichage du titre"
+
+#: ad-acf-blocks-fields.php:574
+msgid "AD ACF Block 05: CTA"
+msgstr "AD ACF Bloc 05 : CTA"
+
+#: ad-acf-blocks-fields.php:597
+msgid "Link"
+msgstr "Lien"
+
+#: ad-acf-blocks-fields.php:612
+msgid "Style"
+msgstr "Style"
+
+#: ad-acf-blocks-fields.php:627
+msgid "Texte color"
+msgstr "Couleur du texte"
+
+#: ad-acf-blocks-fields.php:638
+msgid "Switch text to white"
+msgstr "Passer le texte en blanc"
+
+#: ad-acf-blocks-fields.php:646
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:661
+msgid "Background picture"
+msgstr "Image d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:685
+msgid "Overlay"
+msgstr "Overlay"
+
+#: ad-acf-blocks-fields.php:696
+msgid "Add an overlay over the background image"
+msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
 
 #: ad-acf-blocks.php:81
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
@@ -63,10 +226,6 @@ msgstr "Lire "
 msgid "Enter text here..."
 msgstr "Entrez du texte ici…"
 
-#: templates/block-gallery.php:31 templates/block-textimg.php:30
-msgid "Enlarge picture"
-msgstr "Agrandir l'image"
-
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for the new Editor"
 msgstr "Une collection de blocs réalisés avec ACF pour le nouvel éditeur"
@@ -78,6 +237,15 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Mise en page"
+#~ msgstr "Mise en page"
+
+#~ msgid "Ajouter un overlay sur l'image"
+#~ msgstr "Ajouter un overlay sur l'image"
+
+#~ msgid "Agrandir l'image"
+#~ msgstr "Agrandir l'image"
 
 #~ msgid "AD Blocks"
 #~ msgstr "AD Blocks"
