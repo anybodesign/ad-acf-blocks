@@ -35,6 +35,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'ADBLOCKS__BASENAME', plugin_basename(__FILE__) );
 
 
 // i18n
@@ -49,26 +50,41 @@ add_image_size( 'thumbnail-hd', 320, 320, true );
 
 // ACF Notice
 
-if( ! class_exists('acf') ) {
-	
-	register_activation_hook( __FILE__, 'adblocks_admin_notice_activation_hook' );
-	
-	function adblocks_admin_notice_activation_hook() {
-		set_transient( 'adblocks-admin-notice-transient', true, 5 );
-	}
-	
-	function adblocks_admin_notice(){
-	
-		if ( get_transient( 'adblocks-admin-notice-transient' ) ) {
-			?>
-			<div class="notice notice-info is-dismissible">
-				<p><?php _e( 'Remember, AD ACF Blocks needs ACF Pro 5.8 or greater to be installed and activated!', 'adblocks' ); ?></p>
-			</div>
-			<?php
-			delete_transient( 'adblocks-admin-notice-transient' );
-		}
-	}
-	add_action( 'admin_notices', 'adblocks_admin_notice' );
+add_action('after_plugin_row_' . ADBLOCKS__BASENAME, 'adblocks_plugin_row', 5, 3);
+function adblocks_plugin_row($plugin_file, $plugin_data, $status) {
+    
+	if ( class_exists('ACF') && defined('ACF_PRO') && defined('ACF_VERSION') && version_compare(ACF_VERSION, '5.8', '>=') ) {
+        return;
+    } ?>
+    
+    <style>
+        .plugins tr[data-plugin='<?php echo ADBLOCKS__BASENAME; ?>'] th,
+        .plugins tr[data-plugin='<?php echo ADBLOCKS__BASENAME; ?>'] td {
+            box-shadow: none;
+        }
+        
+        <?php if ( isset($plugin_data['update']) && !empty($plugin_data['update']) ) { ?>
+            
+            .plugins tr.acfe-plugin-tr td {
+                box-shadow: none !important;
+            }
+            .plugins tr.acfe-plugin-tr .update-message {
+                margin-bottom: 0;
+            }
+            
+        <?php } ?>
+    </style>
+    
+    <tr class="plugin-update-tr active acfe-plugin-tr">
+        <td colspan="3" class="plugin-update colspanchange">
+            <div class="update-message notice inline notice-error notice-alt">
+                <p><?php _e('AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8).', 'adblocks'); ?></p>
+            </div>
+        </td>
+    </tr>
+    
+    <?php
+    
 }
 
 
