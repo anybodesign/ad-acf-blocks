@@ -6,18 +6,10 @@
 
 
 .acf-block--text {
-	position: relative;
+	.acf-block-container {
+		
+	}
 }
-
-.acf-block-container {
-	width: 100%;
-}
-
-
-// Block
-
-
-.acf-block-text {}
 
 [class*=acf-block-text--] {
 	

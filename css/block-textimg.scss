@@ -6,18 +6,6 @@
 
 
 .acf-block--textimg {
-	position: relative;
-}
-
-.acf-block-container {
-	width: 100%;
-}
-
-
-// Block
-
-
-.acf-block--textimg {
 	
 	.acf-block-container {
 		
@@ -54,4 +42,8 @@
 
 .acf-block-textimg-picture {
 	@include img-opacity(.7);
+	
+	img {
+		display: block;
+	}
 }
