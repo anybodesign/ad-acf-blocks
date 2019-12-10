@@ -127,7 +127,7 @@ function adblocks_init() {
 			'category'			=> 'ad-blocks',
 			'icon'				=> 'text',
             'mode'				=> 'auto',
-            'supports'			=> array( 'align' => false, 'mode' => false),
+            'supports'			=> array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> array( 'text', 'texte' ),
             'render_template'   => ADBLOCKS__PLUGIN_PATH . 'templates/block-text.php',
             'enqueue_style' 	=> ADBLOCKS__PLUGIN_URL . 'css/block-text.css',
