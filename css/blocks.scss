@@ -2,6 +2,7 @@
 // -
 // + + + + + + + + + + +
 
+// Vars
 
 $grid-padding: 1rem;
 
@@ -11,6 +12,8 @@ $width-large: 60em; 		// @note: 960px
 $width-wide: 75em;	 		// @note: 1200px
 $width-xwide: 90em;	 		// @note: 1440px
 
+
+// Mixins
 
 // Visually obfuscate the text of an element (a11y ok)
 
@@ -81,3 +84,66 @@ $width-xwide: 90em;	 		// @note: 1440px
 		}
 	}
 }
+
+
+
+
+// Common
+
+[class*=acf-block--] {
+	position: relative;
+	
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	&.repeat {
+		background-size: auto;
+		background-repeat: repeat;
+	}
+
+
+	.acf-block-container {
+		width: 100%;
+		
+		&.center-max {
+			// center the content width max-width
+			
+			.wp-admin & {
+				@include rwd(medium) {
+					width: 62%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+
+.has-overlay {
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0; 
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(to top, rgba(0,0,0, .65) 0%, rgba(0,0,0, 0) 100%);
+		z-index: 1;
+	}
+	
+	.acf-block-container {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.white-text {
+	
+	& *:not([class*=action-btn]) {
+		color: #fff;
+	}
+}
+
+

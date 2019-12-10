@@ -6,16 +6,10 @@
 
 
 .acf-block--gallery {
-	position: relative;
+	.acf-block-container {
+		
+	}
 }
-
-.acf-block-container {
-	width: 100%;
-}
-
-
-// Block
-
 
 [class*=acf-block-gallery-pictures],
 [class*=acf-block-gallery-content] {
