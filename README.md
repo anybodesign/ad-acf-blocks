@@ -26,5 +26,10 @@ Create more blocks…
 
 ## Changelog
 
+### 1.1 - 2019-12-10
+* Global block CSS
+* New option fields for backgrounds
+* New block icons
+
 ### 1.0 - 2019-12-09
 * Initial Commit
