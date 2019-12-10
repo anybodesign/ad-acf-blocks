@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2019-12-09 16:33+0100\n"
-"PO-Revision-Date: 2019-12-09 16:33+0100\n"
+"POT-Creation-Date: 2019-12-10 14:28+0100\n"
+"PO-Revision-Date: 2019-12-10 14:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: ad-acf-blocks.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
@@ -25,7 +25,7 @@ msgstr ""
 msgid "AD ACF Block 01: Rich Text"
 msgstr "AD ACF Bloc 01 : Texte riche"
 
-#: ad-acf-blocks-fields.php:13 ad-acf-blocks-fields.php:383
+#: ad-acf-blocks-fields.php:13 ad-acf-blocks-fields.php:560
 msgid "Layout"
 msgstr "Mise en page"
 
@@ -37,11 +37,11 @@ msgstr "Choisir une mise en page pour ce bloc"
 msgid "1 column"
 msgstr "1 colonne"
 
-#: ad-acf-blocks-fields.php:26 ad-acf-blocks-fields.php:395
+#: ad-acf-blocks-fields.php:26 ad-acf-blocks-fields.php:572
 msgid "2 columns"
 msgstr "2 colonnes"
 
-#: ad-acf-blocks-fields.php:27 ad-acf-blocks-fields.php:396
+#: ad-acf-blocks-fields.php:27 ad-acf-blocks-fields.php:573
 msgid "3 columns"
 msgstr "3 colonnes"
 
@@ -53,135 +53,151 @@ msgstr "Deux tiers / Un tiers"
 msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
-#: ad-acf-blocks-fields.php:38 ad-acf-blocks-fields.php:340
+#: ad-acf-blocks-fields.php:38 ad-acf-blocks-fields.php:489
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
-#: ad-acf-blocks-fields.php:57
+#: ad-acf-blocks-fields.php:57 ad-acf-blocks-fields.php:508
+#: ad-acf-blocks-fields.php:706 ad-acf-blocks-fields.php:790
+msgid "Background options"
+msgstr "Option d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:74
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:89
+msgid "Background image"
+msgstr "Image d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:92
+msgid "Choose a picture or a pattern"
+msgstr "Choisissez une image ou un motif"
+
+#: ad-acf-blocks-fields.php:113
+msgid "Keep content centered"
+msgstr "Garde le contenu centré"
+
+#: ad-acf-blocks-fields.php:132
+msgid "Repeat pattern"
+msgstr "Répéter le motif"
+
+#: ad-acf-blocks-fields.php:151
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: ad-acf-blocks-fields.php:162
+msgid "Switch text to white"
+msgstr "Passer le texte en blanc"
+
+#: ad-acf-blocks-fields.php:170
+msgid "Overlay"
+msgstr "Overlay"
+
+#: ad-acf-blocks-fields.php:181
+msgid "Add an overlay over the background image"
+msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:189
+msgid "Background options - end"
+msgstr "Options d'arrière-plan - fin"
+
+#: ad-acf-blocks-fields.php:206
 msgid "First column"
 msgstr "Première colonne"
 
-#: ad-acf-blocks-fields.php:109 ad-acf-blocks-fields.php:173
-#: ad-acf-blocks-fields.php:216
+#: ad-acf-blocks-fields.php:258 ad-acf-blocks-fields.php:322
+#: ad-acf-blocks-fields.php:365
 msgid "Content"
 msgstr "Contenu"
 
-#: ad-acf-blocks-fields.php:128
+#: ad-acf-blocks-fields.php:277
 msgid "Second column"
 msgstr "Deuxième colonne"
 
-#: ad-acf-blocks-fields.php:192
+#: ad-acf-blocks-fields.php:341
 msgid "Third column"
 msgstr "Troisième colonne"
 
-#: ad-acf-blocks-fields.php:255
+#: ad-acf-blocks-fields.php:404
 msgid "AD ACF Block 02: Text + Image"
 msgstr "AD ACF Bloc 02 : Texte et Image"
 
-#: ad-acf-blocks-fields.php:259 ad-acf-blocks-fields.php:546
+#: ad-acf-blocks-fields.php:408 ad-acf-blocks-fields.php:756
 msgid "Text area"
 msgstr "Zone de texte"
 
-#: ad-acf-blocks-fields.php:278
+#: ad-acf-blocks-fields.php:427
 msgid "Picture"
 msgstr "Image"
 
-#: ad-acf-blocks-fields.php:302
+#: ad-acf-blocks-fields.php:451
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: ad-acf-blocks-fields.php:321 templates/block-gallery.php:30
-#: templates/block-textimg.php:30
+#: ad-acf-blocks-fields.php:470 templates/block-gallery.php:45
+#: templates/block-textimg.php:41
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
-#: ad-acf-blocks-fields.php:379
+#: ad-acf-blocks-fields.php:556
 msgid "AD ACF Block 03: Gallery"
 msgstr "AD ACF Block 03 : Galerie"
 
-#: ad-acf-blocks-fields.php:397
+#: ad-acf-blocks-fields.php:574
 msgid "4 columns"
 msgstr "4 colonnes"
 
-#: ad-acf-blocks-fields.php:398
+#: ad-acf-blocks-fields.php:575
 msgid "5 columns"
 msgstr "5 colonnes"
 
-#: ad-acf-blocks-fields.php:399
+#: ad-acf-blocks-fields.php:576
 msgid "6 columns"
 msgstr "6 colonnes"
 
-#: ad-acf-blocks-fields.php:408
+#: ad-acf-blocks-fields.php:585
 msgid "Content type"
 msgstr "Type de contenu"
 
-#: ad-acf-blocks-fields.php:420 ad-acf-blocks-fields.php:430
+#: ad-acf-blocks-fields.php:597 ad-acf-blocks-fields.php:607
 #: ad-acf-blocks.php:154
 msgid "Picture gallery"
 msgstr "Galerie d’images"
 
-#: ad-acf-blocks-fields.php:421 ad-acf-blocks-fields.php:465
-#: ad-acf-blocks.php:168
+#: ad-acf-blocks-fields.php:598 ad-acf-blocks-fields.php:642
 msgid "Content gallery"
 msgstr "Galerie de contenus"
 
-#: ad-acf-blocks-fields.php:433
+#: ad-acf-blocks-fields.php:610
 msgid "Select the pictures"
 msgstr "Sélectionnez les images"
 
-#: ad-acf-blocks-fields.php:468
+#: ad-acf-blocks-fields.php:645
 msgid "Select the pages or posts you wish to have in this gallery"
 msgstr ""
 "Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
 "galerie"
 
-#: ad-acf-blocks-fields.php:493
+#: ad-acf-blocks-fields.php:677
 msgid "Legend display"
 msgstr "Affichage de la légende"
 
-#: ad-acf-blocks-fields.php:512
+#: ad-acf-blocks-fields.php:696
 msgid "Inside"
 msgstr "À l’intérieur"
 
-#: ad-acf-blocks-fields.php:513
+#: ad-acf-blocks-fields.php:697
 msgid "Outside"
 msgstr "À l'extérieur"
 
-#: ad-acf-blocks-fields.php:542
+#: ad-acf-blocks-fields.php:752
 msgid "AD ACF Block 04: CTA"
 msgstr "AD ACF Bloc 04 : CTA"
 
-#: ad-acf-blocks-fields.php:565
+#: ad-acf-blocks-fields.php:775
 msgid "Link"
 msgstr "Lien"
-
-#: ad-acf-blocks-fields.php:580
-msgid "Style"
-msgstr "Style"
-
-#: ad-acf-blocks-fields.php:595
-msgid "Texte color"
-msgstr "Couleur du texte"
-
-#: ad-acf-blocks-fields.php:606
-msgid "Switch text to white"
-msgstr "Passer le texte en blanc"
-
-#: ad-acf-blocks-fields.php:614
-msgid "Background color"
-msgstr "Couleur d’arrière-plan"
-
-#: ad-acf-blocks-fields.php:629
-msgid "Background picture"
-msgstr "Image d’arrière-plan"
-
-#: ad-acf-blocks-fields.php:653
-msgid "Overlay"
-msgstr "Overlay"
-
-#: ad-acf-blocks-fields.php:664
-msgid "Add an overlay over the background image"
-msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
 
 #: ad-acf-blocks.php:81
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
@@ -200,22 +216,58 @@ msgstr "Texte riche"
 msgid "Text and Image"
 msgstr "Texte et image"
 
-#: ad-acf-blocks.php:169
-msgid "Create links to your pages or posts."
-msgstr "Créez des liens vers vos pages ou vos articles."
-
-#: ad-acf-blocks.php:183
+#: ad-acf-blocks.php:168
 msgid "CTA"
 msgstr "CTA"
 
-#: templates/block-content.php:31
-msgid "Read "
-msgstr "Lire "
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:54
+msgid "View details"
+msgstr "Voir les détails"
 
-#: templates/block-cta.php:10 templates/block-text.php:15
-#: templates/block-text.php:16 templates/block-text.php:17
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:77
+#, php-format
+msgid "More information about %s"
+msgstr "Plus d'informations sur %s"
+
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr "Vérifier les mises à jour"
+
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:213
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "L’extension %s est à jour."
+
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:215
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Une nouvelle version de l'extension %s est disponible."
+
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:223
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
+
+#: assets/plugin-update-checker/Puc/v4p8/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "Il n’y a aucun historique des mises à jour disponible."
+
+#: templates/block-cta.php:3 templates/block-text.php:13
+#: templates/block-text.php:14 templates/block-text.php:15
 msgid "Enter text here..."
 msgstr "Entrez du texte ici…"
+
+#: templates/block-gallery.php:74
+msgid "Read "
+msgstr "Lire "
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for the new Editor"
@@ -228,6 +280,12 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Style"
+#~ msgstr "Style"
+
+#~ msgid "Create links to your pages or posts."
+#~ msgstr "Créez des liens vers vos pages ou vos articles."
 
 #~ msgid "PIcture gallery"
 #~ msgstr "Galerie d’images"
