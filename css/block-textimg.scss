@@ -42,4 +42,8 @@
 
 .acf-block-textimg-picture {
 	@include img-opacity(.7);
+	
+	img {
+		display: block;
+	}
 }

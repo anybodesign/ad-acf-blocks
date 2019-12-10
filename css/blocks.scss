@@ -101,6 +101,9 @@ $width-xwide: 90em;	 		// @note: 1440px
 		background-size: auto;
 		background-repeat: repeat;
 	}
+	.wp-admin &[style*=color] {
+		padding: 1rem;
+	}
 
 
 	.acf-block-container {
