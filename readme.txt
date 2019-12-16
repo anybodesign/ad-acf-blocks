@@ -43,5 +43,17 @@ You can translate AD ACF Blocks on [translate.wordpress.org](https://translate.w
 
 == Changelog ==
 
+= 1.2 - 2019-12-16 =
+* Enlarge pictures option for gallery block
+* Fancybox option
+* New separate field group for backgrounds & columns
+* Blocks descriptions
+* Minor changes
+
+= 1.1 - 2019-12-10 =
+* Global block CSS
+* New option fields for backgrounds
+* New block icons
+
 = 1.0 - 2019-12-09 =
 * Initial Commit

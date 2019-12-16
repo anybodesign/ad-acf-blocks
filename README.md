@@ -26,6 +26,13 @@ Create more blocks…
 
 ## Changelog
 
+### 1.2 - 2019-12-16
+* Enlarge pictures option for gallery block
+* Fancybox option
+* New separate field group for backgrounds & columns
+* Blocks descriptions
+* Minor changes
+
 ### 1.1 - 2019-12-10
 * Global block CSS
 * New option fields for backgrounds
