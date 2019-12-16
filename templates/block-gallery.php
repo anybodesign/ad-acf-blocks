@@ -6,6 +6,9 @@
 	$content = get_field('content_gallery');
 	$legend = get_field('legend');
 	
+	$zoom = get_field('zoom');
+	$fancy = get_field('fancy');
+		
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
 	$max = get_field('center_max');
@@ -42,7 +45,9 @@
 				        <?php foreach( $images as $image ): ?>
 				        <div class="acf-block-gallery-item">
 					        
-				            <a href="<?php echo $image['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>" data-fancybox="galerie">
+					        <?php if( $zoom ): ?>
+				            <a href="<?php echo $image['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>"<?php if ($fancy) { echo ' data-fancybox="galerie"'; } ?>>
+					        <?php endif; ?>	   
 					        <figure class="acf-block-gallery-figure"<?php if ( $image['caption'] ) { echo ' role="group"'; } ?>>
 						            <img src="<?php echo $image['sizes']['thumbnail-hd']; ?>" alt="<?php echo $image['alt']; ?>">
 									<?php if ( $image['caption'] ) { ?>
@@ -51,7 +56,9 @@
 									</figcaption>
 									<?php } ?>
 						    </figure>
+					        <?php if( $zoom ): ?>
 					        </a>
+					        <?php endif; ?>	
 						    
 				        </div>
 				        <?php endforeach; ?>
