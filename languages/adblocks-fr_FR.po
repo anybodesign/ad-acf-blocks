@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2019-12-10 14:28+0100\n"
-"PO-Revision-Date: 2019-12-10 14:28+0100\n"
+"POT-Creation-Date: 2019-12-16 18:45+0100\n"
+"PO-Revision-Date: 2019-12-16 18:46+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -22,203 +22,249 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
 #: ad-acf-blocks-fields.php:9
-msgid "AD ACF Block 01: Rich Text"
-msgstr "AD ACF Bloc 01 : Texte riche"
+msgid "Block Options: Columns"
+msgstr "Options de bloc : Colonnes"
 
-#: ad-acf-blocks-fields.php:13 ad-acf-blocks-fields.php:560
-msgid "Layout"
-msgstr "Mise en page"
+#: ad-acf-blocks-fields.php:13
+msgid "Number of Columns"
+msgstr "Nombre de colonnes"
 
-#: ad-acf-blocks-fields.php:16
-msgid "Choose a layout for this block"
-msgstr "Choisir une mise en page pour ce bloc"
-
-#: ad-acf-blocks-fields.php:25
+#: ad-acf-blocks-fields.php:25 ad-acf-blocks-fields.php:75
 msgid "1 column"
 msgstr "1 colonne"
 
-#: ad-acf-blocks-fields.php:26 ad-acf-blocks-fields.php:572
+#: ad-acf-blocks-fields.php:26 ad-acf-blocks-fields.php:76
 msgid "2 columns"
 msgstr "2 colonnes"
 
-#: ad-acf-blocks-fields.php:27 ad-acf-blocks-fields.php:573
+#: ad-acf-blocks-fields.php:27 ad-acf-blocks-fields.php:77
 msgid "3 columns"
 msgstr "3 colonnes"
 
 #: ad-acf-blocks-fields.php:28
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: ad-acf-blocks-fields.php:29
+msgid "5 columns"
+msgstr "5 colonnes"
+
+#: ad-acf-blocks-fields.php:30
+msgid "6 columns"
+msgstr "6 colonnes"
+
+#: ad-acf-blocks-fields.php:59
+msgid "AD ACF Block 01: Rich Text"
+msgstr "AD ACF Bloc 01 : Texte riche"
+
+#: ad-acf-blocks-fields.php:63
+msgid "Layout"
+msgstr "Mise en page"
+
+#: ad-acf-blocks-fields.php:66
+msgid "Choose a layout for this block"
+msgstr "Choisir une mise en page pour ce bloc"
+
+#: ad-acf-blocks-fields.php:78
 msgid "Two thirds / One third"
 msgstr "Deux tiers / Un tiers"
 
-#: ad-acf-blocks-fields.php:29
+#: ad-acf-blocks-fields.php:79
 msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
-#: ad-acf-blocks-fields.php:38 ad-acf-blocks-fields.php:489
+#: ad-acf-blocks-fields.php:88 ad-acf-blocks-fields.php:378
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
-#: ad-acf-blocks-fields.php:57 ad-acf-blocks-fields.php:508
-#: ad-acf-blocks-fields.php:706 ad-acf-blocks-fields.php:790
-msgid "Background options"
-msgstr "Option d’arrière-plan"
+#: ad-acf-blocks-fields.php:107
+msgid "Content area"
+msgstr "Zone de contenu"
 
-#: ad-acf-blocks-fields.php:74
-msgid "Background color"
-msgstr "Couleur d’arrière-plan"
-
-#: ad-acf-blocks-fields.php:89
-msgid "Background image"
-msgstr "Image d’arrière-plan"
-
-#: ad-acf-blocks-fields.php:92
-msgid "Choose a picture or a pattern"
-msgstr "Choisissez une image ou un motif"
-
-#: ad-acf-blocks-fields.php:113
-msgid "Keep content centered"
-msgstr "Garde le contenu centré"
-
-#: ad-acf-blocks-fields.php:132
-msgid "Repeat pattern"
-msgstr "Répéter le motif"
-
-#: ad-acf-blocks-fields.php:151
-msgid "Text color"
-msgstr "Couleur du texte"
-
-#: ad-acf-blocks-fields.php:162
-msgid "Switch text to white"
-msgstr "Passer le texte en blanc"
-
-#: ad-acf-blocks-fields.php:170
-msgid "Overlay"
-msgstr "Overlay"
-
-#: ad-acf-blocks-fields.php:181
-msgid "Add an overlay over the background image"
-msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
-
-#: ad-acf-blocks-fields.php:189
-msgid "Background options - end"
-msgstr "Options d'arrière-plan - fin"
-
-#: ad-acf-blocks-fields.php:206
+#: ad-acf-blocks-fields.php:122
 msgid "First column"
 msgstr "Première colonne"
 
-#: ad-acf-blocks-fields.php:258 ad-acf-blocks-fields.php:322
-#: ad-acf-blocks-fields.php:365
+#: ad-acf-blocks-fields.php:145 ad-acf-blocks-fields.php:209
+#: ad-acf-blocks-fields.php:252
 msgid "Content"
 msgstr "Contenu"
 
-#: ad-acf-blocks-fields.php:277
+#: ad-acf-blocks-fields.php:164
 msgid "Second column"
 msgstr "Deuxième colonne"
 
-#: ad-acf-blocks-fields.php:341
+#: ad-acf-blocks-fields.php:228
 msgid "Third column"
 msgstr "Troisième colonne"
 
-#: ad-acf-blocks-fields.php:404
+#: ad-acf-blocks-fields.php:293
 msgid "AD ACF Block 02: Text + Image"
 msgstr "AD ACF Bloc 02 : Texte et Image"
 
-#: ad-acf-blocks-fields.php:408 ad-acf-blocks-fields.php:756
+#: ad-acf-blocks-fields.php:297 ad-acf-blocks-fields.php:615
 msgid "Text area"
 msgstr "Zone de texte"
 
-#: ad-acf-blocks-fields.php:427
+#: ad-acf-blocks-fields.php:316
 msgid "Picture"
 msgstr "Image"
 
-#: ad-acf-blocks-fields.php:451
+#: ad-acf-blocks-fields.php:340
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: ad-acf-blocks-fields.php:470 templates/block-gallery.php:45
+#: ad-acf-blocks-fields.php:359 templates/block-gallery.php:49
 #: templates/block-textimg.php:41
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
-#: ad-acf-blocks-fields.php:556
+#: ad-acf-blocks-fields.php:417
 msgid "AD ACF Block 03: Gallery"
 msgstr "AD ACF Block 03 : Galerie"
 
-#: ad-acf-blocks-fields.php:574
-msgid "4 columns"
-msgstr "4 colonnes"
-
-#: ad-acf-blocks-fields.php:575
-msgid "5 columns"
-msgstr "5 colonnes"
-
-#: ad-acf-blocks-fields.php:576
-msgid "6 columns"
-msgstr "6 colonnes"
-
-#: ad-acf-blocks-fields.php:585
+#: ad-acf-blocks-fields.php:421
 msgid "Content type"
 msgstr "Type de contenu"
 
-#: ad-acf-blocks-fields.php:597 ad-acf-blocks-fields.php:607
-#: ad-acf-blocks.php:154
+#: ad-acf-blocks-fields.php:433 ad-acf-blocks-fields.php:443
 msgid "Picture gallery"
 msgstr "Galerie d’images"
 
-#: ad-acf-blocks-fields.php:598 ad-acf-blocks-fields.php:642
+#: ad-acf-blocks-fields.php:434 ad-acf-blocks-fields.php:532
 msgid "Content gallery"
 msgstr "Galerie de contenus"
 
-#: ad-acf-blocks-fields.php:610
+#: ad-acf-blocks-fields.php:446
 msgid "Select the pictures"
 msgstr "Sélectionnez les images"
 
-#: ad-acf-blocks-fields.php:645
+#: ad-acf-blocks-fields.php:478
+msgid "Enlarge pictures"
+msgstr "Agrandir les images"
+
+#: ad-acf-blocks-fields.php:505
+msgid "Enlarge pictures with Fancybox"
+msgstr "Agrandir les images avec Fancybox"
+
+#: ad-acf-blocks-fields.php:535
 msgid "Select the pages or posts you wish to have in this gallery"
 msgstr ""
 "Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
 "galerie"
 
-#: ad-acf-blocks-fields.php:677
+#: ad-acf-blocks-fields.php:569
 msgid "Legend display"
 msgstr "Affichage de la légende"
 
-#: ad-acf-blocks-fields.php:696
+#: ad-acf-blocks-fields.php:581
 msgid "Inside"
 msgstr "À l’intérieur"
 
-#: ad-acf-blocks-fields.php:697
+#: ad-acf-blocks-fields.php:582
 msgid "Outside"
 msgstr "À l'extérieur"
 
-#: ad-acf-blocks-fields.php:752
+#: ad-acf-blocks-fields.php:611
 msgid "AD ACF Block 04: CTA"
 msgstr "AD ACF Bloc 04 : CTA"
 
-#: ad-acf-blocks-fields.php:775
+#: ad-acf-blocks-fields.php:634
 msgid "Link"
 msgstr "Lien"
 
-#: ad-acf-blocks.php:81
+#: ad-acf-blocks-fields.php:669
+msgid "Block Options: Background"
+msgstr "Options de bloc : Arrière-plan"
+
+#: ad-acf-blocks-fields.php:673
+msgid "Background options"
+msgstr "Option d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:690
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:705
+msgid "Background image"
+msgstr "Image d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:708
+msgid "Choose a picture or a pattern"
+msgstr "Choisissez une image ou un motif"
+
+#: ad-acf-blocks-fields.php:729
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: ad-acf-blocks-fields.php:740
+msgid "Switch text to white"
+msgstr "Passer le texte en blanc"
+
+#: ad-acf-blocks-fields.php:748
+msgid "Keep content centered"
+msgstr "Garde le contenu centré"
+
+#: ad-acf-blocks-fields.php:767
+msgid "Repeat pattern"
+msgstr "Répéter le motif"
+
+#: ad-acf-blocks-fields.php:786
+msgid "Overlay"
+msgstr "Overlay"
+
+#: ad-acf-blocks-fields.php:797
+msgid "Add an overlay over the background image"
+msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
+
+#: ad-acf-blocks-fields.php:805
+msgid "Background options - end"
+msgstr "Options d'arrière-plan - fin"
+
+#: ad-acf-blocks.php:82
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5,8)."
 
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks.php:107
+#: ad-acf-blocks.php:140
 msgid "AD ACF Blocks"
 msgstr "AD ACF Blocks"
 
-#: ad-acf-blocks.php:126
+#: ad-acf-blocks.php:159
 msgid "Rich Text"
 msgstr "Texte riche"
 
-#: ad-acf-blocks.php:140
+#: ad-acf-blocks.php:160
+msgid "Rich text block with some background andd layout options."
+msgstr ""
+"Bloc de texte riche avec quelques options d'arrière-plan et de mise en page."
+
+#: ad-acf-blocks.php:174
 msgid "Text and Image"
 msgstr "Texte et image"
 
-#: ad-acf-blocks.php:168
+#: ad-acf-blocks.php:175
+msgid "Text and picture block with reverse order option."
+msgstr "Bloc texte image avec option d'ordre inversé."
+
+#: ad-acf-blocks.php:189
+msgid "Gallery"
+msgstr "Galerie"
+
+#: ad-acf-blocks.php:190
+msgid ""
+"Create a picture gallery or a thumbnailed gallery of pages and/or posts."
+msgstr ""
+"Créez une galerie d'images ou une galerie de pages et/ou d’articles avec "
+"vignettes."
+
+#: ad-acf-blocks.php:204
 msgid "CTA"
 msgstr "CTA"
+
+#: ad-acf-blocks.php:205
+msgid "Call to action block, with background color or background picture."
+msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
 
 #: assets/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:54
 msgid "View details"
@@ -260,12 +306,12 @@ msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
 msgid "There is no changelog available."
 msgstr "Il n’y a aucun historique des mises à jour disponible."
 
-#: templates/block-cta.php:3 templates/block-text.php:13
-#: templates/block-text.php:14 templates/block-text.php:15
+#: templates/block-cta.php:3 templates/block-text.php:14
+#: templates/block-text.php:15 templates/block-text.php:16
 msgid "Enter text here..."
 msgstr "Entrez du texte ici…"
 
-#: templates/block-gallery.php:74
+#: templates/block-gallery.php:81
 msgid "Read "
 msgstr "Lire "
 
@@ -289,9 +335,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "PIcture gallery"
 #~ msgstr "Galerie d’images"
-
-#~ msgid "Gallery"
-#~ msgstr "Galerie"
 
 #~ msgid "Inside the picture"
 #~ msgstr "À l'intérieur de l'image"
