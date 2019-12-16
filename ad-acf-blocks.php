@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADBLOCKS__PLUGIN_VERSION', '1.1' );
+define( 'ADBLOCKS__PLUGIN_VERSION', '1.2' );
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADBLOCKS__BASENAME', plugin_basename( __FILE__ ) );
@@ -157,6 +157,7 @@ function adblocks_init() {
 		acf_register_block(array(
 			'name'				=> 'text',
 			'title'				=> __('Rich Text', 'adblocks'),
+			'description'		=> __('Rich text block with some background andd layout options.', 'adblocks'),
 			'category'			=> 'ad-blocks',
 			'icon'				=> '<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M22.08,24l-20.16,0c-1.06,0 -1.92,-0.86 -1.92,-1.92l0,-20.16c0,-1.06 0.86,-1.92 1.92,-1.92l20.16,0c1.06,0 1.92,0.86 1.92,1.92l0,2.08l-2,0l0,-1.2c0,-0.441 -0.358,-0.8 -0.8,-0.8l-18.4,0c-0.442,0 -0.8,0.359 -0.8,0.8l0,18.4c0,0.442 0.358,0.8 0.8,0.8l18.4,0c0.442,0 0.8,-0.358 0.8,-0.8l0,-1.2l2,0l0,2.08c0,1.06 -0.86,1.92 -1.92,1.92Z" style="fill:#555d66;"/><path d="M20,19l-2,0l0,-2l2,0l0,2Zm-4,0l-12,0l0,-2l12,0l0,2Zm-6,-4l-6,0l0,-2l6,0l0,2Zm14,0l-12,0l0,-2l12,0l0,2Zm0,-4.143l-8,0l0,-1.857l8,0l0,1.857Zm-10,0l-10,0l0,-1.857l10,0l0,1.857Zm6,-3.857l-16,0l0,-2l16,0l0,2Z" style="fill:#555d66;"/></g></svg>',
             'mode'				=> 'auto',
@@ -171,6 +172,7 @@ function adblocks_init() {
 		acf_register_block(array(
 			'name'				=> 'textimg',
 			'title'				=> __('Text and Image', 'adblocks'),
+			'description'		=> __('Text and picture block with reverse order option.', 'adblocks'),
 			'category'			=> 'ad-blocks',
 			'icon'				=> '<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M22.08,24l-20.16,0c-1.06,0 -1.92,-0.86 -1.92,-1.92l0,-20.16c0,-1.06 0.86,-1.92 1.92,-1.92l20.16,0c1.06,0 1.92,0.86 1.92,1.92l0,2.08l-2,0l0,-1.2c0,-0.441 -0.358,-0.8 -0.8,-0.8l-18.4,0c-0.442,0 -0.8,0.359 -0.8,0.8l0,18.4c0,0.442 0.358,0.8 0.8,0.8l18.4,0c0.442,0 0.8,-0.358 0.8,-0.8l0,-1.2l2,0l0,2.08c0,1.06 -0.86,1.92 -1.92,1.92Z" style="fill:#555d66;"/><path d="M24,17l-10,0l0,-2l10,0l0,2Zm-12,0l-8,0l0,-10l8,0l0,10Zm10,-4l-8,0l0,-2l8,0l0,2Zm2,-4.143l-10,0l0,-1.857l10,0l0,1.857Z" style="fill:#555d66;"/></g></svg>',
             'mode'				=> 'auto',
@@ -185,6 +187,7 @@ function adblocks_init() {
 		acf_register_block(array(
 			'name'				=> 'gallery',
 			'title'				=> __('Gallery', 'adblocks'),
+			'description'		=> __('Create a picture gallery or a thumbnailed gallery of pages and/or posts.', 'adblocks'),
 			'category'			=> 'ad-blocks',
 			'icon'				=> '<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M6,24l-4.08,0c-1.06,0 -1.92,-0.86 -1.92,-1.92l0,-4.08l2,0l0,3.2c0,0.442 0.358,0.8 0.8,0.8l3.2,0l0,2Zm16,-18l0,-3.2c0,-0.441 -0.358,-0.8 -0.8,-0.8l-3.2,0l0,-2l4.08,0c1.06,0 1.92,0.86 1.92,1.92l0,4.08l-2,0Z" style="fill:#555d66;"/><path d="M24,22c0,1.105 -0.895,2 -2,2l-12,0c-1.105,0 -2,-0.895 -2,-2l0,-12c0,-1.105 0.895,-2 2,-2l12,0c1.105,0 2,0.895 2,2l0,12Zm-2.019,0l0.019,-10l-12,10l11.981,0Zm-15.981,-2l0,0c-1.105,0 -2,-0.895 -2,-2l0,-12c0,-1.105 0.895,-2 2,-2l12,0c1.105,0 2,0.895 2,2l0,0l-12,0c-1.105,0 -2,0.895 -2,2l0,12Zm7,-10c1.656,0 3,1.359 3,3.033c0,1.674 -1.344,3.032 -3,3.032c-1.656,0 -3,-1.358 -3,-3.032c0,-1.674 1.344,-3.033 3,-3.033Zm-11,6l0,0c-1.105,0 -2,-0.895 -2,-2l0,-12c0,-1.105 0.895,-2 2,-2l12,0c1.105,0 2,0.895 2,2l0,0l-12,0c-1.105,0 -2,0.895 -2,2l0,12Z" style="fill:#555d66;"/></g></svg>',
             'mode'				=> 'auto',
@@ -199,6 +202,7 @@ function adblocks_init() {
 		acf_register_block(array(
 			'name'				=> 'cta',
 			'title'				=> __('CTA', 'adblocks'),
+			'description'		=> __('Call to action block, with background color or background picture.', 'adblocks'),
 			'category'			=> 'ad-blocks',
 			'icon'				=> '<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M24.071,20l0,2.08c0,1.06 -0.86,1.92 -1.92,1.92l-20.16,0c-1.059,0 -1.92,-0.86 -1.92,-1.92l0,-2.08l2,0l0,1.2c0,0.442 0.359,0.8 0.8,0.8l18.4,0c0.442,0 0.8,-0.358 0.8,-0.8l0,-1.2l2,0Zm-24,-16l0,-2.08c0,-1.06 0.86,-1.92 1.92,-1.92l20.16,0c1.06,0 1.92,0.86 1.92,1.92l0,2.08l-2,0l0,-1.2c0,-0.441 -0.358,-0.8 -0.8,-0.8l-18.4,0c-0.442,0 -0.8,0.359 -0.8,0.8l0,1.2l-2,0Z" style="fill:#555d66;"/><path d="M23.973,16c0,1.105 -0.896,2 -2,2c-4.516,0 -15.458,0 -19.973,0c-1.105,0 -2,-0.895 -2,-2c0,-2.22 0,-5.78 0,-8c0,-1.105 0.895,-2 2,-2c4.515,0 15.457,0 19.973,0c1.104,0 2,0.895 2,2c0,2.22 0,5.78 0,8Zm-7.977,-1.022l0,-2l-8.02,0l0,2l8.02,0Zm3.963,-3.956l0,-2l-15.945,0l0,2l15.945,0Z" style="fill:#555d66;"/></g></svg>',
             'mode'				=> 'auto',
