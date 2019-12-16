@@ -9,10 +9,11 @@
 	$repeat = get_field('repeat');
 	$white = get_field('white_text');
 	$over = get_field('overlay');
-							
-	$text1 = get_field('text_1') ?: __('Enter text here...', 'adblocks');
-	$text2 = get_field('text_2') ?: __('Enter text here...', 'adblocks');
-	$text3 = get_field('text_3') ?: __('Enter text here...', 'adblocks');
+	
+	$text = get_field('text_group');						
+	$text1 = $text['text_1'] ?: __('Enter text here...', 'adblocks');
+	$text2 = $text['text_2'] ?: __('Enter text here...', 'adblocks');
+	$text3 = $text['text_3'] ?: __('Enter text here...', 'adblocks');
 	
 	if ($bgcolor) {
 		$has_bgcolor = 'background-color: '.$bgcolor.';';
@@ -29,8 +30,7 @@
 	    $align = ' align' . $block['align'];
 	} else {
 		$align = null;
-	} 
-
+	}
 ?>
 						
 			<section class="acf-block--text <?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
