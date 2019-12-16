@@ -6,10 +6,17 @@
 
 
 .acf-block--cta {
-	padding: 6em;
+	padding: 2em;
 	text-align: center;
 	background-size: cover;
 	background-position: center center;
+	
+	@include rwd(small) {
+		padding: 4em;
+	}
+	@include rwd(medium) {
+		padding: 6em;
+	}
 
 	.acf-block-container {
 		
