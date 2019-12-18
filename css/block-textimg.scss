@@ -30,6 +30,19 @@
 	}
 }
 
+.acf-block-textimg-picture figure {
+	
+	.wp-admin & {
+		margin: 0;
+		
+		img {
+			max-width: none;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
 .acf-block-textimg-text {
 	padding: $grid-padding;
 	padding-left: $grid-padding*2;
