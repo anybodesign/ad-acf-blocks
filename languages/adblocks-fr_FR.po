@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2019-12-16 18:45+0100\n"
-"PO-Revision-Date: 2019-12-16 18:46+0100\n"
+"POT-Creation-Date: 2019-12-18 10:40+0100\n"
+"PO-Revision-Date: 2019-12-18 10:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -114,7 +114,7 @@ msgstr "Image"
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: ad-acf-blocks-fields.php:359 templates/block-gallery.php:49
+#: ad-acf-blocks-fields.php:359 templates/block-gallery.php:67
 #: templates/block-textimg.php:41
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
@@ -174,95 +174,123 @@ msgid "Link"
 msgstr "Lien"
 
 #: ad-acf-blocks-fields.php:669
+msgid "Block Options: Gallery Pictures"
+msgstr "Options de bloc : Images de Galerie"
+
+#: ad-acf-blocks-fields.php:673
+msgid "Size"
+msgstr "Taille"
+
+#: ad-acf-blocks-fields.php:685
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: ad-acf-blocks-fields.php:686
+msgid "Medium"
+msgstr "Moyenne"
+
+#: ad-acf-blocks-fields.php:687
+msgid "Large"
+msgstr "Grande"
+
+#: ad-acf-blocks-fields.php:700
+msgid "External link"
+msgstr "Lien Externe"
+
+#: ad-acf-blocks-fields.php:703
+msgid "If you wish to add an external link to this picture."
+msgstr "Si vous souhaitez ajouter un lien externe à cette image."
+
+#: ad-acf-blocks-fields.php:736
 msgid "Block Options: Background"
 msgstr "Options de bloc : Arrière-plan"
 
-#: ad-acf-blocks-fields.php:673
+#: ad-acf-blocks-fields.php:740
 msgid "Background options"
 msgstr "Option d’arrière-plan"
 
-#: ad-acf-blocks-fields.php:690
+#: ad-acf-blocks-fields.php:757
 msgid "Background color"
 msgstr "Couleur d’arrière-plan"
 
-#: ad-acf-blocks-fields.php:705
+#: ad-acf-blocks-fields.php:772
 msgid "Background image"
 msgstr "Image d’arrière-plan"
 
-#: ad-acf-blocks-fields.php:708
+#: ad-acf-blocks-fields.php:775
 msgid "Choose a picture or a pattern"
 msgstr "Choisissez une image ou un motif"
 
-#: ad-acf-blocks-fields.php:729
+#: ad-acf-blocks-fields.php:796
 msgid "Text color"
 msgstr "Couleur du texte"
 
-#: ad-acf-blocks-fields.php:740
+#: ad-acf-blocks-fields.php:807
 msgid "Switch text to white"
 msgstr "Passer le texte en blanc"
 
-#: ad-acf-blocks-fields.php:748
+#: ad-acf-blocks-fields.php:815
 msgid "Keep content centered"
 msgstr "Garde le contenu centré"
 
-#: ad-acf-blocks-fields.php:767
+#: ad-acf-blocks-fields.php:834
 msgid "Repeat pattern"
 msgstr "Répéter le motif"
 
-#: ad-acf-blocks-fields.php:786
+#: ad-acf-blocks-fields.php:853
 msgid "Overlay"
 msgstr "Overlay"
 
-#: ad-acf-blocks-fields.php:797
+#: ad-acf-blocks-fields.php:864
 msgid "Add an overlay over the background image"
 msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
 
-#: ad-acf-blocks-fields.php:805
+#: ad-acf-blocks-fields.php:872
 msgid "Background options - end"
 msgstr "Options d'arrière-plan - fin"
 
-#: ad-acf-blocks.php:82
+#: ad-acf-blocks.php:84
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5,8)."
 
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks.php:140
+#: ad-acf-blocks.php:142
 msgid "AD ACF Blocks"
 msgstr "AD ACF Blocks"
 
-#: ad-acf-blocks.php:159
+#: ad-acf-blocks.php:161
 msgid "Rich Text"
 msgstr "Texte riche"
 
-#: ad-acf-blocks.php:160
+#: ad-acf-blocks.php:162
 msgid "Rich text block with some background andd layout options."
 msgstr ""
 "Bloc de texte riche avec quelques options d'arrière-plan et de mise en page."
 
-#: ad-acf-blocks.php:174
+#: ad-acf-blocks.php:176
 msgid "Text and Image"
 msgstr "Texte et image"
 
-#: ad-acf-blocks.php:175
+#: ad-acf-blocks.php:177
 msgid "Text and picture block with reverse order option."
 msgstr "Bloc texte image avec option d'ordre inversé."
 
-#: ad-acf-blocks.php:189
+#: ad-acf-blocks.php:191
 msgid "Gallery"
 msgstr "Galerie"
 
-#: ad-acf-blocks.php:190
+#: ad-acf-blocks.php:192
 msgid ""
 "Create a picture gallery or a thumbnailed gallery of pages and/or posts."
 msgstr ""
 "Créez une galerie d'images ou une galerie de pages et/ou d’articles avec "
 "vignettes."
 
-#: ad-acf-blocks.php:204
+#: ad-acf-blocks.php:206
 msgid "CTA"
 msgstr "CTA"
 
-#: ad-acf-blocks.php:205
+#: ad-acf-blocks.php:207
 msgid "Call to action block, with background color or background picture."
 msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
 
@@ -311,7 +339,11 @@ msgstr "Il n’y a aucun historique des mises à jour disponible."
 msgid "Enter text here..."
 msgstr "Entrez du texte ici…"
 
-#: templates/block-gallery.php:81
+#: templates/block-gallery.php:64
+msgid "Open a new tab"
+msgstr "Ouvre un nouvel onglet"
+
+#: templates/block-gallery.php:105
 msgid "Read "
 msgstr "Lire "
 

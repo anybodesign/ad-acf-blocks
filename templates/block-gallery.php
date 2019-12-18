@@ -26,7 +26,7 @@
 	} else {
 		$has_bgimg = null;
 	} 
-	
+		
 	if( !empty($block['align']) ) {
 	    $align = ' align' . $block['align'];
 	} else {
@@ -45,18 +45,42 @@
 				        <?php foreach( $images as $image ): ?>
 				        <div class="acf-block-gallery-item">
 					        
-					        <?php if( $zoom ): ?>
-				            <a href="<?php echo $image['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>"<?php if ($fancy) { echo ' data-fancybox="galerie"'; } ?>>
+					        <?php 								
+								$size = get_field('img_size', $image['ID']);
+								$link = get_field('img_link', $image['ID']);
+								
+								if ($size == 'medium') {
+									$the_size = $image['sizes']['adblocks-medium-hd'];
+								}
+								else if ($size == 'large') {
+									$the_size = $image['sizes']['adblocks-large-hd'];
+								}
+								else {
+									$the_size = $image['sizes']['adblocks-thumbnail-hd'];
+								}
+								
+								if ($link) {
+									$the_link = $link;
+									$the_title = 'target="_blank" title="'.__('Open a new tab', 'adblocks').'"';
+								} else {
+									$the_link = $image['url'];
+									$the_title = 'title="'.__('Enlarge picture', 'adblocks').'"';
+								}
+						        
+					        ?>
+					        
+					        <?php if( $zoom || $link ): ?>
+				            <a href="<?php echo $the_link; ?>" <?php echo $the_title; if ($fancy && !$link) { echo ' data-fancybox="gallery"'; } ?>>
 					        <?php endif; ?>	   
 					        <figure class="acf-block-gallery-figure"<?php if ( $image['caption'] ) { echo ' role="group"'; } ?>>
-						            <img src="<?php echo $image['sizes']['thumbnail-hd']; ?>" alt="<?php echo $image['alt']; ?>">
+						            <img src="<?php echo $the_size; ?>" alt="<?php echo $image['alt']; ?>">
 									<?php if ( $image['caption'] ) { ?>
 									<figcaption class="acf-block-gallery-caption">
 										<span class="acf-block-gallery-caption-title"><?php echo $image['caption']; ?></span>
 									</figcaption>
 									<?php } ?>
 						    </figure>
-					        <?php if( $zoom ): ?>
+					        <?php if( $zoom || $link ): ?>
 					        </a>
 					        <?php endif; ?>	
 						    

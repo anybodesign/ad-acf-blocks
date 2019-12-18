@@ -46,7 +46,9 @@ load_plugin_textdomain( 'adblocks', false, basename( dirname( __FILE__ ) ) . '/l
 
 // Image size
 
-add_image_size( 'thumbnail-hd', 320, 320, true );
+add_image_size( 'adblocks-thumbnail-hd', 500, 500, true );
+add_image_size( 'adblocks-medium-hd', 1000, 1000, false );
+add_image_size( 'adblocks-large-hd', 2000, 2000, false );
 
 
 // ACF Notice
