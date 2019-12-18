@@ -1,0 +1,65 @@
+// Posts Block
+// -
+// + + + + + + + + + + 
+
+@import 'blocks.scss';
+
+
+.acf-block--posts {
+	
+	.acf-block-container {}
+}
+
+[class*=acf-block-post-content--] {
+	margin-left: -$grid-padding;
+	margin-right: -$grid-padding;
+		
+	@include rwd(medium) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.acf-block-post-content--1col {
+	
+}
+
+.acf-block-post-item {
+	padding: $grid-padding;
+	
+	@include rwd(medium) {
+		
+		.acf-block-post-content--1col & {
+			width: 100%;
+			
+			a {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+			
+			.acf-block-post-figure {
+				width: 30%;
+				padding-right: $grid-padding*2;
+			}
+			.acf-block-post-content {
+				width: 70%;	
+			}
+		}
+		
+		.acf-block-post-content--2cols & {
+			width: 50%;
+		}
+		.acf-block-post-content--3cols & {
+			width: 33.3333%;
+		}
+		.acf-block-post-content--4cols & {
+			width: 25%;
+		}
+		.acf-block-post-content--5cols & {
+			width: 20%;
+		}
+		.acf-block-post-content--6cols & {
+			width: 16.6667%;
+		}
+	}	
+}	
