@@ -18,6 +18,11 @@ Create more blocks…
 
 ## Changelog
 
+### 1.3 - 2019-12-18
+* New Posts block
+* Gallery options: size & external link
+* Icons assets
+
 ### 1.2 - 2019-12-16
 * Enlarge pictures option for gallery block
 * Fancybox option
