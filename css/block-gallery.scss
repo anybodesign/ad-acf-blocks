@@ -16,6 +16,9 @@
 	display: flex;
 	justify-content: flex-start; 
 	flex-wrap: wrap;
+
+	margin-left: -$grid-padding;
+	margin-right: -$grid-padding;
 }
 
 .acf-block-gallery-item {
