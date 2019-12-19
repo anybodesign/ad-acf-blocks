@@ -18,6 +18,9 @@ Create more blocks…
 
 ## Changelog
 
+### 1.3.5 - 2019-12-19
+* Posts block classes & fix
+
 ### 1.3 - 2019-12-18
 * New Posts block
 * Gallery options: size & external link
