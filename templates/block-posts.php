@@ -50,10 +50,10 @@
 							    </div>
 							    
 					    		<div class="acf-block-post-content">
-									<<?php echo $h; ?>><?php echo get_the_title( $c->ID ); ?></<?php echo $h; ?>>
+									<<?php echo $h; ?> class="acf-block-post-title"><?php echo get_the_title( $c->ID ); ?></<?php echo $h; ?>>
 									<?php 
 										if ($show == 'excerpt') {
-											echo get_the_excerpt($c->ID); 
+											echo '<p class="acf-block-post-excerpt">'.strip_tags(get_the_excerpt($c->ID)).'</p>'; 
 										}
 										if ($show == 'content' ) {
 											echo $c->post_content; 
