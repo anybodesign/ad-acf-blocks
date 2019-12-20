@@ -2,7 +2,7 @@
 // -
 // + + + + + + + + + + +
 
-@import 'blocks.scss';
+@import '../../../assets/css/blocks.scss';
 
 
 .acf-block--cta {
@@ -28,7 +28,8 @@
 }
 
 .acf-block-cta-text {
-	
+	max-width: 64rem;
+	margin: 0 auto;
 }
 .acf-block-cta-btn {
 	
