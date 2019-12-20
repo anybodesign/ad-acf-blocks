@@ -18,9 +18,9 @@ Create more blocks…
 
 ## Changelog
 
-### 1.4 - 2019-?????
-* ?????
-* ???
+### 1.4 - 2019-12-20
+* New templating
+* Some fix
 
 ### 1.3.5 - 2019-12-19
 * Posts block classes & fix
