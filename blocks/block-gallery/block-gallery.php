@@ -33,5 +33,7 @@ function adblocks_gallery_block_init() {
 
 // Load ACF fields (PHP)
 
+require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/columns-fields.php' );
 require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-gallery/block-gallery-fields.php' );
-
+require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/gallery-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );

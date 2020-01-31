@@ -31,4 +31,4 @@ function adblocks_text_block_init() {
 // Load ACF fields (PHP)
 
 require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-text/block-text-fields.php' );
-
+require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );

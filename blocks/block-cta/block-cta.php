@@ -31,4 +31,4 @@ function adblocks_cta_block_init() {
 // Load ACF fields (PHP)
 
 require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-cta/block-cta-fields.php' );
-
+require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
