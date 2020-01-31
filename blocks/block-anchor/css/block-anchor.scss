@@ -1,0 +1,25 @@
+// Anchor Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/blocks.scss';
+
+
+.acf-block--anchor {
+	padding: 0;
+	
+	.wp-admin & {
+		padding: 1em 2em;
+		border: #777 1px dashed;
+		background: url(../../../assets/icons/icon-anchor.svg) 2rem 50% no-repeat !important;
+		background-size: 30px 30px !important;
+		
+		&::after {
+			content: attr(id);
+			display: block;
+			text-align: right;
+			font-weight: bold;
+		}	
+	}
+}
+
