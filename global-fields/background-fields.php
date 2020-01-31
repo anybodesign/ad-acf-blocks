@@ -194,6 +194,13 @@ acf_add_local_field_group(array(
 				'value' => 'acf/posts',
 			),
 		),
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/testimonial',
+			),
+		),
 	),
 	'menu_order' => 20,
 	'position' => 'normal',

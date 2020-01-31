@@ -1,0 +1,26 @@
+// Testimonial Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/blocks.scss';
+
+
+.acf-block--testimonial {
+	
+	.acf-block-container {}
+}
+
+.acf-block-testimonial-item {
+	
+	@include rwd(large) {
+		display: flex;
+		justify-content: space-between;
+
+		.testimonial-picture {
+			width: 25%;
+		}
+		.testimonial-content {
+			width: 70%;
+		}
+	}
+}
