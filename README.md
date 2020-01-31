@@ -6,6 +6,8 @@ Add some custom blocks for the new WordPress Editor.
 
 AD ACF Blocks is a collection of custom blocks for the new editor. They're all made with ACF.
 
+## How-to
+
 ### Installation
 
 * Download the zip archive and upload it to your WordPress site. 
@@ -14,18 +16,17 @@ AD ACF Blocks is a collection of custom blocks for the new editor. They're all m
 
 ### CSS Customisation
 
-These blocks are quite raw, design speaking. You’ll wish to add some CSS in your theme.\ 
-Please inspect the source code and look for the classes you’d like to style.
+These blocks are quite raw so you'll wish to add some CSS in your theme.\ 
+Please inspect the source code and look for the classes you'd like to style.
 
 Here are some useful classes to define:
 
-* .acf-block--_blockname_: general class for all blocks.
-* .acf-block-container_.center-max_: center-max is used to define a max-width in orderto keep the block content centered on screen.
-
+* `[class*=".acf-block--"]`: general rules for all blocks.
+* `.acf-block-container.center-max`: **center-max** is used to define a max-width in order to keep the block's content centered on screen.
 
 ## To-Do
 
-Create more blocks…
+Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
