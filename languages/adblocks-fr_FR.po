@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2019-12-20 16:23+0100\n"
-"PO-Revision-Date: 2019-12-20 16:23+0100\n"
+"POT-Creation-Date: 2020-01-31 10:37+0100\n"
+"PO-Revision-Date: 2020-01-31 10:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -70,6 +70,42 @@ msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
 msgid "There is no changelog available."
 msgstr "Il n’y a aucun historique des mises à jour disponible."
 
+#: blocks/block-anchor/block-anchor-fields.php:9
+msgid "AD ACF Block 06: Anchor"
+msgstr "AD ACF Bloc 06: Ancre"
+
+#: blocks/block-anchor/block-anchor-fields.php:13
+msgid "HTML Markup"
+msgstr "Balisage HTML"
+
+#: blocks/block-anchor/block-anchor-fields.php:16
+msgid "Choose the anchor markup."
+msgstr "Choisissez le balisage de l’ancre."
+
+#: blocks/block-anchor/block-anchor-fields.php:25
+msgid "<div>"
+msgstr "<div>"
+
+#: blocks/block-anchor/block-anchor-fields.php:26
+msgid "<span>"
+msgstr "<span>"
+
+#: blocks/block-anchor/block-anchor-fields.php:27
+msgid "<section>"
+msgstr "<section>"
+
+#: blocks/block-anchor/block-anchor-fields.php:41
+msgid "Anchor ID"
+msgstr "ID de l’Ancre"
+
+#: blocks/block-anchor/block-anchor.php:14
+msgid "Anchor"
+msgstr "Ancre"
+
+#: blocks/block-anchor/block-anchor.php:15
+msgid "Add an anchor anywhere in your post."
+msgstr "Ajoutez une ancre n’importe où dans votre publication."
+
 #: blocks/block-cta/block-cta-fields.php:9
 msgid "AD ACF Block 04: CTA"
 msgstr "AD ACF Bloc 04 : CTA"
@@ -82,102 +118,6 @@ msgstr "Zone de texte"
 #: blocks/block-cta/block-cta-fields.php:32
 msgid "Link"
 msgstr "Lien"
-
-#: blocks/block-cta/block-cta-fields.php:67
-#: blocks/block-gallery/block-gallery-fields.php:327
-#: blocks/block-posts/block-posts-fields.php:171
-#: blocks/block-text/block-text-fields.php:243
-#: blocks/block-textimg/block-textimg-fields.php:133
-msgid "Block Options: Background"
-msgstr "Options de bloc : Arrière-plan"
-
-#: blocks/block-cta/block-cta-fields.php:71
-#: blocks/block-gallery/block-gallery-fields.php:331
-#: blocks/block-posts/block-posts-fields.php:175
-#: blocks/block-text/block-text-fields.php:247
-#: blocks/block-textimg/block-textimg-fields.php:137
-msgid "Background options"
-msgstr "Option d’arrière-plan"
-
-#: blocks/block-cta/block-cta-fields.php:88
-#: blocks/block-gallery/block-gallery-fields.php:348
-#: blocks/block-posts/block-posts-fields.php:192
-#: blocks/block-text/block-text-fields.php:264
-#: blocks/block-textimg/block-textimg-fields.php:154
-msgid "Background color"
-msgstr "Couleur d’arrière-plan"
-
-#: blocks/block-cta/block-cta-fields.php:103
-#: blocks/block-gallery/block-gallery-fields.php:363
-#: blocks/block-posts/block-posts-fields.php:207
-#: blocks/block-text/block-text-fields.php:279
-#: blocks/block-textimg/block-textimg-fields.php:169
-msgid "Background image"
-msgstr "Image d’arrière-plan"
-
-#: blocks/block-cta/block-cta-fields.php:106
-#: blocks/block-gallery/block-gallery-fields.php:366
-#: blocks/block-posts/block-posts-fields.php:210
-#: blocks/block-text/block-text-fields.php:282
-#: blocks/block-textimg/block-textimg-fields.php:172
-msgid "Choose a picture or a pattern"
-msgstr "Choisissez une image ou un motif"
-
-#: blocks/block-cta/block-cta-fields.php:127
-#: blocks/block-gallery/block-gallery-fields.php:387
-#: blocks/block-posts/block-posts-fields.php:231
-#: blocks/block-text/block-text-fields.php:303
-#: blocks/block-textimg/block-textimg-fields.php:193
-msgid "Text color"
-msgstr "Couleur du texte"
-
-#: blocks/block-cta/block-cta-fields.php:138
-#: blocks/block-gallery/block-gallery-fields.php:398
-#: blocks/block-posts/block-posts-fields.php:242
-#: blocks/block-text/block-text-fields.php:314
-#: blocks/block-textimg/block-textimg-fields.php:204
-msgid "Switch text to white"
-msgstr "Passer le texte en blanc"
-
-#: blocks/block-cta/block-cta-fields.php:146
-#: blocks/block-gallery/block-gallery-fields.php:406
-#: blocks/block-posts/block-posts-fields.php:250
-#: blocks/block-text/block-text-fields.php:322
-#: blocks/block-textimg/block-textimg-fields.php:212
-msgid "Keep content centered"
-msgstr "Garde le contenu centré"
-
-#: blocks/block-cta/block-cta-fields.php:165
-#: blocks/block-gallery/block-gallery-fields.php:425
-#: blocks/block-posts/block-posts-fields.php:269
-#: blocks/block-text/block-text-fields.php:341
-#: blocks/block-textimg/block-textimg-fields.php:231
-msgid "Repeat pattern"
-msgstr "Répéter le motif"
-
-#: blocks/block-cta/block-cta-fields.php:184
-#: blocks/block-gallery/block-gallery-fields.php:444
-#: blocks/block-posts/block-posts-fields.php:288
-#: blocks/block-text/block-text-fields.php:360
-#: blocks/block-textimg/block-textimg-fields.php:250
-msgid "Overlay"
-msgstr "Overlay"
-
-#: blocks/block-cta/block-cta-fields.php:195
-#: blocks/block-gallery/block-gallery-fields.php:455
-#: blocks/block-posts/block-posts-fields.php:299
-#: blocks/block-text/block-text-fields.php:371
-#: blocks/block-textimg/block-textimg-fields.php:261
-msgid "Add an overlay over the background image"
-msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
-
-#: blocks/block-cta/block-cta-fields.php:203
-#: blocks/block-gallery/block-gallery-fields.php:463
-#: blocks/block-posts/block-posts-fields.php:307
-#: blocks/block-text/block-text-fields.php:379
-#: blocks/block-textimg/block-textimg-fields.php:269
-msgid "Background options - end"
-msgstr "Options d'arrière-plan - fin"
 
 #: blocks/block-cta/block-cta.php:14
 msgid "CTA"
@@ -195,123 +135,52 @@ msgid "Enter text here..."
 msgstr "Entrez du texte ici…"
 
 #: blocks/block-gallery/block-gallery-fields.php:9
-#: blocks/block-posts/block-posts-fields.php:9
-msgid "Block Options: Columns"
-msgstr "Options de bloc : Colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:13
-#: blocks/block-posts/block-posts-fields.php:13
-msgid "Number of Columns"
-msgstr "Nombre de colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:25
-#: blocks/block-posts/block-posts-fields.php:25
-#: blocks/block-text/block-text-fields.php:25
-msgid "1 column"
-msgstr "1 colonne"
-
-#: blocks/block-gallery/block-gallery-fields.php:26
-#: blocks/block-posts/block-posts-fields.php:26
-#: blocks/block-text/block-text-fields.php:26
-msgid "2 columns"
-msgstr "2 colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:27
-#: blocks/block-posts/block-posts-fields.php:27
-#: blocks/block-text/block-text-fields.php:27
-msgid "3 columns"
-msgstr "3 colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:28
-#: blocks/block-posts/block-posts-fields.php:28
-msgid "4 columns"
-msgstr "4 colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:29
-#: blocks/block-posts/block-posts-fields.php:29
-msgid "5 columns"
-msgstr "5 colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:30
-#: blocks/block-posts/block-posts-fields.php:30
-msgid "6 columns"
-msgstr "6 colonnes"
-
-#: blocks/block-gallery/block-gallery-fields.php:66
 msgid "AD ACF Block 03: Gallery"
 msgstr "AD ACF Block 03 : Galerie"
 
-#: blocks/block-gallery/block-gallery-fields.php:70
+#: blocks/block-gallery/block-gallery-fields.php:13
 msgid "Content type"
 msgstr "Type de contenu"
 
-#: blocks/block-gallery/block-gallery-fields.php:82
-#: blocks/block-gallery/block-gallery-fields.php:92
+#: blocks/block-gallery/block-gallery-fields.php:25
+#: blocks/block-gallery/block-gallery-fields.php:35
 msgid "Picture gallery"
 msgstr "Galerie d’images"
 
-#: blocks/block-gallery/block-gallery-fields.php:83
-#: blocks/block-gallery/block-gallery-fields.php:181
+#: blocks/block-gallery/block-gallery-fields.php:26
+#: blocks/block-gallery/block-gallery-fields.php:124
 msgid "Content gallery"
 msgstr "Galerie de contenus"
 
-#: blocks/block-gallery/block-gallery-fields.php:95
+#: blocks/block-gallery/block-gallery-fields.php:38
 msgid "Select the pictures"
 msgstr "Sélectionnez les images"
 
-#: blocks/block-gallery/block-gallery-fields.php:127
+#: blocks/block-gallery/block-gallery-fields.php:70
 msgid "Enlarge pictures"
 msgstr "Agrandir les images"
 
-#: blocks/block-gallery/block-gallery-fields.php:154
+#: blocks/block-gallery/block-gallery-fields.php:97
 msgid "Enlarge pictures with Fancybox"
 msgstr "Agrandir les images avec Fancybox"
 
-#: blocks/block-gallery/block-gallery-fields.php:184
+#: blocks/block-gallery/block-gallery-fields.php:127
 msgid "Select the pages or posts you wish to have in this gallery"
 msgstr ""
 "Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
 "galerie"
 
-#: blocks/block-gallery/block-gallery-fields.php:218
+#: blocks/block-gallery/block-gallery-fields.php:161
 msgid "Legend display"
 msgstr "Affichage de la légende"
 
-#: blocks/block-gallery/block-gallery-fields.php:230
+#: blocks/block-gallery/block-gallery-fields.php:173
 msgid "Inside"
 msgstr "À l’intérieur"
 
-#: blocks/block-gallery/block-gallery-fields.php:231
+#: blocks/block-gallery/block-gallery-fields.php:174
 msgid "Outside"
 msgstr "À l'extérieur"
-
-#: blocks/block-gallery/block-gallery-fields.php:260
-msgid "Block Options: Gallery Pictures"
-msgstr "Options de bloc : Images de Galerie"
-
-#: blocks/block-gallery/block-gallery-fields.php:264
-msgid "Size"
-msgstr "Taille"
-
-#: blocks/block-gallery/block-gallery-fields.php:276
-msgid "Thumbnail"
-msgstr "Vignette"
-
-#: blocks/block-gallery/block-gallery-fields.php:277
-msgid "Medium"
-msgstr "Moyenne"
-
-#: blocks/block-gallery/block-gallery-fields.php:278
-msgid "Large"
-msgstr "Grande"
-
-#: blocks/block-gallery/block-gallery-fields.php:291
-msgid "External link"
-msgstr "Lien Externe"
-
-#: blocks/block-gallery/block-gallery-fields.php:294
-msgid "If you wish to add an external link to this picture."
-msgstr "Si vous souhaitez ajouter un lien externe à cette image."
 
 #: blocks/block-gallery/block-gallery.php:14
 msgid "Gallery"
@@ -339,47 +208,47 @@ msgstr "Agrandir l'image"
 msgid "Read "
 msgstr "Lire "
 
-#: blocks/block-posts/block-posts-fields.php:66
+#: blocks/block-posts/block-posts-fields.php:9
 msgid "AD ACF Block 05: Posts"
 msgstr "AD ACF Bloc 05: Publications"
 
-#: blocks/block-posts/block-posts-fields.php:70
+#: blocks/block-posts/block-posts-fields.php:13
 msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
 
-#: blocks/block-posts/block-posts-fields.php:96
+#: blocks/block-posts/block-posts-fields.php:39
 msgid "Title level"
 msgstr "Niveau de titre"
 
-#: blocks/block-posts/block-posts-fields.php:108
+#: blocks/block-posts/block-posts-fields.php:51
 msgid "H2"
 msgstr "H2"
 
-#: blocks/block-posts/block-posts-fields.php:109
+#: blocks/block-posts/block-posts-fields.php:52
 msgid "H3"
 msgstr "H3"
 
-#: blocks/block-posts/block-posts-fields.php:110
+#: blocks/block-posts/block-posts-fields.php:53
 msgid "H4"
 msgstr "H4"
 
-#: blocks/block-posts/block-posts-fields.php:111
+#: blocks/block-posts/block-posts-fields.php:54
 msgid "H5"
 msgstr "H5"
 
-#: blocks/block-posts/block-posts-fields.php:112
+#: blocks/block-posts/block-posts-fields.php:55
 msgid "H6"
 msgstr "H6"
 
-#: blocks/block-posts/block-posts-fields.php:126
+#: blocks/block-posts/block-posts-fields.php:69
 msgid "Content to show"
 msgstr "Contenu à afficher"
 
-#: blocks/block-posts/block-posts-fields.php:138
+#: blocks/block-posts/block-posts-fields.php:81
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: blocks/block-posts/block-posts-fields.php:139
+#: blocks/block-posts/block-posts-fields.php:82
 msgid "Full content"
 msgstr "Contenu intégral"
 
@@ -390,6 +259,65 @@ msgstr "Publications"
 #: blocks/block-posts/block-posts.php:15
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
+
+#: blocks/block-testimonial/block-testimonial-fields.php:9
+msgid "AD ACF Block 07: Testimonial"
+msgstr "AD ACF Bloc 07: Témoignage"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:13
+msgid "Testimonials"
+msgstr "Témoignages"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:16
+msgid "Add one or more testimonials."
+msgstr "Ajoutez un ou plusieurs témoignages."
+
+#: blocks/block-testimonial/block-testimonial-fields.php:28
+msgid "Add a testimonial"
+msgstr "Ajouter un témoignage"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:32
+msgid "Portrait"
+msgstr "Portrait"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:56
+#: blocks/block-text/block-text-fields.php:100
+#: blocks/block-text/block-text-fields.php:164
+#: blocks/block-text/block-text-fields.php:207
+msgid "Content"
+msgstr "Contenu"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:71
+msgid "Title"
+msgstr "Titre"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:90
+msgid "Text"
+msgstr "Texte"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:109
+msgid "Author"
+msgstr "Auteur"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:128
+msgid "Author description"
+msgstr "Description de l’auteur"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:131
+msgid "role, job, company, country, city…"
+msgstr "rôle, métier, société, pays, ville…"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:149
+msgid "Portrait on the right"
+msgstr "Portrait à droite"
+
+#: blocks/block-testimonial/block-testimonial.php:14
+msgid "Testimonial"
+msgstr "Témoignage"
+
+#: blocks/block-testimonial/block-testimonial.php:15
+msgid "Testimonial with author name and description."
+msgstr "Témoignage avec nom et description de l'auteur."
 
 #: blocks/block-text/block-text-fields.php:9
 msgid "AD ACF Block 01: Rich Text"
@@ -403,6 +331,21 @@ msgstr "Mise en page"
 msgid "Choose a layout for this block"
 msgstr "Choisir une mise en page pour ce bloc"
 
+#: blocks/block-text/block-text-fields.php:25
+#: global-fields/columns-fields.php:25
+msgid "1 column"
+msgstr "1 colonne"
+
+#: blocks/block-text/block-text-fields.php:26
+#: global-fields/columns-fields.php:26
+msgid "2 columns"
+msgstr "2 colonnes"
+
+#: blocks/block-text/block-text-fields.php:27
+#: global-fields/columns-fields.php:27
+msgid "3 columns"
+msgstr "3 colonnes"
+
 #: blocks/block-text/block-text-fields.php:28
 msgid "Two thirds / One third"
 msgstr "Deux tiers / Un tiers"
@@ -411,30 +354,24 @@ msgstr "Deux tiers / Un tiers"
 msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
-#: blocks/block-text/block-text-fields.php:38
+#: blocks/block-text/block-text-fields.php:43
 #: blocks/block-textimg/block-textimg-fields.php:94
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
-#: blocks/block-text/block-text-fields.php:57
+#: blocks/block-text/block-text-fields.php:62
 msgid "Content area"
 msgstr "Zone de contenu"
 
-#: blocks/block-text/block-text-fields.php:72
+#: blocks/block-text/block-text-fields.php:77
 msgid "First column"
 msgstr "Première colonne"
 
-#: blocks/block-text/block-text-fields.php:95
-#: blocks/block-text/block-text-fields.php:159
-#: blocks/block-text/block-text-fields.php:202
-msgid "Content"
-msgstr "Contenu"
-
-#: blocks/block-text/block-text-fields.php:114
+#: blocks/block-text/block-text-fields.php:119
 msgid "Second column"
 msgstr "Deuxième colonne"
 
-#: blocks/block-text/block-text-fields.php:178
+#: blocks/block-text/block-text-fields.php:183
 msgid "Third column"
 msgstr "Troisième colonne"
 
@@ -466,6 +403,102 @@ msgstr "Texte et image"
 #: blocks/block-textimg/block-textimg.php:15
 msgid "Text and picture block with reverse order option."
 msgstr "Bloc texte image avec option d'ordre inversé."
+
+#: global-fields/background-fields.php:9
+msgid "Block Options: Background"
+msgstr "Options de bloc : Arrière-plan"
+
+#: global-fields/background-fields.php:13
+msgid "Background options"
+msgstr "Option d’arrière-plan"
+
+#: global-fields/background-fields.php:30
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: global-fields/background-fields.php:45
+msgid "Background image"
+msgstr "Image d’arrière-plan"
+
+#: global-fields/background-fields.php:48
+msgid "Choose a picture or a pattern"
+msgstr "Choisissez une image ou un motif"
+
+#: global-fields/background-fields.php:69
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: global-fields/background-fields.php:80
+msgid "Switch text to white"
+msgstr "Passer le texte en blanc"
+
+#: global-fields/background-fields.php:88
+msgid "Keep content centered"
+msgstr "Garde le contenu centré"
+
+#: global-fields/background-fields.php:107
+msgid "Repeat pattern"
+msgstr "Répéter le motif"
+
+#: global-fields/background-fields.php:126
+msgid "Overlay"
+msgstr "Overlay"
+
+#: global-fields/background-fields.php:137
+msgid "Add an overlay over the background image"
+msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
+
+#: global-fields/background-fields.php:145
+msgid "Background options - end"
+msgstr "Options d'arrière-plan - fin"
+
+#: global-fields/columns-fields.php:9
+msgid "Block Options: Columns"
+msgstr "Options de bloc : Colonnes"
+
+#: global-fields/columns-fields.php:13
+msgid "Number of Columns"
+msgstr "Nombre de colonnes"
+
+#: global-fields/columns-fields.php:28
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: global-fields/columns-fields.php:29
+msgid "5 columns"
+msgstr "5 colonnes"
+
+#: global-fields/columns-fields.php:30
+msgid "6 columns"
+msgstr "6 colonnes"
+
+#: global-fields/gallery-fields.php:9
+msgid "Block Options: Gallery Pictures"
+msgstr "Options de bloc : Images de Galerie"
+
+#: global-fields/gallery-fields.php:13
+msgid "Size"
+msgstr "Taille"
+
+#: global-fields/gallery-fields.php:25
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: global-fields/gallery-fields.php:26
+msgid "Medium"
+msgstr "Moyenne"
+
+#: global-fields/gallery-fields.php:27
+msgid "Large"
+msgstr "Grande"
+
+#: global-fields/gallery-fields.php:40
+msgid "External link"
+msgstr "Lien Externe"
+
+#: global-fields/gallery-fields.php:43
+msgid "If you wish to add an external link to this picture."
+msgstr "Si vous souhaitez ajouter un lien externe à cette image."
 
 #. Description of the plugin/theme
 msgid "A collection of blocks made with ACF for the new Editor"
