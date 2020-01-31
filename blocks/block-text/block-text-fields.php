@@ -1,6 +1,6 @@
 <?php defined('ABSPATH') or die(); 
 
-function text_block_fields() {
+function adblocks_text_block_fields() {
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -442,4 +442,4 @@ acf_add_local_field_group(array(
 endif;
 
 }
-add_action('acf/init', 'text_block_fields');
+add_action('acf/init', 'adblocks_text_block_fields');

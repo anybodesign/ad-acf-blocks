@@ -2,8 +2,8 @@
 
 // Text Block
 
-add_action('acf/init', 'text_block_init');
-function text_block_init() {
+add_action('acf/init', 'adblocks_text_block_init');
+function adblocks_text_block_init() {
 
 	if( function_exists('acf_register_block') ) {
 

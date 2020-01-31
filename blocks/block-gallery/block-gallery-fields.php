@@ -1,6 +1,6 @@
 <?php defined('ABSPATH') or die(); 
 
-function gallery_blocks_fields() {
+function adblocks_gallery_blocks_fields() {
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -526,4 +526,4 @@ acf_add_local_field_group(array(
 endif;
 
 }
-add_action('acf/init', 'gallery_blocks_fields');
+add_action('acf/init', 'adblocks_gallery_blocks_fields');

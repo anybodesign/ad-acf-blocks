@@ -2,8 +2,8 @@
 
 // CTA Block
 
-add_action('acf/init', 'cta_block_init');
-function cta_block_init() {
+add_action('acf/init', 'adblocks_cta_block_init');
+function adblocks_cta_block_init() {
 
 	if( function_exists('acf_register_block') ) {
 

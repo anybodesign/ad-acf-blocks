@@ -2,8 +2,8 @@
 
 // Posts Block
 
-add_action('acf/init', 'posts_block_init');
-function posts_block_init() {
+add_action('acf/init', 'adblocks_posts_block_init');
+function adblocks_posts_block_init() {
 
 	if( function_exists('acf_register_block') ) {
 		

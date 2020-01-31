@@ -2,8 +2,8 @@
 
 // Gallery Block
 
-add_action('acf/init', 'gallery_block_init');
-function gallery_block_init() {
+add_action('acf/init', 'adblocks_gallery_block_init');
+function adblocks_gallery_block_init() {
 
 	if( function_exists('acf_register_block') ) {
 
