@@ -4,7 +4,9 @@
 
 @import '../../../assets/css/blocks.scss';
 
-
+html {
+	scroll-behavior: smooth;	
+}
 .acf-block--anchor {
 	padding: 0;
 	
