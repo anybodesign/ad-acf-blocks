@@ -22,5 +22,9 @@
 		.testimonial-content {
 			width: 70%;
 		}
+		
+		&.right {
+			flex-direction: row-reverse;
+		}
 	}
 }
