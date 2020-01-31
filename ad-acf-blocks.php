@@ -119,8 +119,8 @@ function adblocks_block_categories( $categories, $post ) {
 $adblocks = array_diff( scandir(ADBLOCKS__PLUGIN_PATH . '/blocks'), array('..', '.', '.DS_Store') );
 
 foreach( $adblocks as $adblock ) {
-	include_once 'blocks/'. $adblock .'/'. $adblock .'.php';
-	include_once 'blocks/'. $adblock .'/'. $adblock .'-fields.php';
+	include_once ADBLOCKS__PLUGIN_PATH . 'blocks/'. $adblock .'/'. $adblock .'.php';
+	include_once ADBLOCKS__PLUGIN_PATH . 'blocks/'. $adblock .'/'. $adblock .'-fields.php';
 }	
 
 
