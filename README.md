@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.5.1 - 2020-01-31
+* Reverse display option for testimonials
+
 ### 1.5 - 2020-01-31
 * New Anchor Block
 * New Testimonial Block
