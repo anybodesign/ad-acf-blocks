@@ -12,11 +12,28 @@ AD ACF Blocks is a collection of custom blocks for the new editor. They're all m
 * Activate the plugin, ACF must be activated. 
 * Start using the blocks in any post or page!
 
+### CSS Customisation
+
+These blocks are quite raw, design speaking. You’ll wish to add some CSS in your theme.\ 
+Please inspect the source code and look for the classes you’d like to style.
+
+Here are some useful classes to define:
+
+* .acf-block--_blockname_: general class for all blocks.
+* .acf-block-container__.center-max__: use here a max-width to keep the block content centerd on screen.
+
+
 ## To-Do
 
 Create more blocks…
 
 ## Changelog
+
+### 1.5 - 2020-01-31
+* New Anchor Block
+* New Testimonial Block
+* Set global option fields
+* Prefixed functions
 
 ### 1.4 - 2019-12-20
 * New templating
