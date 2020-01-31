@@ -20,7 +20,7 @@ Please inspect the source code and look for the classes you’d like to style.
 Here are some useful classes to define:
 
 * .acf-block--_blockname_: general class for all blocks.
-* .acf-block-container__.center-max__: use here a max-width to keep the block content centerd on screen.
+* .acf-block-container_.center-max_: center-max is used to define a max-width in orderto keep the block content centered on screen.
 
 
 ## To-Do
