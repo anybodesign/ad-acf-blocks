@@ -1,5 +1,7 @@
 <?php if ( !defined('ABSPATH') ) die();
 
+	$h = get_field('title_level');
+
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
 	$max = get_field('center_max');
@@ -49,14 +51,15 @@
 							
 							<?php if ($title) { ?>
 							<div class="list-content">
-								<span class="list-title"><?php echo $title; ?></span>
+								<<?php echo $h; ?> class="list-title"><?php echo $title; ?></<?php echo $h; ?>>
 								<?php if ($desc) { ?>
 								<span class="list-desc"><?php echo $desc; ?></span>
 								<?php } ?>
-								<?php if ($featured) { ?>
-								<span class="list-faetured"><?php echo $featured; ?></span>
-								<?php } ?>
 							</div>
+							<?php } ?>
+
+							<?php if ($featured) { ?>
+							<span class="list-featured"><?php echo $featured; ?></span>
 							<?php } ?>
 							
 							<?php if ($legend) { ?>
