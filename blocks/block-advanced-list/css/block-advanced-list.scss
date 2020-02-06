@@ -19,6 +19,22 @@
 	margin-bottom: $grid-padding*2;
 	padding-bottom: $grid-padding*2;
 	border-bottom: #333 1px solid;
+
+	
+	@include rwd(medium) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+}
+
+
+.list-icon {
+	max-width: 8rem;
+	
+	@include rwd(medium) {
+		padding-right: $grid-padding*2;
+	}
 }
 
 .list-content {
@@ -26,6 +42,30 @@
 	span {
 		display: block;
 		margin: 0;
+
+		&.list-title {
+			font-size: 135%;
+		}		
+	}
+	
+	.list-title {
+		margin: 0;
+	}
+	
+	@include rwd(medium) {
+		flex: 1 0 0;
+		padding-right: $grid-padding*2;
+	}
+}
+
+.list-featured {
+	display: block;
+	margin: $grid-padding 0 0 0;
+	font-size: 150%;
+	
+	@include rwd(medium) {
+		margin-top: 0;
+		padding-left: $grid-padding*2;
 	}
 }
 
