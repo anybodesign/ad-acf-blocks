@@ -1,6 +1,7 @@
 <?php if ( !defined('ABSPATH') ) die();
 
 	$right = get_field('right');
+	$round = get_field('round');
 	$center = get_field('center');
 	$zoom = get_field('zoom');
 	$img = get_field('picture');
@@ -40,7 +41,11 @@
 							<?php if ( $zoom ) { ?>
 							<a href="<?php echo $img['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>" data-fancybox>
 							<?php } ?>
+							<?php if ( $round ) { ?>
+							<img class="is-round" src="<?php echo $img['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $img['alt']; ?>">
+							<?php } else { ?>
 							<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+							<?php } ?>
 							<?php if ( $zoom ) { ?>
 							</a>
 							<?php } ?>
