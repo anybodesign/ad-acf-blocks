@@ -30,6 +30,10 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.6 - 2020-02-06
+* New Advanced List Block
+* Round picture option for Text/Image Block
+
 ### 1.5.1 - 2020-01-31
 * Reverse display option for testimonials
 
