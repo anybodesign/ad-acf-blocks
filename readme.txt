@@ -3,7 +3,7 @@ Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
 Tested up to: 5.3.2
-Stable tag: 1.0
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,17 +17,26 @@ AD ACF Blocks is a collection of custom blocks for the new editor. They're all m
 
 = How-To =
 
-Activate the plugin and start using the blocks. You should add and/or customize some CSS to suit your needs.
+== Installation ==
 
+* Download the zip archive and upload it to your WordPress site. 
+* Activate the plugin, ACF must be activated. 
+* Customize and start using the blocks in any post or page!
 
-= Translations = 
+== CSS Customisation ==
 
-You can translate AD ACF Blocks on [translate.wordpress.org](https://translate.wordpress.org).
+These blocks are quite raw so you'll wish to add some CSS in your theme.\ 
+Please inspect the source code and look for the classes you'd like to style.
 
+Here are some useful classes to define:
 
-= To-Do = 
+* `[class*=".acf-block--"]`: general rules for all blocks.
+* `.acf-block-container.center-max`: **center-max** is used to define a max-width in order to keep the block's content centered on screen.
 
-More blocks :)
+== To-Do ==
+
+Create more blocks, and look for a way to override some block templates
+
 
 
 == Installation ==
@@ -45,6 +54,22 @@ More blocks :)
 
 
 == Changelog ==
+
+= 1.6.1 - 2020-02-13 =
+* CSS optimisation
+
+= 1.6 - 2020-02-06 =
+* New Advanced List Block
+* Round picture option for Text/Image Block
+
+= 1.5.1 - 2020-01-31 =
+* Reverse display option for testimonials
+
+= 1.5 - 2020-01-31 =
+* New Anchor Block
+* New Testimonial Block
+* Set global option fields
+* Prefixed functions
 
 = 1.4 - 2019-12-20 =
 * New templating

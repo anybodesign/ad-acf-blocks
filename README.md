@@ -12,7 +12,7 @@ AD ACF Blocks is a collection of custom blocks for the new editor. They're all m
 
 * Download the zip archive and upload it to your WordPress site. 
 * Activate the plugin, ACF must be activated. 
-* Start using the blocks in any post or page!
+* Customize and start using the blocks in any post or page!
 
 ### CSS Customisation
 
@@ -29,6 +29,9 @@ Here are some useful classes to define:
 Create more blocks, and look for a way to override some block templates
 
 ## Changelog
+
+### 1.6.1 - 2020-02-13
+* CSS optimisation
 
 ### 1.6 - 2020-02-06
 * New Advanced List Block
