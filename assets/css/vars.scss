@@ -1,0 +1,86 @@
+// Blocks variables & mixins
+// -
+// + + + + + + + + + + + + + +
+
+// Vars
+
+$grid-padding: 1rem;
+
+$width-small: 30em; 		// @note: 480px
+$width-medium: 45em;		// @note: 720px
+$width-large: 60em; 		// @note: 960px
+$width-wide: 75em;	 		// @note: 1200px
+$width-xwide: 90em;	 		// @note: 1440px
+
+
+// Mixins
+
+// Visually obfuscate the text of an element (a11y ok)
+
+@mixin a11y-hide($percent: 150%) {
+	text-indent: $percent;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// Visually hide an element (a11y ok)
+
+@mixin a11y-hidden($width: 1px, $height: 1px) {
+	position: absolute;
+	display: block; 
+	width: $width;
+	height: $height;
+	padding: 0;
+	margin: 0;
+	text-indent: 150%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+
+// Opacity effect on hovered images links
+
+@mixin img-opacity($opacity: .5) {
+	a img {
+		transition: opacity .2s ease-in-out;
+	}
+	a:hover img,
+	a.focus-visible img {
+		opacity: $opacity;
+	}	
+}
+
+// Mobile First Media Queries
+
+@mixin rwd($width) {
+	
+	@if $width == xwide {
+		@media only screen and (min-width: $width-xwide) {
+			@content;
+		}
+	}
+	@if $width == wide {
+		@media only screen and (min-width: $width-wide) {
+			@content;
+		}
+	}
+	@else if $width == large {
+		@media only screen and (min-width: $width-large) {
+			@content;
+		}
+	}
+	@else if $width == medium {
+		@media only screen and (min-width: $width-medium) {
+			@content;
+		}
+	}
+	@else if $width == small {
+		@media only screen and (min-width: $width-small) {
+			@content;
+		}
+	}
+	@else {
+		@media only screen and (min-width: $width) {
+			@content;
+		}
+	}
+}
