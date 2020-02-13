@@ -137,6 +137,19 @@ function adblocks_custom_acf_settings_textdomain($domain){
 add_filter('acf/settings/l10n_textdomain', 'adblocks_custom_acf_settings_textdomain');
 
 
+// Common styles
+
+function adblocks_common_css() {
+	wp_enqueue_style( 
+		'blocks', 
+		ADBLOCKS__PLUGIN_URL . 'css/blocks.css',
+		array(), 
+		false, 
+		'screen' 
+	);
+}
+add_action( 'wp_enqueue_scripts', 'adblocks_common_css' );
+
 
 //
 // Auto-Updater
