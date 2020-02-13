@@ -63,13 +63,13 @@
 									$cpt = get_post_type($c->ID)
 								?>
 								<div class="acf-block-post-metas">
-									<span class="meta-author"><?php _e( 'Posted by&nbsp;', 'good-time' ); echo get_the_author(); ?></span>									
+									<span class="meta-author"><?php _e( 'Posted by&nbsp;', 'adblocks' ); echo get_the_author(); ?></span>									
 									<?php if ( $cpt == 'post' ) { ?>
-									<span class="meta-category"><?php _e( 'in&nbsp;', 'good-time' ); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?></span>
+									<span class="meta-category"><?php _e( 'in&nbsp;', 'adblocks' ); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?></span>
 									<?php } ?>
 									
 									<span class="meta-date">
-										<span class="meta-date-text"><?php _e( 'on&nbsp;', 'good-time' ); ?></span><span class="meta-date-time"><?php echo get_the_time( get_option('date_format'), $c->ID ); ?></span>
+										<span class="meta-date-text"><?php _e( 'on&nbsp;', 'adblocks' ); ?></span><span class="meta-date-time"><?php echo get_the_time( get_option('date_format'), $c->ID ); ?></span>
 									</span>
 								</div>
 								<?php } ?>
