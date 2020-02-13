@@ -55,6 +55,9 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 1.6.3 - 2020-02-13 =
+* Posts blocks metas fixed
+
 = 1.6.2 - 2020-02-13 =
 * Posts blocks metas fields
 * Posts block fixed link
