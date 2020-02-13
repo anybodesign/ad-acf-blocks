@@ -55,6 +55,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 1.6.2 - 2020-02-13 =
+* Posts blocks metas fields
+* Posts block fixed link
+
 = 1.6.1 - 2020-02-13 =
 * CSS optimisation
 
