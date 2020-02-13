@@ -19,23 +19,15 @@
 		flex-wrap: wrap;
 	}
 }
-.acf-block-post-content--1col {
-	
-}
-
 .acf-block-post-item {
 	padding: $grid-padding;
 	
 	@include rwd(medium) {
 		
 		.acf-block-post-content--1col & {
+			display: flex;
+			flex-wrap: wrap;
 			width: 100%;
-			
-			a {
-				display: flex;
-				flex-wrap: wrap;
-				width: 100%;
-			}
 			
 			.acf-block-post-figure {
 				width: 30%;

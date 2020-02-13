@@ -4,6 +4,7 @@
 	$content = get_field('posts_select');
 	$h = get_field('title_level');
 	$show = get_field('content_show');
+	$metas = get_field('metas');
 	
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -39,28 +40,45 @@
 				        <?php foreach( $content as $c ): ?>
 				        <div class="acf-block-post-item">
 					        
-				            <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>">
-						        <div class="acf-block-post-figure">
-						            <?php 
-							            if ( has_post_thumbnail( $c->ID ) ) { 
-						            		echo get_the_post_thumbnail( $c->ID, 'thumbnail-hd'); 
-										} else {
-											echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
-							        } ?>
-							    </div>
-							    
-					    		<div class="acf-block-post-content">
-									<<?php echo $h; ?> class="acf-block-post-title"><?php echo get_the_title( $c->ID ); ?></<?php echo $h; ?>>
-									<?php 
-										if ($show == 'excerpt') {
-											echo '<p class="acf-block-post-excerpt">'.strip_tags(get_the_excerpt($c->ID)).'</p>'; 
-										}
-										if ($show == 'content' ) {
-											echo $c->post_content; 
-										}	
-									?>
+					        <div class="acf-block-post-figure">
+						        <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
+					            <?php 
+						            if ( has_post_thumbnail( $c->ID ) ) { 
+					            		echo get_the_post_thumbnail( $c->ID, 'thumbnail-hd'); 
+									} else {
+										echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
+						        } ?>
+						        </a>
+						    </div>
+						    
+				    		<div class="acf-block-post-content">
+								<<?php echo $h; ?> class="acf-block-post-title">
+									<a href="<?php echo get_permalink( $c->ID ); ?>">
+									<?php echo get_the_title( $c->ID ); ?>
+									</a>
+								</<?php echo $h; ?>>
+								
+								<?php if ( $metas ) { 
+									$cat = get_the_category($c->ID);
+								?>
+								<div class="acf-block-post-metas">
+									<span class="meta-date">
+										<span class="meta-date-text"><?php _e( 'Posted on&nbsp;', 'good-time' ); ?></span><span class="meta-date-time"><?php echo get_the_time( get_option('date_format'), $c->ID ); ?></span>
+									</span>
+									<span class="meta-author"><?php _e( 'by&nbsp;', 'good-time' ); echo get_the_author(); ?></span>
+									<span class="meta-category"><?php _e( 'in&nbsp;', 'good-time' ); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?></span>
 								</div>
-					        </a>
+								<?php } ?>
+								
+								<?php 
+									if ($show == 'excerpt') {
+										echo '<p class="acf-block-post-excerpt">'.get_the_excerpt($c->ID).'</p>'; 
+									}
+									if ($show == 'content' ) {
+										echo $c->post_content; 
+									}	
+								?>
+							</div>
 					        
 				        </div>
 				        <?php endforeach; ?>
