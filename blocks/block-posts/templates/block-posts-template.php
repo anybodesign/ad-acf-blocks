@@ -69,7 +69,7 @@
 									<?php } ?>
 									
 									<span class="meta-date">
-										<span class="meta-date-text"><?php _e( 'on&nbsp;', 'adblocks' ); ?></span><span class="meta-date-time"><?php echo get_the_time( get_option('date_format'), $c->ID ); ?></span>
+										<span class="meta-date-text"><?php _e( 'on&nbsp;', 'adblocks' ); ?></span><span class="meta-date-time"><?php echo '<span class="day">'.get_the_time( ('j'), $c->ID ).'</span> '; echo '<span class="month">'.get_the_time( ('F'), $c->ID ).'</span> '; echo '<span class="year">'.get_the_time( ('Y'), $c->ID ).'</span>'; ?></span>
 									</span>
 								</div>
 								<?php } ?>
