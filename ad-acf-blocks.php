@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks
  * Description: A collection of blocks made with ACF for the new Editor 
- * Version: 1.6.4
+ * Version: 1.6.5
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADBLOCKS__PLUGIN_VERSION', '1.6.4' );
+define( 'ADBLOCKS__PLUGIN_VERSION', '1.6.5' );
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADBLOCKS__BASENAME', plugin_basename( __FILE__ ) );
@@ -142,7 +142,7 @@ add_filter('acf/settings/l10n_textdomain', 'adblocks_custom_acf_settings_textdom
 function adblocks_common_css() {
 	wp_enqueue_style( 
 		'blocks', 
-		ADBLOCKS__PLUGIN_URL . 'css/blocks.css',
+		ADBLOCKS__PLUGIN_URL . 'assets/css/ad-acf-blocks.css',
 		array(), 
 		false, 
 		'screen' 
