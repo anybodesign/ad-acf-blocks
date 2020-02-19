@@ -5,6 +5,8 @@
 	$h = get_field('title_level');
 	$show = get_field('content_show');
 	$metas = get_field('metas');
+	$intro = get_field('intro');
+	$intro_text = get_field('intro_text');
 	
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -33,7 +35,13 @@
 
 			<section class="acf-block--posts<?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
-
+					
+					<?php if ( $intro ) { ?>
+					<div class="acf-block-post-intro">
+						<?php echo $intro_text; ?>
+					</div>
+					<?php } ?>
+					
 					<?php if( $content ): ?>
 					<div class="acf-block-post-content--<?php echo $cols; ?>">
 						

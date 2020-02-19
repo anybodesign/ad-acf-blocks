@@ -9,6 +9,52 @@ acf_add_local_field_group(array(
 	'title' => __('AD ACF Block 05: Posts', 'adblocks'),
 	'fields' => array(
 		array(
+			'key' => 'field_5e4d49a6cbf08',
+			'label' => __('Add introduction text or title', 'adblocks'),
+			'name' => 'intro',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
+		array(
+			'key' => 'field_5e4d49bfcbf09',
+			'label' => __('Introduction', 'adblocks'),
+			'name' => 'intro_text',
+			'type' => 'wysiwyg',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5e4d49a6cbf08',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 0,
+			'delay' => 0,
+		),
+		array(
 			'key' => 'field_5dfa27874faba',
 			'label' => __('Select one or many publications', 'adblocks'),
 			'name' => 'posts_select',
