@@ -4,7 +4,7 @@ Add some custom blocks for the new WordPress Editor.
 
 ## Description
 
-AD ACF Blocks is a collection of custom blocks for the new editor. They're all made with ACF.
+AD ACF Blocks is a boilerplate of custom blocks for the new editor. They're all made with ACF.
 
 ## How-to
 
@@ -29,6 +29,9 @@ Here are some useful classes to define:
 Create more blocks, and look for a way to override some block templates
 
 ## Changelog
+
+### 1.7 - 2020-03-25
+* Posts Block intro option
 
 ### 1.6.5 - 2020-02-18
 * Fix: Common CSS path
