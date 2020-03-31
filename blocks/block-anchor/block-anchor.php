@@ -21,7 +21,7 @@ function adblocks_anchor_block_init() {
             'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-anchor/templates/block-anchor-template.php',
             'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-anchor', ADBLOCKS__PLUGIN_URL . '/blocks/block-anchor/css/block-anchor.css' );
-										//wp_enqueue_script( 'block-anchor', ADBLOCKS__PLUGIN_URL . '/blocks/block-anchor/js/block-anchor.js', array(), '', true );										
+										wp_enqueue_script( 'block-anchor', ADBLOCKS__PLUGIN_URL . '/blocks/block-anchor/js/block-anchor.js', array(), '', true );										
 									},
 		));
 	}	
