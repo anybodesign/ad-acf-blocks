@@ -56,6 +56,9 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 1.7.1 - 2020-03-31 =
+* Anchor Block smooth scroll
+
 = 1.7 - 2020-03-25 =
 * Posts Block intro option
 
