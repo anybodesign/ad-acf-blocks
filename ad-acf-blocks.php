@@ -141,10 +141,10 @@ add_filter('acf/settings/l10n_textdomain', 'adblocks_custom_acf_settings_textdom
 
 function adblocks_common_css() {
 	wp_enqueue_style( 
-		'blocks', 
-		ADBLOCKS__PLUGIN_URL . 'assets/css/ad-acf-blocks.css',
+		'adblocks-common', 
+		ADBLOCKS__PLUGIN_URL . 'assets/css/adblocks.css',
 		array(), 
-		false, 
+		ADBLOCKS__PLUGIN_VERSION, 
 		'screen' 
 	);
 }
