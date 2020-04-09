@@ -56,6 +56,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 1.7.2 - 2020-04-09 =
+* Common CSS file renamed
+* Import vars in common CSS
+
 = 1.7.1 - 2020-03-31 =
 * Anchor Block smooth scroll
 
