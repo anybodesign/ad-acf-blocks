@@ -38,33 +38,36 @@
 			}
 		}
 	}
+	
+	
+	&.has-overlay {
+		
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0; 
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to top, rgba(0,0,0, .65) 0%, rgba(0,0,0, 0) 100%);
+			z-index: 1;
+		}
+		
+		.acf-block-container {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	
+	&.white-text {
+		
+		& *:not([class*=action-btn]) {
+			color: #fff;
+		}
+	}
+	
 }
 
 
-.has-overlay {
-	
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0; 
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: linear-gradient(to top, rgba(0,0,0, .65) 0%, rgba(0,0,0, 0) 100%);
-		z-index: 1;
-	}
-	
-	.acf-block-container {
-		position: relative;
-		z-index: 2;
-	}
-}
-
-.white-text {
-	
-	& *:not([class*=action-btn]) {
-		color: #fff;
-	}
-}
 
 
