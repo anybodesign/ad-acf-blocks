@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.7.3 - 2020-05-04
+* CSS white text fix
+
 ### 1.7.2 - 2020-04-09
 * Common CSS file renamed
 * Import vars in common CSS
