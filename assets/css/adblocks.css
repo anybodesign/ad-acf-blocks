@@ -28,3 +28,9 @@
     z-index: 2; }
   [class*=acf-block--].white-text *:not([class*=action-btn]) {
     color: #fff; }
+
+.admin-bar .fancybox-infobar, .admin-bar .fancybox-toolbar {
+  top: 46px; }
+  @media only screen and (min-width: 48.875em) {
+    .admin-bar .fancybox-infobar, .admin-bar .fancybox-toolbar {
+      top: 32px; } }

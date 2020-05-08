@@ -68,6 +68,18 @@
 	
 }
 
+// Fancybox
 
+.fancybox-infobar,
+.fancybox-toolbar {
+	
+	.admin-bar & {
+		top: 46px;
+		
+		@include rwd($admin-bar) {
+			top: 32px;
+		}
+	}
+}
 
 
