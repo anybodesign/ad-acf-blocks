@@ -24,6 +24,11 @@
 .acf-block-gallery-item {
 	padding: $grid-padding;
 	width: 50%;
+
+	.acf-block-gallery-pictures--1col &,
+	.acf-block-gallery-content--1col & {
+		width: 100%;
+	}
 	
 	a {
 		display: block;
