@@ -2,6 +2,7 @@
 
 	$html = get_field('html');
 	$anchor = get_field('id');
+	
 ?>
 						
-			<<?php echo $html; ?> class="acf-block--anchor" id="<?php echo $anchor ;?>"></<?php echo $html; ?>>
+			<<?php echo $html; ?><?php if (is_admin() ) { echo ' class="acf-block--anchor"'; } ?> id="<?php echo $anchor ;?>"></<?php echo $html; ?>>
