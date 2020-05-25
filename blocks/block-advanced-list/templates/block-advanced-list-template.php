@@ -36,19 +36,21 @@
 				        <?php while( have_rows('list') ): the_row();
 							
 							$icon = get_sub_field('icon');   
-							$title = get_sub_field('title');   
-							$desc = get_sub_field('desc');   
-							$legend = get_sub_field('legend');   
+							$infos = get_sub_field('infos');
 							$featured = get_sub_field('featured_text');   
-	
+							
+							$title = $infos['title'];   
+							$desc = $infos['desc'];   
+							$legend = $infos['legend'];
 				        ?>
 				        <li class="acf-block-list-item">					        
+							
 							<?php if ($icon) { ?>
 							<div class="list-icon">
 								<img src="<?php echo $icon['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $icon['alt']; ?>">
 							</div>
 							<?php } ?>
-							
+
 							<?php if ($title) { ?>
 							<div class="list-content">
 								<<?php echo $h; ?> class="list-title"><?php echo $title; ?></<?php echo $h; ?>>
