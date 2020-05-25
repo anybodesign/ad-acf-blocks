@@ -30,9 +30,17 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.8 - 2020-05-25
+* Anchor Block: Conditional class
+* Text and Image Block: Open with Fancybox
+* Advanced List Block: New admin UI
+* Moved Fancybox in assets
+* Resources Path fix
+* Admin CSS to put the Custom Group first on the list
+
 ### 1.7.4 - 2020-05-08
 * Fancybox topbar position
-* Gallery block: 1 column 100% width
+* Gallery Block: 1 column 100% width
 
 ### 1.7.3 - 2020-05-04
 * CSS white text fix
