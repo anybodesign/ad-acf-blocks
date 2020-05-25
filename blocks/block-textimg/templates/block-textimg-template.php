@@ -4,6 +4,7 @@
 	$round = get_field('round');
 	$center = get_field('center');
 	$zoom = get_field('zoom');
+	$fancy = get_field('fancy');
 	$img = get_field('picture');
 	$text = get_field('text');
 
@@ -39,7 +40,7 @@
 					<div class="acf-block-textimg-picture">
 						<figure<?php if ( $img['caption'] ) { echo ' role="group"'; } ?>>
 							<?php if ( $zoom ) { ?>
-							<a href="<?php echo $img['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>" data-fancybox>
+							<a href="<?php echo $img['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>"<?php if ($fancy) { echo ' data-fancybox="picture"'; } ?>>
 							<?php } ?>
 							<?php if ( $round ) { ?>
 							<img class="is-round" src="<?php echo $img['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $img['alt']; ?>">

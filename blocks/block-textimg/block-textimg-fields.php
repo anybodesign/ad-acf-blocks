@@ -109,6 +109,33 @@ acf_add_local_field_group(array(
 			'ui_off_text' => '',
 		),
 		array(
+			'key' => 'field_5ecbe86e4beee',
+			'label' => __('Enlarge picture with Fancybox', 'adblocks'),
+			'name' => 'fancy',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5ceba9d006162',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
+		array(
 			'key' => 'field_5cec15ae50656',
 			'label' => __('Vertical centering', 'adblocks'),
 			'name' => 'center',
