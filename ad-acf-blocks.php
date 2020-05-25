@@ -148,7 +148,20 @@ function adblocks_common_css() {
 		'screen' 
 	);
 }
+function adblocks_admin_css() {
+	wp_enqueue_style( 
+		'adblocks-admin', 
+		ADBLOCKS__PLUGIN_URL . 'assets/css/adblocks-admin.css',
+		array(), 
+		ADBLOCKS__PLUGIN_VERSION, 
+		'screen' 
+	);
+}
+
 add_action( 'wp_enqueue_scripts', 'adblocks_common_css' );
+
+add_action( 'admin_init', 'adblocks_common_css' ); 
+add_action( 'admin_init', 'adblocks_admin_css' ); 
 
 
 //

@@ -1,0 +1,17 @@
+// Admin CSS
+// -
+// + + + + + + + + + + +
+
+
+#editor {
+	
+	.block-editor-inserter__results {
+		display: flex;
+		flex-direction: column;
+		
+		.components-panel__body:last-child {
+			order: -1;
+			border-bottom: 0;
+		}
+	}
+}
