@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-03-25 11:05+0100\n"
-"PO-Revision-Date: 2020-03-25 11:06+0100\n"
+"POT-Creation-Date: 2020-05-25 18:44+0200\n"
+"PO-Revision-Date: 2020-05-25 18:45+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -117,33 +117,37 @@ msgid "Add a list item"
 msgstr "Ajouter un élément de liste"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:63
+msgid "Icon"
+msgstr "Icône"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:87
+msgid "Infos"
+msgstr "Infos"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:102
 #: blocks/block-testimonial/block-testimonial-fields.php:71
 msgid "Title"
 msgstr "Titre"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:82
+#: blocks/block-advanced-list/block-advanced-list-fields.php:121
 msgid "Description"
 msgstr "Description"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:101
+#: blocks/block-advanced-list/block-advanced-list-fields.php:140
 msgid "Legend"
 msgstr "Légende"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:104
+#: blocks/block-advanced-list/block-advanced-list-fields.php:143
 msgid "Could be a footnote"
 msgstr "Peut-être une note de bas de page"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:120
+#: blocks/block-advanced-list/block-advanced-list-fields.php:161
 msgid "Featured text"
 msgstr "Texte mis en avant"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:123
+#: blocks/block-advanced-list/block-advanced-list-fields.php:164
 msgid "Could be a date, a price, a letter, a number…"
 msgstr "Peut-être une date, un prix, une lettre, un numéro…"
-
-#: blocks/block-advanced-list/block-advanced-list-fields.php:139
-msgid "Icon"
-msgstr "Icône"
 
 #: blocks/block-advanced-list/block-advanced-list.php:15
 msgid "Create advanced lists with titles, description, note, price, icon…"
@@ -279,7 +283,7 @@ msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:67
 #: blocks/block-textimg/block-textimg-fields.php:94
-#: blocks/block-textimg/templates/block-textimg-template.php:42
+#: blocks/block-textimg/templates/block-textimg-template.php:43
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
@@ -451,7 +455,7 @@ msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
 #: blocks/block-text/block-text-fields.php:43
-#: blocks/block-textimg/block-textimg-fields.php:113
+#: blocks/block-textimg/block-textimg-fields.php:140
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
@@ -495,6 +499,10 @@ msgstr "Image à droite"
 #: blocks/block-textimg/block-textimg-fields.php:75
 msgid "Round picture"
 msgstr "Image ronde"
+
+#: blocks/block-textimg/block-textimg-fields.php:113
+msgid "Enlarge picture with Fancybox"
+msgstr "Agrandir l’image avec Fancybox"
 
 #: blocks/block-textimg/block-textimg.php:14
 msgid "Text and Image"
