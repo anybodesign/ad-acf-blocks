@@ -18,12 +18,12 @@ function adblocks_gallery_block_init() {
             'mode'				=> 	'auto',
             'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> 	array( 'photo', 'gallery', 'galerie', 'content', 'contenu' ),
-            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-gallery/templates/block-gallery-template.php',
+            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-gallery/templates/block-gallery-template.php',
             'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-gallery', ADBLOCKS__PLUGIN_URL . '/blocks/block-gallery/css/block-gallery.css' );
-										wp_enqueue_style( 'fancybox', ADBLOCKS__PLUGIN_URL . '/blocks/block-gallery/css/jquery.fancybox.min.css' );
-										wp_enqueue_script( 'fancybox', ADBLOCKS__PLUGIN_URL . '/blocks/block-gallery/js/jquery.fancybox.min.js', array('jquery'), '', true );
-										wp_enqueue_script( 'fancybox-init', ADBLOCKS__PLUGIN_URL . '/blocks/block-gallery/js/fancybox-init.js', array('fancybox'), '', true );
+										wp_enqueue_style( 'block-gallery', ADBLOCKS__PLUGIN_URL . 'blocks/block-gallery/css/block-gallery.css' );
+										wp_enqueue_style( 'fancybox', ADBLOCKS__PLUGIN_URL . 'assets/css/jquery.fancybox.min.css' );
+										wp_enqueue_script( 'fancybox', ADBLOCKS__PLUGIN_URL . 'assets/js/jquery.fancybox.min.js', array('jquery'), '', true );
+										wp_enqueue_script( 'fancybox-init', ADBLOCKS__PLUGIN_URL . 'assets/js/fancybox-init.js', array('fancybox'), '', true );
 									},
 		));
 				
@@ -33,7 +33,7 @@ function adblocks_gallery_block_init() {
 
 // Load ACF fields (PHP)
 
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/columns-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-gallery/block-gallery-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/gallery-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/columns-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-gallery/block-gallery-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/gallery-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

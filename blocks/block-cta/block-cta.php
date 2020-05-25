@@ -18,10 +18,9 @@ function adblocks_cta_block_init() {
             'mode'				=> 	'auto',
             'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> 	array( 'cta', 'call to action' ),
-            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-cta/templates/block-cta-template.php',
+            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-cta/templates/block-cta-template.php',
             'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-cta', ADBLOCKS__PLUGIN_URL . '/blocks/block-cta/css/block-cta.css' );
-										//wp_enqueue_script( 'block-cta', ADBLOCKS__PLUGIN_URL . '/blocks/block-cta/js/block-cta.js', array('jquery'), '', true );
+										wp_enqueue_style( 'block-cta', ADBLOCKS__PLUGIN_URL . 'blocks/block-cta/css/block-cta.css' );
 									},
 		));
 	}	
@@ -30,5 +29,5 @@ function adblocks_cta_block_init() {
 
 // Load ACF fields (PHP)
 
-require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-cta/block-cta-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-cta/block-cta-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

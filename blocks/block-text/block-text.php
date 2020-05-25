@@ -18,10 +18,9 @@ function adblocks_text_block_init() {
             'mode'				=> 	'auto',
             'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> 	array( 'text', 'texte' ),
-            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-text/templates/block-text-template.php',
+            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-text/templates/block-text-template.php',
             'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-text', ADBLOCKS__PLUGIN_URL . '/blocks/block-text/css/block-text.css' );
-										//wp_enqueue_script( 'block-text', ADBLOCKS__PLUGIN_URL . '/blocks/block-text/js/block-text.js', array('jquery'), '', true );
+										wp_enqueue_style( 'block-text', ADBLOCKS__PLUGIN_URL . 'blocks/block-text/css/block-text.css' );
 									},
 		));
 	}	
@@ -30,5 +29,5 @@ function adblocks_text_block_init() {
 
 // Load ACF fields (PHP)
 
-require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-text/block-text-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-text/block-text-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

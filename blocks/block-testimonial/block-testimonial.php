@@ -18,10 +18,9 @@ function adblocks_testimonial_block_init() {
             'mode'				=> 	'auto',
             'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> 	array( 'text', 'texte', 'image' ),
-            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-testimonial/templates/block-testimonial-template.php',
+            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-testimonial/templates/block-testimonial-template.php',
             'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-testimonial', ADBLOCKS__PLUGIN_URL . '/blocks/block-testimonial/css/block-testimonial.css' );
-										//wp_enqueue_script( 'block-testimonial', ADBLOCKS__PLUGIN_URL . '/blocks/block-testimonial/js/block-testimonial.js', array('jquery'), '', true );
+										wp_enqueue_style( 'block-testimonial', ADBLOCKS__PLUGIN_URL . 'blocks/block-testimonial/css/block-testimonial.css' );
 									},
 		));
 	}	
@@ -30,5 +29,5 @@ function adblocks_testimonial_block_init() {
 
 // Load ACF fields (PHP)
 
-require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-testimonial/block-testimonial-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-testimonial/block-testimonial-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

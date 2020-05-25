@@ -18,17 +18,9 @@ function adblocks_advancedlist_block_init() {
             'mode'				=> 	'auto',
             'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> 	array( 'list', 'liste' ),
-/*
-            'example' 			=>	array(
-										'attributes' => array(
-											'cover' => ADBLOCKS__PLUGIN_URL . '/assets/fallback.png',
-							        	),
-									),
-*/
-            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-advanced-list/templates/block-advanced-list-template.php',
+            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-advanced-list/templates/block-advanced-list-template.php',
             'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-advanced-list', ADBLOCKS__PLUGIN_URL . '/blocks/block-advanced-list/css/block-advanced-list.css' );
-										//wp_enqueue_script( 'block-advanced-list', ADBLOCKS__PLUGIN_URL . '/blocks/block-advanced-list/js/block-advanced-list.js', array('jquery'), '', true );
+										wp_enqueue_style( 'block-advanced-list', ADBLOCKS__PLUGIN_URL . 'blocks/block-advanced-list/css/block-advanced-list.css' );
 									},
 		));
 	}	
@@ -37,5 +29,5 @@ function adblocks_advancedlist_block_init() {
 
 // Load ACF fields (PHP)
 
-require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-advanced-list/block-advanced-list-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-advanced-list/block-advanced-list-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

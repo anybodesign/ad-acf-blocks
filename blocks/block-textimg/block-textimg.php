@@ -18,10 +18,12 @@ function adblocks_textimg_block_init() {
             'mode'				=> 	'auto',
             'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
             'keywords'			=> 	array( 'text', 'texte', 'image' ),
-            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . '/blocks/block-textimg/templates/block-textimg-template.php',
+            'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-textimg/templates/block-textimg-template.php',
             'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-textimg', ADBLOCKS__PLUGIN_URL . '/blocks/block-textimg/css/block-textimg.css' );
-										//wp_enqueue_script( 'block-textimg', ADBLOCKS__PLUGIN_URL . '/blocks/block-textimg/js/block-textimg.js', array('jquery'), '', true );
+										wp_enqueue_style( 'block-textimg', ADBLOCKS__PLUGIN_URL . 'blocks/block-textimg/css/block-textimg.css' );
+										wp_enqueue_style( 'fancybox', ADBLOCKS__PLUGIN_URL . 'assets/css/jquery.fancybox.min.css' );
+										wp_enqueue_script( 'fancybox', ADBLOCKS__PLUGIN_URL . 'assets/js/jquery.fancybox.min.js', array('jquery'), '', true );
+										wp_enqueue_script( 'fancybox-init', ADBLOCKS__PLUGIN_URL . 'assets/js/fancybox-init.js', array('fancybox'), '', true );
 									},
 		));
 	}	
@@ -30,5 +32,5 @@ function adblocks_textimg_block_init() {
 
 // Load ACF fields (PHP)
 
-require_once( ADBLOCKS__PLUGIN_PATH . '/blocks/block-textimg/block-textimg-fields.php' );
-require_once( ADBLOCKS__PLUGIN_PATH . '/global-fields/background-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-textimg/block-textimg-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );
