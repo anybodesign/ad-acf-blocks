@@ -56,6 +56,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 1.8.2 - 2020-05-27 =
+* Hotfix: gallery markup
+* FR translation
+
 = 1.8.1 - 2020-05-27 =
 * Gallery Block (content): Thumbnail size option
 * Gallery Block (content): Excerpt and button option
