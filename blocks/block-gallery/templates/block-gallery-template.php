@@ -102,11 +102,20 @@
 				        <?php foreach( $content as $c ): ?>
 				        <div class="acf-block-gallery-item">
 					        
+					        <?php 
+						        $size = get_field('feature_size');
+						        $btn = get_field('btn');
+					        ?>
+					        
 				            <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>">
-					        <div class="acf-block-gallery-figure">
+					        <div class="acf-block-gallery-figure">						        
 						            <?php 
 							            if ( has_post_thumbnail( $c->ID ) ) { 
-						            		echo get_the_post_thumbnail( $c->ID, 'thumbnail-hd'); 
+						            		if ($size) {
+						            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd');
+						            		} else {
+						            		echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
+						            		} 
 										} else {
 											echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
 							        } ?>
@@ -115,6 +124,11 @@
 									</div>
 						    </div>
 					        </a>
+
+							<?php if ($btn) { ?>
+							<?php echo get_the_excerpt( $c->ID ); ?>
+							<a href="<?php echo get_permalink( $c->ID ); ?>" class="action-btn"><?php _e('Read More', 'adblocks'); ?>	
+							<?php } ?>
 					        
 				        </div>
 				        <?php endforeach; ?>

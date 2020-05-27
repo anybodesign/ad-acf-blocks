@@ -178,6 +178,67 @@ acf_add_local_field_group(array(
 			'layout' => 'horizontal',
 			'return_format' => 'value',
 		),
+		array(
+			'key' => 'field_5ece2df86f375',
+			'label' => __('Featured image size', 'adblocks'),
+			'name' => 'feature_size',
+			'type' => 'select',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5dee669d7cdba',
+						'operator' => '==',
+						'value' => 'content',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'thumbnail' => __('Thumbnail', 'adblocks'),
+				'medium' => __('Medium', 'adblocks'),
+				'large' => __('Large', 'adblocks'),
+			),
+			'default_value' => 'thumbnail',
+			'allow_null' => 0,
+			'multiple' => 0,
+			'ui' => 0,
+			'return_format' => 'value',
+			'ajax' => 0,
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_5ece2e656f376',
+			'label' => __('Display excerpt and <em>Read More</em> button', 'adblocks'),
+			'name' => 'btn',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5dee669d7cdba',
+						'operator' => '==',
+						'value' => 'content',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
 	),
 	'location' => array(
 		array(
