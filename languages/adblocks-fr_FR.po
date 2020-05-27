@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-05-25 18:44+0200\n"
-"PO-Revision-Date: 2020-05-25 18:45+0200\n"
+"POT-Creation-Date: 2020-05-27 12:14+0200\n"
+"PO-Revision-Date: 2020-05-27 12:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -266,6 +266,30 @@ msgstr "À l’intérieur"
 msgid "Outside"
 msgstr "À l'extérieur"
 
+#: blocks/block-gallery/block-gallery-fields.php:183
+#: blocks/block-textimg/block-textimg-fields.php:56
+msgid "Featured image size"
+msgstr "Taille de l’image de mise en avant"
+
+#: blocks/block-gallery/block-gallery-fields.php:203
+#: global-fields/gallery-fields.php:25
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: blocks/block-gallery/block-gallery-fields.php:204
+#: global-fields/gallery-fields.php:26
+msgid "Medium"
+msgstr "Moyenne"
+
+#: blocks/block-gallery/block-gallery-fields.php:205
+#: global-fields/gallery-fields.php:27
+msgid "Large"
+msgstr "Grande"
+
+#: blocks/block-gallery/block-gallery-fields.php:217
+msgid "Display excerpt and <em>Read More</em> button"
+msgstr "Afficher l’extrait et un bouton <em>En savoir plus</em>"
+
 #: blocks/block-gallery/block-gallery.php:14
 msgid "Gallery"
 msgstr "Galerie"
@@ -282,15 +306,19 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:67
-#: blocks/block-textimg/block-textimg-fields.php:94
-#: blocks/block-textimg/templates/block-textimg-template.php:43
+#: blocks/block-textimg/block-textimg-fields.php:115
+#: blocks/block-textimg/templates/block-textimg-template.php:44
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
-#: blocks/block-gallery/templates/block-gallery-template.php:105
+#: blocks/block-gallery/templates/block-gallery-template.php:110
 #: blocks/block-posts/templates/block-posts-template.php:52
 msgid "Read "
 msgstr "Lire "
+
+#: blocks/block-gallery/templates/block-gallery-template.php:130
+msgid "Read More"
+msgstr "En savoir plus"
 
 #: blocks/block-posts/block-posts-fields.php:9
 msgid "AD ACF Block 05: Posts"
@@ -455,7 +483,7 @@ msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
 #: blocks/block-text/block-text-fields.php:43
-#: blocks/block-textimg/block-textimg-fields.php:140
+#: blocks/block-textimg/block-textimg-fields.php:96
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
@@ -492,17 +520,17 @@ msgstr "AD ACF Bloc 02 : Texte et Image"
 msgid "Picture"
 msgstr "Image"
 
-#: blocks/block-textimg/block-textimg-fields.php:56
+#: blocks/block-textimg/block-textimg-fields.php:77
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: blocks/block-textimg/block-textimg-fields.php:75
-msgid "Round picture"
-msgstr "Image ronde"
-
-#: blocks/block-textimg/block-textimg-fields.php:113
+#: blocks/block-textimg/block-textimg-fields.php:134
 msgid "Enlarge picture with Fancybox"
 msgstr "Agrandir l’image avec Fancybox"
+
+#: blocks/block-textimg/block-textimg-fields.php:161
+msgid "Round picture"
+msgstr "Image ronde"
 
 #: blocks/block-textimg/block-textimg.php:14
 msgid "Text and Image"
@@ -587,18 +615,6 @@ msgstr "Options de bloc : Images de Galerie"
 #: global-fields/gallery-fields.php:13
 msgid "Size"
 msgstr "Taille"
-
-#: global-fields/gallery-fields.php:25
-msgid "Thumbnail"
-msgstr "Vignette"
-
-#: global-fields/gallery-fields.php:26
-msgid "Medium"
-msgstr "Moyenne"
-
-#: global-fields/gallery-fields.php:27
-msgid "Large"
-msgstr "Grande"
 
 #: global-fields/gallery-fields.php:40
 msgid "External link"
