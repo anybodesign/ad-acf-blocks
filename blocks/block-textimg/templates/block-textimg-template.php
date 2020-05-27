@@ -7,6 +7,7 @@
 	$fancy = get_field('fancy');
 	$img = get_field('picture');
 	$text = get_field('text');
+	$size = get_field('textimg_size_feature_size');
 
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -35,7 +36,7 @@
 						
 			<section class="acf-block--textimg<?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($right) { echo ' right'; } ?><?php if ($center) { echo ' centered'; } if ($max) { echo ' center-max'; } ?>">
-					
+				
 				<?php if ( $img ) { ?>
 					<div class="acf-block-textimg-picture">
 						<figure<?php if ( $img['caption'] ) { echo ' role="group"'; } ?>>
@@ -45,7 +46,11 @@
 							<?php if ( $round ) { ?>
 							<img class="is-round" src="<?php echo $img['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $img['alt']; ?>">
 							<?php } else { ?>
-							<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+								<?php if ($size) { ?> 
+								<img src="<?php echo $img['sizes']['adblocks-'.$size.'-hd']; ?>" alt="<?php echo $img['alt']; ?>">
+								<?php } else { ?> 
+								<img src="<?php echo $img['sizes']['adblocks-medium-hd']; ?>" alt="<?php echo $img['alt']; ?>">
+								<?php } ?>
 							<?php } ?>
 							<?php if ( $zoom ) { ?>
 							</a>
