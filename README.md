@@ -30,6 +30,12 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.8.1 - 2020-05-27
+* Gallery Block (content): Thumbnail size option
+* Gallery Block (content): Excerpt and button option
+* Text+Img Block: Thumbnail size option
+* Advanced list Block: Description output format
+
 ### 1.8 - 2020-05-25
 * Anchor Block: Conditional class
 * Text and Image Block: Open with Fancybox
