@@ -133,7 +133,7 @@ acf_add_local_field_group(array(
 							'placeholder' => '',
 							'maxlength' => '',
 							'rows' => 3,
-							'new_lines' => '',
+							'new_lines' => 'br',
 						),
 						array(
 							'key' => 'field_5e3c363016a7a',
