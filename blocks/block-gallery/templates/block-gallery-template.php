@@ -126,8 +126,8 @@
 					        </a>
 
 							<?php if ($btn) { ?>
-							<?php echo get_the_excerpt( $c->ID ); ?>
-							<a href="<?php echo get_permalink( $c->ID ); ?>" class="action-btn"><?php _e('Read More', 'adblocks'); ?>	
+							<p><?php echo get_the_excerpt( $c->ID ); ?></p>
+							<a href="<?php echo get_permalink( $c->ID ); ?>" class="action-btn"><?php _e('Read More', 'adblocks'); ?></a>	
 							<?php } ?>
 					        
 				        </div>
