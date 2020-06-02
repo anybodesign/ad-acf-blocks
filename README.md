@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.8.3 - 2020-06-02
+* Anchor Block: Offset attribute
+
 ### 1.8.2 - 2020-05-27
 * Hotfix: gallery markup
 * FR translation
