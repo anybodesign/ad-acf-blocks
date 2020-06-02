@@ -9,6 +9,11 @@ html {
 }
 .acf-block--anchor {
 	padding: 0;
+	margin: 0 !important;
+	
+	.page-content > & {
+		margin: 0;
+	}
 	
 	.wp-admin & {
 		padding: 1em 2em;

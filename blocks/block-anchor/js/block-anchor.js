@@ -17,6 +17,8 @@ jQuery(document).ready(function($) {
 			  
 				// Figure out element to scroll to
 				var target = $(this.hash);
+				var offset = target.attr('data-offset'); // Offset
+				
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			  
 				// Does a scroll target exist?
@@ -25,7 +27,7 @@ jQuery(document).ready(function($) {
 					// Only prevent default if animation is actually gonna happen
 					event.preventDefault();
 					$('html, body').animate({
-							scrollTop: target.offset().top
+							scrollTop: target.offset().top-offset // Minus offset value
 					}, 1000, function() {
 					  
 						// Callback after animation
