@@ -11,4 +11,4 @@
 	}
 
 ?>
-			<<?php echo $html; ?> class="acf-block--anchor" data-offset="<?php echo $offset ;?>" id="<?php echo $anchor ;?>"></<?php echo $html; ?>>
+			<<?php echo $html; if (is_admin() ) { echo ' class="acf-block--anchor"'; } ?>  data-offset="<?php echo $offset ;?>" id="<?php echo $anchor ;?>"></<?php echo $html; ?>>
