@@ -32,6 +32,7 @@ Create more blocks, and look for a way to override some block templates
 
 ### 1.8.4 - 2020-06-04
 * Anchor Block: JS updated
+* Anchor Block: New way to enqueue assets
 * Anchor Block: Speed attribute
 
 ### 1.8.3 - 2020-06-02

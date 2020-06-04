@@ -1,6 +1,6 @@
 (function($) {
 
-	var initializeBlock = function( $block ) {
+	var initializeBlock = function() {
 
 		function scrollToAnchor(anchorID){
 			var target = $(anchorID);
@@ -29,59 +29,3 @@
     }
 
 })(jQuery);
-
-
-
-// Vanilla JavaScript Scroll to Anchor
-// @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
-
-/*
-document.addEventListener('click', function(e) {
-  
-	// If it isn't an anchor element, don't even bother...
-	if (e.target.tagName !== 'A') return;
-	
-	if ((e.target.href && e.target.href.indexOf('#') != -1) && ((e.target.pathname == location.pathname) || ('/' + e.target.pathname == location.pathname)) && (e.target.search == location.search)) {
-	
-		scrollAnchors(e, e.target);
-	
-	}
-  
-});
-			
-function scrollAnchors(e, respond = null) {
-	// const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-
-	function distanceToTop(el) { 
-		return Math.floor(el.getBoundingClientRect().top); 
-	}
-	
-	e.preventDefault();
-	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-	var targetAnchor = document.querySelector(targetID);
-	var targetOffset = targetAnchor.getAttribute('data-offset');
-	var targetSpeed = targetAnchor.getAttribute('data-speed');
-	
-		if (!targetAnchor) return;
-		var originalTop = distanceToTop(targetAnchor);
-		window.scrollBy({ top: originalTop - targetOffset, left: 0, behavior: 'smooth' });
-		
-		var checkIfDone = setInterval(function() {
-			var atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-			if (distanceToTop(targetAnchor) === 0 || atBottom) {
-				targetAnchor.tabIndex = '-1';
-				targetAnchor.focus();
-	
-				// Let's make sure the History API even exists first..
-				if ('history' in window) {
-					window.history.pushState('', '', targetID);
-				} else {
-					// Do it the old-fashioned way!
-					window.location = targetID;
-				}
-			
-				clearInterval(checkIfDone);
-			}
-		}, targetSpeed);
-}
-*/
