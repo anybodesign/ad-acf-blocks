@@ -19,14 +19,34 @@ function adblocks_anchor_block_init() {
             'supports'			=> 	array( 'align' => false, 'mode' => false),
             'keywords'			=> 	array( 'anchor', 'ancre' ),
             'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-anchor/templates/block-anchor-template.php',
-            'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-anchor', ADBLOCKS__PLUGIN_URL . 'blocks/block-anchor/css/block-anchor.css' );
-										wp_enqueue_script( 'block-anchor', ADBLOCKS__PLUGIN_URL . 'blocks/block-anchor/js/block-anchor.js', array('jquery'), null, false );										
-									},
+            'enqueue_assets'	=>	'ad_anchor_assets',
 		));
 	}	
 }
 
+// Load assets
+	
+function ad_anchor_assets() {
+
+	wp_register_style( 
+		'block-anchor-css', 
+		ADBLOCKS__PLUGIN_URL . 'blocks/block-anchor/css/block-anchor.css', 
+		array(), 
+		null, 
+		'screen'
+	);
+    wp_register_script( 
+	    	'block-anchor', 
+	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-anchor/js/block-anchor.js',
+	    	array('jquery'), 
+	    	null, 
+	    	true
+    );
+
+	wp_enqueue_style( 'block-anchor' );
+	wp_enqueue_script( 'block-anchor' );
+		    
+}
 
 // Load ACF fields (PHP)
 
