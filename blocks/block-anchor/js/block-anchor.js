@@ -1,49 +1,110 @@
+(function($) {
+
+	var initializeBlock = function( $block ) {
+
+		function scrollToAnchor(anchorID){
+			var target = $(anchorID);
+			var targetOffset = target.attr('data-offset');
+			var targetSpeed = target.attr('data-speed');
+	
+			$('html,body').animate({scrollTop: target.offset().top - targetOffset}, targetSpeed);
+		}
+	
+		$('a[href^="#"]').not('a[href="#"]').on('click', function() {
+			var targetID = $(this).attr('href');
+			scrollToAnchor( targetID );
+			
+			return false;
+		});	
+	}
+
+    // Initialize each block on page load (front end).
+    $(document).ready(function() {
+      initializeBlock();
+    });
+
+    // Initialize dynamic block preview (editor).
+    if( window.acf ) {
+        window.acf.addAction( 'render_block_preview', initializeBlock );
+    }
+
+})(jQuery);
+
+/*
+
 jQuery(document).ready(function($) {
 	
-	// Select all links with hashes
-	$('a[href*="#"]')
-		
-		// Remove links that don't actually link to anything
-		.not('[href="#"]')
-		.not('[href="#0"]')
-		.click(function(event) {
-			
-			// On-page links
-			if (
-				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-				&& 
-				location.hostname == this.hostname
-			) {
-			  
-				// Figure out element to scroll to
-				var target = $(this.hash);
-				var offset = target.attr('data-offset'); // Offset
-				
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			  
-				// Does a scroll target exist?
-				if (target.length) {
-				
-					// Only prevent default if animation is actually gonna happen
-					event.preventDefault();
-					$('html, body').animate({
-							scrollTop: target.offset().top-offset // Minus offset value
-					}, 1000, function() {
-					  
-						// Callback after animation
-						// Must change focus!
-						var $target = $(target);
-						$target.focus();
-						
-						if ($target.is(":focus")) { // Checking if the target was focused
-							return false;
-						} else {
-							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-							$target.focus(); // Set focus again
-						}
-					});
-				}
-		}
-	});
+	function scrollToAnchor(anchorID){
+		var target = $(anchorID);
+		var targetOffset = target.attr('data-offset');
+		var targetSpeed = target.attr('data-speed');
 
+		$('html,body').animate({scrollTop: target.offset().top - targetOffset}, targetSpeed);
+	}
+
+	$('a[href^="#"]').not('a[href="#"]').on('click', function() {
+		var targetID = $(this).attr('href');
+		scrollToAnchor( targetID );
+		
+		return false;
+	});	
+	
 });
+*/
+
+
+
+
+// Vanilla JavaScript Scroll to Anchor
+// @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
+
+/*
+document.addEventListener('click', function(e) {
+  
+	// If it isn't an anchor element, don't even bother...
+	if (e.target.tagName !== 'A') return;
+	
+	if ((e.target.href && e.target.href.indexOf('#') != -1) && ((e.target.pathname == location.pathname) || ('/' + e.target.pathname == location.pathname)) && (e.target.search == location.search)) {
+	
+		scrollAnchors(e, e.target);
+	
+	}
+  
+});
+			
+function scrollAnchors(e, respond = null) {
+	// const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+
+	function distanceToTop(el) { 
+		return Math.floor(el.getBoundingClientRect().top); 
+	}
+	
+	e.preventDefault();
+	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+	var targetAnchor = document.querySelector(targetID);
+	var targetOffset = targetAnchor.getAttribute('data-offset');
+	var targetSpeed = targetAnchor.getAttribute('data-speed');
+	
+		if (!targetAnchor) return;
+		var originalTop = distanceToTop(targetAnchor);
+		window.scrollBy({ top: originalTop - targetOffset, left: 0, behavior: 'smooth' });
+		
+		var checkIfDone = setInterval(function() {
+			var atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+			if (distanceToTop(targetAnchor) === 0 || atBottom) {
+				targetAnchor.tabIndex = '-1';
+				targetAnchor.focus();
+	
+				// Let's make sure the History API even exists first..
+				if ('history' in window) {
+					window.history.pushState('', '', targetID);
+				} else {
+					// Do it the old-fashioned way!
+					window.location = targetID;
+				}
+			
+				clearInterval(checkIfDone);
+			}
+		}, targetSpeed);
+}
+*/
