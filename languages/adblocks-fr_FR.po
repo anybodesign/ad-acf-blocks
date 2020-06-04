@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-05-27 12:14+0200\n"
-"PO-Revision-Date: 2020-05-27 12:15+0200\n"
+"POT-Creation-Date: 2020-06-02 12:29+0200\n"
+"PO-Revision-Date: 2020-06-02 12:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -178,9 +178,27 @@ msgstr "<span>"
 msgid "<section>"
 msgstr "<section>"
 
-#: blocks/block-anchor/block-anchor-fields.php:41
+#: blocks/block-anchor/block-anchor-fields.php:39
 msgid "Anchor ID"
 msgstr "ID de l’Ancre"
+
+#: blocks/block-anchor/block-anchor-fields.php:58
+msgid "Offset"
+msgstr "Décalage"
+
+#: blocks/block-anchor/block-anchor-fields.php:61
+msgid "Set an offset value for the scroll, useful if you have a sticky header."
+msgstr ""
+"Définir une valeur de décalage pour le défilement, utile si vous avez un en-"
+"tête collant."
+
+#: blocks/block-anchor/block-anchor-fields.php:79
+msgid "Speed"
+msgstr "Vitesse"
+
+#: blocks/block-anchor/block-anchor-fields.php:82
+msgid "Set the scroll speed in milliseconds. (1000 = 1 sec)"
+msgstr "Définir la vitesse de défilement en millisecondes. (1000 = 1 sec)"
 
 #: blocks/block-anchor/block-anchor.php:14
 msgid "Anchor"
@@ -307,7 +325,7 @@ msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:67
 #: blocks/block-textimg/block-textimg-fields.php:115
-#: blocks/block-textimg/templates/block-textimg-template.php:44
+#: blocks/block-textimg/templates/block-textimg-template.php:61
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
@@ -539,6 +557,14 @@ msgstr "Texte et image"
 #: blocks/block-textimg/block-textimg.php:15
 msgid "Text and picture block with reverse order option."
 msgstr "Bloc texte image avec option d'ordre inversé."
+
+#: blocks/block-textimg/block-textimg.php:32
+msgid ""
+"<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id elit."
+"</p>"
+msgstr ""
+"<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id elit."
+"</p>"
 
 #: global-fields/background-fields.php:9
 msgid "Block Options: Background"
