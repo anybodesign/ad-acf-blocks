@@ -29,7 +29,7 @@ function adblocks_anchor_block_init() {
 function ad_anchor_assets() {
 
 	wp_register_style( 
-		'block-anchor-css', 
+		'block-anchor', 
 		ADBLOCKS__PLUGIN_URL . 'blocks/block-anchor/css/block-anchor.css', 
 		array(), 
 		null, 
