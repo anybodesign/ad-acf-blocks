@@ -25,18 +25,15 @@ function adblocks_textimg_block_init() {
 										wp_enqueue_script( 'fancybox', ADBLOCKS__PLUGIN_URL . 'assets/js/jquery.fancybox.min.js', array('jquery'), '', true );
 										wp_enqueue_script( 'fancybox-init', ADBLOCKS__PLUGIN_URL . 'assets/js/fancybox-init.js', array('fancybox'), '', true );
 									},
-/*
 			'example' 			=> array(
 									'attributes'		=> array(
 										'mode'			=> 'preview',
 										'data'			=> array(
-											'text'			=> __('<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>'),
-											'picture' 		=> __('<img src="'. ADBLOCKS__PLUGIN_URL . 'assets/fallback.png" alt="">'),
-											//'picture' 		=> __('<img src="http://placecorgi.com/150/150" alt="">'),
+											'text'			=> __('<h4>Cupcake ipsum</h4><p>Chupa chups jelly toffee lollipop cotton candy chocolate apple pie.</p>'),
+											'__is_preview'	=> true,
 										),
 									)
 			),
-*/
 
 		));
 	}	

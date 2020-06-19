@@ -36,22 +36,35 @@
 						
 			<section class="acf-block--textimg<?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($right) { echo ' right'; } ?><?php if ($center) { echo ' centered'; } if ($max) { echo ' center-max'; } ?>">
-				
-				<?php if ( $img ) { ?>
+
 					<div class="acf-block-textimg-picture">
+
+						<?php // Block preview
+							if( !empty( $block['data']['__is_preview'] ) ) { ?>
+						    <figure>
+						    	<img src="https://placeimg.com/150/150/animals" alt="">
+						    </figure>
+						<?php } ?>
+						
+						<?php if ( $img ) { ?>
 						<figure<?php if ( $img['caption'] ) { echo ' role="group"'; } ?>>
 							<?php if ( $zoom ) { ?>
 							<a href="<?php echo $img['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>"<?php if ($fancy) { echo ' data-fancybox="picture"'; } ?>>
 							<?php } ?>
+							
 							<?php if ( $round ) { ?>
+							
 							<img class="is-round" src="<?php echo $img['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $img['alt']; ?>">
 							<?php } else { ?>
-								<?php if ($size) { ?> 
-								<img src="<?php echo $img['sizes']['adblocks-'.$size.'-hd']; ?>" alt="<?php echo $img['alt']; ?>">
-								<?php } else { ?> 
-								<img src="<?php echo $img['sizes']['adblocks-medium-hd']; ?>" alt="<?php echo $img['alt']; ?>">
-								<?php } ?>
+							
+							<?php if ($size) { ?> 
+							<img src="<?php echo $img['sizes']['adblocks-'.$size.'-hd']; ?>" alt="<?php echo $img['alt']; ?>">
+							<?php } else { ?> 
+							<img src="<?php echo $img['sizes']['adblocks-medium-hd']; ?>" alt="<?php echo $img['alt']; ?>">
 							<?php } ?>
+							
+							<?php } ?>
+
 							<?php if ( $zoom ) { ?>
 							</a>
 							<?php } ?>
@@ -62,8 +75,8 @@
 							</figcaption>
 							<?php } ?>
 						</figure>
+						<?php } ?>
 					</div>
-				<?php } ?>
 
 				<?php if ( $text ) { ?>
 					<div class="acf-block-textimg-text">
