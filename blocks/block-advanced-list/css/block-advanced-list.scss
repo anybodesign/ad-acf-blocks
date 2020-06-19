@@ -30,10 +30,18 @@
 
 
 .list-icon {
-	max-width: 8rem;
+	width: 12rem;
+	padding-bottom: $grid-padding/2;
+	
+	img {
+		max-height: 12rem;
+		width: auto;
+	}
 	
 	@include rwd(medium) {
+		text-align: center;
 		padding-right: $grid-padding*2;
+		padding-bottom: 0;
 	}
 }
 

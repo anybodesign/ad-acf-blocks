@@ -6,14 +6,14 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5e3c35c86cbe6',
-	'title' => __('AD ACF Block 08: Advanced List', 'adblocks'),
+	'title' => __('AD ACF Block 08: Advanced List', 'from-scratch'),
 	'fields' => array(
 		array(
 			'key' => 'field_5e3c482fe1b4c',
-			'label' => __('Title level', 'adblocks'),
+			'label' => __('Title level', 'from-scratch'),
 			'name' => 'title_level',
 			'type' => 'select',
-			'instructions' => __('Choose the title level for the list items', 'adblocks'),
+			'instructions' => __('Choose the title level for the list items', 'from-scratch'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -22,12 +22,12 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'choices' => array(
-				'span' => __('None', 'adblocks'),
-				'h2' => __('h2 title', 'adblocks'),
-				'h3' => __('h3 title', 'adblocks'),
-				'h4' => __('h4 title', 'adblocks'),
-				'h5' => __('h5 title', 'adblocks'),
-				'h6' => __('h6 title', 'adblocks'),
+				'span' => __('None', 'from-scratch'),
+				'h2' => __('h2 title', 'from-scratch'),
+				'h3' => __('h3 title', 'from-scratch'),
+				'h4' => __('h4 title', 'from-scratch'),
+				'h5' => __('h5 title', 'from-scratch'),
+				'h6' => __('h6 title', 'from-scratch'),
 			),
 			'default_value' => array(
 				0 => 'span',
@@ -41,7 +41,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5e3c35db16a77',
-			'label' => __('Advanced List', 'adblocks'),
+			'label' => __('Advanced List', 'from-scratch'),
 			'name' => 'list',
 			'type' => 'repeater',
 			'instructions' => '',
@@ -56,18 +56,18 @@ acf_add_local_field_group(array(
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'table',
-			'button_label' => __('Add a list item', 'adblocks'),
+			'button_label' => __('Add a list item', 'from-scratch'),
 			'sub_fields' => array(
 				array(
 					'key' => 'field_5e3c364e16a7c',
-					'label' => __('Icon', 'adblocks'),
+					'label' => __('Icon', 'from-scratch'),
 					'name' => 'icon',
 					'type' => 'image',
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
-						'width' => '15',
+						'width' => '10',
 						'class' => '',
 						'id' => '',
 					),
@@ -84,7 +84,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5ecbefab55ccd',
-					'label' => __('Infos', 'adblocks'),
+					'label' => __('Infos', 'from-scratch'),
 					'name' => 'infos',
 					'type' => 'group',
 					'instructions' => '',
@@ -99,7 +99,7 @@ acf_add_local_field_group(array(
 					'sub_fields' => array(
 						array(
 							'key' => 'field_5e3c360a16a78',
-							'label' => __('Title', 'adblocks'),
+							'label' => __('Title', 'from-scratch'),
 							'name' => 'title',
 							'type' => 'text',
 							'instructions' => '',
@@ -118,7 +118,7 @@ acf_add_local_field_group(array(
 						),
 						array(
 							'key' => 'field_5e3c362716a79',
-							'label' => __('Description', 'adblocks'),
+							'label' => __('Description', 'from-scratch'),
 							'name' => 'desc',
 							'type' => 'textarea',
 							'instructions' => '',
@@ -132,15 +132,15 @@ acf_add_local_field_group(array(
 							'default_value' => '',
 							'placeholder' => '',
 							'maxlength' => '',
-							'rows' => 3,
+							'rows' => '',
 							'new_lines' => 'br',
 						),
 						array(
 							'key' => 'field_5e3c363016a7a',
-							'label' => __('Legend', 'adblocks'),
+							'label' => __('Legend', 'from-scratch'),
 							'name' => 'legend',
 							'type' => 'text',
-							'instructions' => __('Could be a footnote', 'adblocks'),
+							'instructions' => __('Could be a footnote', 'from-scratch'),
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -158,10 +158,10 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5e3c363516a7b',
-					'label' => __('Featured text', 'adblocks'),
+					'label' => __('Featured text', 'from-scratch'),
 					'name' => 'featured_text',
 					'type' => 'text',
-					'instructions' => __('Could be a date, a price, a letter, a number…', 'adblocks'),
+					'instructions' => __('Could be a date, a price, a letter, a number…', 'from-scratch'),
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
@@ -176,6 +176,27 @@ acf_add_local_field_group(array(
 					'maxlength' => '',
 				),
 			),
+		),
+		array(
+			'key' => 'field_5eec887b9b145',
+			'label' => __('Icon size', 'from-scratch'),
+			'name' => 'icon_size',
+			'type' => 'clone',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'clone' => array(
+				0 => 'field_5ece2df86f375',
+			),
+			'display' => 'seamless',
+			'layout' => 'block',
+			'prefix_label' => 0,
+			'prefix_name' => 1,
 		),
 	),
 	'location' => array(

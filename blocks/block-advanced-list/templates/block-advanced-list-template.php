@@ -1,6 +1,7 @@
 <?php if ( !defined('ABSPATH') ) die();
 
 	$h = get_field('title_level');
+	$size = get_field('icon_size_feature_size');
 
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -47,7 +48,11 @@
 							
 							<?php if ($icon) { ?>
 							<div class="list-icon">
+								<?php if ($size) { ?> 
+								<img src="<?php echo $icon['sizes']['adblocks-'.$size.'-hd']; ?>" alt="<?php echo $icon['alt']; ?>">
+								<?php } else { ?> 
 								<img src="<?php echo $icon['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $icon['alt']; ?>">
+								<?php } ?>
 							</div>
 							<?php } ?>
 
