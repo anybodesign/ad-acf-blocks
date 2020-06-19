@@ -22,6 +22,15 @@ function adblocks_advancedlist_block_init() {
             'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-advanced-list', ADBLOCKS__PLUGIN_URL . 'blocks/block-advanced-list/css/block-advanced-list.css' );
 									},
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'__is_preview'	=> true,
+										),
+									)
+			),
+									
 		));
 	}	
 }

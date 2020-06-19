@@ -76,7 +76,33 @@
 				        <?php endwhile; ?>
 				        
 					</ul>
-					<?php endif; ?>	
+					<?php endif; ?>
+
+
+					<?php // Block preview
+						if( !empty( $block['data']['__is_preview'] ) ) { ?>
+					    <ul class="acf-block-list-items">
+						    <li class="acf-block-list-item">
+						    	<div class="list-content">
+							    	<h3>Cupcake Ipsum</h3>
+									<span class="list-desc">
+										Cupcake ipsum dolor sit amet pastry. 
+									</span>
+							    </div>
+								<span class="list-featured">01</span>
+						    </li>
+						    <li class="acf-block-list-item">
+						    	<div class="list-content">
+							    	<h3>Candy dragée roll</h3>
+									<span class="list-desc">
+										Carrot cake bonbon sesame I love. 
+									</span>
+							    </div>
+								<span class="list-featured">02</span>
+						    </li>
+					    </ul>
+					<?php } ?>
+						
 
 				</div>
 			</section>
