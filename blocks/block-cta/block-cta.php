@@ -22,6 +22,16 @@ function adblocks_cta_block_init() {
             'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-cta', ADBLOCKS__PLUGIN_URL . 'blocks/block-cta/css/block-cta.css' );
 									},
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'text'			=> __('<h4>Cupcake ipsum</h4><p>Chupa chups jelly toffee lollipop cotton candy chocolate apple pie, gingerbread caramels I love soufflé I love.</p>'),
+											'bg_color'		=> '#efefef',
+										),
+									)
+			),
+									
 		));
 	}	
 }
