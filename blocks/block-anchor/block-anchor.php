@@ -20,6 +20,16 @@ function adblocks_anchor_block_init() {
             'keywords'			=> 	array( 'anchor', 'ancre' ),
             'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-anchor/templates/block-anchor-template.php',
             'enqueue_assets'	=>	'ad_anchor_assets',
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'id'			=> 'anchor',
+											'__is_preview'	=> true,
+										),
+									)
+			),
+            
 		));
 	}	
 }
