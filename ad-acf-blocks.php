@@ -155,7 +155,6 @@ add_action( 'wp_enqueue_scripts', 'adblocks_common_css' );
 
 add_action( 'admin_init', 'adblocks_common_css' ); 
 
-/*
 function adblocks_admin_css() {
 	wp_enqueue_style( 
 		'adblocks-admin', 
@@ -166,7 +165,6 @@ function adblocks_admin_css() {
 	);
 }
 add_action( 'admin_init', 'adblocks_admin_css' ); 
-*/
 
 
 //

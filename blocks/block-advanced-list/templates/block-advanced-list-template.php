@@ -27,6 +27,10 @@
 		$align = null;
 	}						
 ?>
+			<?php // Block preview
+				if( !empty( $block['data']['__is_preview'] ) ) { ?>
+				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/advancedlist-preview.png" alt="" class="adblock-preview">
+			<?php } else { ?>
 						
 			<section class="acf-block--advanced-list<?php if ($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
@@ -78,31 +82,7 @@
 					</ul>
 					<?php endif; ?>
 
-
-					<?php // Block preview
-						if( !empty( $block['data']['__is_preview'] ) ) { ?>
-					    <ul class="acf-block-list-items">
-						    <li class="acf-block-list-item">
-						    	<div class="list-content">
-							    	<h3>Cupcake Ipsum</h3>
-									<span class="list-desc">
-										Cupcake ipsum dolor sit amet pastry. 
-									</span>
-							    </div>
-								<span class="list-featured">01</span>
-						    </li>
-						    <li class="acf-block-list-item">
-						    	<div class="list-content">
-							    	<h3>Candy dragée roll</h3>
-									<span class="list-desc">
-										Carrot cake bonbon sesame I love. 
-									</span>
-							    </div>
-								<span class="list-featured">02</span>
-						    </li>
-					    </ul>
-					<?php } ?>
-						
-
 				</div>
 			</section>
+			
+			<?php } ?>

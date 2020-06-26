@@ -29,7 +29,6 @@ function adblocks_textimg_block_init() {
 									'attributes'		=> array(
 										'mode'			=> 'preview',
 										'data'			=> array(
-											'text'			=> __('<h4>Cupcake ipsum</h4><p>Chupa chups jelly toffee lollipop cotton candy chocolate apple pie.</p>'),
 											'__is_preview'	=> true,
 										),
 									)

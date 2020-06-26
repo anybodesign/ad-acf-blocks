@@ -24,6 +24,11 @@
 		$align = null;
 	}						
 ?>
+
+			<?php // Block preview
+				if( !empty( $block['data']['__is_preview'] ) ) { ?>
+				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/testimonial-preview.png" alt="" class="adblock-preview">
+			<?php } else { ?>
 						
 			<section class="acf-block--testimonial<?php if ($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
@@ -81,3 +86,5 @@
 										
 				</div>
 			</section>
+			
+			<?php } ?>

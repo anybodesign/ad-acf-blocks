@@ -25,6 +25,15 @@ function adblocks_gallery_block_init() {
 										wp_enqueue_script( 'fancybox', ADBLOCKS__PLUGIN_URL . 'assets/js/jquery.fancybox.min.js', array('jquery'), '', true );
 										wp_enqueue_script( 'fancybox-init', ADBLOCKS__PLUGIN_URL . 'assets/js/fancybox-init.js', array('fancybox'), '', true );
 									},
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'__is_preview'	=> true,
+										),
+									)
+			),
+									
 		));
 				
 	}	

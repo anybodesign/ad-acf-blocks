@@ -22,6 +22,14 @@ function adblocks_testimonial_block_init() {
             'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-testimonial', ADBLOCKS__PLUGIN_URL . 'blocks/block-testimonial/css/block-testimonial.css' );
 									},
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'__is_preview'	=> true,
+										),
+									)
+			),									
 		));
 	}	
 }

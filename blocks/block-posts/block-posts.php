@@ -22,16 +22,14 @@ function adblocks_posts_block_init() {
 			'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-posts', ADBLOCKS__PLUGIN_URL . 'blocks/block-posts/css/block-posts.css' );
 									},
-/*
-			'example' => array(
-				'attributes'		=> array(
-					'mode'			=> 'preview',
-					'data'			=> array(
-						'content' 	=> '<img src="https://via.placeholder.com/680x720">',
-					),
-				)
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'__is_preview'	=> true,
+										),
+									)
 			),
-*/
 		));
 	}
 }

@@ -5,6 +5,7 @@
 
 #editor {
 	
+	/*
 	.block-editor-inserter__results {
 		display: flex;
 		flex-direction: column;
@@ -13,5 +14,11 @@
 			order: -1;
 			border-bottom: 0;
 		}
+	}
+	*/
+	
+	img.adblock-preview {
+		position: relative;
+		top: -140px;
 	}
 }

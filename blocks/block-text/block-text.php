@@ -22,6 +22,15 @@ function adblocks_text_block_init() {
             'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-text', ADBLOCKS__PLUGIN_URL . 'blocks/block-text/css/block-text.css' );
 									},
+			'example' 			=> array(
+									'attributes'		=> array(
+										'mode'			=> 'preview',
+										'data'			=> array(
+											'__is_preview'	=> true,
+										),
+									)
+			),
+									
 		));
 	}	
 }

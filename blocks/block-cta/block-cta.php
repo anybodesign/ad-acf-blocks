@@ -26,8 +26,7 @@ function adblocks_cta_block_init() {
 									'attributes'		=> array(
 										'mode'			=> 'preview',
 										'data'			=> array(
-											'text'			=> __('<h4>Cupcake ipsum</h4><p>Chupa chups jelly toffee lollipop cotton candy chocolate apple pie, gingerbread caramels I love soufflé I love.</p>'),
-											'bg_color'		=> '#efefef',
+											'__is_preview'	=> true,
 										),
 									)
 			),
