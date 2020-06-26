@@ -30,6 +30,11 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.8.5 - 2020-06-26
+* Block previews
+* Anchor Block: Chrome bugfix
+* Advanced list Block: icon size option
+
 ### 1.8.4 - 2020-06-04
 * Anchor Block: JS updated
 * Anchor Block: New way to enqueue assets
