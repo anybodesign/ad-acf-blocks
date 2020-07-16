@@ -6,11 +6,11 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5f104da408322',
-	'title' => __('AD ACF Block 09: Cards', 'from-scratch'),
+	'title' => __('AD ACF Block 09: Cards', 'adblocks'),
 	'fields' => array(
 		array(
 			'key' => 'field_5f1050a1a33b0',
-			'label' => __('Title level', 'from-scratch'),
+			'label' => __('Title level', 'adblocks'),
 			'name' => 'title_level',
 			'type' => 'select',
 			'instructions' => '',
@@ -22,10 +22,11 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'choices' => array(
-				'h1' => __('H1', 'from-scratch'),
-				'h2' => __('H2', 'from-scratch'),
-				'h3' => __('H3', 'from-scratch'),
-				'h4' => __('H4', 'from-scratch'),
+				'h2' => __('H2', 'adblocks'),
+				'h3' => __('H3', 'adblocks'),
+				'h4' => __('H4', 'adblocks'),
+				'h5' => __('H5', 'adblocks'),
+				'h6' => __('H6', 'adblocks'),
 			),
 			'default_value' => 'h2',
 			'allow_null' => 0,
@@ -37,7 +38,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5f104db1f60f6',
-			'label' => __('Add cards', 'from-scratch'),
+			'label' => __('Add cards', 'adblocks'),
 			'name' => 'cards',
 			'type' => 'repeater',
 			'instructions' => '',
@@ -52,11 +53,11 @@ acf_add_local_field_group(array(
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'block',
-			'button_label' => __('Add a card', 'from-scratch'),
+			'button_label' => __('Add a card', 'adblocks'),
 			'sub_fields' => array(
 				array(
 					'key' => 'field_5f104e18f60fc',
-					'label' => __('Card infos', 'from-scratch'),
+					'label' => __('Card infos', 'adblocks'),
 					'name' => 'infos',
 					'type' => 'group',
 					'instructions' => '',
@@ -71,7 +72,7 @@ acf_add_local_field_group(array(
 					'sub_fields' => array(
 						array(
 							'key' => 'field_5f104dcaf60f7',
-							'label' => __('Title', 'from-scratch'),
+							'label' => __('Title', 'adblocks'),
 							'name' => 'title',
 							'type' => 'text',
 							'instructions' => '',
@@ -90,7 +91,7 @@ acf_add_local_field_group(array(
 						),
 						array(
 							'key' => 'field_5f104dd1f60f8',
-							'label' => __('Subtitle', 'from-scratch'),
+							'label' => __('Subtitle', 'adblocks'),
 							'name' => 'subtitle',
 							'type' => 'text',
 							'instructions' => '',
@@ -109,7 +110,7 @@ acf_add_local_field_group(array(
 						),
 						array(
 							'key' => 'field_5f104ddcf60f9',
-							'label' => __('Text', 'from-scratch'),
+							'label' => __('Text', 'adblocks'),
 							'name' => 'text',
 							'type' => 'textarea',
 							'instructions' => '',
@@ -130,7 +131,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5f104e2df60fd',
-					'label' => __('Picture and links', 'from-scratch'),
+					'label' => __('Picture and links', 'adblocks'),
 					'name' => 'picture_and_links',
 					'type' => 'group',
 					'instructions' => '',
@@ -145,7 +146,7 @@ acf_add_local_field_group(array(
 					'sub_fields' => array(
 						array(
 							'key' => 'field_5f104df7f60fa',
-							'label' => __('Picture', 'from-scratch'),
+							'label' => __('Picture', 'adblocks'),
 							'name' => 'picture',
 							'type' => 'image',
 							'instructions' => '',
@@ -169,7 +170,7 @@ acf_add_local_field_group(array(
 						),
 						array(
 							'key' => 'field_5f104e0ff60fb',
-							'label' => __('Link', 'from-scratch'),
+							'label' => __('Link', 'adblocks'),
 							'name' => 'link',
 							'type' => 'link',
 							'instructions' => '',

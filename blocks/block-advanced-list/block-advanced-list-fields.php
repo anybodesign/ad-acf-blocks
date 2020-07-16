@@ -6,14 +6,14 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5e3c35c86cbe6',
-	'title' => __('AD ACF Block 08: Advanced List', 'from-scratch'),
+	'title' => __('AD ACF Block 08: Advanced List', 'adblocks'),
 	'fields' => array(
 		array(
 			'key' => 'field_5e3c482fe1b4c',
-			'label' => __('Title level', 'from-scratch'),
+			'label' => __('Title level', 'adblocks'),
 			'name' => 'title_level',
 			'type' => 'select',
-			'instructions' => __('Choose the title level for the list items', 'from-scratch'),
+			'instructions' => __('Choose the title level for the list items', 'adblocks'),
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -22,12 +22,12 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'choices' => array(
-				'span' => __('None', 'from-scratch'),
-				'h2' => __('h2 title', 'from-scratch'),
-				'h3' => __('h3 title', 'from-scratch'),
-				'h4' => __('h4 title', 'from-scratch'),
-				'h5' => __('h5 title', 'from-scratch'),
-				'h6' => __('h6 title', 'from-scratch'),
+				'span' => __('None', 'adblocks'),
+				'h2' => __('H2', 'adblocks'),
+				'h3' => __('H3', 'adblocks'),
+				'h4' => __('H4', 'adblocks'),
+				'h5' => __('H5', 'adblocks'),
+				'h6' => __('H6', 'adblocks'),
 			),
 			'default_value' => array(
 				0 => 'span',
@@ -41,7 +41,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5e3c35db16a77',
-			'label' => __('Advanced List', 'from-scratch'),
+			'label' => __('Advanced List', 'adblocks'),
 			'name' => 'list',
 			'type' => 'repeater',
 			'instructions' => '',
@@ -56,11 +56,11 @@ acf_add_local_field_group(array(
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'table',
-			'button_label' => __('Add a list item', 'from-scratch'),
+			'button_label' => __('Add a list item', 'adblocks'),
 			'sub_fields' => array(
 				array(
 					'key' => 'field_5e3c364e16a7c',
-					'label' => __('Icon', 'from-scratch'),
+					'label' => __('Icon', 'adblocks'),
 					'name' => 'icon',
 					'type' => 'image',
 					'instructions' => '',
@@ -84,7 +84,7 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5ecbefab55ccd',
-					'label' => __('Infos', 'from-scratch'),
+					'label' => __('Infos', 'adblocks'),
 					'name' => 'infos',
 					'type' => 'group',
 					'instructions' => '',
@@ -99,7 +99,7 @@ acf_add_local_field_group(array(
 					'sub_fields' => array(
 						array(
 							'key' => 'field_5e3c360a16a78',
-							'label' => __('Title', 'from-scratch'),
+							'label' => __('Title', 'adblocks'),
 							'name' => 'title',
 							'type' => 'text',
 							'instructions' => '',
@@ -118,7 +118,7 @@ acf_add_local_field_group(array(
 						),
 						array(
 							'key' => 'field_5e3c362716a79',
-							'label' => __('Description', 'from-scratch'),
+							'label' => __('Description', 'adblocks'),
 							'name' => 'desc',
 							'type' => 'textarea',
 							'instructions' => '',
@@ -137,10 +137,10 @@ acf_add_local_field_group(array(
 						),
 						array(
 							'key' => 'field_5e3c363016a7a',
-							'label' => __('Legend', 'from-scratch'),
+							'label' => __('Legend', 'adblocks'),
 							'name' => 'legend',
 							'type' => 'text',
-							'instructions' => __('Could be a footnote', 'from-scratch'),
+							'instructions' => __('Could be a footnote', 'adblocks'),
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
@@ -158,10 +158,10 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5e3c363516a7b',
-					'label' => __('Featured text', 'from-scratch'),
+					'label' => __('Featured text', 'adblocks'),
 					'name' => 'featured_text',
 					'type' => 'text',
-					'instructions' => __('Could be a date, a price, a letter, a number…', 'from-scratch'),
+					'instructions' => __('Could be a date, a price, a letter, a number…', 'adblocks'),
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
@@ -179,7 +179,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5eec887b9b145',
-			'label' => __('Icon size', 'from-scratch'),
+			'label' => __('Icon size', 'adblocks'),
 			'name' => 'icon_size',
 			'type' => 'clone',
 			'instructions' => '',
