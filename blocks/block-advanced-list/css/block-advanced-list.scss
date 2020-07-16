@@ -22,8 +22,15 @@
 
 	
 	@include rwd(medium) {
-		display: flex;
-		flex-wrap: wrap;
+		
+		&,
+		& > a {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		& > a {
+			width: 100%;
+		}
 	}
 	
 }

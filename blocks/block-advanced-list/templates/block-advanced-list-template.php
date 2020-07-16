@@ -47,9 +47,11 @@
 							$title = $infos['title'];   
 							$desc = $infos['desc'];   
 							$legend = $infos['legend'];
+							$link = $infos['link'];
 				        ?>
 				        <li class="acf-block-list-item">					        
-							
+							<?php if ($link) { ?><a href="<?php echo $link; ?>"><?php } ?>
+								
 							<?php if ($icon) { ?>
 							<div class="list-icon">
 								<?php if ($size) { ?> 
@@ -76,7 +78,10 @@
 							<?php if ($legend) { ?>
 							<small class="list-legend"><?php echo $legend; ?></small>
 							<?php } ?>
+
+							<?php if ($link) { ?></a><?php } ?>
 				        </li>
+				        
 				        <?php endwhile; ?>
 				        
 					</ul>
