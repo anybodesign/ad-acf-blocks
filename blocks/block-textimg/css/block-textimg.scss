@@ -51,6 +51,21 @@
 		padding-left: $grid-padding;
 		padding-right: $grid-padding*2;
 	}
+	
+	@include rwd(medium) {
+		.one-third & {
+			width: 66.6667%;
+		}
+		.one-third.right & {
+			width: 33.3333%;
+		}
+		.two-third & {
+			width: 33.3333%;
+		}
+		.two-third.right & {
+			width: 66.6667%;
+		}
+	}
 }
 
 .acf-block-textimg-picture {
@@ -63,4 +78,19 @@
 			border-radius: 100%;
 		}
 	}
+
+	@include rwd(medium) {
+		.one-third & {
+			width: 33.3333%;
+		}
+		.one-third.right & {
+			width: 66.6667%;
+		}
+		.two-third & {
+			width: 66.6667%;
+		}
+		.two-third.right & {
+			width: 33.3333%;
+		}
+	}	
 }

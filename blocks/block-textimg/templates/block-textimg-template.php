@@ -8,6 +8,7 @@
 	$img = get_field('picture');
 	$text = get_field('text');
 	$size = get_field('textimg_size_feature_size');
+	$prop = get_field('proportions');
 
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -40,7 +41,7 @@
 			<?php } else { ?>
 						
 			<section class="acf-block--textimg<?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
-				<div class="acf-block-container<?php if ($right) { echo ' right'; } ?><?php if ($center) { echo ' centered'; } if ($max) { echo ' center-max'; } ?>">
+				<div class="acf-block-container<?php if ($right) { echo ' right'; } ?><?php if ($center) { echo ' centered'; } if ($max) { echo ' center-max'; } echo ' '.esc_attr($prop); ?>">
 
 					<div class="acf-block-textimg-picture">
 

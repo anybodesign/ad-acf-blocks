@@ -9,6 +9,32 @@ acf_add_local_field_group(array(
 	'title' => __('AD ACF Block 02: Text + Image', 'adblocks'),
 	'fields' => array(
 		array(
+			'key' => 'field_5f105fd167152',
+			'label' => __('Proportions', 'adblocks'),
+			'name' => 'proportions',
+			'type' => 'select',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'half-half' => __('Half half', 'adblocks'),
+				'one-third' => __('One third / Two third', 'adblocks'),
+				'two-third' => __('Two third / One third', 'adblocks'),
+			),
+			'default_value' => 'half-half',
+			'allow_null' => 0,
+			'multiple' => 0,
+			'ui' => 0,
+			'return_format' => 'value',
+			'ajax' => 0,
+			'placeholder' => '',
+		),
+		array(
 			'key' => 'field_5ce41de031ede',
 			'label' => __('Text area', 'adblocks'),
 			'name' => 'text',
