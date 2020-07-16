@@ -208,6 +208,13 @@ acf_add_local_field_group(array(
 				'value' => 'acf/advanced-list',
 			),
 		),
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/cards',
+			),
+		),
 	),
 	'menu_order' => 20,
 	'position' => 'normal',

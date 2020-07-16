@@ -1,0 +1,85 @@
+// Cards Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/vars.scss';
+
+
+.acf-block--cards {
+	.acf-block-container {
+		
+	}
+}
+
+[class*="acf-block-cards--"] {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: -$grid-padding;
+	margin-right: -$grid-padding;
+}
+
+.acf-block-cards-item {
+	display: flex;
+	flex-direction: column;
+	padding: $grid-padding;
+	width: 100%;
+
+	.acf-block-cards--1col & {
+		width: 100%;
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+	}
+	
+	@include rwd(large) {
+		.acf-block-cards--6cols & {
+			width: 16.6667%;
+		}
+		.acf-block-cards--5cols & {
+			width: 20%;
+		}
+		.acf-block-cards--4cols & {
+			width: 25%;
+		}
+		.acf-block-cards--3cols & {
+			width: 33.3333%;
+		}
+		.acf-block-cards--2cols & {
+			width: 50%;
+		}
+	}	
+}
+
+.acf-block-cards-figure {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+}
+.acf-block-cards-title {
+	margin-bottom: $grid-padding;
+}
+.acf-block-cards-subtitle {
+	
+}
+.acf-block-cards-content {
+	padding: $grid-padding;
+	flex: 1 0 auto;
+}
+
+.acf-block-cards-link {
+	padding: $grid-padding;
+	
+	a {
+		display: inline-block;
+	}
+}

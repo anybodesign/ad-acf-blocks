@@ -55,6 +55,13 @@ acf_add_local_field_group(array(
 				'value' => 'acf/posts',
 			),
 		),
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/cards',
+			),
+		),		
 	),
 	'menu_order' => -1,
 	'position' => 'normal',
