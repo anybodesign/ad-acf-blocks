@@ -56,6 +56,11 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 1.9 - 2020-07-16 =
+* New Cards Block
+* Text+Img Block: one-third option
+* Advanced list Block: link option
+
 = 1.8.5 - 2020-06-26 =
 * Block previews
 * Anchor Block: Chrome bugfix

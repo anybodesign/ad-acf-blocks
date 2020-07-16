@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-07-16 15:52+0200\n"
-"PO-Revision-Date: 2020-07-16 15:56+0200\n"
+"POT-Creation-Date: 2020-07-16 16:40+0200\n"
+"PO-Revision-Date: 2020-07-16 16:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -89,77 +89,85 @@ msgid "None"
 msgstr "Aucun"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:26
-#: blocks/block-cards/block-cards-fields.php:26
+#: blocks/block-cards/block-cards-fields.php:25
 #: blocks/block-posts/block-posts-fields.php:119
 msgid "H2"
 msgstr "H2"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:27
-#: blocks/block-cards/block-cards-fields.php:27
+#: blocks/block-cards/block-cards-fields.php:26
 #: blocks/block-posts/block-posts-fields.php:120
 msgid "H3"
 msgstr "H3"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:28
-#: blocks/block-cards/block-cards-fields.php:28
+#: blocks/block-cards/block-cards-fields.php:27
 #: blocks/block-posts/block-posts-fields.php:121
 msgid "H4"
 msgstr "H4"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:29
+#: blocks/block-cards/block-cards-fields.php:28
 #: blocks/block-posts/block-posts-fields.php:122
 msgid "H5"
 msgstr "H5"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:30
+#: blocks/block-cards/block-cards-fields.php:29
 #: blocks/block-posts/block-posts-fields.php:123
 msgid "H6"
 msgstr "H6"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:44
+#: blocks/block-advanced-list/block-advanced-list-fields.php:42
 #: blocks/block-advanced-list/block-advanced-list.php:14
 msgid "Advanced List"
 msgstr "Liste avancée"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:59
+#: blocks/block-advanced-list/block-advanced-list-fields.php:57
 msgid "Add a list item"
 msgstr "Ajouter un élément de liste"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:63
+#: blocks/block-advanced-list/block-advanced-list-fields.php:61
 msgid "Icon"
 msgstr "Icône"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:87
+#: blocks/block-advanced-list/block-advanced-list-fields.php:85
 msgid "Infos"
 msgstr "Infos"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:102
-#: blocks/block-cards/block-cards-fields.php:74
+#: blocks/block-advanced-list/block-advanced-list-fields.php:100
+#: blocks/block-cards/block-cards-fields.php:75
 #: blocks/block-testimonial/block-testimonial-fields.php:71
 msgid "Title"
 msgstr "Titre"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:121
+#: blocks/block-advanced-list/block-advanced-list-fields.php:119
 msgid "Description"
 msgstr "Description"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:140
+#: blocks/block-advanced-list/block-advanced-list-fields.php:138
 msgid "Legend"
 msgstr "Légende"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:143
+#: blocks/block-advanced-list/block-advanced-list-fields.php:141
 msgid "Could be a footnote"
 msgstr "Peut-être une note de bas de page"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:161
+#: blocks/block-advanced-list/block-advanced-list-fields.php:157
+#: blocks/block-cards/block-cards-fields.php:173
+#: blocks/block-cta/block-cta-fields.php:32
+msgid "Link"
+msgstr "Lien"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:174
 msgid "Featured text"
 msgstr "Texte mis en avant"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:164
+#: blocks/block-advanced-list/block-advanced-list-fields.php:177
 msgid "Could be a date, a price, a letter, a number…"
 msgstr "Peut-être une date, un prix, une lettre, un numéro…"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:182
+#: blocks/block-advanced-list/block-advanced-list-fields.php:195
 msgid "Icon size"
 msgstr "Taille de l'icône"
 
@@ -226,44 +234,35 @@ msgstr "Ajoutez une ancre n’importe où dans votre publication."
 msgid "AD ACF Block 09: Cards"
 msgstr "AD ACF Block 09: Cartes"
 
-#: blocks/block-cards/block-cards-fields.php:25
-msgid "H1"
-msgstr "H1"
-
-#: blocks/block-cards/block-cards-fields.php:40
+#: blocks/block-cards/block-cards-fields.php:41
 msgid "Add cards"
 msgstr "Ajouter des cartes"
 
-#: blocks/block-cards/block-cards-fields.php:55
+#: blocks/block-cards/block-cards-fields.php:56
 msgid "Add a card"
 msgstr "Ajouter une carte"
 
-#: blocks/block-cards/block-cards-fields.php:59
+#: blocks/block-cards/block-cards-fields.php:60
 msgid "Card infos"
 msgstr "Infos carte"
 
-#: blocks/block-cards/block-cards-fields.php:93
+#: blocks/block-cards/block-cards-fields.php:94
 msgid "Subtitle"
 msgstr "Sous-titre"
 
-#: blocks/block-cards/block-cards-fields.php:112
+#: blocks/block-cards/block-cards-fields.php:113
 #: blocks/block-testimonial/block-testimonial-fields.php:90
 msgid "Text"
 msgstr "Texte"
 
-#: blocks/block-cards/block-cards-fields.php:133
+#: blocks/block-cards/block-cards-fields.php:134
 msgid "Picture and links"
 msgstr "Image et liens"
 
-#: blocks/block-cards/block-cards-fields.php:148
-#: blocks/block-textimg/block-textimg-fields.php:32
+#: blocks/block-cards/block-cards-fields.php:149
+#: blocks/block-textimg/block-textimg-fields.php:58
 msgid "Picture"
 msgstr "Image"
-
-#: blocks/block-cards/block-cards-fields.php:172
-#: blocks/block-cta/block-cta-fields.php:32
-msgid "Link"
-msgstr "Lien"
 
 #: blocks/block-cards/block-cards.php:14
 msgid "Cards"
@@ -278,7 +277,7 @@ msgid "AD ACF Block 04: CTA"
 msgstr "AD ACF Bloc 04 : CTA"
 
 #: blocks/block-cta/block-cta-fields.php:13
-#: blocks/block-textimg/block-textimg-fields.php:13
+#: blocks/block-textimg/block-textimg-fields.php:39
 msgid "Text area"
 msgstr "Zone de texte"
 
@@ -346,7 +345,7 @@ msgid "Outside"
 msgstr "À l'extérieur"
 
 #: blocks/block-gallery/block-gallery-fields.php:183
-#: blocks/block-textimg/block-textimg-fields.php:56
+#: blocks/block-textimg/block-textimg-fields.php:82
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
 
@@ -385,8 +384,8 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:72
-#: blocks/block-textimg/block-textimg-fields.php:115
-#: blocks/block-textimg/templates/block-textimg-template.php:51
+#: blocks/block-textimg/block-textimg-fields.php:141
+#: blocks/block-textimg/templates/block-textimg-template.php:52
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
@@ -538,7 +537,7 @@ msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
 #: blocks/block-text/block-text-fields.php:43
-#: blocks/block-textimg/block-textimg-fields.php:96
+#: blocks/block-textimg/block-textimg-fields.php:122
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
@@ -571,15 +570,31 @@ msgstr ""
 msgid "AD ACF Block 02: Text + Image"
 msgstr "AD ACF Bloc 02 : Texte et Image"
 
-#: blocks/block-textimg/block-textimg-fields.php:77
+#: blocks/block-textimg/block-textimg-fields.php:13
+msgid "Proportions"
+msgstr "Proportions"
+
+#: blocks/block-textimg/block-textimg-fields.php:25
+msgid "Half half"
+msgstr "Moitié moitié"
+
+#: blocks/block-textimg/block-textimg-fields.php:26
+msgid "One third / Two third"
+msgstr "Un tiers / Deux tiers"
+
+#: blocks/block-textimg/block-textimg-fields.php:27
+msgid "Two third / One third"
+msgstr "Deux tiers / Un tiers"
+
+#: blocks/block-textimg/block-textimg-fields.php:103
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: blocks/block-textimg/block-textimg-fields.php:134
+#: blocks/block-textimg/block-textimg-fields.php:160
 msgid "Enlarge picture with Fancybox"
 msgstr "Agrandir l’image avec Fancybox"
 
-#: blocks/block-textimg/block-textimg-fields.php:161
+#: blocks/block-textimg/block-textimg-fields.php:187
 msgid "Round picture"
 msgstr "Image ronde"
 
@@ -686,6 +701,9 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "H1"
+#~ msgstr "H1"
 
 #~ msgid "h2 title"
 #~ msgstr "Titre h2"
