@@ -72,7 +72,7 @@
 						    	<?php if ($subtitle) { ?>
 						    		<p class="acf-block-cards-subtitle"><?php echo $subtitle; ?></p>
 						    	<?php } ?>
-						    	<?php if ($text) { echo $text; } ?>
+						    	<?php if ($text) { echo '<p>'.$text.'</p>'; } ?>
 						    </div>
 							<?php } ?>
 						    
