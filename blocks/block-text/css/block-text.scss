@@ -19,6 +19,9 @@
 		
 		&.centered {
 			align-items: center;
+		}
+		&.centered-x {
+			justify-content: center;
 		} 
 	}
 }

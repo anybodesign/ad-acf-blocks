@@ -28,9 +28,7 @@ acf_add_local_field_group(array(
 				'2-1col' => __('Two thirds / One third', 'adblocks'),
 				'1-2col' => __('One third / Two thirds', 'adblocks'),
 			),
-			'default_value' => array(
-				0 => '1col',
-			),
+			'default_value' => '1col',
 			'allow_null' => 0,
 			'multiple' => 0,
 			'ui' => 0,
@@ -39,13 +37,48 @@ acf_add_local_field_group(array(
 			'placeholder' => '',
 		),
 		array(
+			'key' => 'field_5f1994ecb7981',
+			'label' => __('Horizontal centering', 'adblocks'),
+			'name' => 'center_x',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5ce3ffde2ab33',
+						'operator' => '==',
+						'value' => '1col',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '25',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
+		array(
 			'key' => 'field_5cebff896af3c',
 			'label' => __('Vertical centering', 'adblocks'),
 			'name' => 'center',
 			'type' => 'true_false',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5ce3ffde2ab33',
+						'operator' => '!=',
+						'value' => '1col',
+					),
+				),
+			),
 			'wrapper' => array(
 				'width' => '25',
 				'class' => '',
