@@ -78,7 +78,7 @@
 				            <a href="<?php echo $the_link; ?>" <?php echo $the_title; if ($fancy && !$link) { echo ' data-fancybox="gallery"'; } ?>>
 					        <?php endif; ?>	   
 					        <figure class="acf-block-gallery-figure"<?php if ( $image['caption'] ) { echo ' role="group"'; } ?>>
-						            <img src="<?php echo $the_size; ?>" alt="<?php echo $image['alt']; ?>">
+						            <div><img src="<?php echo $the_size; ?>" alt="<?php echo $image['alt']; ?>"></div>
 									<?php if ( $image['caption'] ) { ?>
 									<figcaption class="acf-block-gallery-caption">
 										<span class="acf-block-gallery-caption-title"><?php echo $image['caption']; ?></span>
@@ -117,12 +117,12 @@
 						            <?php 
 							            if ( has_post_thumbnail( $c->ID ) ) { 
 						            		if ($size) {
-						            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd');
+						            		echo '<div>'.get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd').'</div>';
 						            		} else {
-						            		echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd');
+						            		echo '<div>'.get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd').'</div>';
 						            		} 
 										} else {
-											echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
+											echo '<div><img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt=""></div>'; 
 							        } ?>
 									<div class="acf-block-gallery-caption">
 										<span class="acf-block-gallery-caption-title"><?php echo get_the_title( $c->ID ); ?></span>
