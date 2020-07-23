@@ -30,6 +30,11 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 1.9.1 - 2020-07-23
+* Cards Block markup fix
+* Text Block: horizontal centering option
+* Gallery Block: wrapping div for pictures
+
 ### 1.9 - 2020-07-16
 * New Cards Block
 * Text+Img Block: one-third option

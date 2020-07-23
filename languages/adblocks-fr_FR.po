@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-07-16 16:40+0200\n"
-"PO-Revision-Date: 2020-07-16 16:40+0200\n"
+"POT-Creation-Date: 2020-07-23 15:57+0200\n"
+"PO-Revision-Date: 2020-07-23 15:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -290,9 +290,9 @@ msgid "Call to action block, with background color or background picture."
 msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
 
 #: blocks/block-cta/templates/block-cta-template.php:3
-#: blocks/block-text/templates/block-text-template.php:14
 #: blocks/block-text/templates/block-text-template.php:15
 #: blocks/block-text/templates/block-text-template.php:16
+#: blocks/block-text/templates/block-text-template.php:17
 msgid "Enter text here..."
 msgstr "Entrez du texte ici..."
 
@@ -471,9 +471,9 @@ msgid "Portrait"
 msgstr "Portrait"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:56
-#: blocks/block-text/block-text-fields.php:100
-#: blocks/block-text/block-text-fields.php:164
-#: blocks/block-text/block-text-fields.php:207
+#: blocks/block-text/block-text-fields.php:133
+#: blocks/block-text/block-text-fields.php:197
+#: blocks/block-text/block-text-fields.php:240
 msgid "Content"
 msgstr "Contenu"
 
@@ -536,24 +536,28 @@ msgstr "Deux tiers / Un tiers"
 msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
-#: blocks/block-text/block-text-fields.php:43
+#: blocks/block-text/block-text-fields.php:41
+msgid "Horizontal centering"
+msgstr "Centrage horizontal"
+
+#: blocks/block-text/block-text-fields.php:68
 #: blocks/block-textimg/block-textimg-fields.php:122
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
-#: blocks/block-text/block-text-fields.php:62
+#: blocks/block-text/block-text-fields.php:95
 msgid "Content area"
 msgstr "Zone de contenu"
 
-#: blocks/block-text/block-text-fields.php:77
+#: blocks/block-text/block-text-fields.php:110
 msgid "First column"
 msgstr "Première colonne"
 
-#: blocks/block-text/block-text-fields.php:119
+#: blocks/block-text/block-text-fields.php:152
 msgid "Second column"
 msgstr "Deuxième colonne"
 
-#: blocks/block-text/block-text-fields.php:183
+#: blocks/block-text/block-text-fields.php:216
 msgid "Third column"
 msgstr "Troisième colonne"
 
