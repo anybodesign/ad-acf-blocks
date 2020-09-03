@@ -140,10 +140,7 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
-			'post_type' => array(
-				0 => 'post',
-				1 => 'page',
-			),
+			'post_type' => '',
 			'taxonomy' => '',
 			'filters' => array(
 				0 => 'search',
