@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADBLOCKS__PLUGIN_VERSION', '1.9.1' );
+define( 'ADBLOCKS__PLUGIN_VERSION', '2.0' );
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADBLOCKS__BASENAME', plugin_basename( __FILE__ ) );
