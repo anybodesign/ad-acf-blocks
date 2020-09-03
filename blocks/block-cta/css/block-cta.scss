@@ -11,25 +11,64 @@
 	background-size: cover;
 	background-position: center center;
 	
-	@include rwd(small) {
-		padding: 4em;
-	}
-	@include rwd(medium) {
-		padding: 6em;
-	}
+	&.inline-cta {
+		padding: $grid-padding;
+		text-align: left;
 
-	.acf-block-container {
+		.acf-block-container {
+			display: flex;
+			flex-direction: column;
+			
+			@include rwd(medium) {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
 		
 	}
 	
+	@include rwd(small) {
+		padding: 4em;
+
+		&.inline-cta {
+			padding: $grid-padding;
+		}		
+	}
+	@include rwd(medium) {
+		padding: 6em;
+
+		&.inline-cta {
+			padding: $grid-padding*2;
+		}		
+	}
 	@include rwd(large) {
 		padding: 12em 6em;
+
+		&.inline-cta {
+			padding: $grid-padding*2;
+		}		
 	}	
+
+	.acf-block-container {}
 }
 
 .acf-block-cta-text {
 	max-width: 64rem;
 	margin: 0 auto;
+	
+	.inline-cta & {
+		max-width: none;
+		margin: 0;
+		
+		@include rwd(medium) {
+			max-width: 75%;
+			
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 .acf-block-cta-btn {
 	

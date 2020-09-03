@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-09-03 12:24+0200\n"
-"PO-Revision-Date: 2020-09-03 12:24+0200\n"
+"POT-Creation-Date: 2020-09-03 13:33+0200\n"
+"PO-Revision-Date: 2020-09-03 13:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -76,7 +76,7 @@ msgstr "AD ACF Block 08: Liste avancée"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:13
 #: blocks/block-cards/block-cards-fields.php:13
-#: blocks/block-posts/block-posts-fields.php:153
+#: blocks/block-posts/block-posts-fields.php:174
 msgid "Title level"
 msgstr "Niveau de titre"
 
@@ -90,31 +90,31 @@ msgstr "Aucun"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:26
 #: blocks/block-cards/block-cards-fields.php:25
-#: blocks/block-posts/block-posts-fields.php:165
+#: blocks/block-posts/block-posts-fields.php:186
 msgid "H2"
 msgstr "H2"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:27
 #: blocks/block-cards/block-cards-fields.php:26
-#: blocks/block-posts/block-posts-fields.php:166
+#: blocks/block-posts/block-posts-fields.php:187
 msgid "H3"
 msgstr "H3"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:28
 #: blocks/block-cards/block-cards-fields.php:27
-#: blocks/block-posts/block-posts-fields.php:167
+#: blocks/block-posts/block-posts-fields.php:188
 msgid "H4"
 msgstr "H4"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:29
 #: blocks/block-cards/block-cards-fields.php:28
-#: blocks/block-posts/block-posts-fields.php:168
+#: blocks/block-posts/block-posts-fields.php:189
 msgid "H5"
 msgstr "H5"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:30
 #: blocks/block-cards/block-cards-fields.php:29
-#: blocks/block-posts/block-posts-fields.php:169
+#: blocks/block-posts/block-posts-fields.php:190
 msgid "H6"
 msgstr "H6"
 
@@ -156,8 +156,8 @@ msgstr "Peut-être une note de bas de page"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:157
 #: blocks/block-cards/block-cards-fields.php:173
-#: blocks/block-cta/block-cta-fields.php:32
-#: blocks/block-posts/block-posts-fields.php:221
+#: blocks/block-cta/block-cta-fields.php:54
+#: blocks/block-posts/block-posts-fields.php:242
 msgid "Link"
 msgstr "Lien"
 
@@ -279,6 +279,18 @@ msgid "AD ACF Block 04: CTA"
 msgstr "AD ACF Bloc 04 : CTA"
 
 #: blocks/block-cta/block-cta-fields.php:13
+msgid "CTA type"
+msgstr "Type de CTA"
+
+#: blocks/block-cta/block-cta-fields.php:25
+msgid "Box"
+msgstr "Boîte"
+
+#: blocks/block-cta/block-cta-fields.php:26
+msgid "Inline"
+msgstr "En ligne"
+
+#: blocks/block-cta/block-cta-fields.php:35
 #: blocks/block-textimg/block-textimg-fields.php:39
 msgid "Text area"
 msgstr "Zone de texte"
@@ -291,7 +303,7 @@ msgstr "CTA"
 msgid "Call to action block, with background color or background picture."
 msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
 
-#: blocks/block-cta/templates/block-cta-template.php:3
+#: blocks/block-cta/templates/block-cta-template.php:4
 #: blocks/block-text/templates/block-text-template.php:15
 #: blocks/block-text/templates/block-text-template.php:16
 #: blocks/block-text/templates/block-text-template.php:17
@@ -347,6 +359,7 @@ msgid "Outside"
 msgstr "À l'extérieur"
 
 #: blocks/block-gallery/block-gallery-fields.php:183
+#: blocks/block-posts/block-posts-fields.php:153
 #: blocks/block-textimg/block-textimg-fields.php:82
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
@@ -392,7 +405,7 @@ msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:115
-#: blocks/block-posts/templates/block-posts-template.php:65
+#: blocks/block-posts/templates/block-posts-template.php:68
 msgid "Read "
 msgstr "Lire "
 
@@ -432,11 +445,11 @@ msgstr "Extrait"
 msgid "Full content"
 msgstr "Contenu intégral"
 
-#: blocks/block-posts/block-posts-fields.php:183
+#: blocks/block-posts/block-posts-fields.php:204
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
-#: blocks/block-posts/block-posts-fields.php:202
+#: blocks/block-posts/block-posts-fields.php:223
 msgid "Add a link"
 msgstr "Ajouter un lien"
 
@@ -448,15 +461,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:87
+#: blocks/block-posts/templates/block-posts-template.php:93
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:89
+#: blocks/block-posts/templates/block-posts-template.php:95
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:93
+#: blocks/block-posts/templates/block-posts-template.php:99
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 

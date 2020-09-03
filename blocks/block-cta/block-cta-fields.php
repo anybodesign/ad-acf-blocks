@@ -9,6 +9,28 @@ acf_add_local_field_group(array(
 	'title' => __('AD ACF Block 04: CTA', 'adblocks'),
 	'fields' => array(
 		array(
+			'key' => 'field_5f50d1d536c33',
+			'label' => __('CTA type', 'adblocks'),
+			'name' => 'type',
+			'type' => 'button_group',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'box' => __('Box', 'adblocks'),
+				'inline' => __('Inline', 'adblocks'),
+			),
+			'allow_null' => 0,
+			'default_value' => '',
+			'layout' => 'horizontal',
+			'return_format' => 'value',
+		),
+		array(
 			'key' => 'field_5ced030883dea',
 			'label' => __('Text area', 'adblocks'),
 			'name' => 'text',
