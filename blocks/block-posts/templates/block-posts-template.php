@@ -1,12 +1,19 @@
 <?php if ( !defined('ABSPATH') ) die();
 
 	$cols = get_field('columns');
+
+	$has_title = get_field('title');
+	$title = get_field('title_text');
+	$has_intro = get_field('intro');
+	$intro = get_field('intro_text');
+	$has_link = get_field('link');
+	$link = get_field('link_value');
+	
 	$content = get_field('posts_select');
 	$h = get_field('title_level');
 	$show = get_field('content_show');
 	$metas = get_field('metas');
-	$intro = get_field('intro');
-	$intro_text = get_field('intro_text');
+	
 	
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -41,9 +48,10 @@
 			<section class="acf-block--posts<?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
 					
-					<?php if ( $intro ) { ?>
+					<?php if ( $has_intro || $has_title ) { ?>
 					<div class="acf-block-post-intro">
-						<?php echo $intro_text; ?>
+						<?php if ( $has_title ) { echo '<h2 class="acf-block-post-intro-title">'.$title.'</h2>'; } ?>
+						<?php if ( $has_intro ) { echo $intro; } ?>
 					</div>
 					<?php } ?>
 					
@@ -99,6 +107,15 @@
 					        
 				        </div>
 				        <?php endforeach; ?>
+
+
+						<?php if ( $has_link ) { ?>
+						<div class="acf-block-post-link">
+							<a href="<?php echo $link['url']; ?>" class="action-btn"<?php if ( $link['target'] ) { echo ' target="'.$link['target'].'"'; } ?>><?php echo $link['title']; ?></a>
+							
+						</div>
+						<?php } ?>
+				        
 				        
 					</div>
 					<?php endif; ?>	

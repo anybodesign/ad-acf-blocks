@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-07-23 15:57+0200\n"
-"PO-Revision-Date: 2020-07-23 15:57+0200\n"
+"POT-Creation-Date: 2020-09-03 12:24+0200\n"
+"PO-Revision-Date: 2020-09-03 12:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -76,7 +76,7 @@ msgstr "AD ACF Block 08: Liste avancée"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:13
 #: blocks/block-cards/block-cards-fields.php:13
-#: blocks/block-posts/block-posts-fields.php:107
+#: blocks/block-posts/block-posts-fields.php:153
 msgid "Title level"
 msgstr "Niveau de titre"
 
@@ -90,31 +90,31 @@ msgstr "Aucun"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:26
 #: blocks/block-cards/block-cards-fields.php:25
-#: blocks/block-posts/block-posts-fields.php:119
+#: blocks/block-posts/block-posts-fields.php:165
 msgid "H2"
 msgstr "H2"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:27
 #: blocks/block-cards/block-cards-fields.php:26
-#: blocks/block-posts/block-posts-fields.php:120
+#: blocks/block-posts/block-posts-fields.php:166
 msgid "H3"
 msgstr "H3"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:28
 #: blocks/block-cards/block-cards-fields.php:27
-#: blocks/block-posts/block-posts-fields.php:121
+#: blocks/block-posts/block-posts-fields.php:167
 msgid "H4"
 msgstr "H4"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:29
 #: blocks/block-cards/block-cards-fields.php:28
-#: blocks/block-posts/block-posts-fields.php:122
+#: blocks/block-posts/block-posts-fields.php:168
 msgid "H5"
 msgstr "H5"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:30
 #: blocks/block-cards/block-cards-fields.php:29
-#: blocks/block-posts/block-posts-fields.php:123
+#: blocks/block-posts/block-posts-fields.php:169
 msgid "H6"
 msgstr "H6"
 
@@ -137,6 +137,7 @@ msgstr "Infos"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:100
 #: blocks/block-cards/block-cards-fields.php:75
+#: blocks/block-posts/block-posts-fields.php:32
 #: blocks/block-testimonial/block-testimonial-fields.php:71
 msgid "Title"
 msgstr "Titre"
@@ -156,6 +157,7 @@ msgstr "Peut-être une note de bas de page"
 #: blocks/block-advanced-list/block-advanced-list-fields.php:157
 #: blocks/block-cards/block-cards-fields.php:173
 #: blocks/block-cta/block-cta-fields.php:32
+#: blocks/block-posts/block-posts-fields.php:221
 msgid "Link"
 msgstr "Lien"
 
@@ -390,7 +392,7 @@ msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:115
-#: blocks/block-posts/templates/block-posts-template.php:57
+#: blocks/block-posts/templates/block-posts-template.php:65
 msgid "Read "
 msgstr "Lire "
 
@@ -403,32 +405,40 @@ msgid "AD ACF Block 05: Posts"
 msgstr "AD ACF Bloc 05: Publications"
 
 #: blocks/block-posts/block-posts-fields.php:13
-msgid "Add introduction text or title"
-msgstr "Ajouter un texte ou un titre d’introduction"
+msgid "Add a title"
+msgstr "Ajouter un titre"
 
-#: blocks/block-posts/block-posts-fields.php:32
+#: blocks/block-posts/block-posts-fields.php:59
+msgid "Add an introduction text"
+msgstr "Ajouter un texte d’introduction"
+
+#: blocks/block-posts/block-posts-fields.php:78
 msgid "Introduction"
 msgstr "Introduction"
 
-#: blocks/block-posts/block-posts-fields.php:59
+#: blocks/block-posts/block-posts-fields.php:105
 msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
 
-#: blocks/block-posts/block-posts-fields.php:85
+#: blocks/block-posts/block-posts-fields.php:131
 msgid "Content to show"
 msgstr "Contenu à afficher"
 
-#: blocks/block-posts/block-posts-fields.php:97
+#: blocks/block-posts/block-posts-fields.php:143
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: blocks/block-posts/block-posts-fields.php:98
+#: blocks/block-posts/block-posts-fields.php:144
 msgid "Full content"
 msgstr "Contenu intégral"
 
-#: blocks/block-posts/block-posts-fields.php:137
+#: blocks/block-posts/block-posts-fields.php:183
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
+
+#: blocks/block-posts/block-posts-fields.php:202
+msgid "Add a link"
+msgstr "Ajouter un lien"
 
 #: blocks/block-posts/block-posts.php:14
 msgid "Posts"
@@ -438,15 +448,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:79
+#: blocks/block-posts/templates/block-posts-template.php:87
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:81
+#: blocks/block-posts/templates/block-posts-template.php:89
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:85
+#: blocks/block-posts/templates/block-posts-template.php:93
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
