@@ -56,6 +56,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 2.1 - 2020-09-03 =
+* Posts Block: get CPT class
+* Gallery Block: extended to all CPT
+
 = 2.0 - 2020-09-03 =
 * Cards Block: link on icon
 * CTA Block: inline layout option
