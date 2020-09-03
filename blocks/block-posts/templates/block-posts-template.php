@@ -61,8 +61,13 @@
 					<?php if( $content ): ?>
 					<div class="acf-block-post-content--<?php echo $cols; ?>">
 						
-				        <?php foreach( $content as $c ): ?>
-				        <div class="acf-block-post-item">
+				        <?php foreach( $content as $c ): 
+					        
+			        		$cat = get_the_category($c->ID);
+							$cpt = get_post_type($c->ID)
+
+				        ?>
+				        <div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
 					        
 					        <div class="acf-block-post-figure">
 						        <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
@@ -85,10 +90,7 @@
 									</a>
 								</<?php echo $h; ?>>
 								
-								<?php if ( $metas ) { 
-									$cat = get_the_category($c->ID);
-									$cpt = get_post_type($c->ID)
-								?>
+								<?php if ( $metas ) { ?>
 								<div class="acf-block-post-metas">
 									<span class="meta-author"><?php _e( 'Posted by&nbsp;', 'adblocks' ); echo get_the_author(); ?></span>									
 									<?php if ( $cpt == 'post' ) { ?>
