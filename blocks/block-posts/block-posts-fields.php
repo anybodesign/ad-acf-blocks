@@ -135,7 +135,7 @@ acf_add_local_field_group(array(
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '',
+				'width' => '66',
 				'class' => '',
 				'id' => '',
 			),
@@ -147,6 +147,27 @@ acf_add_local_field_group(array(
 			'default_value' => 'excerpt',
 			'layout' => 'horizontal',
 			'return_format' => 'value',
+		),
+		array(
+			'key' => 'field_5f50cc85fe2f8',
+			'label' => __('Featured image size', 'adblocks'),
+			'name' => 'posts_size',
+			'type' => 'clone',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'clone' => array(
+				0 => 'field_5ece2df86f375',
+			),
+			'display' => 'seamless',
+			'layout' => 'block',
+			'prefix_label' => 0,
+			'prefix_name' => 1,
 		),
 		array(
 			'key' => 'field_5dfa2bcaa5483',
@@ -233,7 +254,7 @@ acf_add_local_field_group(array(
 				),
 			),
 			'wrapper' => array(
-				'width' => '',
+				'width' => '70',
 				'class' => '',
 				'id' => '',
 			),

@@ -14,6 +14,9 @@
 	$show = get_field('content_show');
 	$metas = get_field('metas');
 	
+	$size = get_field('posts_size_feature_size');
+	
+	// Bg
 	
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -64,11 +67,14 @@
 					        <div class="acf-block-post-figure">
 						        <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
 					            <?php 
-						            if ( has_post_thumbnail( $c->ID ) ) { 
-					            		echo get_the_post_thumbnail( $c->ID, 'thumbnail-hd'); 
+						            if ( has_post_thumbnail( $c->ID ) && $size ) { 
+					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd'); 
+									} else if ( has_post_thumbnail( $c->ID ) ) {
+					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd'); 
 									} else {
 										echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
-						        } ?>
+						        	} 
+						        ?>
 						        </a>
 						    </div>
 						    
