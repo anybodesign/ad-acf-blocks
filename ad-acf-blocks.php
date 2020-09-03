@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks
  * Description: A collection of blocks made with ACF for the new Editor 
- * Version: 1.9.1
+ * Version: 2.0
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks
