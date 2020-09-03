@@ -58,8 +58,10 @@
 					        
 						    
 							<?php if ($picture) { ?>
-					        <div class="acf-block-cards-figure">						        
+					        <div class="acf-block-cards-figure">
+						        <?php if ($link) { ?><a href="<?php echo $link['url']; ?>" rel="nofollow"><?php } ?>				        
 						    	<img src="<?php echo $picture['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $picture['alt']; ?>">
+						        <?php if ($link) { ?></a><?php } ?>				        						    	
 						    </div>
 							<?php } ?>
 							
