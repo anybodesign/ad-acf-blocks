@@ -47,7 +47,7 @@
 	
 	iframe {
 		.wp-admin & {
-			max-height: 280px;
+			max-height: 280px !important;
 		}
 	}
 
