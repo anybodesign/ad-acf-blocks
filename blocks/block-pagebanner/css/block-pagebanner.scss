@@ -1,0 +1,66 @@
+// PAge banner Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/vars.scss';
+
+.acf-block--pagebanner {
+	
+	.acf-block-container {
+		position: relative;
+		padding: 0;
+	}
+}
+
+// Img & Video
+
+.banner-bg,
+.banner-video {
+	display: block;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	@include rwd(large) {
+		max-height: 68vh;	
+	}
+
+}
+
+// Text 
+
+.acf-block-banner-text {
+	position: relative;
+	padding: $grid-padding;
+	background-color: #fff;
+
+	@include rwd(large) {
+		position: absolute;
+		left: $grid-padding*2;
+		bottom: $grid-padding*2;
+		padding: $grid-padding*2;
+		max-width: 52rem;
+	}	
+}
+
+// Buttons
+
+.scroll-down {
+	display: block;
+	border: 0;
+	
+	img {
+		display: block;
+	}
+		
+	.wp-admin & {
+		display: none;
+	}
+}
+
+#banner_stop {
+	position: absolute;
+	top: $grid-padding;
+	right: $grid-padding;
+}
