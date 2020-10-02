@@ -116,17 +116,16 @@
 				        </div>
 				        <?php endforeach; ?>
 
-
-						<?php if ( $has_link ) { ?>
-						<div class="acf-block-post-link">
-							<a href="<?php echo $link['url']; ?>" class="action-btn"<?php if ( $link['target'] ) { echo ' target="'.$link['target'].'"'; } ?>><?php echo $link['title']; ?></a>
-							
-						</div>
-						<?php } ?>
-				        
-				        
 					</div>
-					<?php endif; ?>	
+					<?php endif; ?>
+					
+					
+					<?php if ( $has_link ) { ?>
+					<div class="acf-block-post-link">
+						<a href="<?php echo $link['url']; ?>" class="action-btn"<?php if ( $link['target'] ) { echo ' target="'.$link['target'].'"'; } ?>><?php echo $link['title']; ?></a>
+						
+					</div>
+					<?php } ?>	
 				
 				</div>
 			</section>
