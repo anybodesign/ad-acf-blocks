@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-03-25 11:05+0100\n"
-"PO-Revision-Date: 2020-03-25 11:06+0100\n"
+"POT-Creation-Date: 2020-10-02 14:57+0200\n"
+"PO-Revision-Date: 2020-10-02 15:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ad-acf-blocks.php:84
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
-msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5,8)."
+msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
 #. Plugin Name of the plugin/theme
 #: ad-acf-blocks.php:110
@@ -75,7 +75,8 @@ msgid "AD ACF Block 08: Advanced List"
 msgstr "AD ACF Block 08: Liste avancée"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:13
-#: blocks/block-posts/block-posts-fields.php:107
+#: blocks/block-cards/block-cards-fields.php:13
+#: blocks/block-posts/block-posts-fields.php:174
 msgid "Title level"
 msgstr "Niveau de titre"
 
@@ -88,62 +89,89 @@ msgid "None"
 msgstr "Aucun"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:26
-msgid "h2 title"
-msgstr "Titre h2"
+#: blocks/block-cards/block-cards-fields.php:25
+#: blocks/block-posts/block-posts-fields.php:186
+msgid "H2"
+msgstr "H2"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:27
-msgid "h3 title"
-msgstr "Titre h3"
+#: blocks/block-cards/block-cards-fields.php:26
+#: blocks/block-posts/block-posts-fields.php:187
+msgid "H3"
+msgstr "H3"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:28
-msgid "h4 title"
-msgstr "Titre h4"
+#: blocks/block-cards/block-cards-fields.php:27
+#: blocks/block-posts/block-posts-fields.php:188
+msgid "H4"
+msgstr "H4"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:29
-msgid "h5 title"
-msgstr "Titre h5"
+#: blocks/block-cards/block-cards-fields.php:28
+#: blocks/block-posts/block-posts-fields.php:189
+msgid "H5"
+msgstr "H5"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:30
-msgid "h6 title"
-msgstr "Titre h6"
+#: blocks/block-cards/block-cards-fields.php:29
+#: blocks/block-posts/block-posts-fields.php:190
+msgid "H6"
+msgstr "H6"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:44
+#: blocks/block-advanced-list/block-advanced-list-fields.php:42
 #: blocks/block-advanced-list/block-advanced-list.php:14
 msgid "Advanced List"
 msgstr "Liste avancée"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:59
+#: blocks/block-advanced-list/block-advanced-list-fields.php:57
 msgid "Add a list item"
 msgstr "Ajouter un élément de liste"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:63
+#: blocks/block-advanced-list/block-advanced-list-fields.php:61
+msgid "Icon"
+msgstr "Icône"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:85
+msgid "Infos"
+msgstr "Infos"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:100
+#: blocks/block-cards/block-cards-fields.php:75
+#: blocks/block-posts/block-posts-fields.php:32
 #: blocks/block-testimonial/block-testimonial-fields.php:71
 msgid "Title"
 msgstr "Titre"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:82
+#: blocks/block-advanced-list/block-advanced-list-fields.php:119
 msgid "Description"
 msgstr "Description"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:101
+#: blocks/block-advanced-list/block-advanced-list-fields.php:138
 msgid "Legend"
 msgstr "Légende"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:104
+#: blocks/block-advanced-list/block-advanced-list-fields.php:141
 msgid "Could be a footnote"
 msgstr "Peut-être une note de bas de page"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:120
+#: blocks/block-advanced-list/block-advanced-list-fields.php:157
+#: blocks/block-cards/block-cards-fields.php:173
+#: blocks/block-cta/block-cta-fields.php:54
+#: blocks/block-posts/block-posts-fields.php:242
+msgid "Link"
+msgstr "Lien"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:174
 msgid "Featured text"
 msgstr "Texte mis en avant"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:123
+#: blocks/block-advanced-list/block-advanced-list-fields.php:177
 msgid "Could be a date, a price, a letter, a number…"
 msgstr "Peut-être une date, un prix, une lettre, un numéro…"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:139
-msgid "Icon"
-msgstr "Icône"
+#: blocks/block-advanced-list/block-advanced-list-fields.php:195
+msgid "Icon size"
+msgstr "Taille de l'icône"
 
 #: blocks/block-advanced-list/block-advanced-list.php:15
 msgid "Create advanced lists with titles, description, note, price, icon…"
@@ -174,9 +202,27 @@ msgstr "<span>"
 msgid "<section>"
 msgstr "<section>"
 
-#: blocks/block-anchor/block-anchor-fields.php:41
+#: blocks/block-anchor/block-anchor-fields.php:39
 msgid "Anchor ID"
 msgstr "ID de l’Ancre"
+
+#: blocks/block-anchor/block-anchor-fields.php:58
+msgid "Offset"
+msgstr "Décalage"
+
+#: blocks/block-anchor/block-anchor-fields.php:61
+msgid "Set an offset value for the scroll, useful if you have a sticky header."
+msgstr ""
+"Définir une valeur de décalage pour le défilement, utile si vous avez un en-"
+"tête collant."
+
+#: blocks/block-anchor/block-anchor-fields.php:79
+msgid "Speed"
+msgstr "Vitesse"
+
+#: blocks/block-anchor/block-anchor-fields.php:82
+msgid "Set the scroll speed in milliseconds. (1000 = 1 sec)"
+msgstr "Définir la vitesse de défilement en millisecondes. (1000 = 1 sec)"
 
 #: blocks/block-anchor/block-anchor.php:14
 msgid "Anchor"
@@ -186,31 +232,81 @@ msgstr "Ancre"
 msgid "Add an anchor anywhere in your post."
 msgstr "Ajoutez une ancre n’importe où dans votre publication."
 
+#: blocks/block-cards/block-cards-fields.php:9
+msgid "AD ACF Block 09: Cards"
+msgstr "AD ACF Block 09: Cartes"
+
+#: blocks/block-cards/block-cards-fields.php:41
+msgid "Add cards"
+msgstr "Ajouter des cartes"
+
+#: blocks/block-cards/block-cards-fields.php:56
+msgid "Add a card"
+msgstr "Ajouter une carte"
+
+#: blocks/block-cards/block-cards-fields.php:60
+msgid "Card infos"
+msgstr "Infos carte"
+
+#: blocks/block-cards/block-cards-fields.php:94
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: blocks/block-cards/block-cards-fields.php:113
+#: blocks/block-testimonial/block-testimonial-fields.php:90
+msgid "Text"
+msgstr "Texte"
+
+#: blocks/block-cards/block-cards-fields.php:134
+msgid "Picture and links"
+msgstr "Image et liens"
+
+#: blocks/block-cards/block-cards-fields.php:149
+#: blocks/block-textimg/block-textimg-fields.php:58
+msgid "Picture"
+msgstr "Image"
+
+#: blocks/block-cards/block-cards.php:14
+msgid "Cards"
+msgstr "Cartes"
+
+#: blocks/block-cards/block-cards.php:15
+msgid "Create a gallery of cards with or without thumbnails."
+msgstr "Créez une galerie de cartes avec ou sans miniature."
+
 #: blocks/block-cta/block-cta-fields.php:9
 msgid "AD ACF Block 04: CTA"
-msgstr "AD ACF Bloc 04 : CTA"
+msgstr "AD ACF Bloc 04 : Appel à l’action"
 
 #: blocks/block-cta/block-cta-fields.php:13
-#: blocks/block-textimg/block-textimg-fields.php:13
+msgid "CTA type"
+msgstr "Type de bloc d’appel à l’action"
+
+#: blocks/block-cta/block-cta-fields.php:25
+msgid "Box"
+msgstr "Boîte"
+
+#: blocks/block-cta/block-cta-fields.php:26
+msgid "Inline"
+msgstr "En ligne"
+
+#: blocks/block-cta/block-cta-fields.php:35
+#: blocks/block-textimg/block-textimg-fields.php:39
 msgid "Text area"
 msgstr "Zone de texte"
 
-#: blocks/block-cta/block-cta-fields.php:32
-msgid "Link"
-msgstr "Lien"
-
 #: blocks/block-cta/block-cta.php:14
 msgid "CTA"
-msgstr "CTA"
+msgstr "Bloc d’appel à l’action"
 
 #: blocks/block-cta/block-cta.php:15
 msgid "Call to action block, with background color or background picture."
 msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
 
-#: blocks/block-cta/templates/block-cta-template.php:3
-#: blocks/block-text/templates/block-text-template.php:14
+#: blocks/block-cta/templates/block-cta-template.php:4
 #: blocks/block-text/templates/block-text-template.php:15
 #: blocks/block-text/templates/block-text-template.php:16
+#: blocks/block-text/templates/block-text-template.php:17
 msgid "Enter text here..."
 msgstr "Entrez du texte ici..."
 
@@ -250,17 +346,42 @@ msgstr ""
 "Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
 "galerie"
 
-#: blocks/block-gallery/block-gallery-fields.php:161
+#: blocks/block-gallery/block-gallery-fields.php:158
 msgid "Legend display"
 msgstr "Affichage de la légende"
 
-#: blocks/block-gallery/block-gallery-fields.php:173
+#: blocks/block-gallery/block-gallery-fields.php:170
 msgid "Inside"
 msgstr "À l’intérieur"
 
-#: blocks/block-gallery/block-gallery-fields.php:174
+#: blocks/block-gallery/block-gallery-fields.php:171
 msgid "Outside"
 msgstr "À l'extérieur"
+
+#: blocks/block-gallery/block-gallery-fields.php:180
+#: blocks/block-posts/block-posts-fields.php:153
+#: blocks/block-textimg/block-textimg-fields.php:82
+msgid "Featured image size"
+msgstr "Taille de l’image de mise en avant"
+
+#: blocks/block-gallery/block-gallery-fields.php:200
+#: global-fields/gallery-fields.php:25
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: blocks/block-gallery/block-gallery-fields.php:201
+#: global-fields/gallery-fields.php:26
+msgid "Medium"
+msgstr "Moyenne"
+
+#: blocks/block-gallery/block-gallery-fields.php:202
+#: global-fields/gallery-fields.php:27
+msgid "Large"
+msgstr "Grande"
+
+#: blocks/block-gallery/block-gallery-fields.php:214
+msgid "Display excerpt and <em>Read More</em> button"
+msgstr "Afficher l’extrait et un bouton <em>En savoir plus</em>"
 
 #: blocks/block-gallery/block-gallery.php:14
 msgid "Gallery"
@@ -273,72 +394,64 @@ msgstr ""
 "Créez une galerie d'images ou une galerie de pages et/ou d’articles avec "
 "vignettes."
 
-#: blocks/block-gallery/templates/block-gallery-template.php:64
+#: blocks/block-gallery/templates/block-gallery-template.php:69
 msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
-#: blocks/block-gallery/templates/block-gallery-template.php:67
-#: blocks/block-textimg/block-textimg-fields.php:94
-#: blocks/block-textimg/templates/block-textimg-template.php:42
+#: blocks/block-gallery/templates/block-gallery-template.php:72
+#: blocks/block-textimg/block-textimg-fields.php:141
+#: blocks/block-textimg/templates/block-textimg-template.php:52
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
-#: blocks/block-gallery/templates/block-gallery-template.php:105
-#: blocks/block-posts/templates/block-posts-template.php:52
+#: blocks/block-gallery/templates/block-gallery-template.php:115
+#: blocks/block-posts/templates/block-posts-template.php:73
 msgid "Read "
 msgstr "Lire "
+
+#: blocks/block-gallery/templates/block-gallery-template.php:135
+msgid "Read More"
+msgstr "En savoir plus"
 
 #: blocks/block-posts/block-posts-fields.php:9
 msgid "AD ACF Block 05: Posts"
 msgstr "AD ACF Bloc 05: Publications"
 
 #: blocks/block-posts/block-posts-fields.php:13
-msgid "Add introduction text or title"
-msgstr "Ajouter un texte ou un titre d’introduction"
+msgid "Add a title"
+msgstr "Ajouter un titre"
 
-#: blocks/block-posts/block-posts-fields.php:32
+#: blocks/block-posts/block-posts-fields.php:59
+msgid "Add an introduction text"
+msgstr "Ajouter un texte d’introduction"
+
+#: blocks/block-posts/block-posts-fields.php:78
 msgid "Introduction"
 msgstr "Introduction"
 
-#: blocks/block-posts/block-posts-fields.php:59
+#: blocks/block-posts/block-posts-fields.php:105
 msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
 
-#: blocks/block-posts/block-posts-fields.php:85
+#: blocks/block-posts/block-posts-fields.php:131
 msgid "Content to show"
 msgstr "Contenu à afficher"
 
-#: blocks/block-posts/block-posts-fields.php:97
+#: blocks/block-posts/block-posts-fields.php:143
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: blocks/block-posts/block-posts-fields.php:98
+#: blocks/block-posts/block-posts-fields.php:144
 msgid "Full content"
 msgstr "Contenu intégral"
 
-#: blocks/block-posts/block-posts-fields.php:119
-msgid "H2"
-msgstr "H2"
-
-#: blocks/block-posts/block-posts-fields.php:120
-msgid "H3"
-msgstr "H3"
-
-#: blocks/block-posts/block-posts-fields.php:121
-msgid "H4"
-msgstr "H4"
-
-#: blocks/block-posts/block-posts-fields.php:122
-msgid "H5"
-msgstr "H5"
-
-#: blocks/block-posts/block-posts-fields.php:123
-msgid "H6"
-msgstr "H6"
-
-#: blocks/block-posts/block-posts-fields.php:137
+#: blocks/block-posts/block-posts-fields.php:204
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
+
+#: blocks/block-posts/block-posts-fields.php:223
+msgid "Add a link"
+msgstr "Ajouter un lien"
 
 #: blocks/block-posts/block-posts.php:14
 msgid "Posts"
@@ -348,15 +461,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:74
+#: blocks/block-posts/templates/block-posts-template.php:95
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:76
+#: blocks/block-posts/templates/block-posts-template.php:97
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:80
+#: blocks/block-posts/templates/block-posts-template.php:101
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
@@ -381,15 +494,11 @@ msgid "Portrait"
 msgstr "Portrait"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:56
-#: blocks/block-text/block-text-fields.php:100
-#: blocks/block-text/block-text-fields.php:164
-#: blocks/block-text/block-text-fields.php:207
+#: blocks/block-text/block-text-fields.php:133
+#: blocks/block-text/block-text-fields.php:197
+#: blocks/block-text/block-text-fields.php:240
 msgid "Content"
 msgstr "Contenu"
-
-#: blocks/block-testimonial/block-testimonial-fields.php:90
-msgid "Text"
-msgstr "Texte"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:109
 msgid "Author"
@@ -450,24 +559,28 @@ msgstr "Deux tiers / Un tiers"
 msgid "One third / Two thirds"
 msgstr "Un tiers / Deux tiers"
 
-#: blocks/block-text/block-text-fields.php:43
-#: blocks/block-textimg/block-textimg-fields.php:113
+#: blocks/block-text/block-text-fields.php:41
+msgid "Horizontal centering"
+msgstr "Centrage horizontal"
+
+#: blocks/block-text/block-text-fields.php:68
+#: blocks/block-textimg/block-textimg-fields.php:122
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
-#: blocks/block-text/block-text-fields.php:62
+#: blocks/block-text/block-text-fields.php:95
 msgid "Content area"
 msgstr "Zone de contenu"
 
-#: blocks/block-text/block-text-fields.php:77
+#: blocks/block-text/block-text-fields.php:110
 msgid "First column"
 msgstr "Première colonne"
 
-#: blocks/block-text/block-text-fields.php:119
+#: blocks/block-text/block-text-fields.php:152
 msgid "Second column"
 msgstr "Deuxième colonne"
 
-#: blocks/block-text/block-text-fields.php:183
+#: blocks/block-text/block-text-fields.php:216
 msgid "Third column"
 msgstr "Troisième colonne"
 
@@ -484,15 +597,31 @@ msgstr ""
 msgid "AD ACF Block 02: Text + Image"
 msgstr "AD ACF Bloc 02 : Texte et Image"
 
-#: blocks/block-textimg/block-textimg-fields.php:32
-msgid "Picture"
-msgstr "Image"
+#: blocks/block-textimg/block-textimg-fields.php:13
+msgid "Proportions"
+msgstr "Proportions"
 
-#: blocks/block-textimg/block-textimg-fields.php:56
+#: blocks/block-textimg/block-textimg-fields.php:25
+msgid "Half half"
+msgstr "Moitié moitié"
+
+#: blocks/block-textimg/block-textimg-fields.php:26
+msgid "One third / Two third"
+msgstr "Un tiers / Deux tiers"
+
+#: blocks/block-textimg/block-textimg-fields.php:27
+msgid "Two third / One third"
+msgstr "Deux tiers / Un tiers"
+
+#: blocks/block-textimg/block-textimg-fields.php:103
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: blocks/block-textimg/block-textimg-fields.php:75
+#: blocks/block-textimg/block-textimg-fields.php:160
+msgid "Enlarge picture with Fancybox"
+msgstr "Agrandir l’image avec Fancybox"
+
+#: blocks/block-textimg/block-textimg-fields.php:187
 msgid "Round picture"
 msgstr "Image ronde"
 
@@ -542,11 +671,11 @@ msgstr "Répéter le motif"
 
 #: global-fields/background-fields.php:126
 msgid "Overlay"
-msgstr "Overlay"
+msgstr "Calque de superposition"
 
 #: global-fields/background-fields.php:137
 msgid "Add an overlay over the background image"
-msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
+msgstr "Ajouter un dégradé sombre superposé à l’image d’arrière-plan"
 
 #: global-fields/background-fields.php:145
 msgid "Background options - end"
@@ -580,18 +709,6 @@ msgstr "Options de bloc : Images de Galerie"
 msgid "Size"
 msgstr "Taille"
 
-#: global-fields/gallery-fields.php:25
-msgid "Thumbnail"
-msgstr "Vignette"
-
-#: global-fields/gallery-fields.php:26
-msgid "Medium"
-msgstr "Moyenne"
-
-#: global-fields/gallery-fields.php:27
-msgid "Large"
-msgstr "Grande"
-
 #: global-fields/gallery-fields.php:40
 msgid "External link"
 msgstr "Lien Externe"
@@ -611,6 +728,31 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "H1"
+#~ msgstr "H1"
+
+#~ msgid "h2 title"
+#~ msgstr "Titre h2"
+
+#~ msgid "h3 title"
+#~ msgstr "Titre h3"
+
+#~ msgid "h4 title"
+#~ msgstr "Titre h4"
+
+#~ msgid "h5 title"
+#~ msgstr "Titre h5"
+
+#~ msgid "h6 title"
+#~ msgstr "Titre h6"
+
+#~ msgid ""
+#~ "<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id "
+#~ "elit.</p>"
+#~ msgstr ""
+#~ "<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id "
+#~ "elit.</p>"
 
 #~ msgid "by&nbsp;"
 #~ msgstr "par&nbsp;"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-09-03 13:33+0200\n"
-"PO-Revision-Date: 2020-09-03 13:33+0200\n"
+"POT-Creation-Date: 2020-10-02 14:57+0200\n"
+"PO-Revision-Date: 2020-10-02 15:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -276,11 +276,11 @@ msgstr "Créez une galerie de cartes avec ou sans miniature."
 
 #: blocks/block-cta/block-cta-fields.php:9
 msgid "AD ACF Block 04: CTA"
-msgstr "AD ACF Bloc 04 : CTA"
+msgstr "AD ACF Bloc 04 : Appel à l’action"
 
 #: blocks/block-cta/block-cta-fields.php:13
 msgid "CTA type"
-msgstr "Type de CTA"
+msgstr "Type de bloc d’appel à l’action"
 
 #: blocks/block-cta/block-cta-fields.php:25
 msgid "Box"
@@ -297,7 +297,7 @@ msgstr "Zone de texte"
 
 #: blocks/block-cta/block-cta.php:14
 msgid "CTA"
-msgstr "CTA"
+msgstr "Bloc d’appel à l’action"
 
 #: blocks/block-cta/block-cta.php:15
 msgid "Call to action block, with background color or background picture."
@@ -346,40 +346,40 @@ msgstr ""
 "Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
 "galerie"
 
-#: blocks/block-gallery/block-gallery-fields.php:161
+#: blocks/block-gallery/block-gallery-fields.php:158
 msgid "Legend display"
 msgstr "Affichage de la légende"
 
-#: blocks/block-gallery/block-gallery-fields.php:173
+#: blocks/block-gallery/block-gallery-fields.php:170
 msgid "Inside"
 msgstr "À l’intérieur"
 
-#: blocks/block-gallery/block-gallery-fields.php:174
+#: blocks/block-gallery/block-gallery-fields.php:171
 msgid "Outside"
 msgstr "À l'extérieur"
 
-#: blocks/block-gallery/block-gallery-fields.php:183
+#: blocks/block-gallery/block-gallery-fields.php:180
 #: blocks/block-posts/block-posts-fields.php:153
 #: blocks/block-textimg/block-textimg-fields.php:82
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
 
-#: blocks/block-gallery/block-gallery-fields.php:203
+#: blocks/block-gallery/block-gallery-fields.php:200
 #: global-fields/gallery-fields.php:25
 msgid "Thumbnail"
 msgstr "Vignette"
 
-#: blocks/block-gallery/block-gallery-fields.php:204
+#: blocks/block-gallery/block-gallery-fields.php:201
 #: global-fields/gallery-fields.php:26
 msgid "Medium"
 msgstr "Moyenne"
 
-#: blocks/block-gallery/block-gallery-fields.php:205
+#: blocks/block-gallery/block-gallery-fields.php:202
 #: global-fields/gallery-fields.php:27
 msgid "Large"
 msgstr "Grande"
 
-#: blocks/block-gallery/block-gallery-fields.php:217
+#: blocks/block-gallery/block-gallery-fields.php:214
 msgid "Display excerpt and <em>Read More</em> button"
 msgstr "Afficher l’extrait et un bouton <em>En savoir plus</em>"
 
@@ -405,7 +405,7 @@ msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:115
-#: blocks/block-posts/templates/block-posts-template.php:68
+#: blocks/block-posts/templates/block-posts-template.php:73
 msgid "Read "
 msgstr "Lire "
 
@@ -461,15 +461,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:93
+#: blocks/block-posts/templates/block-posts-template.php:95
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:95
+#: blocks/block-posts/templates/block-posts-template.php:97
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:99
+#: blocks/block-posts/templates/block-posts-template.php:101
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
@@ -671,11 +671,11 @@ msgstr "Répéter le motif"
 
 #: global-fields/background-fields.php:126
 msgid "Overlay"
-msgstr "Overlay"
+msgstr "Calque de superposition"
 
 #: global-fields/background-fields.php:137
 msgid "Add an overlay over the background image"
-msgstr "Ajouter un overlay par dessus l’image d’arrière-plan"
+msgstr "Ajouter un dégradé sombre superposé à l’image d’arrière-plan"
 
 #: global-fields/background-fields.php:145
 msgid "Background options - end"
