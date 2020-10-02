@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-10-02 14:57+0200\n"
-"PO-Revision-Date: 2020-10-02 15:02+0200\n"
+"POT-Creation-Date: 2020-10-02 16:02+0200\n"
+"PO-Revision-Date: 2020-10-02 16:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -262,7 +262,8 @@ msgid "Picture and links"
 msgstr "Image et liens"
 
 #: blocks/block-cards/block-cards-fields.php:149
-#: blocks/block-textimg/block-textimg-fields.php:58
+#: blocks/block-textimg/block-textimg-fields.php:51
+#: blocks/block-textimg/block-textimg-fields.php:80
 msgid "Picture"
 msgstr "Image"
 
@@ -291,7 +292,8 @@ msgid "Inline"
 msgstr "En ligne"
 
 #: blocks/block-cta/block-cta-fields.php:35
-#: blocks/block-textimg/block-textimg-fields.php:39
+#: blocks/block-pagebanner/block-pagebanner-fields.php:13
+#: blocks/block-textimg/block-textimg-fields.php:61
 msgid "Text area"
 msgstr "Zone de texte"
 
@@ -360,7 +362,7 @@ msgstr "À l'extérieur"
 
 #: blocks/block-gallery/block-gallery-fields.php:180
 #: blocks/block-posts/block-posts-fields.php:153
-#: blocks/block-textimg/block-textimg-fields.php:82
+#: blocks/block-textimg/block-textimg-fields.php:139
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
 
@@ -399,8 +401,8 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:72
-#: blocks/block-textimg/block-textimg-fields.php:141
-#: blocks/block-textimg/templates/block-textimg-template.php:52
+#: blocks/block-textimg/block-textimg-fields.php:198
+#: blocks/block-textimg/templates/block-textimg-template.php:61
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
@@ -412,6 +414,51 @@ msgstr "Lire "
 #: blocks/block-gallery/templates/block-gallery-template.php:135
 msgid "Read More"
 msgstr "En savoir plus"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:9
+msgid "AD ACF Block 10: Page banner"
+msgstr "AD ACF Block 10: Page banner"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:32
+msgid "Background type"
+msgstr "Type d’arrière-plan"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:44
+msgid "Image"
+msgstr "Image"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:45
+msgid "MP4 Video"
+msgstr "Vidéo MP4"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:54
+#: global-fields/background-fields.php:45
+msgid "Background image"
+msgstr "Image d’arrière-plan"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:86
+msgid "Background video"
+msgstr "Vidéo d'arrière-plan"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:113
+msgid "Add a scroll button"
+msgstr "Ajouter un bouton de défilement"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:132
+msgid "Custom scroll button image"
+msgstr "Image personnalisée du bouton de défilement"
+
+#: blocks/block-pagebanner/block-pagebanner.php:14
+msgid "Page Banner"
+msgstr "Bannière de page"
+
+#: blocks/block-pagebanner/block-pagebanner.php:15
+msgid "Add a page banner at the beginning of your page."
+msgstr "Ajoutez une bannière au début de votre page."
+
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:31
+msgid "Scroll Down"
+msgstr "Faire défiler vers le bas"
 
 #: blocks/block-posts/block-posts-fields.php:9
 msgid "AD ACF Block 05: Posts"
@@ -564,7 +611,7 @@ msgid "Horizontal centering"
 msgstr "Centrage horizontal"
 
 #: blocks/block-text/block-text-fields.php:68
-#: blocks/block-textimg/block-textimg-fields.php:122
+#: blocks/block-textimg/block-textimg-fields.php:179
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
@@ -613,15 +660,28 @@ msgstr "Un tiers / Deux tiers"
 msgid "Two third / One third"
 msgstr "Deux tiers / Un tiers"
 
-#: blocks/block-textimg/block-textimg-fields.php:103
+#: blocks/block-textimg/block-textimg-fields.php:39
+msgid "Media type"
+msgstr "Type de Média"
+
+#: blocks/block-textimg/block-textimg-fields.php:52
+#: blocks/block-textimg/block-textimg-fields.php:112
+msgid "Video embed"
+msgstr "Intégrer de la vidéo"
+
+#: blocks/block-textimg/block-textimg-fields.php:115
+msgid "Copy-paste your video URL from Youtube, Vimeo…"
+msgstr "Copier-coller votre URL vidéo de Youtube, Vimeo…"
+
+#: blocks/block-textimg/block-textimg-fields.php:160
 msgid "Picture on the right"
 msgstr "Image à droite"
 
-#: blocks/block-textimg/block-textimg-fields.php:160
+#: blocks/block-textimg/block-textimg-fields.php:217
 msgid "Enlarge picture with Fancybox"
 msgstr "Agrandir l’image avec Fancybox"
 
-#: blocks/block-textimg/block-textimg-fields.php:187
+#: blocks/block-textimg/block-textimg-fields.php:244
 msgid "Round picture"
 msgstr "Image ronde"
 
@@ -644,10 +704,6 @@ msgstr "Option d’arrière-plan"
 #: global-fields/background-fields.php:30
 msgid "Background color"
 msgstr "Couleur d’arrière-plan"
-
-#: global-fields/background-fields.php:45
-msgid "Background image"
-msgstr "Image d’arrière-plan"
 
 #: global-fields/background-fields.php:48
 msgid "Choose a picture or a pattern"
