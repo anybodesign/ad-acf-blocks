@@ -30,6 +30,12 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.2 - 2020-10-02
+* New block: Page banner
+* Posts Block: link markup fix
+* Text+Img Block: video option
+* FR translation updated
+
 ### 2.1 - 2020-09-03
 * Posts Block: get CPT class
 * Gallery Block: extended to all CPT
