@@ -63,4 +63,8 @@
 	position: absolute;
 	top: $grid-padding;
 	right: $grid-padding;
+
+	.wp-admin & {
+		display: none;
+	}
 }
