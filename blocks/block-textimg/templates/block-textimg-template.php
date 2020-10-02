@@ -9,7 +9,10 @@
 	$text = get_field('text');
 	$size = get_field('textimg_size_feature_size');
 	$prop = get_field('proportions');
-
+	
+	$media = get_field('media_type');
+	$video = get_field('video');
+	
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
 	$max = get_field('center_max');
@@ -45,8 +48,14 @@
 
 					<div class="acf-block-textimg-picture">
 
+					<?php 
+						if ($media == 'video' && $video ) { 
+							
+							echo $video; 
 						
-						<?php if ( $img ) { ?>
+						} else { ?>	
+						
+						<?php if ($img) { ?>
 						<figure<?php if ( $img['caption'] ) { echo ' role="group"'; } ?>>
 							<?php if ( $zoom ) { ?>
 							<a href="<?php echo $img['url']; ?>" title="<?php _e('Enlarge picture', 'adblocks'); ?>"<?php if ($fancy) { echo ' data-fancybox="picture"'; } ?>>
@@ -76,6 +85,10 @@
 							<?php } ?>
 						</figure>
 						<?php } ?>
+						
+					<?php } ?>
+					
+
 					</div>
 
 				<?php if ( $text ) { ?>

@@ -35,6 +35,28 @@ acf_add_local_field_group(array(
 			'placeholder' => '',
 		),
 		array(
+			'key' => 'field_5f772547bc234',
+			'label' => __('Media type', 'adblocks'),
+			'name' => 'media_type',
+			'type' => 'button_group',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'picture' => __('Picture', 'adblocks'),
+				'video' => __('Video embed', 'adblocks'),
+			),
+			'allow_null' => 0,
+			'default_value' => 'picture',
+			'layout' => 'horizontal',
+			'return_format' => 'value',
+		),
+		array(
 			'key' => 'field_5ce41de031ede',
 			'label' => __('Text area', 'adblocks'),
 			'name' => 'text',
@@ -60,7 +82,15 @@ acf_add_local_field_group(array(
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5f772547bc234',
+						'operator' => '==',
+						'value' => 'picture',
+					),
+				),
+			),
 			'wrapper' => array(
 				'width' => '35',
 				'class' => '',
@@ -76,6 +106,33 @@ acf_add_local_field_group(array(
 			'max_height' => '',
 			'max_size' => '',
 			'mime_types' => '',
+		),
+		array(
+			'key' => 'field_5f7725a97898a',
+			'label' => __('Video embed', 'adblocks'),
+			'name' => 'video',
+			'type' => 'wysiwyg',
+			'instructions' => __('Copy-paste your video URL from Youtube, Vimeo…', 'adblocks'),
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5f772547bc234',
+						'operator' => '==',
+						'value' => 'video',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '35',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'visual',
+			'toolbar' => 'basic',
+			'media_upload' => 0,
+			'delay' => 1,
 		),
 		array(
 			'key' => 'field_5ece36dd24459',

@@ -30,17 +30,27 @@
 	}
 }
 
-.acf-block-textimg-picture figure {
+.acf-block-textimg-picture {
 	
-	.wp-admin & {
-		margin: 0;
+	figure {
 		
-		img {
-			max-width: none;
-			width: 100%;
-			height: auto;
+		.wp-admin & {
+			margin: 0;
+			
+			img {
+				max-width: none;
+				width: 100%;
+				height: auto;
+			}
+		}	 
+	}
+	
+	iframe {
+		.wp-admin & {
+			max-height: 280px;
 		}
 	}
+
 }
 
 .acf-block-textimg-text {
