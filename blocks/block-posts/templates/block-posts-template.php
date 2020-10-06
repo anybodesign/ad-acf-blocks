@@ -10,6 +10,7 @@
 	$link = get_field('link_value');
 	
 	$content = get_field('posts_select');
+	$h1 = get_field('first_title_level');
 	$h = get_field('title_level');
 	$show = get_field('content_show');
 	$metas = get_field('metas');
@@ -53,7 +54,7 @@
 					
 					<?php if ( $has_intro || $has_title ) { ?>
 					<div class="acf-block-post-intro">
-						<?php if ( $has_title ) { echo '<h2 class="acf-block-post-intro-title">'.$title.'</h2>'; } ?>
+						<?php if ( $has_title ) { echo '<'.$h1.' class="acf-block-post-intro-title">'.$title.'</'.$h1.'>'; } ?>
 						<?php if ( $has_intro ) { echo $intro; } ?>
 					</div>
 					<?php } ?>
