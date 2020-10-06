@@ -17,6 +17,12 @@
 	
 	$size = get_field('posts_size_feature_size');
 	
+	if ($h1) {
+		$h_title = $h1;
+	} else {
+		$h_title = 'h2';
+	}
+	
 	// Bg
 	
 	$bgcolor = get_field('bg_color');
@@ -54,7 +60,7 @@
 					
 					<?php if ( $has_intro || $has_title ) { ?>
 					<div class="acf-block-post-intro">
-						<?php if ( $has_title ) { echo '<'.$h1.' class="acf-block-post-intro-title">'.$title.'</'.$h1.'>'; } ?>
+						<?php if ( $has_title ) { echo '<'.$h_title.' class="acf-block-post-intro-title">'.$title.'</'.$h_title.'>'; } ?>
 						<?php if ( $has_intro ) { echo $intro; } ?>
 					</div>
 					<?php } ?>
