@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-10-02 16:02+0200\n"
-"PO-Revision-Date: 2020-10-02 16:03+0200\n"
+"POT-Creation-Date: 2020-10-06 08:50+0200\n"
+"PO-Revision-Date: 2020-10-06 08:50+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -76,7 +76,7 @@ msgstr "AD ACF Block 08: Liste avancée"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:13
 #: blocks/block-cards/block-cards-fields.php:13
-#: blocks/block-posts/block-posts-fields.php:174
+#: blocks/block-posts/block-posts-fields.php:59
 msgid "Title level"
 msgstr "Niveau de titre"
 
@@ -85,36 +85,44 @@ msgid "Choose the title level for the list items"
 msgstr "Choisissez le niveau de titre pour les éléments de liste"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:25
+#: blocks/block-cards/block-cards-fields.php:30
+#: blocks/block-posts/block-posts-fields.php:84
+#: blocks/block-posts/block-posts-fields.php:228
 msgid "None"
 msgstr "Aucun"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:26
 #: blocks/block-cards/block-cards-fields.php:25
-#: blocks/block-posts/block-posts-fields.php:186
+#: blocks/block-posts/block-posts-fields.php:79
+#: blocks/block-posts/block-posts-fields.php:223
 msgid "H2"
 msgstr "H2"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:27
 #: blocks/block-cards/block-cards-fields.php:26
-#: blocks/block-posts/block-posts-fields.php:187
+#: blocks/block-posts/block-posts-fields.php:80
+#: blocks/block-posts/block-posts-fields.php:224
 msgid "H3"
 msgstr "H3"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:28
 #: blocks/block-cards/block-cards-fields.php:27
-#: blocks/block-posts/block-posts-fields.php:188
+#: blocks/block-posts/block-posts-fields.php:81
+#: blocks/block-posts/block-posts-fields.php:225
 msgid "H4"
 msgstr "H4"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:29
 #: blocks/block-cards/block-cards-fields.php:28
-#: blocks/block-posts/block-posts-fields.php:189
+#: blocks/block-posts/block-posts-fields.php:82
+#: blocks/block-posts/block-posts-fields.php:226
 msgid "H5"
 msgstr "H5"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:30
 #: blocks/block-cards/block-cards-fields.php:29
-#: blocks/block-posts/block-posts-fields.php:190
+#: blocks/block-posts/block-posts-fields.php:83
+#: blocks/block-posts/block-posts-fields.php:227
 msgid "H6"
 msgstr "H6"
 
@@ -136,7 +144,7 @@ msgid "Infos"
 msgstr "Infos"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:100
-#: blocks/block-cards/block-cards-fields.php:75
+#: blocks/block-cards/block-cards-fields.php:76
 #: blocks/block-posts/block-posts-fields.php:32
 #: blocks/block-testimonial/block-testimonial-fields.php:71
 msgid "Title"
@@ -155,9 +163,9 @@ msgid "Could be a footnote"
 msgstr "Peut-être une note de bas de page"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:157
-#: blocks/block-cards/block-cards-fields.php:173
+#: blocks/block-cards/block-cards-fields.php:174
 #: blocks/block-cta/block-cta-fields.php:54
-#: blocks/block-posts/block-posts-fields.php:242
+#: blocks/block-posts/block-posts-fields.php:278
 msgid "Link"
 msgstr "Lien"
 
@@ -236,32 +244,32 @@ msgstr "Ajoutez une ancre n’importe où dans votre publication."
 msgid "AD ACF Block 09: Cards"
 msgstr "AD ACF Block 09: Cartes"
 
-#: blocks/block-cards/block-cards-fields.php:41
+#: blocks/block-cards/block-cards-fields.php:42
 msgid "Add cards"
 msgstr "Ajouter des cartes"
 
-#: blocks/block-cards/block-cards-fields.php:56
+#: blocks/block-cards/block-cards-fields.php:57
 msgid "Add a card"
 msgstr "Ajouter une carte"
 
-#: blocks/block-cards/block-cards-fields.php:60
+#: blocks/block-cards/block-cards-fields.php:61
 msgid "Card infos"
 msgstr "Infos carte"
 
-#: blocks/block-cards/block-cards-fields.php:94
+#: blocks/block-cards/block-cards-fields.php:95
 msgid "Subtitle"
 msgstr "Sous-titre"
 
-#: blocks/block-cards/block-cards-fields.php:113
+#: blocks/block-cards/block-cards-fields.php:114
 #: blocks/block-testimonial/block-testimonial-fields.php:90
 msgid "Text"
 msgstr "Texte"
 
-#: blocks/block-cards/block-cards-fields.php:134
+#: blocks/block-cards/block-cards-fields.php:135
 msgid "Picture and links"
 msgstr "Image et liens"
 
-#: blocks/block-cards/block-cards-fields.php:149
+#: blocks/block-cards/block-cards-fields.php:150
 #: blocks/block-textimg/block-textimg-fields.php:51
 #: blocks/block-textimg/block-textimg-fields.php:80
 msgid "Picture"
@@ -361,7 +369,7 @@ msgid "Outside"
 msgstr "À l'extérieur"
 
 #: blocks/block-gallery/block-gallery-fields.php:180
-#: blocks/block-posts/block-posts-fields.php:153
+#: blocks/block-posts/block-posts-fields.php:190
 #: blocks/block-textimg/block-textimg-fields.php:139
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
@@ -407,7 +415,7 @@ msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:115
-#: blocks/block-posts/templates/block-posts-template.php:73
+#: blocks/block-posts/templates/block-posts-template.php:74
 msgid "Read "
 msgstr "Lire "
 
@@ -441,10 +449,14 @@ msgid "Background video"
 msgstr "Vidéo d'arrière-plan"
 
 #: blocks/block-pagebanner/block-pagebanner-fields.php:113
+msgid "Video poster"
+msgstr "Affiche vidéo"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:145
 msgid "Add a scroll button"
 msgstr "Ajouter un bouton de défilement"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:132
+#: blocks/block-pagebanner/block-pagebanner-fields.php:164
 msgid "Custom scroll button image"
 msgstr "Image personnalisée du bouton de défilement"
 
@@ -456,7 +468,11 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:31
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:39
+msgid "Stop video playback"
+msgstr "Arrêter la lecture vidéo"
+
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:53
 msgid "Scroll Down"
 msgstr "Faire défiler vers le bas"
 
@@ -468,35 +484,39 @@ msgstr "AD ACF Bloc 05: Publications"
 msgid "Add a title"
 msgstr "Ajouter un titre"
 
-#: blocks/block-posts/block-posts-fields.php:59
+#: blocks/block-posts/block-posts-fields.php:96
 msgid "Add an introduction text"
 msgstr "Ajouter un texte d’introduction"
 
-#: blocks/block-posts/block-posts-fields.php:78
+#: blocks/block-posts/block-posts-fields.php:115
 msgid "Introduction"
 msgstr "Introduction"
 
-#: blocks/block-posts/block-posts-fields.php:105
+#: blocks/block-posts/block-posts-fields.php:142
 msgid "Select one or many publications"
 msgstr "Sélectionner une ou plusieurs publications"
 
-#: blocks/block-posts/block-posts-fields.php:131
+#: blocks/block-posts/block-posts-fields.php:168
 msgid "Content to show"
 msgstr "Contenu à afficher"
 
-#: blocks/block-posts/block-posts-fields.php:143
+#: blocks/block-posts/block-posts-fields.php:180
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: blocks/block-posts/block-posts-fields.php:144
+#: blocks/block-posts/block-posts-fields.php:181
 msgid "Full content"
 msgstr "Contenu intégral"
 
-#: blocks/block-posts/block-posts-fields.php:204
+#: blocks/block-posts/block-posts-fields.php:211
+msgid "Posts title level"
+msgstr "Niveau de titre des publications"
+
+#: blocks/block-posts/block-posts-fields.php:240
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
-#: blocks/block-posts/block-posts-fields.php:223
+#: blocks/block-posts/block-posts-fields.php:259
 msgid "Add a link"
 msgstr "Ajouter un lien"
 
@@ -508,15 +528,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:95
+#: blocks/block-posts/templates/block-posts-template.php:96
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:97
+#: blocks/block-posts/templates/block-posts-template.php:98
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:101
+#: blocks/block-posts/templates/block-posts-template.php:102
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
