@@ -32,7 +32,7 @@
 				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/cta-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>
 
-			<section class="acf-block--cta<?php if ($type == 'inline') { echo ' inline-cta'; } if ($white) { echo ' white-text'; } if ($over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
+			<section class="acf-block--cta<?php if ($type == 'inline') { echo ' inline-cta'; } else { echo ' boxed-cta'; } if ($white) { echo ' white-text'; } if ($over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container">
 				
 					<?php if( $text ) { ?>
