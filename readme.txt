@@ -3,7 +3,7 @@ Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
 Tested up to: 5.5.1
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,13 +16,6 @@ AD ACF Blocks is a boilerplate of custom blocks for the new editor. They're all 
 
 
 = How-To =
-
-== Installation ==
-
-* Download the zip archive and upload it to your WordPress site. 
-* Activate the plugin, ACF must be activated. 
-* Customize and start using the blocks in any post or page!
-
 
 == CSS Customisation ==
 
@@ -55,6 +48,9 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 2.2.2 - 2020-10-06 =
+* Hotfix: Posts title level exists
 
 = 2.2.1 - 2020-10-06 =
 * Fr translation update
