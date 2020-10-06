@@ -27,6 +27,7 @@ acf_add_local_field_group(array(
 				'h4' => __('H4', 'adblocks'),
 				'h5' => __('H5', 'adblocks'),
 				'h6' => __('H6', 'adblocks'),
+				'p' => __('None', 'adblocks'),
 			),
 			'default_value' => 'h2',
 			'allow_null' => 0,
