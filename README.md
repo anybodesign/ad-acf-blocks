@@ -30,6 +30,11 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.2.1 - 2020-10-06
+* Fr translation update
+* CTA boxed class
+* Cards & Posts blocks no title level
+
 ### 2.2 - 2020-10-02
 * New block: Page banner
 * Posts Block: link markup fix
