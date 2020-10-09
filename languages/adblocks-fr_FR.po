@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-10-06 08:50+0200\n"
-"PO-Revision-Date: 2020-10-06 08:50+0200\n"
+"POT-Creation-Date: 2020-10-09 18:47+0200\n"
+"PO-Revision-Date: 2020-10-09 18:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,8 +25,12 @@ msgstr ""
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
+#: ad-acf-blocks.php:104
+msgid "Read more"
+msgstr "Lire la suite"
+
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks.php:110
+#: ad-acf-blocks.php:125
 msgid "AD ACF Blocks"
 msgstr "AD ACF Blocks"
 
@@ -415,7 +419,7 @@ msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:115
-#: blocks/block-posts/templates/block-posts-template.php:74
+#: blocks/block-posts/templates/block-posts-template.php:80
 msgid "Read "
 msgstr "Lire "
 
@@ -528,15 +532,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:96
+#: blocks/block-posts/templates/block-posts-template.php:102
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:98
+#: blocks/block-posts/templates/block-posts-template.php:104
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:102
+#: blocks/block-posts/templates/block-posts-template.php:108
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
