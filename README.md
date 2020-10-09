@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.2.3 - 2020-10-09
+* Hotfix: Posts Block custom post excerpt link
+
 ### 2.2.2 - 2020-10-06
 * Hotfix: Posts title level exists
 
