@@ -90,6 +90,21 @@ function adblocks_plugin_row($plugin_file, $plugin_data, $status) {
     
 }
 
+// Custom excerpt
+// https://gist.github.com/samjbmason/4050714
+
+function adblocks_get_excerpt($count, $post_id){
+  $permalink = get_permalink($post_id);
+  $excerpt = get_post($post_id);
+  $excerpt = $excerpt->post_content;
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, $count);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+
+  $excerpt = '<p class="acf-block-post-excerpt">'.$excerpt.'... <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks').'</a></p>';
+  return $excerpt;
+}
+
 
 //
 // ACF Blocks

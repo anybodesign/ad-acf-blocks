@@ -112,7 +112,8 @@
 								
 								<?php 
 									if ($show == 'excerpt') {
-										echo '<p class="acf-block-post-excerpt">'.get_the_excerpt($c->ID).'</p>'; 
+										//echo '<p class="acf-block-post-excerpt">'.get_the_excerpt($c->ID).'</p>';
+										echo adblocks_get_excerpt(125, $c->ID); 
 									}
 									if ($show == 'content' ) {
 										echo $c->post_content; 
