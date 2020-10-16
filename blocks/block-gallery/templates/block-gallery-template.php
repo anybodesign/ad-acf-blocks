@@ -2,6 +2,9 @@
 
 	$cols = get_field('columns');
 	$type = get_field('type');
+	$display = get_field('display');
+	
+	$items = get_field('grid_gallery');
 	$images = get_field('picture_gallery');
 	$content = get_field('content_gallery');
 	$legend = get_field('legend');
@@ -42,7 +45,47 @@
 			<section class="acf-block--gallery<?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); echo esc_attr(' '.$legend); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
 					
-				<?php if ($type == 'gallery') { ?>
+					
+				<?php if ($type == 'gallery' && $display == 'grid') { ?>
+				
+					<?php if( $items ): ?>
+					<div class="acf-block-gallery-pictures--<?php echo $cols; ?> gallery-grid">
+						<?php foreach( $items as $item ): 
+						
+							$image = $item['grid_picture'];
+							$size = $item['grid_size'];
+							
+							if ($size == 'square' || $size == 'big') {
+								$the_size = $image['sizes']['adblocks-thumbnail-hd'];
+							} else {
+								$the_size = $image['sizes']['adblocks-medium-hd'];
+							}
+						?>
+						<div class="acf-block-gallery-item<?php echo ' grid-'.$size; ?>">
+							<?php if( $zoom ): ?>
+				            <a href="<?php echo $image['url']; ?>" "title="<?php esc_attr_e('Enlarge picture', 'adblocks'); ?>"<?php if ($fancy) { echo ' data-fancybox="grid-gallery"'; } ?>>
+					        <?php endif; ?>	   
+					        <figure class="acf-block-gallery-figure"<?php if ( $image['caption'] ) { echo ' role="group"'; } ?>>
+						            <div><img src="<?php echo $the_size; ?>" alt="<?php echo $image['alt']; ?>"></div>
+									<?php if ( $image['caption'] ) { ?>
+									<figcaption class="acf-block-gallery-caption">
+										<span class="acf-block-gallery-caption-title"><?php echo $image['caption']; ?></span>
+									</figcaption>
+									<?php } ?>
+						    </figure>
+					        <?php if( $zoom): ?>
+					        </a>
+					        <?php endif; ?>	
+							
+							 
+						</div>
+						<?php endforeach; ?>
+					</div>
+					<?php endif; ?>	
+					
+					
+				<?php } else if ($type == 'gallery' && $display != 'grid') { ?>
+				
 				
 					<?php if( $images ): ?>
 					<div class="acf-block-gallery-pictures--<?php echo $cols; ?>">
