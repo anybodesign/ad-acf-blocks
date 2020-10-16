@@ -24,25 +24,17 @@
 	
 	@include rwd(tiny) {
 		width: 50%;
+		
+		.acf-block-post-content--1col & {
+			width: 100%;
+		}
 	}
 	@include rwd(small) {
 		width: 33.3333%;
-		
-		.acf-block-post-content--2cols & {
-			width: 50%;
-		}
-	}
-	@include rwd(medium) {
-		width: 25%;
-		
-		.acf-block-post-content--3cols & {
-			width: 33.3333%;
-		}
 
 		.acf-block-post-content--1col & {
 			display: flex;
 			flex-wrap: wrap;
-			width: 100%;
 			
 			.acf-block-post-figure {
 				width: 30%;
@@ -52,6 +44,26 @@
 				width: 70%;	
 			}
 		}		
+		.acf-block-post-content--2cols & {
+			width: 50%;
+		}
+	}
+	@include rwd(medium) {
+		width: 25%;
+		
+		.acf-block-post-content--1col & {
+			
+			.acf-block-post-figure {
+				width: 50%;
+			}
+			.acf-block-post-content {
+				width: 50%;	
+			}
+		}
+		
+		.acf-block-post-content--3cols & {
+			width: 33.3333%;
+		}				
 	}
 	@include rwd(large) {
 		.acf-block-post-content--5cols & {
