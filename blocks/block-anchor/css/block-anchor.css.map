@@ -1,1 +1,1 @@
-{"version":3,"sources":["block-anchor.scss"],"names":[],"mappings":"AASA,mBACC,SAAU,CAEV,6BACC,eAAgB,CAChB,sBAAuB,CACvB,mFAAoF,CACpF,oCAAqC,CAJtC,oCAOE,gBAAiB,CACjB,aAAc,CACd,gBAAiB,CACjB,gBAAiB","file":"block-anchor.css"}
+{"version":3,"sources":["block-anchor.scss","block-anchor.css"],"names":[],"mappings":"AASA,mBACC,SCRD,CDUC,6BACC,eAAA,CACA,sBAAA,CACA,kFAAA,CACA,mCCRF,CDUE,mCACC,gBAAA,CACA,aAAA,CACA,gBAAA,CACA,gBCRH","file":"block-anchor.css"}

@@ -6,6 +6,7 @@
 
 $grid-padding: 1rem;
 
+$width-tiny: 23.375em;	 	// @note: 374px
 $width-small: 30em; 		// @note: 480px
 $width-medium: 45em;		// @note: 720px
 $width-large: 60em; 		// @note: 960px
@@ -77,6 +78,11 @@ $admin-bar: 48.875em;	 	// @note: 782px
 	}
 	@else if $width == small {
 		@media only screen and (min-width: $width-small) {
+			@content;
+		}
+	}
+	@else if $width == tiny {
+		@media only screen and (min-width: $width-tiny) {
 			@content;
 		}
 	}
