@@ -14,7 +14,7 @@
 	margin-left: -$grid-padding;
 	margin-right: -$grid-padding;
 		
-	@include rwd(medium) {
+	@include rwd(tiny) {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -22,8 +22,23 @@
 .acf-block-post-item {
 	padding: $grid-padding;
 	
-	@include rwd(medium) {
+	@include rwd(tiny) {
+		width: 50%;
+	}
+	@include rwd(small) {
+		width: 33.3333%;
 		
+		.acf-block-post-content--2cols & {
+			width: 50%;
+		}
+	}
+	@include rwd(medium) {
+		width: 25%;
+		
+		.acf-block-post-content--3cols & {
+			width: 33.3333%;
+		}
+
 		.acf-block-post-content--1col & {
 			display: flex;
 			flex-wrap: wrap;
@@ -36,22 +51,14 @@
 			.acf-block-post-content {
 				width: 70%;	
 			}
-		}
-		
-		.acf-block-post-content--2cols & {
-			width: 50%;
-		}
-		.acf-block-post-content--3cols & {
-			width: 33.3333%;
-		}
-		.acf-block-post-content--4cols & {
-			width: 25%;
-		}
+		}		
+	}
+	@include rwd(large) {
 		.acf-block-post-content--5cols & {
 			width: 20%;
 		}
 		.acf-block-post-content--6cols & {
 			width: 16.6667%;
-		}
+		}		
 	}	
 }	
