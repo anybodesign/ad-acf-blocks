@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.3.1 - 2020-10-16
+* Hotfix: Posts block on single column
+
 ### 2.3 - 2020-10-16
 * Posts block: post header addded
 * Gallery block: grid view option
