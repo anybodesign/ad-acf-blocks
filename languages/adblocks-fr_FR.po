@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-10-09 18:47+0200\n"
-"PO-Revision-Date: 2020-10-09 18:47+0200\n"
+"POT-Creation-Date: 2020-10-16 13:13+0200\n"
+"PO-Revision-Date: 2020-10-16 13:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -274,6 +274,7 @@ msgid "Picture and links"
 msgstr "Image et liens"
 
 #: blocks/block-cards/block-cards-fields.php:150
+#: blocks/block-gallery/block-gallery-fields.php:137
 #: blocks/block-textimg/block-textimg-fields.php:51
 #: blocks/block-textimg/block-textimg-fields.php:80
 msgid "Picture"
@@ -333,67 +334,109 @@ msgid "Content type"
 msgstr "Type de contenu"
 
 #: blocks/block-gallery/block-gallery-fields.php:25
-#: blocks/block-gallery/block-gallery-fields.php:35
+#: blocks/block-gallery/block-gallery-fields.php:65
 msgid "Picture gallery"
 msgstr "Galerie d’images"
 
 #: blocks/block-gallery/block-gallery-fields.php:26
-#: blocks/block-gallery/block-gallery-fields.php:124
+#: blocks/block-gallery/block-gallery-fields.php:244
 msgid "Content gallery"
 msgstr "Galerie de contenus"
 
-#: blocks/block-gallery/block-gallery-fields.php:38
+#: blocks/block-gallery/block-gallery-fields.php:35
+msgid "Display"
+msgstr "Affichage"
+
+#: blocks/block-gallery/block-gallery-fields.php:55
+msgid "Contact sheet"
+msgstr "Planche contact"
+
+#: blocks/block-gallery/block-gallery-fields.php:56
+msgid "Grid"
+msgstr "﻿Grille"
+
+#: blocks/block-gallery/block-gallery-fields.php:68
+#: blocks/block-gallery/block-gallery-fields.php:108
 msgid "Select the pictures"
 msgstr "Sélectionnez les images"
 
-#: blocks/block-gallery/block-gallery-fields.php:70
+#: blocks/block-gallery/block-gallery-fields.php:105
+msgid "Picture grid gallery"
+msgstr "Galerie d’images en grille"
+
+#: blocks/block-gallery/block-gallery-fields.php:133
+msgid "Add a picture"
+msgstr "Ajouter une photo"
+
+#: blocks/block-gallery/block-gallery-fields.php:161
+#: global-fields/gallery-fields.php:13
+msgid "Size"
+msgstr "Taille"
+
+#: blocks/block-gallery/block-gallery-fields.php:173
+msgid "Square"
+msgstr "Carré"
+
+#: blocks/block-gallery/block-gallery-fields.php:174
+msgid "Big Square"
+msgstr "Grand Carré"
+
+#: blocks/block-gallery/block-gallery-fields.php:175
+msgid "Horizontal"
+msgstr "Horizontale"
+
+#: blocks/block-gallery/block-gallery-fields.php:176
+msgid "Vertical"
+msgstr "Verticale"
+
+#: blocks/block-gallery/block-gallery-fields.php:190
 msgid "Enlarge pictures"
 msgstr "Agrandir les images"
 
-#: blocks/block-gallery/block-gallery-fields.php:97
+#: blocks/block-gallery/block-gallery-fields.php:217
 msgid "Enlarge pictures with Fancybox"
 msgstr "Agrandir les images avec Fancybox"
 
-#: blocks/block-gallery/block-gallery-fields.php:127
+#: blocks/block-gallery/block-gallery-fields.php:247
 msgid "Select the pages or posts you wish to have in this gallery"
 msgstr ""
 "Sélectionnez les pages ou les articles que vous souhaitez avoir dans cette "
 "galerie"
 
-#: blocks/block-gallery/block-gallery-fields.php:158
+#: blocks/block-gallery/block-gallery-fields.php:278
 msgid "Legend display"
 msgstr "Affichage de la légende"
 
-#: blocks/block-gallery/block-gallery-fields.php:170
+#: blocks/block-gallery/block-gallery-fields.php:290
 msgid "Inside"
 msgstr "À l’intérieur"
 
-#: blocks/block-gallery/block-gallery-fields.php:171
+#: blocks/block-gallery/block-gallery-fields.php:291
 msgid "Outside"
 msgstr "À l'extérieur"
 
-#: blocks/block-gallery/block-gallery-fields.php:180
+#: blocks/block-gallery/block-gallery-fields.php:300
 #: blocks/block-posts/block-posts-fields.php:190
 #: blocks/block-textimg/block-textimg-fields.php:139
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
 
-#: blocks/block-gallery/block-gallery-fields.php:200
+#: blocks/block-gallery/block-gallery-fields.php:320
 #: global-fields/gallery-fields.php:25
 msgid "Thumbnail"
 msgstr "Vignette"
 
-#: blocks/block-gallery/block-gallery-fields.php:201
+#: blocks/block-gallery/block-gallery-fields.php:321
 #: global-fields/gallery-fields.php:26
 msgid "Medium"
 msgstr "Moyenne"
 
-#: blocks/block-gallery/block-gallery-fields.php:202
+#: blocks/block-gallery/block-gallery-fields.php:322
 #: global-fields/gallery-fields.php:27
 msgid "Large"
 msgstr "Grande"
 
-#: blocks/block-gallery/block-gallery-fields.php:214
+#: blocks/block-gallery/block-gallery-fields.php:334
 msgid "Display excerpt and <em>Read More</em> button"
 msgstr "Afficher l’extrait et un bouton <em>En savoir plus</em>"
 
@@ -408,22 +451,23 @@ msgstr ""
 "Créez une galerie d'images ou une galerie de pages et/ou d’articles avec "
 "vignettes."
 
-#: blocks/block-gallery/templates/block-gallery-template.php:69
-msgid "Open a new tab"
-msgstr "Ouvre un nouvel onglet"
-
-#: blocks/block-gallery/templates/block-gallery-template.php:72
+#: blocks/block-gallery/templates/block-gallery-template.php:66
+#: blocks/block-gallery/templates/block-gallery-template.php:115
 #: blocks/block-textimg/block-textimg-fields.php:198
 #: blocks/block-textimg/templates/block-textimg-template.php:61
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
-#: blocks/block-gallery/templates/block-gallery-template.php:115
+#: blocks/block-gallery/templates/block-gallery-template.php:112
+msgid "Open a new tab"
+msgstr "Ouvre un nouvel onglet"
+
+#: blocks/block-gallery/templates/block-gallery-template.php:158
 #: blocks/block-posts/templates/block-posts-template.php:80
 msgid "Read "
 msgstr "Lire "
 
-#: blocks/block-gallery/templates/block-gallery-template.php:135
+#: blocks/block-gallery/templates/block-gallery-template.php:178
 msgid "Read More"
 msgstr "En savoir plus"
 
@@ -532,15 +576,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:102
+#: blocks/block-posts/templates/block-posts-template.php:104
 msgid "Posted by&nbsp;"
 msgstr "Publié par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:104
+#: blocks/block-posts/templates/block-posts-template.php:106
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:108
+#: blocks/block-posts/templates/block-posts-template.php:110
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
@@ -785,10 +829,6 @@ msgstr "6 colonnes"
 msgid "Block Options: Gallery Pictures"
 msgstr "Options de bloc : Images de Galerie"
 
-#: global-fields/gallery-fields.php:13
-msgid "Size"
-msgstr "Taille"
-
 #: global-fields/gallery-fields.php:40
 msgid "External link"
 msgstr "Lien Externe"
@@ -851,9 +891,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "AD ACF Block 04: Content Gallery"
 #~ msgstr "AD ACF Bloc 04 : Galerie de contenus"
-
-#~ msgid "Title display"
-#~ msgstr "Affichage du titre"
 
 #~ msgid "Mise en page"
 #~ msgstr "Mise en page"
