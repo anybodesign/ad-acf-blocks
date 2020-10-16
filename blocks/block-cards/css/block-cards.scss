@@ -28,12 +28,24 @@
 	.acf-block-cards--1col & {
 		width: 100%;
 	}
-	
-	a {
-		display: block;
-		text-decoration: none;
+		
+	@include rwd(tiny) {
+		width: 50%;
 	}
-	
+	@include rwd(small) {
+		width: 33.3333%;
+		
+		.acf-block-cards--2cols & {
+			width: 50%;
+		}
+	}
+	@include rwd(medium) {
+		width: 25%;
+		
+		.acf-block-cards--3cols & {
+			width: 33.3333%;
+		}
+	}
 	@include rwd(large) {
 		.acf-block-cards--6cols & {
 			width: 16.6667%;
@@ -43,14 +55,13 @@
 		}
 		.acf-block-cards--4cols & {
 			width: 25%;
-		}
-		.acf-block-cards--3cols & {
-			width: 33.3333%;
-		}
-		.acf-block-cards--2cols & {
-			width: 50%;
-		}
+		}		
 	}	
+	
+	a {
+		display: block;
+		text-decoration: none;
+	}
 }
 
 .acf-block-cards-figure {
