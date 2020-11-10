@@ -49,6 +49,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 2.3.2 - 2020-11-10 =
+* Post block: meta markup
+* Gallery block: item CPT class
+
 = 2.3.1 - 2020-10-16 =
 * Hotfix: Posts block on single column
 
