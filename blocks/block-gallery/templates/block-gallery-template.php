@@ -147,8 +147,8 @@
 					<?php if( $content ): ?>
 					<div class="acf-block-gallery-content--<?php echo $cols; ?>">
 						
-				        <?php foreach( $content as $c ): ?>
-				        <div class="acf-block-gallery-item">
+				        <?php foreach( $content as $c ): $cpt = get_post_type($c->ID); ?>
+				        <div class="acf-block-gallery-item <?php echo 'type-'.$cpt; ?>">
 					        
 					        <?php 
 						        $size = get_field('feature_size');
