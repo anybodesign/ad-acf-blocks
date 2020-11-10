@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-10-16 13:13+0200\n"
-"PO-Revision-Date: 2020-10-16 13:15+0200\n"
+"POT-Creation-Date: 2020-11-10 13:09+0100\n"
+"PO-Revision-Date: 2020-11-10 13:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -576,17 +576,17 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:104
-msgid "Posted by&nbsp;"
-msgstr "Publié par&nbsp;"
+#: blocks/block-posts/templates/block-posts-template.php:105
+msgid "Posted on&nbsp;"
+msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:106
+#: blocks/block-posts/templates/block-posts-template.php:108
+msgid "by&nbsp;"
+msgstr "par&nbsp;"
+
+#: blocks/block-posts/templates/block-posts-template.php:112
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
-
-#: blocks/block-posts/templates/block-posts-template.php:110
-msgid "on&nbsp;"
-msgstr "le&nbsp;"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:9
 msgid "AD ACF Block 07: Testimonial"
@@ -849,6 +849,9 @@ msgstr "Thomas Villain - Anybodesign"
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
 
+#~ msgid "on&nbsp;"
+#~ msgstr "le&nbsp;"
+
 #~ msgid "H1"
 #~ msgstr "H1"
 
@@ -873,9 +876,6 @@ msgstr "https://anybodesign.com/"
 #~ msgstr ""
 #~ "<h4>Lorem ipsum</h4><p>Nullam id dolor id nibh ultricies vehicula ut id "
 #~ "elit.</p>"
-
-#~ msgid "by&nbsp;"
-#~ msgstr "par&nbsp;"
 
 #~ msgid "Style"
 #~ msgstr "Style"
