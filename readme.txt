@@ -49,6 +49,9 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 2.3.3 - 2020-11-13 =
+* Fix: Post block excerpt
+
 = 2.3.2 - 2020-11-10 =
 * Post block: meta markup
 * Gallery block: item CPT class
