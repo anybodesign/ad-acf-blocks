@@ -119,8 +119,18 @@
 								<div class="acf-block-post-excerpt">
 									<?php 
 										if ($show == 'excerpt') {
-											echo adblocks_get_excerpt(125, $c->ID); 
+											
+											$my_excerpt = $c->post_excerpt;
+											$manual_excerpt = get_the_excerpt( $c->ID );
+											$permalink = get_permalink( $c->ID );
+											
+											if ( $my_excerpt != '' ) {												
+										        echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks').'</a></p>';
+										    } else {
+												echo adblocks_get_excerpt(125, $c->ID);
+											}											
 										}
+										
 										if ($show == 'content' ) {
 											echo $c->post_content; 
 										}	
