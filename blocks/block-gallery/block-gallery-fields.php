@@ -56,7 +56,7 @@ acf_add_local_field_group(array(
 				'grid' => __('Grid', 'adblocks'),
 			),
 			'allow_null' => 0,
-			'default_value' => '',
+			'default_value' => 'regular',
 			'layout' => 'horizontal',
 			'return_format' => 'value',
 		),

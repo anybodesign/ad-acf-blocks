@@ -117,7 +117,9 @@
 			object-fit: cover;
 		}
 		.acf-block-gallery-caption {
-			@include a11y-hidden();
+			.outside & {
+				@include a11y-hidden();
+			}
 		}
 		
 		&.grid-square {
