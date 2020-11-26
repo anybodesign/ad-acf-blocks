@@ -2,8 +2,8 @@
 Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
-Tested up to: 5.5.1
-Stable tag: 2.3.1
+Tested up to: 5.5.3
+Stable tag: 2.3.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,14 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 2.4 - 2020-11-26 =
+* New: Custom image sizes global fields
+* Custom sizes for posts and text+img blocks
+* Text+img block: new options (show caption, add button)
+* Grid gallery caption fix
+* testimonial block class name fix
+* Updated PUC
 
 = 2.3.3 - 2020-11-13 =
 * Fix: Post block excerpt
