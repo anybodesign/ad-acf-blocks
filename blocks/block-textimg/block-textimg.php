@@ -42,4 +42,5 @@ function adblocks_textimg_block_init() {
 // Load ACF fields (PHP)
 
 require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-textimg/block-textimg-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/custom-sizes.php' );
 require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

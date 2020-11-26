@@ -39,4 +39,5 @@ function adblocks_posts_block_init() {
 
 require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/columns-fields.php' );
 require_once( ADBLOCKS__PLUGIN_PATH . 'blocks/block-posts/block-posts-fields.php' );
+require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/custom-sizes.php' );
 require_once( ADBLOCKS__PLUGIN_PATH . 'global-fields/background-fields.php' );

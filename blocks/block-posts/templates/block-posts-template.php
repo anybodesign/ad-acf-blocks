@@ -17,6 +17,9 @@
 	
 	$size = get_field('posts_size_feature_size');
 	
+	$has_custom = get_field('has_custom_size');
+	$customsize = get_field('custom_size');
+	
 	if ($h1) {
 		$h_title = $h1;
 	} else {
@@ -79,11 +82,16 @@
 					        <div class="acf-block-post-figure">
 						        <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
 					            <?php 
-						            if ( has_post_thumbnail( $c->ID ) && $size ) { 
-					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd'); 
-									} else if ( has_post_thumbnail( $c->ID ) ) {
+						            if ( has_post_thumbnail( $c->ID ) && $size && ! $has_custom ) { 
+					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd');
+									}
+									else if ( has_post_thumbnail( $c->ID ) && $customsize && $has_custom ) { 
+					            		echo get_the_post_thumbnail( $c->ID, $customsize); 
+									} 
+									else if ( has_post_thumbnail( $c->ID ) ) {
 					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd'); 
-									} else {
+									} 
+									else {
 										echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
 						        	} 
 						        ?>

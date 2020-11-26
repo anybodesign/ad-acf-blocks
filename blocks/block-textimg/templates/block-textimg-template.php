@@ -12,7 +12,10 @@
 	
 	$media = get_field('media_type');
 	$video = get_field('video');
-	
+
+	$has_custom = get_field('has_custom_size');
+	$customsize = get_field('custom_size');
+		
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
 	$max = get_field('center_max');
@@ -66,8 +69,10 @@
 							<img class="is-round" src="<?php echo $img['sizes']['adblocks-thumbnail-hd']; ?>" alt="<?php echo $img['alt']; ?>">
 							<?php } else { ?>
 							
-							<?php if ($size) { ?> 
+							<?php if ($size && ! $has_custom) { ?> 
 							<img src="<?php echo $img['sizes']['adblocks-'.$size.'-hd']; ?>" alt="<?php echo $img['alt']; ?>">
+							<?php } else if ($customsize && $has_custom) { ?> 
+							<img src="<?php echo $img['sizes'][$customsize]; ?>" alt="<?php echo $img['alt']; ?>">
 							<?php } else { ?> 
 							<img src="<?php echo $img['sizes']['adblocks-medium-hd']; ?>" alt="<?php echo $img['alt']; ?>">
 							<?php } ?>
