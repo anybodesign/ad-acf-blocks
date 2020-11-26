@@ -57,7 +57,7 @@
 
 							<div class="testimonial-content">
 								<?php if ($title) { ?>
-								<p class="testimonal-title"><?php echo $title; ?></p>
+								<p class="testimonial-title"><?php echo $title; ?></p>
 								<?php } ?>
 								
 								<?php if ($text) { ?>

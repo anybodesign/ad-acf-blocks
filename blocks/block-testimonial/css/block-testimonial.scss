@@ -15,9 +15,14 @@
 	@include rwd(large) {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
 
 		.testimonial-picture {
 			width: 25%;
+			
+			img {
+				display: block;
+			}
 		}
 		.testimonial-content {
 			width: 70%;
