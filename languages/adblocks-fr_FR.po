@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-12-14 08:49+0100\n"
-"PO-Revision-Date: 2020-12-14 08:49+0100\n"
+"POT-Creation-Date: 2020-12-14 13:41+0100\n"
+"PO-Revision-Date: 2020-12-14 13:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -26,7 +26,7 @@ msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
 #: ad-acf-blocks.php:104
-#: blocks/block-posts/templates/block-posts-template.php:135
+#: blocks/block-posts/templates/block-posts-template.php:136
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -466,7 +466,7 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:158
-#: blocks/block-posts/templates/block-posts-template.php:82
+#: blocks/block-posts/templates/block-posts-template.php:83
 msgid "Read "
 msgstr "Lire "
 
@@ -524,11 +524,15 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:39
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:41
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:53
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:44
+msgid "Play video"
+msgstr "Lire la vidéo"
+
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:73
 msgid "Scroll Down"
 msgstr "Faire défiler vers le bas"
 
@@ -584,15 +588,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:112
+#: blocks/block-posts/templates/block-posts-template.php:113
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:115
+#: blocks/block-posts/templates/block-posts-template.php:116
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:119
+#: blocks/block-posts/templates/block-posts-template.php:120
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
