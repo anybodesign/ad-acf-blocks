@@ -43,6 +43,7 @@ acf_add_local_field_group(array(
 			'choices' => array(
 				'image' => __('Image', 'adblocks'),
 				'video' => __('MP4 Video', 'adblocks'),
+				'slideshow' => __('Slideshow', 'adblocks'),
 			),
 			'allow_null' => 0,
 			'default_value' => 'image',
@@ -141,6 +142,41 @@ acf_add_local_field_group(array(
 			'mime_types' => '',
 		),
 		array(
+			'key' => 'field_5fd718c26a301',
+			'label' => __('Slideshow', 'adblocks'),
+			'name' => 'slideshow',
+			'type' => 'gallery',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5f7732687c2dd',
+						'operator' => '==',
+						'value' => 'slideshow',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'array',
+			'preview_size' => 'medium',
+			'insert' => 'append',
+			'library' => 'all',
+			'min' => '',
+			'max' => '',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+		),
+		array(
 			'key' => 'field_5f7730c3484d6',
 			'label' => __('Add a scroll button', 'adblocks'),
 			'name' => 'scroll',
@@ -212,6 +248,5 @@ acf_add_local_field_group(array(
 ));
 
 endif;
-
 }
 add_action('acf/init', 'adblocks_pagebanner_block_fields');

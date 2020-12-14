@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-11-26 12:24+0100\n"
-"PO-Revision-Date: 2020-11-26 12:25+0100\n"
+"POT-Creation-Date: 2020-12-14 08:49+0100\n"
+"PO-Revision-Date: 2020-12-14 08:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -26,7 +26,7 @@ msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
 #: ad-acf-blocks.php:104
-#: blocks/block-posts/templates/block-posts-template.php:136
+#: blocks/block-posts/templates/block-posts-template.php:135
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -466,7 +466,7 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:158
-#: blocks/block-posts/templates/block-posts-template.php:83
+#: blocks/block-posts/templates/block-posts-template.php:82
 msgid "Read "
 msgstr "Lire "
 
@@ -490,24 +490,29 @@ msgstr "Image"
 msgid "MP4 Video"
 msgstr "Vidéo MP4"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:54
+#: blocks/block-pagebanner/block-pagebanner-fields.php:46
+#: blocks/block-pagebanner/block-pagebanner-fields.php:146
+msgid "Slideshow"
+msgstr "Diaporama"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:55
 #: global-fields/background-fields.php:45
 msgid "Background image"
 msgstr "Image d’arrière-plan"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:86
+#: blocks/block-pagebanner/block-pagebanner-fields.php:87
 msgid "Background video"
 msgstr "Vidéo d'arrière-plan"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:113
+#: blocks/block-pagebanner/block-pagebanner-fields.php:114
 msgid "Video poster"
 msgstr "Affiche vidéo"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:145
+#: blocks/block-pagebanner/block-pagebanner-fields.php:181
 msgid "Add a scroll button"
 msgstr "Ajouter un bouton de défilement"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:164
+#: blocks/block-pagebanner/block-pagebanner-fields.php:200
 msgid "Custom scroll button image"
 msgstr "Image personnalisée du bouton de défilement"
 
@@ -579,15 +584,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:113
+#: blocks/block-posts/templates/block-posts-template.php:112
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:116
+#: blocks/block-posts/templates/block-posts-template.php:115
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:120
+#: blocks/block-posts/templates/block-posts-template.php:119
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
