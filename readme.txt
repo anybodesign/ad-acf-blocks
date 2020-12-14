@@ -3,7 +3,7 @@ Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
 Tested up to: 5.6
-Stable tag: 2.4
+Stable tag: 2.5.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 2.5.1 - 2020-12-14 =
+* Hotfix: page banner block preview
 
 = 2.5 - 2020-12-14 =
 * Page banner block: slideshow option

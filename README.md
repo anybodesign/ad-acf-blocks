@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.5.1 - 2020-12-14
+* Hotfix: page banner block preview
+
 ### 2.5 - 2020-12-14
 * Page banner block: slideshow option
 * Page banner block: play button
