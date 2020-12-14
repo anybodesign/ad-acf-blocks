@@ -38,7 +38,10 @@
 						<source type="video/mp4" src="<?php echo $video; ?>">
 					</video>
 					<button id="banner_stop">
-						<img src="<?php echo ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/stop.svg'; ?>" class="banner-bg" alt="<?php esc_html_e('Stop video playback', 'adblocks'); ?>">
+						<img src="<?php echo ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/stop.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Stop video playback', 'adblocks'); ?>">
+					</button>
+					<button id="banner_play">
+						<img src="<?php echo ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/play.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Play video', 'adblocks'); ?>">
 					</button>
 					
 					<?php } else if ( $type == 'slideshow' && $slideshow ) { ?>

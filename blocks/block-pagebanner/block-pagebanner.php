@@ -62,7 +62,7 @@ function ad_pagebanner_assets() {
 	wp_register_script( 
 	    	'splide', 
 	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/splide.min.js',
-	    	array('jquery'), 
+	    	array(), 
 	    	null, 
 	    	true
     );

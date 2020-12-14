@@ -75,12 +75,23 @@
 	}
 }
 
+#banner_play,
 #banner_stop {
+	padding: 0;
+	background-color: transparent;	
 	position: absolute;
 	top: $grid-padding;
 	right: $grid-padding;
+	
+	img {
+		width: 4.4rem;
+		height: 4.4rem;
+	}
 
 	.wp-admin & {
 		display: none;
 	}
+}
+#banner_play {
+	display: none;
 }
