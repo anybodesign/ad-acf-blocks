@@ -30,6 +30,10 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.5 - 2020-12-14
+* Page banner block: slideshow option
+* Page banner block: play button
+
 ### 2.4 - 2020-11-26
 * New: Custom image sizes global fields
 * Custom sizes for posts and text+img blocks
