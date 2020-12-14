@@ -45,6 +45,13 @@ function ad_pagebanner_assets() {
 		null, 
 		'screen'
 	);
+	wp_register_style( 
+		'splide-css', 
+		ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/css/splide.min.css', 
+		array(), 
+		null, 
+		'screen'
+	);
     wp_register_script( 
 	    	'block-pagebanner', 
 	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/block-pagebanner.js',
@@ -52,9 +59,18 @@ function ad_pagebanner_assets() {
 	    	null, 
 	    	true
     );
+	wp_register_script( 
+	    	'splide', 
+	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/splide.min.js',
+	    	array('jquery'), 
+	    	null, 
+	    	true
+    );
 
 	wp_enqueue_style( 'block-pagebanner' );
+	wp_enqueue_style( 'splide-css' );
 	wp_enqueue_script( 'block-pagebanner' );
+	wp_enqueue_script( 'splide' );
 		    
 }
 

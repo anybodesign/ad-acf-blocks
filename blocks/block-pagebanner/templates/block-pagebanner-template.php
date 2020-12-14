@@ -7,6 +7,8 @@
 	$video = get_field('bg_video');
 	$poster = get_field('poster');
 	
+	$slideshow = get_field('slideshow');
+
 	$scroll = get_field('scroll');
 	$scroll_btn = get_field('scroll_btn');
 	
@@ -38,6 +40,21 @@
 					<button id="banner_stop">
 						<img src="<?php echo ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/stop.svg'; ?>" class="banner-bg" alt="<?php esc_html_e('Stop video playback', 'adblocks'); ?>">
 					</button>
+					
+					<?php } else if ( $type == 'slideshow' && $slideshow ) { ?>
+					
+					<div class="banner-slideshow splide">
+						<div class="splide__track">
+							<div class="splide__list">
+					        <?php foreach( $slideshow as $slide ): ?>
+					            <div class="splide__slide">
+									<img src="<?php echo esc_url($slide['sizes']['adblocks-large-hd']); ?>" alt="<?php echo esc_attr($slide['alt']); ?>" />
+					            </div>
+					        <?php endforeach; ?>
+							</div>
+						</div>						
+					</div>
+					
 					
 					<?php } else { 
 						echo '<img src="'.$bg.'" class="banner-bg" alt="">';	

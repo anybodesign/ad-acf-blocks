@@ -23,6 +23,18 @@ jQuery(document).ready(function($) {
 	$("#banner_stop").on('click', function() {
 	    stopVideo();
 	});
-	 
+	
+	
+	// Slideshow
+	
+	new Splide( '.splide', {
+		type	: 'fade',
+		rewind	: true,
+		speed	: 1000,
+		arrows	: false,
+		pagination	: false,
+		autoplay	: true,
+		lazyLoad	: 'nearby',
+	} ).mount();
 	
 });

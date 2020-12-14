@@ -15,7 +15,11 @@
 // Img & Video
 
 .banner-bg,
-.banner-video {
+.banner-video,
+.banner-slideshow,
+.splide__track,
+.splide__list,
+.splide__slide {
 	display: block;
 	pointer-events: none;
 	width: 100%;
@@ -27,6 +31,18 @@
 	}
 
 }
+
+.splide__slide {
+	
+	img {
+		display: block;
+		max-height: 68vh;
+		width: 100%;
+		max-width: none;
+		object-fit: cover; 
+	}
+}
+
 
 // Text 
 
