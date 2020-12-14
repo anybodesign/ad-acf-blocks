@@ -35,17 +35,4 @@ jQuery(document).ready(function($) {
 		$('#banner_stop').show();
 	});
 	
-	
-	// Slideshow
-	
-	new Splide( '.splide', {
-		type	: 'fade',
-		rewind	: true,
-		speed	: 1000,
-		arrows	: false,
-		pagination	: false,
-		autoplay	: true,
-		lazyLoad	: 'nearby',
-	} ).mount();
-	
 });

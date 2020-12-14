@@ -66,12 +66,19 @@ function ad_pagebanner_assets() {
 	    	null, 
 	    	true
     );
+	wp_register_script( 
+	    	'splide-init', 
+	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/splide-init.js',
+	    	array('splide'), 
+	    	null, 
+	    	true
+    );
 
 	wp_enqueue_style( 'block-pagebanner' );
 	wp_enqueue_style( 'splide-css' );
 	wp_enqueue_script( 'block-pagebanner' );
 	wp_enqueue_script( 'splide' );
-		    
+	wp_enqueue_script( 'splide-init' );		    
 }
 
 // Load ACF fields (PHP)
