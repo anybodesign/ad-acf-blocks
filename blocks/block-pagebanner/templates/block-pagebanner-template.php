@@ -46,16 +46,12 @@
 					
 					<?php } else if ( $type == 'slideshow' && $slideshow ) { ?>
 					
-					<div class="banner-slideshow splide">
-						<div class="splide__track">
-							<div class="splide__list">
-					        <?php foreach( $slideshow as $slide ): ?>
-					            <div class="splide__slide">
-									<img src="<?php echo esc_url($slide['sizes']['adblocks-large-hd']); ?>" alt="<?php echo esc_attr($slide['alt']); ?>" />
-					            </div>
-					        <?php endforeach; ?>
-							</div>
-						</div>						
+					<div class="banner-slideshow slick-slider">
+				    <?php foreach( $slideshow as $slide ): ?>
+			            <div class="slick-item">
+							<img src="<?php echo esc_url($slide['sizes']['adblocks-large-hd']); ?>" alt="<?php echo esc_attr($slide['alt']); ?>" />
+			            </div>
+			        <?php endforeach; ?>				
 					</div>
 					
 					
