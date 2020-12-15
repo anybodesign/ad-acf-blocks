@@ -30,6 +30,10 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.5.2 - 2020-12-15
+* Critical Hotfix: block preview issue
+* Swicth Splide to Slick
+
 ### 2.5.1 - 2020-12-14
 * Hotfix: page banner block preview
 
