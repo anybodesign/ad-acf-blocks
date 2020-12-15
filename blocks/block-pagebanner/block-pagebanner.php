@@ -19,7 +19,7 @@ function adblocks_pagebanner_block_init() {
             'supports'			=> array( 'align' => array( 'wide', 'full' ), 'mode' => false, 'multiple' => false ),
             'keywords'			=> array( 'banner', 'bannière' ),
             'render_template'   => ADBLOCKS__PLUGIN_PATH . 'blocks/block-pagebanner/templates/block-pagebanner-template.php',
-            'enqueue_assets'	=> 'ad_pagebanner_assets',
+            'enqueue_assets'	=> 'ad_pagebanner_assets',	
 			'example' 			=> array(
 									'attributes'		=> array(
 										'mode'			=> 'preview',
@@ -46,39 +46,39 @@ function ad_pagebanner_assets() {
 		'screen'
 	);
 	wp_register_style( 
-		'splide-css', 
-		ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/css/splide.min.css', 
+		'slick-css', 
+		ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/css/slick.css', 
 		array(), 
 		null, 
 		'screen'
 	);
     wp_register_script( 
-	    	'block-pagebanner', 
-	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/block-pagebanner.js',
-	    	array('jquery'), 
-	    	null, 
-	    	true
+    	'block-pagebanner-js', 
+    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/block-pagebanner.js',
+    	array('jquery'), 
+    	null, 
+    	true
     );
 	wp_register_script( 
-	    	'splide', 
-	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/splide.min.js',
-	    	array(), 
-	    	null, 
-	    	true
+    	'slick', 
+    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/slick.min.js',
+    	array('jquery'), 
+    	null, 
+    	true
     );
 	wp_register_script( 
-	    	'splide-init', 
-	    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/splide-init.js',
-	    	array('splide'), 
-	    	null, 
-	    	true
+    	'slick-init', 
+    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/slick-init.js',
+    	array('slick'), 
+    	null, 
+    	true
     );
 
 	wp_enqueue_style( 'block-pagebanner' );
-	wp_enqueue_style( 'splide-css' );
-	wp_enqueue_script( 'block-pagebanner' );
-	wp_enqueue_script( 'splide' );
-	wp_enqueue_script( 'splide-init' );		    
+	wp_enqueue_style( 'slick-css' );
+	wp_enqueue_script( 'block-pagebanner-js' );
+	wp_enqueue_script( 'slick' );
+	wp_enqueue_script( 'slick-init' );		    
 }
 
 // Load ACF fields (PHP)

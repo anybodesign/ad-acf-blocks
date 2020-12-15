@@ -10,6 +10,12 @@
 		position: relative;
 		padding: 0;
 	}
+	
+	// .wp-admin & {
+	// 	max-width: 96rem !important;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
 }
 
 // Img & Video
@@ -17,29 +23,32 @@
 .banner-bg,
 .banner-video,
 .banner-slideshow,
-.splide__track,
-.splide__list,
-.splide__slide {
+.slick-track,
+.slick-list,
+.slick-item {
 	display: block;
 	pointer-events: none;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 
 	@include rwd(large) {
 		max-height: 68vh;	
 	}
-
 }
-
-.splide__slide {
+.slick-item {
 	
-	img {
-		display: block;
-		max-height: 68vh;
+	& > img {
 		width: 100%;
-		max-width: none;
-		object-fit: cover; 
+		max-height: 68vh;
+		object-fit: cover;
+	}
+	
+	.wp-admin & {
+		display: none;
+		
+		&:first-child {
+			display: block;
+		}
 	}
 }
 
