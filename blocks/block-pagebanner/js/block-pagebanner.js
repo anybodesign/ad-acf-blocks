@@ -35,4 +35,32 @@ jQuery(document).ready(function($) {
 		$('#banner_stop').show();
 	});
 	
+	// Slick
+
+	$('.slick-slider').slick({
+		speed: 1000,
+		autoplay: true,
+    	slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		dots: false,
+		infinite: true,
+		draggable: false,
+		swipe: false,
+		touchMove: false
+    });
+	
+	$('.slick-slide').removeAttr('tabindex');
+	
+	$(window).on('load',function() {
+		$('.slick-slide').removeAttr('tabindex');
+	});
+	
+	$(window).on('resize',function() {
+		if ($(window).width() > 720) {
+			$('.slick-slide').removeAttr('tabindex');
+		}
+	});	
+	
 });

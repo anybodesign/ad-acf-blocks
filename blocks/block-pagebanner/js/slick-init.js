@@ -1,6 +1,8 @@
 (function($){
-
-    var initializeBlock = function( $block ) {
+	
+	
+    
+	var initializeBlock = function( $block ) {
         $('.slick-slider').slick({
 			speed: 1000,
 			autoplay: true,
@@ -16,7 +18,8 @@
         });
     }
 	
-	 /* // Huge preview issue, must deactivate
+	 
+	// Huge preview issue, must deactivate
 	
     // Initialize each block on page load (front end).
     $(document).ready(function() {
@@ -27,7 +30,6 @@
     if( window.acf ) {
         window.acf.addAction( 'render_block_preview', initializeBlock );
     }
-	*/
 
 
 	// Tab Index

@@ -78,7 +78,7 @@ function ad_pagebanner_assets() {
 	wp_enqueue_style( 'slick-css' );
 	wp_enqueue_script( 'block-pagebanner-js' );
 	wp_enqueue_script( 'slick' );
-	wp_enqueue_script( 'slick-init' );		    
+	//wp_enqueue_script( 'slick-init' );		    
 }
 
 // Load ACF fields (PHP)
