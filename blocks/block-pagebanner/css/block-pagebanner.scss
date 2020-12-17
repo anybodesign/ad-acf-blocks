@@ -30,6 +30,8 @@
 	display: block;
 	width: 100%;
 	height: 32rem;
+	object-fit: cover;
+	pointer-events: none;
 	
 	@include rwd(medium) {
 		height: 45rem;	
@@ -39,11 +41,6 @@
 	}
 }
 .slick-item {
-	
-	& > img {
-		object-fit: cover;
-		pointer-events: none;
-	}
 	
 	.wp-admin & {
 		display: none;
