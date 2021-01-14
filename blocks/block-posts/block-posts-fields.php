@@ -215,7 +215,7 @@ acf_add_local_field_group(array(
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '50',
+				'width' => '30',
 				'class' => '',
 				'id' => '',
 			),
@@ -244,7 +244,7 @@ acf_add_local_field_group(array(
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '50',
+				'width' => '30',
 				'class' => '',
 				'id' => '',
 			),
@@ -255,6 +255,39 @@ acf_add_local_field_group(array(
 			'ui_off_text' => '',
 		),
 		array(
+			'key' => 'field_600031416d176',
+			'label' => __('Additional metas', 'adblocks'),
+			'name' => 'your_metas',
+			'type' => 'checkbox',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5e454fa2b2b02',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '40',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'author' => __('Author', 'adblocks'),
+				'cat' => __('Category', 'adblocks'),
+			),
+			'allow_custom' => 0,
+			'default_value' => array(
+			),
+			'layout' => 'vertical',
+			'toggle' => 0,
+			'return_format' => 'value',
+			'save_custom' => 0,
+		),
+		array(
 			'key' => 'field_5f50aeda81d0b',
 			'label' => __('Add a link', 'adblocks'),
 			'name' => 'link',
@@ -263,7 +296,7 @@ acf_add_local_field_group(array(
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '30',
+				'width' => '100',
 				'class' => '',
 				'id' => '',
 			),
