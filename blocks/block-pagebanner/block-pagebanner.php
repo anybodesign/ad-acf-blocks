@@ -66,19 +66,14 @@ function ad_pagebanner_assets() {
     	null, 
     	true
     );
-	wp_register_script( 
-    	'slick-init', 
-    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/slick-init.js',
-    	array('slick'), 
-    	null, 
-    	true
-    );
 
 	wp_enqueue_style( 'block-pagebanner' );
-	wp_enqueue_style( 'slick-css' );
-	wp_enqueue_script( 'block-pagebanner-js' );
-	wp_enqueue_script( 'slick' );
-	//wp_enqueue_script( 'slick-init' );		    
+	
+	if ( ! is_admin() ) {
+		wp_enqueue_style( 'slick-css' );
+		wp_enqueue_script( 'slick' );
+		wp_enqueue_script( 'block-pagebanner-js' );
+	}
 }
 
 // Load ACF fields (PHP)
