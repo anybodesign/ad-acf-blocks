@@ -30,6 +30,12 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.6 - 2021-01-14
+* Post block: meta options
+* Gallery block: better responsive for grid view
+* Fix: Page banner block preview in slideshow mode
+* New block previews
+
 ### 2.5.3 - 2020-12-17
 * Hotfix: page banner block css
 
