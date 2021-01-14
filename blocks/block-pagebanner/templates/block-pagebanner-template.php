@@ -25,9 +25,9 @@
 	}	
 ?>
 
-			<?php if( !empty( $block['data']['__is_preview'] ) ) { // Block preview ?>
-
-
+			<?php // Block preview
+				if( !empty( $block['data']['__is_preview'] ) ) { ?>
+				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/pagebanner-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>			
 			
 			<section class="acf-block--pagebanner<?php echo esc_attr($align); ?>">
