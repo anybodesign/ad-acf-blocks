@@ -34,24 +34,37 @@
 	}
 	@include rwd(small) {
 		grid-template-columns: repeat(3, 1fr);
-		grid-auto-rows: 22rem;
 	}
-	@include rwd(medium) {
+	@include rwd(40em) {
+		grid-auto-rows: 25rem;
+	}
+	@include rwd(large) {
 		grid-auto-rows: 30rem;
 	}
 }
 @include rwd(medium) {
 	.acf-block-gallery-pictures--4cols.gallery-grid {
 		grid-template-columns: repeat(4, 1fr);
-		grid-auto-rows: 23rem;
+		grid-auto-rows: 20rem;
 	}
 	.acf-block-gallery-pictures--5cols.gallery-grid {
 		grid-template-columns: repeat(5, 1fr);
-		grid-auto-rows: 18rem;
+		grid-auto-rows: 14rem;
 	}
 	.acf-block-gallery-pictures--6cols.gallery-grid {
 		grid-template-columns: repeat(6, 1fr);
-		grid-auto-rows: 14rem;
+		grid-auto-rows: 11rem;
+	}
+}
+@include rwd(large) {
+	.acf-block-gallery-pictures--4cols.gallery-grid {
+		grid-auto-rows: 23rem;
+	}
+	.acf-block-gallery-pictures--5cols.gallery-grid {
+		grid-auto-rows: 18rem;
+	}
+	.acf-block-gallery-pictures--6cols.gallery-grid {
+		grid-auto-rows: 15rem;
 	}
 } 
 
