@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2021-01-22 10:07+0100\n"
-"PO-Revision-Date: 2021-01-22 10:08+0100\n"
+"POT-Creation-Date: 2021-01-22 17:26+0100\n"
+"PO-Revision-Date: 2021-01-22 17:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -26,7 +26,7 @@ msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
 #: ad-acf-blocks.php:104
-#: blocks/block-posts/templates/block-posts-template.php:139
+#: blocks/block-posts/templates/block-posts-template.php:147
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -92,42 +92,42 @@ msgstr "Choisissez le niveau de titre pour les éléments de liste"
 #: blocks/block-advanced-list/block-advanced-list-fields.php:25
 #: blocks/block-cards/block-cards-fields.php:30
 #: blocks/block-posts/block-posts-fields.php:84
-#: blocks/block-posts/block-posts-fields.php:228
+#: blocks/block-posts/block-posts-fields.php:274
 msgid "None"
 msgstr "Aucun"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:26
 #: blocks/block-cards/block-cards-fields.php:25
 #: blocks/block-posts/block-posts-fields.php:79
-#: blocks/block-posts/block-posts-fields.php:223
+#: blocks/block-posts/block-posts-fields.php:269
 msgid "H2"
 msgstr "H2"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:27
 #: blocks/block-cards/block-cards-fields.php:26
 #: blocks/block-posts/block-posts-fields.php:80
-#: blocks/block-posts/block-posts-fields.php:224
+#: blocks/block-posts/block-posts-fields.php:270
 msgid "H3"
 msgstr "H3"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:28
 #: blocks/block-cards/block-cards-fields.php:27
 #: blocks/block-posts/block-posts-fields.php:81
-#: blocks/block-posts/block-posts-fields.php:225
+#: blocks/block-posts/block-posts-fields.php:271
 msgid "H4"
 msgstr "H4"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:29
 #: blocks/block-cards/block-cards-fields.php:28
 #: blocks/block-posts/block-posts-fields.php:82
-#: blocks/block-posts/block-posts-fields.php:226
+#: blocks/block-posts/block-posts-fields.php:272
 msgid "H5"
 msgstr "H5"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:30
 #: blocks/block-cards/block-cards-fields.php:29
 #: blocks/block-posts/block-posts-fields.php:83
-#: blocks/block-posts/block-posts-fields.php:227
+#: blocks/block-posts/block-posts-fields.php:273
 msgid "H6"
 msgstr "H6"
 
@@ -170,7 +170,7 @@ msgstr "Peut-être une note de bas de page"
 #: blocks/block-advanced-list/block-advanced-list-fields.php:157
 #: blocks/block-cards/block-cards-fields.php:174
 #: blocks/block-cta/block-cta-fields.php:54
-#: blocks/block-posts/block-posts-fields.php:311
+#: blocks/block-posts/block-posts-fields.php:357
 #: blocks/block-textimg/block-textimg-fields.php:139
 msgid "Link"
 msgstr "Lien"
@@ -418,7 +418,7 @@ msgid "Outside"
 msgstr "À l'extérieur"
 
 #: blocks/block-gallery/block-gallery-fields.php:300
-#: blocks/block-posts/block-posts-fields.php:190
+#: blocks/block-posts/block-posts-fields.php:236
 #: blocks/block-textimg/block-textimg-fields.php:154
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
@@ -466,7 +466,7 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:158
-#: blocks/block-posts/templates/block-posts-template.php:84
+#: blocks/block-posts/templates/block-posts-template.php:92
 msgid "Read "
 msgstr "Lire "
 
@@ -572,28 +572,36 @@ msgstr "Extrait"
 msgid "Full content"
 msgstr "Contenu intégral"
 
-#: blocks/block-posts/block-posts-fields.php:211
+#: blocks/block-posts/block-posts-fields.php:190
+msgid "Carousel mode"
+msgstr "Mode carrousel"
+
+#: blocks/block-posts/block-posts-fields.php:209
+msgid "Only on mobile"
+msgstr "Seulement sur mobile"
+
+#: blocks/block-posts/block-posts-fields.php:257
 msgid "Posts title level"
 msgstr "Niveau de titre des publications"
 
-#: blocks/block-posts/block-posts-fields.php:240
+#: blocks/block-posts/block-posts-fields.php:286
 msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
-#: blocks/block-posts/block-posts-fields.php:259
+#: blocks/block-posts/block-posts-fields.php:305
 msgid "Additional metas"
 msgstr "Métas supplémentaires"
 
-#: blocks/block-posts/block-posts-fields.php:279
+#: blocks/block-posts/block-posts-fields.php:325
 #: blocks/block-testimonial/block-testimonial-fields.php:109
 msgid "Author"
 msgstr "Auteur"
 
-#: blocks/block-posts/block-posts-fields.php:280
+#: blocks/block-posts/block-posts-fields.php:326
 msgid "Category"
 msgstr "Catégorie"
 
-#: blocks/block-posts/block-posts-fields.php:292
+#: blocks/block-posts/block-posts-fields.php:338
 msgid "Add a link"
 msgstr "Ajouter un lien"
 
@@ -605,15 +613,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:114
+#: blocks/block-posts/templates/block-posts-template.php:122
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:118
+#: blocks/block-posts/templates/block-posts-template.php:126
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:123
+#: blocks/block-posts/templates/block-posts-template.php:131
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 

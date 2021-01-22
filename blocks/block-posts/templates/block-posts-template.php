@@ -17,6 +17,8 @@
 	$your_metas = get_field('your_metas');
 	
 	$size = get_field('posts_size_feature_size');
+	$slider = get_field('slider');
+	$mob = get_field('slider_mobile');
 	
 	$has_custom = get_field('has_custom_size');
 	$customsize = get_field('custom_size');
@@ -46,12 +48,15 @@
 	} else {
 		$has_bgimg = null;
 	} 
-		
+
 	if( !empty($block['align']) ) {
 	    $align = ' align' . $block['align'];
 	} else {
 		$align = null;
-	}						
+	}
+	
+	//global $id;
+	$id = 'slider-' . $block['id'];						
 ?>
 
 			<?php // Block preview
@@ -70,7 +75,11 @@
 					<?php } ?>
 					
 					<?php if( $content ): ?>
+					<?php if( $slider ) { ?>
+					<div class="acf-block-post-content--<?php echo $cols; ?> acf-block-post-slider" id="<?php echo esc_attr($id); ?>">
+					<?php } else { ?>
 					<div class="acf-block-post-content--<?php echo $cols; ?>">
+					<?php } ?>
 						
 				        <?php foreach( $content as $c ): 
 					        
@@ -166,5 +175,181 @@
 				
 				</div>
 			</section>
+			
+			
+			<?php 
+				if ($slider && $mob) { 
+				
+				echo "
+					<script>
+						jQuery(document).ready(function($) {
+						
+							var slick_slider;
+							var settings;
+							
+							slick_slider = $('#".$id."');
+							settings = {
+								speed: 1000,
+						    	slidesToShow: 1,
+								slidesToScroll: 1,
+								arrows: true,
+								dots: true,
+								infinite: false,
+								pauseOnHover: true,
+								nextArrow: '<button type=\'button\' class=\'slick-next slick-arrow\' aria-label=\'Next pannel\'> › </button>',
+								prevArrow: '<button type=\'button\' class=\'slick-prev slick-arrow\' aria-label=\'Previous pannel\'> ‹ </button>',
+								mobileFirst: true,
+								responsive: [
+								    {
+								      breakpoint: 375,
+								      settings: {
+								        slidesToShow: 2,
+								        slidesToScroll: 2,
+								      }
+								    },
+									{
+								      breakpoint: 720,
+								      settings: {
+								        slidesToShow: 3,
+								        slidesToScroll: 3,
+								      }
+								    },
+								    {
+								      breakpoint: 960,
+								      settings: 'unslick'
+								    }
+								]
+							};
+							slick_slider.slick(settings);
+							
+							$(window).on('resize',function() {
+								if ($(window).width() > 959) {
+									if (slick_slider.hasClass('slick-initialized')) {
+										slick_slider.slick('unslick');
+										$('.acf-block-post-item').removeAttr('tabindex');
+									}
+									return;
+								}
+								if (!slick_slider.hasClass('slick-initialized')) {
+									return slick_slider.slick(settings);
+								}
+								return;
+							});
+							
+							$('.slick-slide, .slick-slide a').removeAttr('tabindex');
+							
+							$(window).on('load',function() {
+								$('.slick-slide').removeAttr('tabindex');
+							});
+							
+							$(window).on('resize',function() {
+								if ($(window).width() > 720) {
+									$('.slick-slide').removeAttr('tabindex');
+								}
+							});	
+							
+							$('.slick-dots li button').prepend('Pannel ');
+						});
+					</script>
+					";
+				
+				}
+				else if ($slider && !$mob) {
+				// RWD
+				
+				if ($cols == '1col') {
+					$n_small = 1;
+					$n_med = 1;
+					$n_large = 1;
+				}
+				else if ($cols == '2cols') {
+					$nb = 2;
+					$n_small = 2;
+					$n_med = 2;
+					$n_large = 2;
+				}
+				else if ($cols == '3cols') {
+					$n_small = 2;
+					$n_med = 3;
+					$n_large = 3;
+				}
+				else if ($cols == '4cols') {
+					$n_small = 2;
+					$n_med = 3;
+					$n_large = 4;
+				}
+				else if ($cols == '5cols') {
+					$n_small = 2;
+					$n_med = 3;
+					$n_large = 5;
+				}
+				else if ($cols == '6cols') {
+					$n_small = 2;
+					$n_med = 3;
+					$n_large = 6;
+				}				
+				echo "
+					<script>
+						jQuery(document).ready(function($) {
+						
+							var slick_slider;
+							var settings;
+							
+							slick_slider = $('#".$id."');
+							settings = {
+								speed: 1000,
+						    	slidesToShow: 1,
+								slidesToScroll: 1,
+								arrows: true,
+								dots: true,
+								infinite: false,
+								pauseOnHover: true,
+								nextArrow: '<button type=\'button\' class=\'slick-next slick-arrow\' aria-label=\'Next pannel\'> › </button>',
+								prevArrow: '<button type=\'button\' class=\'slick-prev slick-arrow\' aria-label=\'Previous pannel\'> ‹ </button>',
+								mobileFirst: true,
+								responsive: [
+								    {
+								      breakpoint: 375,
+								      settings: {
+								        slidesToShow: ".$n_small.",
+								        slidesToScroll: ".$n_small.",
+								      }
+								    },
+									{
+								      breakpoint: 720,
+								      settings: {
+								        slidesToShow: ".$n_med.",
+								        slidesToScroll: ".$n_med.",
+								      }
+								    },
+								    {
+								      breakpoint: 960,
+								      settings: {
+								        slidesToShow: ".$n_large.",
+								        slidesToScroll: ".$n_large.",
+								      }
+								    }
+								]
+							};
+							slick_slider.slick(settings);
+							
+							$('.slick-slide, .slick-slide a').removeAttr('tabindex');
+							
+							
+							$(window).on('load',function() {
+								$('.slick-slide').removeAttr('tabindex');
+							});
+							
+							$(window).on('resize',function() {
+								if ($(window).width() > 720) {
+									$('.slick-slide').removeAttr('tabindex');
+								}
+							});	
+							
+							$('.slick-dots li button').prepend('Pannel ');
+						});
+					</script>
+					";
+			} ?>		
 			
 			<?php } ?>

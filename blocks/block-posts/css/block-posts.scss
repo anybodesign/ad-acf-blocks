@@ -8,6 +8,21 @@
 .acf-block--posts {
 	
 	.acf-block-container {}
+
+	// Carousel in admin
+	
+	.wp-admin & {
+		.acf-block-carousel {
+			display: flex;
+			overflow: hidden;
+			padding: $grid-padding !important;
+			
+			.product-block {
+				width: 33.3333%;
+				min-width: 23rem;	
+			}
+		}
+	}		
 }
 
 [class*=acf-block-post-content--] {
@@ -73,4 +88,4 @@
 			width: 16.6667%;
 		}		
 	}	
-}	
+}
