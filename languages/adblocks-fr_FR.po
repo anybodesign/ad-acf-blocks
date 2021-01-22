@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2020-12-14 13:41+0100\n"
-"PO-Revision-Date: 2020-12-14 13:41+0100\n"
+"POT-Creation-Date: 2021-01-22 10:07+0100\n"
+"PO-Revision-Date: 2021-01-22 10:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -26,7 +26,7 @@ msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
 #: ad-acf-blocks.php:104
-#: blocks/block-posts/templates/block-posts-template.php:136
+#: blocks/block-posts/templates/block-posts-template.php:139
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -170,7 +170,7 @@ msgstr "Peut-être une note de bas de page"
 #: blocks/block-advanced-list/block-advanced-list-fields.php:157
 #: blocks/block-cards/block-cards-fields.php:174
 #: blocks/block-cta/block-cta-fields.php:54
-#: blocks/block-posts/block-posts-fields.php:278
+#: blocks/block-posts/block-posts-fields.php:311
 #: blocks/block-textimg/block-textimg-fields.php:139
 msgid "Link"
 msgstr "Lien"
@@ -466,7 +466,7 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:158
-#: blocks/block-posts/templates/block-posts-template.php:83
+#: blocks/block-posts/templates/block-posts-template.php:84
 msgid "Read "
 msgstr "Lire "
 
@@ -516,6 +516,14 @@ msgstr "Ajouter un bouton de défilement"
 msgid "Custom scroll button image"
 msgstr "Image personnalisée du bouton de défilement"
 
+#: blocks/block-pagebanner/block-pagebanner-fields.php:232
+msgid "Show button label"
+msgstr "Afficher le libellé du bouton"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:251
+msgid "Custom button label"
+msgstr "Libellé personnalisé"
+
 #: blocks/block-pagebanner/block-pagebanner.php:14
 msgid "Page Banner"
 msgstr "Bannière de page"
@@ -524,17 +532,13 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:41
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:48
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:44
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:51
 msgid "Play video"
 msgstr "Lire la vidéo"
-
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:73
-msgid "Scroll Down"
-msgstr "Faire défiler vers le bas"
 
 #: blocks/block-posts/block-posts-fields.php:9
 msgid "AD ACF Block 05: Posts"
@@ -577,6 +581,19 @@ msgid "Display post metas"
 msgstr "Afficher les metas de l'article"
 
 #: blocks/block-posts/block-posts-fields.php:259
+msgid "Additional metas"
+msgstr "Métas supplémentaires"
+
+#: blocks/block-posts/block-posts-fields.php:279
+#: blocks/block-testimonial/block-testimonial-fields.php:109
+msgid "Author"
+msgstr "Auteur"
+
+#: blocks/block-posts/block-posts-fields.php:280
+msgid "Category"
+msgstr "Catégorie"
+
+#: blocks/block-posts/block-posts-fields.php:292
 msgid "Add a link"
 msgstr "Ajouter un lien"
 
@@ -588,15 +605,15 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:113
+#: blocks/block-posts/templates/block-posts-template.php:114
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:116
+#: blocks/block-posts/templates/block-posts-template.php:118
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:120
+#: blocks/block-posts/templates/block-posts-template.php:123
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
@@ -626,10 +643,6 @@ msgstr "Portrait"
 #: blocks/block-text/block-text-fields.php:240
 msgid "Content"
 msgstr "Contenu"
-
-#: blocks/block-testimonial/block-testimonial-fields.php:109
-msgid "Author"
-msgstr "Auteur"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:128
 msgid "Author description"
@@ -828,7 +841,7 @@ msgstr "Calque de superposition"
 
 #: global-fields/background-fields.php:137
 msgid "Add an overlay over the background image"
-msgstr "Ajouter un dégradé sombre superposé à l’image d’arrière-plan"
+msgstr "Ajouter un dégradé superposé à l’image d’arrière-plan"
 
 #: global-fields/background-fields.php:145
 msgid "Background options - end"
@@ -889,6 +902,9 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Scroll Down"
+#~ msgstr "Faire défiler vers le bas"
 
 #~ msgid "on&nbsp;"
 #~ msgstr "le&nbsp;"

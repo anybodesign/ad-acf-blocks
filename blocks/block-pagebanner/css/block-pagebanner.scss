@@ -72,14 +72,17 @@
 
 .scroll-down {
 	display: block;
+	font-size: 1.4rem;
 	border: 0;
 	
 	img {
-		display: block;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: $grid-padding/2;
 	}
 		
 	.wp-admin & {
-		display: none;
+		pointer-events: none;
 	}
 }
 

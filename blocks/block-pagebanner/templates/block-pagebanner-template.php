@@ -11,11 +11,18 @@
 
 	$scroll = get_field('scroll');
 	$scroll_btn = get_field('scroll_btn');
+	$scroll_show = get_field('scroll_show');
+	$scroll_label = get_field('scroll_label');
 	
 	if ($scroll_btn) {
 		$btn = $scroll_btn;
 	} else {
 		$btn = ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/arrow.svg';
+	}
+	if ($scroll_label) {
+		$label = $scroll_label;
+	} else {
+		$label = 'Scroll Down';
 	}
 
 	if( !empty($block['align']) ) {
@@ -66,7 +73,12 @@
 						
 						<?php if ($scroll) { ?>
 						<button class="scroll-down">
-							<img src="<?php echo $btn; ?>" alt="<?php esc_html_e('Scroll Down', 'adblocks'); ?>">
+							<?php if ($scroll_show) { ?>
+							<img src="<?php echo $btn; ?>" alt="">
+							<?php } else { ?>
+							<img src="<?php echo $btn; ?>" alt="<?php esc_attr_e($label, 'adblocks'); ?>">
+							<?php } ?>
+							<?php if ($scroll_show) { esc_attr_e($label, 'adblocks'); } ?>
 						</button>
 						<?php } ?>						
 					</div>
