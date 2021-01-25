@@ -89,3 +89,50 @@
 		}		
 	}	
 }
+
+// Slick basic styles
+
+.acf-block--posts {
+	
+	.slick-slider {
+		padding: 0 5.4rem;
+		
+		@include rwd(wide) {
+			padding: 0;
+		}
+	}
+	
+	.slick-dots {
+		position: relative;
+		left: auto;
+		bottom: auto;
+	}
+	
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: block;
+		width: 4.4rem;
+		height: 4.4rem;
+		font-size: 2.2rem;
+		
+		&.slick-next {
+			right: 0;
+			
+			@include rwd(wide) {
+				right: -6.4rem;
+			}
+		}
+		&.slick-prev {
+			left: 0;
+			
+			@include rwd(wide) {
+				left: -6.4rem;
+			}
+		}
+		&.slick-disabled {
+			opacity: .3;
+		}
+	}
+}
