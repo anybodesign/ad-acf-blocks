@@ -45,13 +45,6 @@ function ad_pagebanner_assets() {
 		null, 
 		'screen'
 	);
-	wp_register_style( 
-		'slick-css', 
-		ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/css/slick.css', 
-		array(), 
-		null, 
-		'screen'
-	);
     wp_register_script( 
     	'block-pagebanner-js', 
     	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/block-pagebanner.js',
@@ -59,9 +52,16 @@ function ad_pagebanner_assets() {
     	null, 
     	true
     );
+	wp_register_style( 
+		'slick-css', 
+		ADBLOCKS__PLUGIN_URL . 'assets/css/slick.css', 
+		array(), 
+		null, 
+		'screen'
+	);
 	wp_register_script( 
     	'slick', 
-    	ADBLOCKS__PLUGIN_URL . 'blocks/block-pagebanner/js/slick.min.js',
+    	ADBLOCKS__PLUGIN_URL . 'assets/js/slick.min.js',
     	array('jquery'), 
     	null, 
     	true

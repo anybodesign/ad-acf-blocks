@@ -53,7 +53,7 @@
 					
 					<?php } else if ( $type == 'slideshow' && $slideshow ) { ?>
 					
-					<div class="banner-slideshow slick-slider">
+					<div class="banner-slideshow">
 				    <?php foreach( $slideshow as $slide ): ?>
 			            <div class="slick-item">
 							<img src="<?php echo esc_url($slide['sizes']['adblocks-large-hd']); ?>" alt="<?php echo esc_attr($slide['alt']); ?>" />

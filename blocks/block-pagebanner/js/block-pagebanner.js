@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 	
 	// Slick
 
-	$('.slick-slider').slick({
+	$('.banner-slideshow').slick({
 		speed: 1000,
 		autoplay: true,
     	slidesToShow: 1,
