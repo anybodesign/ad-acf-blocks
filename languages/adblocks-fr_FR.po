@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2021-01-22 17:26+0100\n"
-"PO-Revision-Date: 2021-01-22 17:26+0100\n"
+"POT-Creation-Date: 2021-01-25 10:02+0100\n"
+"PO-Revision-Date: 2021-01-25 10:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -26,7 +26,7 @@ msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
 #: ad-acf-blocks.php:104
-#: blocks/block-posts/templates/block-posts-template.php:147
+#: blocks/block-posts/templates/block-posts-template.php:148
 msgid "Read more"
 msgstr "Lire la suite"
 
@@ -466,7 +466,7 @@ msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
 #: blocks/block-gallery/templates/block-gallery-template.php:158
-#: blocks/block-posts/templates/block-posts-template.php:92
+#: blocks/block-posts/templates/block-posts-template.php:93
 msgid "Read "
 msgstr "Lire "
 
@@ -523,6 +523,10 @@ msgstr "Afficher le libellé du bouton"
 #: blocks/block-pagebanner/block-pagebanner-fields.php:251
 msgid "Custom button label"
 msgstr "Libellé personnalisé"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:271
+msgid "Scroll Down"
+msgstr "Défiler vers le bas"
 
 #: blocks/block-pagebanner/block-pagebanner.php:14
 msgid "Page Banner"
@@ -613,17 +617,32 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-template.php:122
+#: blocks/block-posts/templates/block-posts-template.php:123
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:126
+#: blocks/block-posts/templates/block-posts-template.php:127
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:131
+#: blocks/block-posts/templates/block-posts-template.php:132
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
+
+#: blocks/block-posts/templates/block-posts-template.php:199
+#: blocks/block-posts/templates/block-posts-template.php:307
+msgid "Next Pannel"
+msgstr "Panneau suivant"
+
+#: blocks/block-posts/templates/block-posts-template.php:200
+#: blocks/block-posts/templates/block-posts-template.php:308
+msgid "Previous Pannel"
+msgstr "Panneau précédent"
+
+#: blocks/block-posts/templates/block-posts-template.php:251
+#: blocks/block-posts/templates/block-posts-template.php:349
+msgid "Pannel"
+msgstr "Panneau"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:9
 msgid "AD ACF Block 07: Testimonial"
@@ -910,9 +929,6 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
-
-#~ msgid "Scroll Down"
-#~ msgstr "Faire défiler vers le bas"
 
 #~ msgid "on&nbsp;"
 #~ msgstr "le&nbsp;"

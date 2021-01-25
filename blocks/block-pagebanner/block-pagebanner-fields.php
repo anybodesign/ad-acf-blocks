@@ -268,7 +268,7 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'default_value' => '',
-			'placeholder' => 'Scroll Down',
+			'placeholder' => __('Scroll Down', 'adblocks'),
 			'prepend' => '',
 			'append' => '',
 			'maxlength' => '',

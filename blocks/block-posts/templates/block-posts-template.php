@@ -196,8 +196,8 @@
 								dots: true,
 								infinite: false,
 								pauseOnHover: true,
-								nextArrow: '<button type=\'button\' class=\'slick-next slick-arrow\' aria-label=\'Next pannel\'> › </button>',
-								prevArrow: '<button type=\'button\' class=\'slick-prev slick-arrow\' aria-label=\'Previous pannel\'> ‹ </button>',
+								nextArrow: '<button type=\'button\' class=\'slick-next slick-arrow\' aria-label=\'".__('Next Pannel','adblocks')."\'> › </button>',
+								prevArrow: '<button type=\'button\' class=\'slick-prev slick-arrow\' aria-label=\'".__('Previous Pannel','adblocks')."\'> ‹ </button>',
 								mobileFirst: true,
 								responsive: [
 								    {
@@ -248,7 +248,7 @@
 								}
 							});	
 							
-							$('.slick-dots li button').prepend('Pannel ');
+							$('.slick-dots li button').prepend('".__('Pannel','adblocks')." ');
 						});
 					</script>
 					";
@@ -304,8 +304,8 @@
 								dots: true,
 								infinite: false,
 								pauseOnHover: true,
-								nextArrow: '<button type=\'button\' class=\'slick-next slick-arrow\' aria-label=\'Next pannel\'> › </button>',
-								prevArrow: '<button type=\'button\' class=\'slick-prev slick-arrow\' aria-label=\'Previous pannel\'> ‹ </button>',
+								nextArrow: '<button type=\'button\' class=\'slick-next slick-arrow\' aria-label=\'".__('Next Pannel','adblocks')."\'> › </button>',
+								prevArrow: '<button type=\'button\' class=\'slick-prev slick-arrow\' aria-label=\'".__('Previous Pannel','adblocks')."\'> ‹ </button>',
 								mobileFirst: true,
 								responsive: [
 								    {
@@ -346,7 +346,7 @@
 								}
 							});	
 							
-							$('.slick-dots li button').prepend('Pannel ');
+							$('.slick-dots li button').prepend('".__('Pannel','adblocks')." ');
 						});
 					</script>
 					";
