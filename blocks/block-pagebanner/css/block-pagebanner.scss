@@ -23,10 +23,10 @@
 .banner-bg,
 .banner-video,
 .banner-slideshow,
-.slick-track,
-.slick-list,
-.slick-item,
-.slick-item > img {
+.banner-slideshow .slick-track,
+.banner-slideshow .slick-list,
+.banner-slideshow .slick-item,
+.banner-slideshow .slick-item > img {
 	display: block;
 	width: 100%;
 	height: 32rem;
@@ -40,7 +40,7 @@
 		height: 68vh;	
 	}
 }
-.slick-item {
+.banner-slideshow .slick-item {
 	
 	.wp-admin & {
 		display: none;
