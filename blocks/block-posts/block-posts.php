@@ -24,7 +24,7 @@ function adblocks_posts_block_init() {
 									},
 			'enqueue_assets'	=> function() {
 										wp_enqueue_style( 'block-posts', ADBLOCKS__PLUGIN_URL . 'blocks/block-posts/css/block-posts.css' );
-										wp_enqueue_style( 'slick', ADBLOCKS__PLUGIN_URL . 'assets/css/slick.css' );
+										wp_enqueue_style( 'slick-css', ADBLOCKS__PLUGIN_URL . 'assets/css/slick.css' );
 										wp_enqueue_script( 'slick', ADBLOCKS__PLUGIN_URL . 'assets/js/slick.min.js', array('jquery'), '', true );
 										//wp_enqueue_script( 'slick-init', ADBLOCKS__PLUGIN_URL . 'assets/js/slick-init.js', array('slick'), '', true );
 									},

@@ -12,15 +12,13 @@
 	// Carousel in admin
 	
 	.wp-admin & {
-		.acf-block-carousel {
+		.acf-block-post-slider {
 			display: flex;
 			overflow: hidden;
 			padding: $grid-padding !important;
-			
-			.product-block {
-				width: 33.3333%;
-				min-width: 23rem;	
-			}
+		}
+		.slick-dots, .slick-arrow {
+			display: none !important;
 		}
 	}		
 }
