@@ -32,6 +32,7 @@ Create more blocks, and look for a way to override some block templates
 
 ### 2.8 - 2021-02-01
 * Page Banner block: player options
+* Page Banner block: type class
 
 ### 2.7 - 2021-01-25
 * Page Banner block: button label options

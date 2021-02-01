@@ -17,6 +17,14 @@
 	$scroll_show = get_field('scroll_show');
 	$scroll_label = get_field('scroll_label');
 	
+	if ( $type == 'video' ) {
+		$the_type = ' has-video';
+	} elseif ( $type == 'slideshow' ) {
+		$the_type = ' has-slideshow';
+	} else {
+		$the_type = ' has-picture';
+	}
+	
 	if ($scroll_btn) {
 		$btn = $scroll_btn;
 	} else {
@@ -40,7 +48,7 @@
 				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/pagebanner-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>			
 			
-			<section class="acf-block--pagebanner<?php echo esc_attr($align); ?>">
+			<section class="acf-block--pagebanner<?php echo $the_type; echo esc_attr($align); ?>">
 				<div class="acf-block-container">
 					
 					<?php if ( $type == 'video' && $video ) { ?>
