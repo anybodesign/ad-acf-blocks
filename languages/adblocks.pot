@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2021-01-25 10:02+0100\n"
-"PO-Revision-Date: 2021-01-25 10:02+0100\n"
+"POT-Creation-Date: 2021-02-01 11:57+0100\n"
+"PO-Revision-Date: 2021-02-01 11:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -491,7 +491,7 @@ msgid "MP4 Video"
 msgstr "Vidéo MP4"
 
 #: blocks/block-pagebanner/block-pagebanner-fields.php:46
-#: blocks/block-pagebanner/block-pagebanner-fields.php:146
+#: blocks/block-pagebanner/block-pagebanner-fields.php:227
 msgid "Slideshow"
 msgstr "Diaporama"
 
@@ -508,25 +508,33 @@ msgstr "Vidéo d'arrière-plan"
 msgid "Video poster"
 msgstr "Affiche vidéo"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:181
+#: blocks/block-pagebanner/block-pagebanner-fields.php:146
+msgid "Loop"
+msgstr "En boucle"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:173
+msgid "Muted"
+msgstr "En sourdine"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:200
+msgid "Autoplay"
+msgstr "Lecture automatique"
+
+#: blocks/block-pagebanner/block-pagebanner-fields.php:262
 msgid "Add a scroll button"
 msgstr "Ajouter un bouton de défilement"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:200
+#: blocks/block-pagebanner/block-pagebanner-fields.php:281
 msgid "Custom scroll button image"
 msgstr "Image personnalisée du bouton de défilement"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:232
+#: blocks/block-pagebanner/block-pagebanner-fields.php:313
 msgid "Show button label"
 msgstr "Afficher le libellé du bouton"
 
-#: blocks/block-pagebanner/block-pagebanner-fields.php:251
+#: blocks/block-pagebanner/block-pagebanner-fields.php:332
 msgid "Custom button label"
 msgstr "Libellé personnalisé"
-
-#: blocks/block-pagebanner/block-pagebanner-fields.php:271
-msgid "Scroll Down"
-msgstr "Défiler vers le bas"
 
 #: blocks/block-pagebanner/block-pagebanner.php:14
 msgid "Page Banner"
@@ -536,11 +544,11 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:48
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:51
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:51
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:54
 msgid "Play video"
 msgstr "Lire la vidéo"
 
@@ -929,6 +937,9 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Scroll Down"
+#~ msgstr "Défiler vers le bas"
 
 #~ msgid "on&nbsp;"
 #~ msgstr "le&nbsp;"

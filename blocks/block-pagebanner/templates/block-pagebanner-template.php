@@ -6,6 +6,9 @@
 	$bg = get_field('bg_img');
 	$video = get_field('bg_video');
 	$poster = get_field('poster');
+	$loop = get_field('loop');
+	$mute = get_field('muted');
+	$auto = get_field('autoplay');
 	
 	$slideshow = get_field('slideshow');
 
@@ -41,13 +44,13 @@
 				<div class="acf-block-container">
 					
 					<?php if ( $type == 'video' && $video ) { ?>
-					<video id="banner_video" class="banner-video" loop muted autoplay<?php if ( $poster ) { echo ' poster="'.$poster.'"'; } ?>>
+					<video id="banner_video" class="banner-video"<?php if ( $loop ) { echo ' loop'; } if ( $mute ) { echo ' muted'; } if ( $auto ) { echo ' autoplay'; } if ( $poster ) { echo ' poster="'.$poster.'"'; } ?>>
 						<source type="video/mp4" src="<?php echo $video; ?>">
 					</video>
-					<button id="banner_stop">
+					<button id="banner_stop"<?php if ( ! $auto ) { echo ' style="display:none"'; } ?>>
 						<img src="<?php echo ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/stop.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Stop video playback', 'adblocks'); ?>">
 					</button>
-					<button id="banner_play">
+					<button id="banner_play"<?php if ( ! $auto ) { echo ' style="display:block"'; } ?>>
 						<img src="<?php echo ADBLOCKS__PLUGIN_URL .'/blocks/block-pagebanner/assets/play.svg'; ?>" class="banner-btn" alt="<?php esc_html_e('Play video', 'adblocks'); ?>">
 					</button>
 					
