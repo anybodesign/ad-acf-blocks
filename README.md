@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.8 - 2021-02-01
+* Page Banner block: player options
+
 ### 2.7 - 2021-01-25
 * Page Banner block: button label options
 * Posts block: carousel/slider layout option
