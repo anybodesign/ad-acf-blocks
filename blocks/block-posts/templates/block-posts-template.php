@@ -9,6 +9,8 @@
 	$has_link = get_field('link');
 	$link = get_field('link_value');
 	
+	$mode = get_field('mode');
+	
 	$content = get_field('posts_select');
 	$h1 = get_field('first_title_level');
 	$h = get_field('title_level');
@@ -74,93 +76,57 @@
 					</div>
 					<?php } ?>
 					
-					<?php if( $content ): ?>
+					<?php if( ( $content && $mode != 'auto' ) || ( $mode == 'auto' ) ) : ?>
 					<?php if( $slider ) { ?>
 					<div class="acf-block-post-content--<?php echo $cols; ?> acf-block-post-slider" id="<?php echo esc_attr($id); ?>">
 					<?php } else { ?>
 					<div class="acf-block-post-content--<?php echo $cols; ?>">
 					<?php } ?>
 						
-				        <?php foreach( $content as $c ): 
-					        
-			        		$cat = get_the_category($c->ID);
-							$cpt = get_post_type($c->ID);
-
-				        ?>
-				        <div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
-					        
-					        <div class="acf-block-post-figure">
-						        <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
-					            <?php 
-						            if ( has_post_thumbnail( $c->ID ) && $size && ! $has_custom ) { 
-					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd');
-									}
-									else if ( has_post_thumbnail( $c->ID ) && $customsize && $has_custom ) { 
-					            		echo get_the_post_thumbnail( $c->ID, $customsize); 
-									} 
-									else if ( has_post_thumbnail( $c->ID ) ) {
-					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd'); 
-									} 
-									else {
-										echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
-						        	} 
-						        ?>
-						        </a>
-						    </div>
-						    
-				    		<div class="acf-block-post-content">
+						<?php 
+							// MANUAL 
+							
+							if( $content && $mode != 'auto' ) {
+							foreach( $content as $c ) : 
 								
-								<header class="acf-block-post-header">
-									<<?php echo $h; ?> class="acf-block-post-title">
-										<a href="<?php echo get_permalink( $c->ID ); ?>">
-										<?php echo get_the_title( $c->ID ); ?>
-										</a>
-									</<?php echo $h; ?>>
+								$cat = get_the_category($c->ID);
+								$cpt = get_post_type($c->ID);
+								
+								include ADBLOCKS__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
+							endforeach;
+							}
+							
+							// AUTO
+							
+							if( $mode == 'auto' ) {
+								
+								$num = get_field('auto_nb');
+								$type = get_field('auto_type');
+								
+								if ($num) {
+									$number = $num;
+								} else {
+									$number = '-1';
+								}
+								
+								$args = array(
+									'numberposts' 	=> $number,
+									'post_type' 	=> $type,
+									'order'			=> 'DESC'
+								);
+								$autocontent = get_posts($args);
+								
+								foreach ($autocontent as $c) :
 									
-									<?php if ( $metas ) { ?>
-									<div class="acf-block-post-metas">
-										<span class="meta-date">
-											<span class="meta-date-text"><?php _e( 'Posted on&nbsp;', 'adblocks' ); ?></span><span class="meta-date-time"><?php echo '<span class="day">'.get_the_time( ('j'), $c->ID ).'</span> '; echo '<span class="month">'.get_the_time( ('F'), $c->ID ).'</span> '; echo '<span class="year">'.get_the_time( ('Y'), $c->ID ).'</span>'; ?></span>
-										</span>
-										<?php if( $your_metas && in_array('author', $your_metas) ) { ?>
-										<span class="meta-author">
-											<?php _e( 'by&nbsp;', 'adblocks' ); echo get_the_author(); ?>
-										</span>
-										<?php } ?>
-										<?php if( $your_metas && in_array('cat', $your_metas) && $cpt == 'post' ) { ?>
-										<span class="meta-category">
-											<?php _e( 'in&nbsp;', 'adblocks' ); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?>
-										</span>
-										<?php } ?>
-									</div>
-									<?php } ?>									
-								</header>
-
-								<div class="acf-block-post-excerpt">
-									<?php 
-										if ($show == 'excerpt') {
-											
-											$my_excerpt = $c->post_excerpt;
-											$manual_excerpt = get_the_excerpt( $c->ID );
-											$permalink = get_permalink( $c->ID );
-											
-											if ( $my_excerpt != '' ) {												
-										        echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks').'</a></p>';
-										    } else {
-												echo adblocks_get_excerpt(125, $c->ID);
-											}											
-										}
-										
-										if ($show == 'content' ) {
-											echo $c->post_content; 
-										}	
-									?>
-								</div>
+									$cat = get_the_category($c->ID);
+									$cpt = get_post_type($c->ID);
+								
+									include ADBLOCKS__PLUGIN_PATH . '/blocks/block-posts/templates/block-posts-content.php';
 									
-							</div>
-					        
-				        </div>
-				        <?php endforeach; ?>
+								endforeach;
+								wp_reset_postdata();
+							}
+						?>
 
 					</div>
 					<?php endif; ?>
