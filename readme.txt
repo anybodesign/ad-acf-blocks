@@ -3,7 +3,7 @@ Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
 Tested up to: 5.6
-Stable tag: 2.8
+Stable tag: 2.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,10 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 2.9 - 2021-02-03 =
+* Posts block: automatic mode
+* Gallery block: grid columns fix
 
 = 2.8 - 2021-02-01 =
 * Page Banner block: player options

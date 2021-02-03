@@ -30,6 +30,10 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 2.9 - 2021-02-03
+* Posts block: automatic mode
+* Gallery block: grid columns fix
+
 ### 2.8 - 2021-02-01
 * Page Banner block: player options
 * Page Banner block: type class
