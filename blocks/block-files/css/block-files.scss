@@ -1,0 +1,36 @@
+// Files Block
+// -
+// + + + + + + + + + + 
+
+@import '../../../assets/css/vars.scss';
+
+.acf-block--files {
+	
+	.acf-block-container {}
+	
+}
+
+.acf-block-file-items {
+	padding: 0;
+	list-style: none;
+}
+.file-item {
+	display: block;
+	border-bottom: #000 1px solid;
+	
+	a {
+		display: flex;
+		padding: $grid-padding 0;
+		align-items: center;
+	}
+}
+
+.file-item-icon {
+	display: inline-block;
+	width: 2rem;
+	height: auto;
+	margin-right: $grid-padding;
+}
+.file-item-desc {
+	display: block;
+}

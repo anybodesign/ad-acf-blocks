@@ -215,6 +215,13 @@ acf_add_local_field_group(array(
 				'value' => 'acf/cards',
 			),
 		),
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/files',
+			),
+		),
 	),
 	'menu_order' => 20,
 	'position' => 'normal',
