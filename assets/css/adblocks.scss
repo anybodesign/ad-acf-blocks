@@ -22,6 +22,21 @@
 	.wp-admin &[style*=color] {
 		padding: 1rem;
 	}
+	
+	&.has-bg-color,
+	&.has-bg-img {
+		padding-top: $grid-padding*2;
+		padding-bottom: $grid-padding*2;
+		
+		@include rwd(medium) {
+			padding-top: $grid-padding*4;
+			padding-bottom: $grid-padding*4;
+		}
+	}
+	&.alignfull {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 
 	.acf-block-container {

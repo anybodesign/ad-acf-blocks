@@ -48,7 +48,7 @@
 				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/textimg-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>
 						
-			<section class="acf-block--textimg<?php if ($right) { echo ' right'; } if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
+			<section class="acf-block--textimg<?php if($bgimg) { echo ' has-bg-img'; } if($bgcolor) { echo ' has-bg-color'; } if ($right) { echo ' right'; } if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($right) { echo ' right'; } ?><?php if ($center) { echo ' centered'; } if ($max) { echo ' center-max'; } echo ' '.esc_attr($prop); ?>">
 
 					<div class="acf-block-textimg-picture">

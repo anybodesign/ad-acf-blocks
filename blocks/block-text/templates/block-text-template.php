@@ -39,7 +39,7 @@
 			
 			<?php } else { ?>
 						
-			<section class="acf-block--text <?php if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
+			<section class="acf-block--text<?php if($bgimg) { echo ' has-bg-img'; } if($bgcolor) { echo ' has-bg-color'; } if($white) { echo ' white-text'; } if( $over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
 
 					<div class="acf-block-text--<?php echo $layout; ?><?php if ($center) { echo ' centered'; } if ($center_x) { echo ' centered-x'; } ?>">
