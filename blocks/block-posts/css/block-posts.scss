@@ -33,17 +33,17 @@
 	}
 }
 .acf-block-post-item {
-	padding: $grid-padding;
+	margin: $grid-padding;
 	
 	@include rwd(tiny) {
-		width: 50%;
+		width: calc(50% - #{$grid-padding}*2);
 		
 		.acf-block-post-content--1col & {
 			width: 100%;
 		}
 	}
 	@include rwd(small) {
-		width: 33.3333%;
+		width: calc(33.3333% - #{$grid-padding}*2);
 
 		.acf-block-post-content--1col & {
 			display: flex;
@@ -58,11 +58,11 @@
 			}
 		}		
 		.acf-block-post-content--2cols & {
-			width: 50%;
+			width: calc(50% - #{$grid-padding}*2);
 		}
 	}
 	@include rwd(medium) {
-		width: 25%;
+		width: calc(25% - #{$grid-padding}*2);
 		
 		.acf-block-post-content--1col & {
 			
@@ -75,15 +75,15 @@
 		}
 		
 		.acf-block-post-content--3cols & {
-			width: 33.3333%;
+			width: calc(33.3333% - #{$grid-padding}*2);
 		}				
 	}
 	@include rwd(large) {
 		.acf-block-post-content--5cols & {
-			width: 20%;
+			width: calc(20% - #{$grid-padding}*2);
 		}
 		.acf-block-post-content--6cols & {
-			width: 16.6667%;
+			width: calc(16.6667% - #{$grid-padding}*2);
 		}		
 	}	
 }
