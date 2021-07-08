@@ -30,7 +30,7 @@
 
 			<?php // Block preview
 				if( !empty( $block['data']['__is_preview'] ) ) { ?>
-			    
+			    <img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/files-preview.png" alt="" class="adblock-preview">
 
 			<?php } else { ?>			
 			
