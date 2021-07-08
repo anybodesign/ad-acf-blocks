@@ -2,6 +2,7 @@
 
 	$h = get_field('title_level');
 	$size = get_field('icon_size_feature_size');
+	$order = get_field('reverse_order');
 
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -36,7 +37,7 @@
 				<div class="acf-block-container<?php if ($max) { echo ' center-max'; } ?>">
 
 					<?php if( have_rows('list') ): ?>
-					<ul class="acf-block-list-items">
+					<ul class="acf-block-list-items<?php if ($order) { echo ' reverse'; } ?>">
 						
 				        <?php while( have_rows('list') ): the_row();
 							

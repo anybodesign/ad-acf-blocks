@@ -13,19 +13,55 @@
 .acf-block-list-items {
 	list-style: none;
 	padding-left: 0;
+	
+	
+		//reverse
+		
+		&.reverse {
+			
+			.acf-block-list-item,
+			.acf-block-list-item > a {
+				
+				.list-featured {
+					order: 0;
+					
+					@include rwd(medium) {
+						padding-left: 0;
+						padding-right: $grid-padding*2;
+					}
+				}
+				.list-content {
+					order: 1;
+				}
+				.list-icon {
+					order: 2;
+				}
+				.list-legend {
+					order: 3;
+				}
+			}
+			
+		}
 }
 
 .acf-block-list-item {
 	margin-bottom: $grid-padding*2;
 	padding-bottom: $grid-padding*2;
 	border-bottom: #333 1px solid;
-
+	
+	&,
+	& > a {
+		display: flex;
+		flex-direction: column;	
+	}
+	
 	
 	@include rwd(medium) {
 		
 		&,
 		& > a {
 			display: flex;
+			flex-direction: row;
 			flex-wrap: wrap;
 		}
 		& > a {
@@ -34,6 +70,7 @@
 	}
 	
 }
+
 
 
 .list-icon {
