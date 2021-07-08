@@ -1,18 +1,24 @@
 (function($) {
 
 	var initializeBlock = function() {
-
-		function scrollToAnchor(anchorID){
-			var target = $(anchorID);
+		
+		$('a[href^="#"]').not('a[href="#"]').on('click', function() {
+			
+			var targetID = $(this).attr('href');
+			var target = $(targetID);
 			var targetOffset = target.attr('data-offset');
 			var targetSpeed = target.attr('data-speed');
-	
-			$('html,body').animate({scrollTop: target.offset().top - targetOffset}, targetSpeed);
-		}
-	
-		$('a[href^="#"]').not('a[href="#"]').on('click', function() {
-			var targetID = $(this).attr('href');
-			scrollToAnchor( targetID );
+
+			console.log('targetID:'+targetID);
+			console.log('id:'+target);
+			console.log('speed:'+targetSpeed);
+			console.log('offset:'+targetOffset);
+			
+			$('html, body').animate({scrollTop: target.offset().top-targetOffset}, +targetSpeed);
+				
+			// $('html, body').animate({
+			// 	scrollTop: target.offset().top - 500
+			// }, 5000);
 			
 			return false;
 		});	
