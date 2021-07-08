@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2021-02-03 12:09+0100\n"
-"PO-Revision-Date: 2021-02-03 12:11+0100\n"
+"POT-Creation-Date: 2021-07-08 09:16+0200\n"
+"PO-Revision-Date: 2021-07-08 09:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -132,42 +132,50 @@ msgid "H6"
 msgstr "H6"
 
 #: blocks/block-advanced-list/block-advanced-list-fields.php:42
+msgid "Reverse order"
+msgstr "Ordre inverse"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:45
+msgid "Place the icon on the right and the numbers on the left"
+msgstr "Placer l’icône à droite et les chiffres à gauche"
+
+#: blocks/block-advanced-list/block-advanced-list-fields.php:61
 #: blocks/block-advanced-list/block-advanced-list.php:14
 msgid "Advanced List"
 msgstr "Liste avancée"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:57
+#: blocks/block-advanced-list/block-advanced-list-fields.php:76
 msgid "Add a list item"
 msgstr "Ajouter un élément de liste"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:61
+#: blocks/block-advanced-list/block-advanced-list-fields.php:80
 msgid "Icon"
 msgstr "Icône"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:85
+#: blocks/block-advanced-list/block-advanced-list-fields.php:104
 msgid "Infos"
 msgstr "Infos"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:100
+#: blocks/block-advanced-list/block-advanced-list-fields.php:119
 #: blocks/block-cards/block-cards-fields.php:76
 #: blocks/block-posts/block-posts-fields.php:32
 #: blocks/block-testimonial/block-testimonial-fields.php:71
 msgid "Title"
 msgstr "Titre"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:119
+#: blocks/block-advanced-list/block-advanced-list-fields.php:138
 msgid "Description"
 msgstr "Description"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:138
+#: blocks/block-advanced-list/block-advanced-list-fields.php:157
 msgid "Legend"
 msgstr "Légende"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:141
+#: blocks/block-advanced-list/block-advanced-list-fields.php:160
 msgid "Could be a footnote"
 msgstr "Peut-être une note de bas de page"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:157
+#: blocks/block-advanced-list/block-advanced-list-fields.php:176
 #: blocks/block-cards/block-cards-fields.php:174
 #: blocks/block-cta/block-cta-fields.php:54
 #: blocks/block-posts/block-posts-fields.php:443
@@ -175,15 +183,15 @@ msgstr "Peut-être une note de bas de page"
 msgid "Link"
 msgstr "Lien"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:174
+#: blocks/block-advanced-list/block-advanced-list-fields.php:193
 msgid "Featured text"
 msgstr "Texte mis en avant"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:177
+#: blocks/block-advanced-list/block-advanced-list-fields.php:196
 msgid "Could be a date, a price, a letter, a number…"
 msgstr "Peut-être une date, un prix, une lettre, un numéro…"
 
-#: blocks/block-advanced-list/block-advanced-list-fields.php:195
+#: blocks/block-advanced-list/block-advanced-list-fields.php:214
 msgid "Icon size"
 msgstr "Taille de l'icône"
 
@@ -326,6 +334,42 @@ msgstr "Bloc de call to action, avec couleur de fond ou image de fond."
 #: blocks/block-text/templates/block-text-template.php:17
 msgid "Enter text here..."
 msgstr "Entrez du texte ici..."
+
+#: blocks/block-files/block-files-fields.php:9
+msgid "AD ACF Block 11: File list"
+msgstr "Bloc AD ACF 11 : Liste de fichiers"
+
+#: blocks/block-files/block-files-fields.php:13
+msgid "Add files"
+msgstr "Ajouter des fichiers"
+
+#: blocks/block-files/block-files-fields.php:28
+msgid "Add a file"
+msgstr "Ajouter un fichier"
+
+#: blocks/block-files/block-files-fields.php:32
+msgid "File"
+msgstr "Fichier"
+
+#: blocks/block-files/block-files-fields.php:35
+msgid "Allowed file type: PDF, ZIP, JPEG, MP3 and MP4"
+msgstr "Type de fichier autorisé: PDF, ZIP, JPEG, MP3 et MP4"
+
+#: blocks/block-files/block-files-fields.php:53
+msgid "Display file type icon"
+msgstr "Afficher l’icône de type de fichier"
+
+#: blocks/block-files/block-files.php:14
+msgid "File list"
+msgstr "Liste de fichiers"
+
+#: blocks/block-files/block-files.php:15
+msgid "Add an downloadable file list."
+msgstr "Ajoutez une liste de fichiers téléchargeables."
+
+#: blocks/block-files/templates/block-files-template.php:60
+msgid "Download "
+msgstr "Télécharger "
 
 #: blocks/block-gallery/block-gallery-fields.php:9
 msgid "AD ACF Block 03: Gallery"
