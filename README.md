@@ -30,6 +30,14 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.0 - 2021-07-08
+* New block: File list
+* New blocks previews
+* Advanced List: reverse order
+* Anchor: offset & speed support
+* Posts: replaced padding with margin
+* Added has-bg class on sections
+
 ### 2.9 - 2021-02-03
 * Posts block: automatic mode
 * Gallery block: grid columns fix
