@@ -114,7 +114,7 @@ function adblocks_get_excerpt($count, $post_id){
 
 // Custom Group
 
-if( array_key_exists( 'block_categories_all' , $GLOBALS['wp_filter']) ) {
+if( function_exists('get_default_block_categories') ) { // WP 5.8
 	add_filter( 'block_categories_all', 'adblocks_block_categories', 10, 2 );
 } else {
 	add_filter( 'block_categories', 'adblocks_block_categories', 10, 2 );
