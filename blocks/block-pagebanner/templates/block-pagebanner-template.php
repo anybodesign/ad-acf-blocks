@@ -11,6 +11,14 @@
 	$auto = get_field('autoplay');
 	
 	$slideshow = get_field('slideshow');
+	$s_speed = get_field('slideshow_speed');
+	$s_autospeed = get_field('slideshow_autospeed');
+	$s_loop = get_field('slideshow_loop');
+	if ($s_loop == false) {
+		$infinite = 'false';
+	} else {
+		$infinite = 'true';
+	}
 
 	$scroll = get_field('scroll');
 	$scroll_btn = get_field('scroll_btn');
@@ -71,7 +79,36 @@
 			            </div>
 			        <?php endforeach; ?>				
 					</div>
-					
+					<?php if (!is_admin()) { ?>
+					<script>
+						jQuery(document).ready(function($) {
+							var item_length = $('.banner-slideshow > div').length - 1;
+							var slideshow = $('.banner-slideshow').slick({
+								autoplay: true,
+								speed: <?php echo $s_speed; ?>,
+								autoplaySpeed: <?php echo $s_autospeed; ?>,
+								infinite: <?php echo $infinite; ?>,
+						    	slidesToShow: 1,
+								slidesToScroll: 1,
+								fade: true,
+								arrows: false,
+								dots: false,
+								draggable: false,
+								swipe: false,
+								touchMove: false
+						    });
+							<?php if ($s_loop == false) { ?>
+							// On before slide change
+							slideshow.on('afterChange', function(event, slick, currentSlide, nextSlide){
+							  if( item_length === slideshow.slick('slickCurrentSlide') ){
+							    slideshow.slickPause();
+							    //slideshow.slickSetOption("autoplay",false,false)
+							  };
+							});
+							<?php } ?>
+						});
+					</script>
+					<?php } ?>
 					
 					<?php } else { 
 						echo '<img src="'.$bg.'" class="banner-bg" alt="">';	
@@ -97,8 +134,9 @@
 										
 				</div>
 			</section>
-			<?php if ($scroll) { ?>
-			<div id="banner_after"></div>
-			<?php } ?>	
-						
+			
+				<?php if ($scroll) { ?>
+				<div id="banner_after"></div>
+				<?php } ?>
+				
 			<?php } ?>

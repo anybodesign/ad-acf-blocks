@@ -37,19 +37,20 @@ jQuery(document).ready(function($) {
 	
 	// Slick
 
-	$('.banner-slideshow').slick({
-		speed: 1000,
-		autoplay: true,
-    	slidesToShow: 1,
-		slidesToScroll: 1,
-		fade: true,
-		arrows: false,
-		dots: false,
-		infinite: true,
-		draggable: false,
-		swipe: false,
-		touchMove: false
-    });
+	// $('.banner-slideshow').slick({
+	// 	speed: 1000,
+	// 	autoplay: true,
+	// 	infinite: true,
+    // 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	fade: true,
+	// 	arrows: false,
+	// 	dots: false,
+	// 	infinite: true,
+	// 	draggable: false,
+	// 	swipe: false,
+	// 	touchMove: false
+    // });
 	
 	$('.slick-slide').removeAttr('tabindex');
 	
