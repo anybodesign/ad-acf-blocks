@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks
  * Description: A collection of blocks made with ACF for the new Editor 
- * Version: 3.0
+ * Version: 3.1
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADBLOCKS__PLUGIN_VERSION', '3.0' );
+define( 'ADBLOCKS__PLUGIN_VERSION', '3.1' );
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADBLOCKS__BASENAME', plugin_basename( __FILE__ ) );
@@ -114,7 +114,11 @@ function adblocks_get_excerpt($count, $post_id){
 
 // Custom Group
 
-add_filter( 'block_categories', 'adblocks_block_categories', 10, 2 );
+if( array_key_exists( 'block_categories_all' , $GLOBALS['wp_filter']) ) {
+	add_filter( 'block_categories_all', 'adblocks_block_categories', 10, 2 );
+} else {
+	add_filter( 'block_categories', 'adblocks_block_categories', 10, 2 );
+}
 function adblocks_block_categories( $categories, $post ) {
 
     return array_merge(

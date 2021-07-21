@@ -2,8 +2,8 @@
 Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
-Tested up to: 5.6
-Stable tag: 2.9
+Tested up to: 5.8
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,10 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 3.1 - 2021-07-21 =
+* Page banner block: speed and duration options
+* Added WordPress 5.8 block_categories_all filter
 
 = 3.0 - 2021-07-08 =
 * New block: File list
