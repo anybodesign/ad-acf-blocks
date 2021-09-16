@@ -14,11 +14,14 @@
 			console.log('speed:'+targetSpeed);
 			console.log('offset:'+targetOffset);
 			
-			$('html, body').animate({scrollTop: target.offset().top-targetOffset}, +targetSpeed);
+			if ( $('body').hasClass('admin-bar') ) {
+				var $bar = 32;
+			} else {
+				var $bar = 0;
+			}
+			$('html, body').animate({scrollTop: target.offset().top-targetOffset-$bar}, +targetSpeed);
 				
-			// $('html, body').animate({
-			// 	scrollTop: target.offset().top - 500
-			// }, 5000);
+			// console.log($bar);
 			
 			return false;
 		});	
