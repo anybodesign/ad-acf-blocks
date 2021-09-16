@@ -25,6 +25,7 @@
 	}
 	
 	$icons = get_field('files_icons');
+	$custom = get_field('custom_icons');
 
 ?>
 
@@ -58,9 +59,27 @@
 				        ?>
 				        <li class="file-item">					        
 							<a href="<?php echo esc_attr($url); ?>" title="<?php esc_attr_e('Download '.$title.'', 'adblocks'); ?>" download="<?php echo esc_attr($title); ?>">
-								<?php if ($icons != false) { ?>
+								<?php if ($icons != false || $custom == true) { ?>
 								<div class="file-icon">
+									<?php if ($custom != true) { ?>
 									<img class="file-item-icon" src="<?php echo esc_attr($icon); ?>" alt="">
+									<?php } else { ?>
+										<?php if ($type == 'mpeg') { ?>
+										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/audio.svg" alt="">
+										<?php } ?>
+										<?php if ($type == 'jpeg') { ?>
+										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/picture.svg" alt="">
+										<?php } ?>
+										<?php if ($type == 'mp4') { ?>
+										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/video.svg" alt="">
+										<?php } ?>
+										<?php if ($type == 'pdf') { ?>
+										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/text.svg" alt="">
+										<?php } ?>
+										<?php if ($type == 'zip') { ?>
+										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/archive.svg" alt="">
+										<?php } ?>
+									<?php } ?>
 								</div>
 								<?php } ?>
 								<div class="file-infos">

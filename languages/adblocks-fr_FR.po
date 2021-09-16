@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2021-07-21 15:53+0200\n"
-"PO-Revision-Date: 2021-07-21 15:53+0200\n"
+"POT-Creation-Date: 2021-09-16 13:52+0200\n"
+"PO-Revision-Date: 2021-09-16 13:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -359,6 +359,20 @@ msgstr "Type de fichier autorisé: PDF, ZIP, JPEG, MP3 et MP4"
 msgid "Display file type icon"
 msgstr "Afficher l’icône de type de fichier"
 
+#: blocks/block-files/block-files-fields.php:72
+msgid "Use custom theme icons"
+msgstr "Utiliser des icônes personnalisées du thème"
+
+#: blocks/block-files/block-files-fields.php:75
+msgid ""
+"Icons path in the theme must be: <em>/img/icons/files/</em><br>\n"
+"File names: <em>archive.svg, audio.svg, picture.svg, text.svg,\tvideo.svg</"
+"em>"
+msgstr ""
+"Le chemin des icônes dans le thème doit être : <em>/img/icons/files/</"
+"em><br>Noms des fichiers : <em>archive.svg, audio.svg, image.svg, texte.svg, "
+"vidéo.svg</em>"
+
 #: blocks/block-files/block-files.php:14
 msgid "File list"
 msgstr "Liste de fichiers"
@@ -367,7 +381,7 @@ msgstr "Liste de fichiers"
 msgid "Add an downloadable file list."
 msgstr "Ajoutez une liste de fichiers téléchargeables."
 
-#: blocks/block-files/templates/block-files-template.php:60
+#: blocks/block-files/templates/block-files-template.php:61
 msgid "Download "
 msgstr "Télécharger "
 
