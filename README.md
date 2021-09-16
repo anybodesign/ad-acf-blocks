@@ -30,6 +30,10 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.2 - 2021-09-16
+* File list block: custom icons option
+* Anchor: offset with admin-bar
+
 ### 3.1 - 2021-07-21
 * Page banner block: speed and duration options
 * Added WordPress 5.8 block_categories_all filter
