@@ -114,15 +114,15 @@ function adblocks_get_excerpt($count, $post_id){
 
 // Custom Group
 
-if( function_exists('get_default_block_categories') ) { // WP 5.8
-	add_filter( 'block_categories_all', 'adblocks_block_categories', 10, 2 );
+if ( version_compare( $GLOBALS['wp_version'], '5.8-alpha-1', '<' ) ) {
+    add_filter( 'block_categories', 'adblocks_block_categories', 10, 2 );
 } else {
-	add_filter( 'block_categories', 'adblocks_block_categories', 10, 2 );
+    add_filter( 'block_categories_all', 'adblocks_block_categories', 10, 2 );
 }
-function adblocks_block_categories( $categories, $post ) {
+function adblocks_block_categories( $block_categories, $block_editor_context ) {
 
     return array_merge(
-        $categories,
+        $block_categories,
         array(
             array(
                 'slug' 	=> 'ad-blocks',
