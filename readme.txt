@@ -49,6 +49,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 3.2.1 - 2021-11-10 =
+* Text domain fix
+* Function all groups fix
+
 = 3.2 - 2021-09-16 =
 * File list block: custom icons option
 * Anchor: offset with admin-bar
