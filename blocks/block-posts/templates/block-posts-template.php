@@ -21,6 +21,9 @@
 	$size = get_field('posts_size_feature_size');
 	$slider = get_field('slider');
 	$mob = get_field('slider_mobile');
+	$small = get_field('small_breakpoint' ?: 480);
+	$medium = get_field('medium_breakpoint' ?: 720);
+	$large = get_field('large_breakpoint' ?: 960);
 	
 	$has_custom = get_field('has_custom_size');
 	$customsize = get_field('custom_size');
@@ -167,21 +170,21 @@
 								mobileFirst: true,
 								responsive: [
 								    {
-								      breakpoint: 480,
+								      breakpoint: ".$small.",
 								      settings: {
 								        slidesToShow: 2,
 								        slidesToScroll: 2,
 								      }
 								    },
 									{
-								      breakpoint: 720,
+								      breakpoint: ".$medium.",
 								      settings: {
 								        slidesToShow: 3,
 								        slidesToScroll: 3,
 								      }
 								    },
 								    {
-								      breakpoint: 960,
+								      breakpoint: ".$large.",
 								      settings: 'unslick'
 								    }
 								]
@@ -189,7 +192,7 @@
 							slick_slider.slick(settings);
 							
 							$(window).on('resize',function() {
-								if ($(window).width() > 959) {
+								if ($(window).width() > ".$large.") {
 									if (slick_slider.hasClass('slick-initialized')) {
 										slick_slider.slick('unslick');
 										$('.acf-block-post-item').removeAttr('tabindex');
@@ -209,7 +212,7 @@
 							});
 							
 							$(window).on('resize',function() {
-								if ($(window).width() > 720) {
+								if ($(window).width() > ".$medium.") {
 									$('.slick-slide').removeAttr('tabindex');
 								}
 							});	
