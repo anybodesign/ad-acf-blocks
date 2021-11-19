@@ -49,6 +49,11 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 3.3 - 2021-11-19 =
+* Posts block: breakpoint options for slider
+* Posts block: meta markup
+* Theme fallback image if exists 
+
 = 3.2.1 - 2021-11-10 =
 * Text domain fix
 * Function all groups fix
