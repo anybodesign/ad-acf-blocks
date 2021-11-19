@@ -1,4 +1,17 @@
-<?php if ( !defined('ABSPATH') ) die(); ?>
+<?php if ( !defined('ABSPATH') ) die(); 
+	
+	$location = get_template_directory_uri(). '/img/';
+	$location = str_replace("http://", "", $location);
+	$location = str_replace("https://", "", $location);
+	$location = str_replace($_SERVER['HTTP_HOST'], "", $location);
+	$location = $_SERVER['DOCUMENT_ROOT'].$location;
+	
+	$path1 = $location. 'fallback.png';
+	$path2 = $location. 'fallback.jpg';
+	$fallback1 = get_template_directory_uri(). '/img/fallback.png';
+	$fallback2 = get_template_directory_uri(). '/img/fallback.jpg';
+
+?>
 
 						<div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
 					        
@@ -13,16 +26,21 @@
 									} 
 									else if ( has_post_thumbnail( $c->ID ) ) {
 					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd'); 
-									} 
+									}
+									else if ( file_exists( $path1 ) ) {
+					            		echo '<img src="' . $fallback1. '" alt="">';  
+									}
+									else if ( file_exists( $path2 ) ) {
+					            		echo '<img src="' . $fallback2. '" alt="">';  
+									}
 									else {
 										echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
-						        	} 
+						        	}
 						        ?>
 						        </a>
 						    </div>
 						    
 				    		<div class="acf-block-post-content">
-								
 								<header class="acf-block-post-header">
 									<<?php echo $h; ?> class="acf-block-post-title">
 										<a href="<?php echo get_permalink( $c->ID ); ?>">
@@ -37,12 +55,12 @@
 										</span>
 										<?php if( $your_metas && in_array('author', $your_metas) ) { ?>
 										<span class="meta-author">
-											<?php _e( 'by&nbsp;', 'adblocks' ); echo get_the_author(); ?>
+											<span><?php _e( 'by&nbsp;', 'adblocks' ); ?></span> <span><?php echo get_the_author(); ?></span>
 										</span>
 										<?php } ?>
 										<?php if( $your_metas && in_array('cat', $your_metas) && $cpt == 'post' ) { ?>
 										<span class="meta-category">
-											<?php _e( 'in&nbsp;', 'adblocks' ); echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?>
+											<span><?php _e( 'in&nbsp;', 'adblocks' ); ?></span> <span><?php echo '<a href="'.esc_url( get_category_link( $cat[0]->term_id) ).'">' . esc_html( $cat[0]->name) . '</a>'; ?></span>
 										</span>
 										<?php } ?>
 									</div>
