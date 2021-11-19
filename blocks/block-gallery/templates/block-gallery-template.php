@@ -34,7 +34,18 @@
 	    $align = ' align' . $block['align'];
 	} else {
 		$align = null;
-	}						
+	}
+
+	$location = get_template_directory_uri(). '/img/';
+	$location = str_replace("http://", "", $location);
+	$location = str_replace("https://", "", $location);
+	$location = str_replace($_SERVER['HTTP_HOST'], "", $location);
+	$location = $_SERVER['DOCUMENT_ROOT'].$location;
+	
+	$path1 = $location. 'fallback.png';
+	$path2 = $location. 'fallback.jpg';
+	$fallback1 = get_template_directory_uri(). '/img/fallback.png';
+	$fallback2 = get_template_directory_uri(). '/img/fallback.jpg';
 ?>
 
 			<?php // Block preview
@@ -161,11 +172,19 @@
 							            if ( has_post_thumbnail( $c->ID ) ) { 
 						            		if ($size) {
 						            		echo '<div>'.get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd').'</div>';
-						            		} else {
+											} else {
 						            		echo '<div>'.get_the_post_thumbnail( $c->ID, 'adblocks-thumbnail-hd').'</div>';
 						            		} 
+											
 										} else {
-											echo '<div><img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt=""></div>'; 
+											
+											if ( file_exists( $path1 ) ) {
+					            			echo '<div><img src="' . $fallback1. '" alt=""></div>';  
+											} else if ( file_exists( $path2 ) ) {
+					            			echo '<div><img src="' . $fallback2. '" alt=""></div>';  
+											} else {
+											echo '<div><img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt=""></div>';
+											} 
 							        } ?>
 									<div class="acf-block-gallery-caption">
 										<span class="acf-block-gallery-caption-title"><?php echo get_the_title( $c->ID ); ?></span>
