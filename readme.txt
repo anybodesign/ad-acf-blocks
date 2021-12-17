@@ -2,7 +2,7 @@
 Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
-Tested up to: 5.8.1
+Tested up to: 5.8.2
 Stable tag: 3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -48,6 +48,10 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 3.4 - 2021-12-17 =
+* Posts block: display post permalink with excerpt only
+* File list block: more file formats and custom title
 
 = 3.3 - 2021-11-19 =
 * Posts block: breakpoint options for slider
