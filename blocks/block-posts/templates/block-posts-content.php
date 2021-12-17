@@ -16,7 +16,9 @@
 						<div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
 					        
 					        <div class="acf-block-post-figure">
-						        <a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
+						        <?php if ( $show != 'content' ) { ?>
+								<a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
+								<?php } ?>
 					            <?php 
 						            if ( has_post_thumbnail( $c->ID ) && $size && ! $has_custom ) { 
 					            		echo get_the_post_thumbnail( $c->ID, 'adblocks-'.$size.'-hd');
@@ -37,15 +39,21 @@
 										echo '<img src="' . ADBLOCKS__PLUGIN_URL .'assets/fallback.png" alt="">'; 
 						        	}
 						        ?>
+								<?php if ( $show != 'content' ) { ?>
 						        </a>
+								<?php } ?>
 						    </div>
 						    
 				    		<div class="acf-block-post-content">
 								<header class="acf-block-post-header">
 									<<?php echo $h; ?> class="acf-block-post-title">
+										<?php if ( $show != 'content' ) { ?>
 										<a href="<?php echo get_permalink( $c->ID ); ?>">
-										<?php echo get_the_title( $c->ID ); ?>
+										<?php } ?>
+											<?php echo get_the_title( $c->ID ); ?>
+										<?php if ( $show != 'content' ) { ?>
 										</a>
+										<?php } ?>
 									</<?php echo $h; ?>>
 									
 									<?php if ( $metas ) { ?>
