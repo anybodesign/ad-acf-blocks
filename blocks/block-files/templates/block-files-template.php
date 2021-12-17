@@ -26,6 +26,7 @@
 	
 	$icons = get_field('files_icons');
 	$custom = get_field('custom_icons');
+	
 
 ?>
 
@@ -51,6 +52,8 @@
 							$icon = $file['icon'];
 							$desc = $file['description'];
 							
+							$customtitle = get_sub_field('title');
+							
 							$filesize = $file['filesize'];
 							$size_mo = $filesize / 1000000;
 							$size = number_format($size_mo, 2); 
@@ -58,11 +61,11 @@
 							//echo var_dump($file);
 				        ?>
 				        <li class="file-item">					        
-							<a href="<?php echo esc_attr($url); ?>" title="<?php esc_attr_e('Download '.$title.'', 'adblocks'); ?>" download="<?php echo esc_attr($title); ?>">
+							<a href="<?php echo esc_url($url); ?>" title="<?php esc_attr_e('Download '.$title.'', 'adblocks'); ?>" download="<?php echo esc_attr($title); ?>">
 								<?php if ($icons != false || $custom == true) { ?>
 								<div class="file-icon">
 									<?php if ($custom != true) { ?>
-									<img class="file-item-icon" src="<?php echo esc_attr($icon); ?>" alt="">
+									<img class="file-item-icon" src="<?php echo esc_url($icon); ?>" alt="">
 									<?php } else { ?>
 										<?php if ($type == 'mpeg') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/audio.svg" alt="">
@@ -83,12 +86,14 @@
 								</div>
 								<?php } ?>
 								<div class="file-infos">
-									<span class="file-item-name"><?php echo esc_attr($title); ?></span>&nbsp;
-									(<span class="file-item-type"><?php echo esc_attr($type); ?></span>
+									<span class="file-item-name">
+										<?php if ( $customtitle ) { echo esc_html($customtitle); } else { echo esc_html($title); } ?>
+									</span>&nbsp;
+									(<span class="file-item-type"><?php echo esc_html($type); ?></span>
 									&nbsp;–&nbsp;
-									<span class="file-item-size"><?php echo esc_attr($size); ?> Mb</span>)&nbsp;
+									<span class="file-item-size"><?php echo esc_html($size); ?> Mb</span>)&nbsp;
 									<?php if ($desc) { ?>
-									<span class="file-item-desc"><?php echo esc_attr($desc); ?></span>
+									<span class="file-item-desc"><?php echo esc_html($desc); ?></span>
 									<?php } ?>
 								</div>									
 							</a>
