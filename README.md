@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.4.1 - 2021-12-17
+* FR translation
+
 ### 3.4 - 2021-12-17
 * Posts block: display post permalink with excerpt only
 * File list block: more file formats and custom title
