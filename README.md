@@ -30,6 +30,11 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.5 - 2022-01-12
+* Custom class option for all blocks
+* Posts: featured image option
+* Posts: read more link a11y title
+
 ### 3.4.1 - 2021-12-17
 * FR translation
 
