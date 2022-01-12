@@ -10,11 +10,11 @@
 	$path2 = $location. 'fallback.jpg';
 	$fallback1 = get_template_directory_uri(). '/img/fallback.png';
 	$fallback2 = get_template_directory_uri(). '/img/fallback.jpg';
-
 ?>
 
 						<div class="acf-block-post-item <?php echo $cpt.'-block'; ?>">
 					        
+						<?php if ( !isset( $featured ) || $featured == true ) { ?>
 					        <div class="acf-block-post-figure">
 						        <?php if ( $show != 'content' ) { ?>
 								<a href="<?php echo get_permalink( $c->ID ); ?>" title="<?php _e('Read ', 'adblocks'); echo get_the_title( $c->ID ); ?>" rel="nofollow">
@@ -42,7 +42,8 @@
 								<?php if ( $show != 'content' ) { ?>
 						        </a>
 								<?php } ?>
-						    </div>
+						    </div>	
+						<?php } ?>
 						    
 				    		<div class="acf-block-post-content">
 								<header class="acf-block-post-header">
@@ -82,9 +83,10 @@
 											$my_excerpt = $c->post_excerpt;
 											$manual_excerpt = get_the_excerpt( $c->ID );
 											$permalink = get_permalink( $c->ID );
+											$title = get_the_title( $c->ID );
 											
 											if ( $my_excerpt != '' ) {												
-										        echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks').'</a></p>';
+										        echo '<p>'.$manual_excerpt.' <a class="read-more" href="'.$permalink.'" rel="nofollow">'.esc_html__('Read more', 'adblocks').' <span class="a11y-hidden"> '.esc_html__('of ', 'adblocks').$title.'</span></a></p>';
 										    } else {
 												echo adblocks_get_excerpt(125, $c->ID);
 											}											
