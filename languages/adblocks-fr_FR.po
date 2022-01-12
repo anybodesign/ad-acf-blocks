@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2021-12-17 08:20+0100\n"
-"PO-Revision-Date: 2021-12-17 08:20+0100\n"
+"POT-Creation-Date: 2022-01-12 10:30+0100\n"
+"PO-Revision-Date: 2022-01-12 10:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,13 +25,18 @@ msgstr ""
 msgid "AD ACF Blocks requires Advanced Custom Fields PRO (minimum: 5.8)."
 msgstr "AD ACF Blocks nécessite Advanced Custom Fields PRO (minimum : 5.8)."
 
-#: ad-acf-blocks.php:104
-#: blocks/block-posts/templates/block-posts-content.php:87
+#: ad-acf-blocks.php:105
+#: blocks/block-posts/templates/block-posts-content.php:89
 msgid "Read more"
 msgstr "Lire la suite"
 
+#: ad-acf-blocks.php:105
+#: blocks/block-posts/templates/block-posts-content.php:89
+msgid "of "
+msgstr "de "
+
 #. Plugin Name of the plugin/theme
-#: ad-acf-blocks.php:129
+#: ad-acf-blocks.php:130
 msgid "AD ACF Blocks"
 msgstr "AD ACF Blocks"
 
@@ -385,7 +390,7 @@ msgstr "Liste de fichiers"
 msgid "Add an downloadable file list."
 msgstr "Ajoutez une liste de fichiers téléchargeables."
 
-#: blocks/block-files/templates/block-files-template.php:64
+#: blocks/block-files/templates/block-files-template.php:66
 msgid "Download "
 msgstr "Télécharger "
 
@@ -480,7 +485,7 @@ msgid "Outside"
 msgstr "À l'extérieur"
 
 #: blocks/block-gallery/block-gallery-fields.php:300
-#: blocks/block-posts/block-posts-fields.php:532
+#: blocks/block-posts/block-posts-fields.php:551
 #: blocks/block-textimg/block-textimg-fields.php:154
 msgid "Featured image size"
 msgstr "Taille de l’image de mise en avant"
@@ -515,24 +520,24 @@ msgstr ""
 "Créez une galerie d'images ou une galerie de pages et/ou d’articles avec "
 "vignettes."
 
-#: blocks/block-gallery/templates/block-gallery-template.php:77
-#: blocks/block-gallery/templates/block-gallery-template.php:126
+#: blocks/block-gallery/templates/block-gallery-template.php:79
+#: blocks/block-gallery/templates/block-gallery-template.php:128
 #: blocks/block-textimg/block-textimg-fields.php:213
-#: blocks/block-textimg/templates/block-textimg-template.php:68
-#: blocks/block-textimg/templates/block-textimg-template.php:71
+#: blocks/block-textimg/templates/block-textimg-template.php:70
+#: blocks/block-textimg/templates/block-textimg-template.php:73
 msgid "Enlarge picture"
 msgstr "Agrandir l'image"
 
-#: blocks/block-gallery/templates/block-gallery-template.php:123
+#: blocks/block-gallery/templates/block-gallery-template.php:125
 msgid "Open a new tab"
 msgstr "Ouvre un nouvel onglet"
 
-#: blocks/block-gallery/templates/block-gallery-template.php:169
+#: blocks/block-gallery/templates/block-gallery-template.php:171
 #: blocks/block-posts/templates/block-posts-content.php:20
 msgid "Read "
 msgstr "Lire "
 
-#: blocks/block-gallery/templates/block-gallery-template.php:197
+#: blocks/block-gallery/templates/block-gallery-template.php:199
 msgid "Read More"
 msgstr "En savoir plus"
 
@@ -615,11 +620,11 @@ msgstr "Bannière de page"
 msgid "Add a page banner at the beginning of your page."
 msgstr "Ajoutez une bannière au début de votre page."
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:67
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:69
 msgid "Stop video playback"
 msgstr "Arrêter la lecture vidéo"
 
-#: blocks/block-pagebanner/templates/block-pagebanner-template.php:70
+#: blocks/block-pagebanner/templates/block-pagebanner-template.php:72
 msgid "Play video"
 msgstr "Lire la vidéo"
 
@@ -733,6 +738,10 @@ msgstr "Catégorie"
 msgid "Add a link"
 msgstr "Ajouter un lien"
 
+#: blocks/block-posts/block-posts-fields.php:532
+msgid "Display featured image"
+msgstr "Afficher l'image mise en avant"
+
 #: blocks/block-posts/block-posts.php:14
 msgid "Posts"
 msgstr "Publications"
@@ -741,30 +750,30 @@ msgstr "Publications"
 msgid "Insert one or many posts or custom posts."
 msgstr "Insérez une ou plusieurs publications ou publications personnalisées."
 
-#: blocks/block-posts/templates/block-posts-content.php:62
+#: blocks/block-posts/templates/block-posts-content.php:63
 msgid "Posted on&nbsp;"
 msgstr "Publié le&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-content.php:66
+#: blocks/block-posts/templates/block-posts-content.php:67
 msgid "by&nbsp;"
 msgstr "par&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-content.php:71
+#: blocks/block-posts/templates/block-posts-content.php:72
 msgid "in&nbsp;"
 msgstr "dans&nbsp;"
 
-#: blocks/block-posts/templates/block-posts-template.php:168
-#: blocks/block-posts/templates/block-posts-template.php:276
+#: blocks/block-posts/templates/block-posts-template.php:171
+#: blocks/block-posts/templates/block-posts-template.php:279
 msgid "Next Pannel"
 msgstr "Panneau suivant"
 
-#: blocks/block-posts/templates/block-posts-template.php:169
-#: blocks/block-posts/templates/block-posts-template.php:277
+#: blocks/block-posts/templates/block-posts-template.php:172
+#: blocks/block-posts/templates/block-posts-template.php:280
 msgid "Previous Pannel"
 msgstr "Panneau précédent"
 
-#: blocks/block-posts/templates/block-posts-template.php:220
-#: blocks/block-posts/templates/block-posts-template.php:318
+#: blocks/block-posts/templates/block-posts-template.php:223
+#: blocks/block-posts/templates/block-posts-template.php:321
 msgid "Pannel"
 msgstr "Panneau"
 
@@ -949,8 +958,8 @@ msgstr "Texte et image"
 msgid "Text and picture block with reverse order option."
 msgstr "Bloc texte image avec option d'ordre inversé."
 
-#: blocks/block-textimg/templates/block-textimg-template.php:77
-#: blocks/block-textimg/templates/block-textimg-template.php:120
+#: blocks/block-textimg/templates/block-textimg-template.php:79
+#: blocks/block-textimg/templates/block-textimg-template.php:122
 msgid "Open in a new tab"
 msgstr "Ouvre un nouvel onglet"
 
