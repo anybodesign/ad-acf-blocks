@@ -21,10 +21,12 @@
 		$has_bgimg = null;
 	} 
 	
+	$className = 'acf-block--cta';
+	if( !empty($block['className']) ) {
+		$className .= ' ' . $block['className'];
+	}
 	if( !empty($block['align']) ) {
-	    $align = ' align' . $block['align'];
-	} else {
-		$align = null;
+		$className .= ' align' . $block['align'];
 	}						
 ?>
 			<?php // Block preview
@@ -32,7 +34,7 @@
 				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/cta-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>
 
-			<section class="acf-block--cta<?php if($bgimg) { echo ' has-bg-img'; } if($bgcolor) { echo ' has-bg-color'; } if ($type == 'inline') { echo ' inline-cta'; } else { echo ' boxed-cta'; } if ($white) { echo ' white-text'; } if ($over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } echo esc_attr($align); ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
+			<section class="<?php echo esc_attr($className); if($bgimg) { echo ' has-bg-img'; } if($bgcolor) { echo ' has-bg-color'; } if ($type == 'inline') { echo ' inline-cta'; } else { echo ' boxed-cta'; } if ($white) { echo ' white-text'; } if ($over) { echo ' has-overlay'; } if ($repeat) { echo ' repeat'; } ?>"<?php if ($bgcolor || $bgimg) { echo ' style="'.$has_bgcolor.' '.$has_bgimg.'"'; } ?>>
 				<div class="acf-block-container">
 				
 					<?php if( $text ) { ?>

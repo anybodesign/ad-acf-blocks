@@ -44,10 +44,12 @@
 		$label = 'Scroll Down';
 	}
 
+	$className = 'acf-block--pagebanner';
+	if( !empty($block['className']) ) {
+		$className .= ' ' . $block['className'];
+	}
 	if( !empty($block['align']) ) {
-	    $align = ' align' . $block['align'];
-	} else {
-		$align = null;
+		$className .= ' align' . $block['align'];
 	}	
 ?>
 
@@ -56,7 +58,7 @@
 				<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>assets/previews/pagebanner-preview.png" alt="" class="adblock-preview">
 			<?php } else { ?>			
 			
-			<section class="acf-block--pagebanner<?php echo $the_type; echo esc_attr($align); ?>">
+			<section class="<?php echo esc_attr($className); echo esc_attr($the_type); ?>">
 				<div class="acf-block-container">
 					
 					<?php if ( $type == 'video' && $video ) { ?>
