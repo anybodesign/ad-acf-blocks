@@ -72,13 +72,13 @@
 										<?php if ($type == 'mpeg') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/audio.svg" alt="">
 										<?php } ?>
-										<?php if ($type == 'jpeg') { ?>
+										<?php if ($type == 'jpeg' || $type == 'png' ) { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/picture.svg" alt="">
 										<?php } ?>
 										<?php if ($type == 'mp4') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/video.svg" alt="">
 										<?php } ?>
-										<?php if ($type == 'pdf') { ?>
+										<?php if ($type == 'pdf' || $type == 'msword') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/text.svg" alt="">
 										<?php } ?>
 										<?php if ($type == 'zip') { ?>
