@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.5.2 - 2022-01-14
+* File list: blank icon for fallback
+
 ### 3.5.1 - 2022-01-14
 * File list: msword and png icons
 
