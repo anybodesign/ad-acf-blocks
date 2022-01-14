@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.5.1 - 2022-01-14
+* File list: msword and png icons
+
 ### 3.5 - 2022-01-12
 * Custom class option for all blocks
 * Posts: featured image option

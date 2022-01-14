@@ -3,7 +3,7 @@ Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
 Tested up to: 5.8.3
-Stable tag: 3.5
+Stable tag: 3.5.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 3.5.1 - 2022-01-14 =
+* File list: msword and png icons
 
 = 3.5 - 2022-01-12 =
 * Custom class option for all blocks
