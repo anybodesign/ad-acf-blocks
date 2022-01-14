@@ -71,18 +71,16 @@
 									<?php } else { ?>
 										<?php if ($type == 'mpeg') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/audio.svg" alt="">
-										<?php } ?>
-										<?php if ($type == 'jpeg' || $type == 'png' ) { ?>
+										<?php } else if ($type == 'jpeg' || $type == 'png' ) { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/picture.svg" alt="">
-										<?php } ?>
-										<?php if ($type == 'mp4') { ?>
+										<?php } else if ($type == 'mp4') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/video.svg" alt="">
-										<?php } ?>
-										<?php if ($type == 'pdf' || $type == 'msword') { ?>
+										<?php } else if ($type == 'pdf' || $type == 'msword') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/text.svg" alt="">
-										<?php } ?>
-										<?php if ($type == 'zip') { ?>
+										<?php } else if ($type == 'zip') { ?>
 										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/archive.svg" alt="">
+										<?php } else { ?>
+										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/blank.svg" alt="">
 										<?php } ?>
 									<?php } ?>
 								</div>

@@ -44,7 +44,7 @@ acf_add_local_field_group(array(
 					'library' => 'all',
 					'min_size' => '',
 					'max_size' => '',
-					'mime_types' => 'pdf, zip, jpg, jpeg, png, doc, docx, odt, mp3, mp4',
+					'mime_types' => 'pdf, zip, jpg, jpeg, png, doc, mp3, mp4',
 				),
 				array(
 					'key' => 'field_61bc308f4ed93',
@@ -92,7 +92,7 @@ acf_add_local_field_group(array(
 			'name' => 'custom_icons',
 			'type' => 'true_false',
 			'instructions' => __('Icons path in the theme must be: <em>/img/icons/files/</em><br>
-File names: <em>archive.svg, audio.svg, picture.svg, text.svg,	video.svg</em>', 'adblocks'),
+File names: <em>archive.svg, audio.svg, picture.svg, text.svg, video.svg, blank.svg</em>', 'adblocks'),
 			'required' => 0,
 			'conditional_logic' => array(
 				array(
