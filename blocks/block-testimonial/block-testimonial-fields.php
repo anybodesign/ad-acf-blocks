@@ -101,7 +101,7 @@ acf_add_local_field_group(array(
 							'default_value' => '',
 							'placeholder' => '',
 							'maxlength' => '',
-							'rows' => '',
+							'rows' => 4,
 							'new_lines' => '',
 						),
 						array(
@@ -113,7 +113,7 @@ acf_add_local_field_group(array(
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -128,11 +128,11 @@ acf_add_local_field_group(array(
 							'label' => __('Author description', 'adblocks'),
 							'name' => 'desc',
 							'type' => 'text',
-							'instructions' => __('role, job, company, country, city…', 'adblocks'),
+							'instructions' => __('role, job, society, country, city…', 'adblocks'),
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -153,7 +153,7 @@ acf_add_local_field_group(array(
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
-						'width' => '',
+						'width' => '50',
 						'class' => '',
 						'id' => '',
 					),
@@ -164,6 +164,113 @@ acf_add_local_field_group(array(
 					'ui_off_text' => '',
 				),
 			),
+		),
+		array(
+			'key' => 'field_632ad5e06165f',
+			'label' => __('Slider option', 'adblocks'),
+			'name' => 'slider',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
+		array(
+			'key' => 'field_632ad5f561660',
+			'label' => __('Number of columns', 'adblocks'),
+			'name' => 'cols',
+			'type' => 'select',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_632ad5e06165f',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'col2' => __('2 columns', 'adblocks'),
+				'col3' => __('3 columns', 'adblocks'),
+				'col4' => __('4 columns', 'adblocks'),
+			),
+			'default_value' => 'col2',
+			'allow_null' => 0,
+			'multiple' => 0,
+			'ui' => 0,
+			'return_format' => 'value',
+			'ajax' => 0,
+			'placeholder' => '',
+		),
+		array(
+			'key' => 'field_632b0fd08be36',
+			'label' => __('Show dots', 'adblocks'),
+			'name' => 'dots',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_632ad5e06165f',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
+		array(
+			'key' => 'field_632b0fe08be37',
+			'label' => __('Show arrows', 'adblocks'),
+			'name' => 'arrows',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_632ad5e06165f',
+						'operator' => '==',
+						'value' => '1',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
 		),
 	),
 	'location' => array(
@@ -183,8 +290,10 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => 0,
 ));
 
 endif;
+
 }
 add_action('acf/init', 'adblocks_testimonial_block_fields');

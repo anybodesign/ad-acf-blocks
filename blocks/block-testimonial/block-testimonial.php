@@ -21,6 +21,8 @@ function adblocks_testimonial_block_init() {
             'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-testimonial/templates/block-testimonial-template.php',
             'enqueue_assets'	=>	function() {
 										wp_enqueue_style( 'block-testimonial', ADBLOCKS__PLUGIN_URL . 'blocks/block-testimonial/css/block-testimonial.css' );
+										wp_enqueue_style( 'slick-css', ADBLOCKS__PLUGIN_URL . 'assets/css/slick.css' );
+										wp_enqueue_script( 'slick', ADBLOCKS__PLUGIN_URL . 'assets/js/slick.min.js', array('jquery'), '', true );
 									},
 			'example' 			=> array(
 									'attributes'		=> array(
