@@ -49,6 +49,10 @@ Create more blocks, and look for a way to override some block templates
 
 == Changelog ==
 
+= 3.6 - 2022-09-21 =
+* CTA: button color
+* Testimonial: slider option
+
 = 3.5.2 - 2022-01-14 =
 * File list: blank icon for fallback
 
