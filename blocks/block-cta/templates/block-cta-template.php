@@ -3,6 +3,8 @@
 	$type = get_field('type');
 	$text = get_field('text') ?: __('Enter text here...', 'adblocks');
 	$link = get_field('link');
+	$btn_bg = get_field('btn_bg');
+	$btn_txt = get_field('btn_txt');
 	
 	$bgcolor = get_field('bg_color');
 	$bgimg = get_field('bg_img');
@@ -44,8 +46,21 @@
 					<?php } ?>
 				
 					<?php if( $link ) : ?>
+					
+					<?php 
+						if ($btn_bg) {
+							$bg = 'background-color: '.$btn_bg.';';
+						} else {
+							$bg = null; 
+						}
+						if ($btn_txt) {
+							$txt = 'color: '.$btn_txt.';';
+						} else {
+							$txt = null; 
+						}
+					?>
 					<div class="acf-block-cta-btn">
-						<a href="<?php echo $link['url']; ?>" class="action-btn"<?php if($link['target']) { echo ' target="'.$link['target'].'"'; } ?>>
+						<a href="<?php echo $link['url']; ?>"<?php if ($btn_bg || $btn_txt) { echo ' style=" '. $bg . $txt .' "';} ?> class="action-btn"<?php if($link['target']) { echo ' target="'.$link['target'].'"'; } ?>>
 							<?php echo $link['title']; ?>
 						</a>
 					</div>

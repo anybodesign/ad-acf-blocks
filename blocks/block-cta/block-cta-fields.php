@@ -6,11 +6,11 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5ced02f02266d',
-	'title' => __('AD ACF Block 04: CTA', 'adblocks'),
+	'title' => __('AD ACF Block 04 : Call to action', 'adblocks'),
 	'fields' => array(
 		array(
 			'key' => 'field_5f50d1d536c33',
-			'label' => __('CTA type', 'adblocks'),
+			'label' => __('Call to action type', 'adblocks'),
 			'name' => 'type',
 			'type' => 'button_group',
 			'instructions' => '',
@@ -64,6 +64,54 @@ acf_add_local_field_group(array(
 			),
 			'return_format' => 'array',
 		),
+		array(
+			'key' => 'field_632b14756ab55',
+			'label' => __('Button background color', 'adblocks'),
+			'name' => 'btn_bg',
+			'type' => 'color_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5ced030883deb',
+						'operator' => '!=empty',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'enable_opacity' => 0,
+			'return_format' => 'string',
+		),
+		array(
+			'key' => 'field_632b14bab6828',
+			'label' => __('Button text color', 'adblocks'),
+			'name' => 'btn_txt',
+			'type' => 'color_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5ced030883deb',
+						'operator' => '!=empty',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '50',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'enable_opacity' => 0,
+			'return_format' => 'string',
+		),
 	),
 	'location' => array(
 		array(
@@ -82,6 +130,7 @@ acf_add_local_field_group(array(
 	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
+	'show_in_rest' => 0,
 ));
 
 endif;

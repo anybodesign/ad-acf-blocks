@@ -75,4 +75,12 @@
 	a {
 		// your style .action-btn
 	}
+	
+	.action-btn {
+		&:focus, 
+		&:hover {
+			background-color: var(--text_color) !important;
+			color: var(--btn_text_hover) !important;
+		}
+	}
 }
