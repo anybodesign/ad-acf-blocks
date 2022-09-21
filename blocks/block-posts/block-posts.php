@@ -19,9 +19,6 @@ function adblocks_posts_block_init() {
 			'supports'			=> 	array( 'align' => array( 'wide', 'full' ), 'mode' => false),
 			'keywords'			=>	array( 'post', 'publication' ),
 			'render_template'   =>	ADBLOCKS__PLUGIN_PATH . 'blocks/block-posts/templates/block-posts-template.php',
-			'enqueue_assets'	=>	function() {
-										wp_enqueue_style( 'block-posts', ADBLOCKS__PLUGIN_URL . 'blocks/block-posts/css/block-posts.css' );
-									},
 			'enqueue_assets'	=> function() {
 										wp_enqueue_style( 'block-posts', ADBLOCKS__PLUGIN_URL . 'blocks/block-posts/css/block-posts.css' );
 										wp_enqueue_style( 'slick-css', ADBLOCKS__PLUGIN_URL . 'assets/css/slick.css' );
