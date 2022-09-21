@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AD ACF Blocks\n"
-"POT-Creation-Date: 2022-01-14 17:51+0100\n"
-"PO-Revision-Date: 2022-01-14 17:51+0100\n"
+"POT-Creation-Date: 2022-09-21 21:38+0200\n"
+"PO-Revision-Date: 2022-09-21 21:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -304,12 +304,12 @@ msgid "Create a gallery of cards with or without thumbnails."
 msgstr "Créez une galerie de cartes avec ou sans miniature."
 
 #: blocks/block-cta/block-cta-fields.php:9
-msgid "AD ACF Block 04: CTA"
-msgstr "AD ACF Bloc 04 : Appel à l’action"
+msgid "AD ACF Block 04 : Call to action"
+msgstr "AD ACF Block 04 : Appel à l’action"
 
 #: blocks/block-cta/block-cta-fields.php:13
-msgid "CTA type"
-msgstr "Type de bloc d’appel à l’action"
+msgid "Call to action type"
+msgstr "Type d’appel à l’action"
 
 #: blocks/block-cta/block-cta-fields.php:25
 msgid "Box"
@@ -324,6 +324,14 @@ msgstr "En ligne"
 #: blocks/block-textimg/block-textimg-fields.php:61
 msgid "Text area"
 msgstr "Zone de texte"
+
+#: blocks/block-cta/block-cta-fields.php:69
+msgid "Button background color"
+msgstr "Couleur d'arrière-plan du bouton"
+
+#: blocks/block-cta/block-cta-fields.php:93
+msgid "Button text color"
+msgstr "Couleur du texte du bouton"
 
 #: blocks/block-cta/block-cta.php:14
 msgid "CTA"
@@ -765,16 +773,19 @@ msgstr "dans&nbsp;"
 
 #: blocks/block-posts/templates/block-posts-template.php:171
 #: blocks/block-posts/templates/block-posts-template.php:279
+#: blocks/block-testimonial/templates/block-testimonial-template.php:151
 msgid "Next Pannel"
 msgstr "Panneau suivant"
 
 #: blocks/block-posts/templates/block-posts-template.php:172
 #: blocks/block-posts/templates/block-posts-template.php:280
+#: blocks/block-testimonial/templates/block-testimonial-template.php:152
 msgid "Previous Pannel"
 msgstr "Panneau précédent"
 
 #: blocks/block-posts/templates/block-posts-template.php:223
 #: blocks/block-posts/templates/block-posts-template.php:321
+#: blocks/block-testimonial/templates/block-testimonial-template.php:193
 msgid "Pannel"
 msgstr "Panneau"
 
@@ -810,12 +821,45 @@ msgid "Author description"
 msgstr "Description de l’auteur"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:131
-msgid "role, job, company, country, city…"
+msgid "role, job, society, country, city…"
 msgstr "rôle, métier, société, pays, ville…"
 
 #: blocks/block-testimonial/block-testimonial-fields.php:149
 msgid "Portrait on the right"
 msgstr "Portrait à droite"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:170
+msgid "Slider option"
+msgstr "Option carousel"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:189
+msgid "Number of columns"
+msgstr "Nombre de colonnes"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:209
+#: blocks/block-text/block-text-fields.php:26
+#: global-fields/columns-fields.php:26
+msgid "2 columns"
+msgstr "2 colonnes"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:210
+#: blocks/block-text/block-text-fields.php:27
+#: global-fields/columns-fields.php:27
+msgid "3 columns"
+msgstr "3 colonnes"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:211
+#: global-fields/columns-fields.php:28
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:223
+msgid "Show dots"
+msgstr "Afficher les points"
+
+#: blocks/block-testimonial/block-testimonial-fields.php:250
+msgid "Show arrows"
+msgstr "Afficher les flèches"
 
 #: blocks/block-testimonial/block-testimonial.php:14
 msgid "Testimonial"
@@ -841,16 +885,6 @@ msgstr "Choisir une mise en page pour ce bloc"
 #: global-fields/columns-fields.php:25
 msgid "1 column"
 msgstr "1 colonne"
-
-#: blocks/block-text/block-text-fields.php:26
-#: global-fields/columns-fields.php:26
-msgid "2 columns"
-msgstr "2 colonnes"
-
-#: blocks/block-text/block-text-fields.php:27
-#: global-fields/columns-fields.php:27
-msgid "3 columns"
-msgstr "3 colonnes"
 
 #: blocks/block-text/block-text-fields.php:28
 msgid "Two thirds / One third"
@@ -1016,10 +1050,6 @@ msgstr "Options de bloc : Colonnes"
 msgid "Number of Columns"
 msgstr "Nombre de colonnes"
 
-#: global-fields/columns-fields.php:28
-msgid "4 columns"
-msgstr "4 colonnes"
-
 #: global-fields/columns-fields.php:29
 msgid "5 columns"
 msgstr "5 colonnes"
@@ -1063,6 +1093,9 @@ msgstr "Thomas Villain - Anybodesign"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "CTA type"
+#~ msgstr "Type de bloc d’appel à l’action"
 
 #~ msgid "Scroll Down"
 #~ msgstr "Défiler vers le bas"
