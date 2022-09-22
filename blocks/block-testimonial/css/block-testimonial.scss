@@ -32,4 +32,32 @@
 			flex-direction: row-reverse;
 		}
 	}
+	
+	.testimonial-stars {
+		overflow: hidden;
+		height: 2rem;
+		
+		img {
+			display: block;
+			height: 2rem;
+			width: 14rem;
+			max-width: none;
+		}
+		
+		&.nb-one {
+			width: 3rem;
+		}
+		&.nb-two {
+			width: 6rem;
+		}
+		&.nb-three {
+			width: 9rem;
+		}
+		&.nb-four {
+			width: 12rem;
+		}
+		&.nb-five {
+			width: 15rem;
+		}
+	}
 }

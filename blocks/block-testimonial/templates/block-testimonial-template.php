@@ -57,6 +57,8 @@
 							$avatar = get_sub_field('avatar');   
 							$content = get_sub_field('content');
 							$right = get_sub_field('right');
+							$show_stars = get_sub_field('show_stars');
+							$stars = get_sub_field('stars');
 							
 							$title = $content['title'];
 							$text = $content['text'];
@@ -78,6 +80,11 @@
 								
 								<?php if ($text) { ?>
 								<figure <?php if ($author || $desc) { echo ' role="group"'; } ?>>
+									<?php if ($show_stars) { ?>
+									<div class="testimonial-stars nb-<?php echo $stars; ?>">
+										<img src="<?php echo ADBLOCKS__PLUGIN_URL; ?>blocks/block-testimonial/assets/stars.svg" alt="<?php echo $stars; ?> stars">
+									</div>
+									<?php } ?>
 									<blockquote>
 										<?php echo $text; ?>
 									</blockquote>
