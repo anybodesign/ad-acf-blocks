@@ -30,6 +30,9 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.6.1 - 2022-09-22
+* Testimonial: stars option
+
 ### 3.6 - 2022-09-21
 * CTA: button color
 * Testimonial: slider option
