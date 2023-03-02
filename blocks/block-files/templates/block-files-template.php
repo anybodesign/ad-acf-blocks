@@ -70,17 +70,17 @@
 									<img class="file-item-icon" src="<?php echo esc_url($icon); ?>" alt="">
 									<?php } else { ?>
 										<?php if ($type == 'mpeg') { ?>
-										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/audio.svg" alt="">
+										<img class="file-item-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/files/audio.svg" alt="">
 										<?php } else if ($type == 'jpeg' || $type == 'png' ) { ?>
-										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/picture.svg" alt="">
+										<img class="file-item-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/files/picture.svg" alt="">
 										<?php } else if ($type == 'mp4') { ?>
-										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/video.svg" alt="">
+										<img class="file-item-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/files/video.svg" alt="">
 										<?php } else if ($type == 'pdf' || $type == 'msword') { ?>
-										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/text.svg" alt="">
+										<img class="file-item-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/files/text.svg" alt="">
 										<?php } else if ($type == 'zip') { ?>
-										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/archive.svg" alt="">
+										<img class="file-item-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/files/archive.svg" alt="">
 										<?php } else { ?>
-										<img class="file-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/files/blank.svg" alt="">
+										<img class="file-item-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/files/blank.svg" alt="">
 										<?php } ?>
 									<?php } ?>
 								</div>
@@ -89,9 +89,12 @@
 									<span class="file-item-name">
 										<?php if ( $customtitle ) { echo esc_html($customtitle); } else { echo esc_html($title); } ?>
 									</span>&nbsp;
-									(<span class="file-item-type"><?php echo esc_html($type); ?></span>
-									&nbsp;–&nbsp;
-									<span class="file-item-size"><?php echo esc_html($size); ?> Mb</span>)&nbsp;
+									<span class="file-item-type-size">
+										(<span class="file-item-type"><?php echo esc_html($type); ?></span>
+										&nbsp;–&nbsp;
+										<span class="file-item-size"><?php echo esc_html($size); ?> Mb</span>)
+									</span>
+									&nbsp;
 									<?php if ($desc) { ?>
 									<span class="file-item-desc"><?php echo esc_html($desc); ?></span>
 									<?php } ?>
