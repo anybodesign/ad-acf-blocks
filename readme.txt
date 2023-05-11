@@ -2,8 +2,8 @@
 Contributors: anybodesign
 Tags: blocks, acf
 Requires at least: 5.0
-Tested up to: 5.8.3
-Stable tag: 3.5.2
+Tested up to: 6.2
+Stable tag: 3.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,13 @@ Create more blocks, and look for a way to override some block templates
 
 
 == Changelog ==
+
+= 3.7 - 2023-05-11 =
+* New block icons
+* Fix: Files block
+* PUC update
+* Added plugin icon and banner
+* Self-hosting plugin source
 
 = 3.6.1 - 2022-09-22 =
 * Testimonial: stars option

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD ACF Blocks
  * Description: A collection of blocks made with ACF for the new Editor 
- * Version: 3.6.1
+ * Version: 3.7
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Text Domain: adblocks
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 // Constants
 
-define( 'ADBLOCKS__PLUGIN_VERSION', '3.6.1' );
+define( 'ADBLOCKS__PLUGIN_VERSION', '3.7' );
 define( 'ADBLOCKS__PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ADBLOCKS__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADBLOCKS__BASENAME', plugin_basename( __FILE__ ) );
@@ -193,10 +193,10 @@ add_action( 'admin_init', 'adblocks_admin_css' );
 // ////////////////
 
 
-require 'assets/plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/anybodesign/ad-acf-blocks',
+require 'assets/plugin-update-checker-5.0/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://lab.anybodesign.com/plugins/ad-acf-blocks/ad-acf-blocks.json',
 	__FILE__,
 	'ad-acf-blocks'
 );
-$myUpdateChecker->setBranch('master');

@@ -30,6 +30,13 @@ Create more blocks, and look for a way to override some block templates
 
 ## Changelog
 
+### 3.7 - 2023-05-11
+* New block icons
+* Fix: Files block
+* PUC update
+* Added plugin icon and banner
+* Self-hosting plugin source
+
 ### 3.6.1 - 2022-09-22
 * Testimonial: stars option
 
