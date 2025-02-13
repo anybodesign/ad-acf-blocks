@@ -1,6 +1,6 @@
 # AD ACF Blocks
 
-Add some custom blocks for the new WordPress Editor.
+This project will not be maintained anymore, I'm now working on a new version : [AD ACF Blocks 2 plugin](https://github.com/anybodesign/ad-acf-blocks-2).
 
 ## Description
 
